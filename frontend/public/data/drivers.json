@@ -73,7 +73,7 @@
           "races": 2
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.24848193084355655,
           "tire_degradation": -8.183399999999992,
           "clutch_score": 0.5401845131733796,
@@ -95,7 +95,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.3134725181916882,
           "tire_degradation": -14.246750000000008,
           "clutch_score": 3.010825124542995,
@@ -203,7 +203,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.17842976537237232,
           "tire_degradation": -9.192416666666674,
           "clutch_score": 1.57438238342319,
@@ -225,7 +225,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.1764450983856541,
           "tire_degradation": -14.2472619047619,
           "clutch_score": 2.827833740442218,
@@ -333,7 +333,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.0400572436974546,
           "tire_degradation": -34.92405000000001,
           "clutch_score": 3.721585520494517,
@@ -355,7 +355,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.19750603588788496,
           "tire_degradation": -13.364154761904759,
           "clutch_score": 2.5081846508755006,
@@ -463,7 +463,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.33536530520306507,
           "tire_degradation": -7.97818333333332,
           "clutch_score": 1.3989279381935191,
@@ -485,7 +485,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.2775683745206032,
           "tire_degradation": -12.944404761904778,
           "clutch_score": 2.699881395874613,
@@ -662,7 +662,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.1844891078511089,
           "tire_degradation": -8.252683333333323,
           "clutch_score": 0.3708822326060528,
@@ -755,7 +755,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.17555269165910506,
           "tire_degradation": -11.829011904761899,
           "clutch_score": 1.7759226509003356,
@@ -863,7 +863,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.30297331547827355,
           "tire_degradation": -8.184966666666654,
           "clutch_score": 1.1040090115208356,
@@ -885,7 +885,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.3019141085703102,
           "tire_degradation": -12.909285714285732,
           "clutch_score": 2.777050847677228,
@@ -1039,7 +1039,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.21704750107951495,
           "tire_degradation": -7.92661666666669,
           "clutch_score": 0.5874303186273941,
@@ -1061,7 +1061,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.18673528515421636,
           "tire_degradation": -53.50276190476191,
           "clutch_score": 8.756248338837201,
@@ -1143,7 +1143,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.30479149335707717,
           "tire_degradation": -8.365933333333345,
           "clutch_score": 1.5510401169898913,
@@ -1461,7 +1461,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.21327508722663455,
           "tire_degradation": -8.344700000000003,
           "clutch_score": 1.5891835925618596,
@@ -1483,7 +1483,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.043365931820617,
           "tire_degradation": -24.67616666666666,
           "clutch_score": 5.540693984814973,
@@ -1673,7 +1673,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.10174794215346189,
           "tire_degradation": 12.595300000000009,
           "clutch_score": -43.05648230666249,
@@ -1695,7 +1695,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.0433966828532597,
           "tire_degradation": -24.98783333333336,
           "clutch_score": 5.428773528840496,
@@ -1791,7 +1791,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.05788618145283454,
           "tire_degradation": -2.520233333333323,
           "clutch_score": 2.7897101426256743,
@@ -1813,7 +1813,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.16531820994833443,
           "tire_degradation": -14.480916666666644,
           "clutch_score": 2.9263552314319035,
@@ -1921,7 +1921,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.2871341092703339,
           "tire_degradation": -8.3707,
           "clutch_score": 1.6473258654782559,
@@ -1943,7 +1943,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.2976764863172705,
           "tire_degradation": -12.902500000000005,
           "clutch_score": 2.8893530558309046,
@@ -2050,7 +2050,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.09326371468433281,
           "tire_degradation": -12.244833333333347,
           "clutch_score": 2.1779386775761083,
@@ -2227,7 +2227,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.12571673905023056,
           "tire_degradation": -7.640049999999974,
           "clutch_score": 1.5091400441464358,
@@ -2249,7 +2249,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.13814912184303818,
           "tire_degradation": -13.108345238095238,
           "clutch_score": 2.841155592806787,
@@ -2357,7 +2357,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.20386224965212904,
           "tire_degradation": -8.57256666666666,
           "clutch_score": 0.6135776629211054,
@@ -2379,7 +2379,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.06767091791564085,
           "tire_degradation": -12.702083333333348,
           "clutch_score": 3.637767263418068,
@@ -2612,7 +2612,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.15214037547601889,
           "tire_degradation": -13.253857142857127,
           "clutch_score": 2.768296351816621,
@@ -2743,7 +2743,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.19226733615614106,
           "tire_degradation": -8.512116666666643,
           "clutch_score": 0.9189471377071702,
@@ -2765,7 +2765,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.2754090876440923,
           "tire_degradation": -13.084761904761905,
           "clutch_score": 4.441135632196959,
@@ -2873,7 +2873,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.2609489309824008,
           "tire_degradation": -8.129249999999999,
           "clutch_score": 1.3198703707177286,
@@ -2895,7 +2895,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.2915338526259612,
           "tire_degradation": -12.70317857142858,
           "clutch_score": 2.8397098729295824,
@@ -3047,7 +3047,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.2566304920707442,
           "tire_degradation": -8.714283333333341,
           "clutch_score": 1.5139108869843054,
@@ -3155,7 +3155,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.2917663410923972,
           "tire_degradation": -1.1025000000000205,
           "clutch_score": -0.0908925075948522,
@@ -3177,7 +3177,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.16595367574311573,
           "tire_degradation": -12.328833333333321,
           "clutch_score": 2.3643928478346705,
@@ -3367,7 +3367,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.19040637230437835,
           "tire_degradation": -6.6880000000000015,
           "clutch_score": 1.0389885659015572,
@@ -3389,7 +3389,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.27368570186989555,
           "tire_degradation": -12.574440476190475,
           "clutch_score": 2.7595022130751854,
@@ -3495,7 +3495,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.1786129915960252,
           "tire_degradation": -0.934000000000026,
           "clutch_score": 0.8165394301610847,
@@ -3612,7 +3612,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.15945362472789557,
           "tire_degradation": -13.07544047619048,
           "clutch_score": 2.7320560601428103,
@@ -3709,7 +3709,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.044344792097987196,
           "tire_degradation": -21.94486666666664,
           "clutch_score": 4.413932710338736,
@@ -3731,7 +3731,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.26389358740405827,
           "tire_degradation": 32.74721428571429,
           "clutch_score": -9.006759337385937,
@@ -3824,7 +3824,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.1778659350584034,
           "tire_degradation": -13.748702380952379,
           "clutch_score": 3.0671582957713452,
@@ -3921,7 +3921,7 @@
           "races": 1
         },
         "sebring": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.17847779227211066,
           "tire_degradation": -8.988533333333322,
           "clutch_score": 1.604233436333986,
@@ -3943,7 +3943,7 @@
           "races": 2
         },
         "vir": {
-          "top_speed_max": 0.0,
+          "top_speed_max": 0,
           "consistency_score": 0.15971361773511125,
           "tire_degradation": -13.405285714285696,
           "clutch_score": 2.657363212491673,

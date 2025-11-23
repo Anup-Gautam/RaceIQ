@@ -778,7 +778,7 @@ def generate_all_outputs(base_path: Path, ml_results: dict = None):
     print("✓ Generated insights.json")
     
     # 8. visualizations.json (Critical presentation charts)
-    visualizations = generate_visualizations_json(ml_results, features_df)
+    visualizations = generate_visualizations_json(ml_results, features_df, loader)
     with open(output_dir / 'visualizations.json', 'w') as f:
         json.dump(visualizations, f, indent=2, default=str)
     print("✓ Generated visualizations.json")
@@ -792,7 +792,7 @@ def generate_all_outputs(base_path: Path, ml_results: dict = None):
     
     print(f"\nAll JSON files generated in: {output_dir}")
 
-def generate_visualizations_json(ml_results: dict, features_df: pd.DataFrame) -> dict:
+def generate_visualizations_json(ml_results: dict, features_df: pd.DataFrame, loader: RaceDataLoader) -> dict:
     """Generate critical visualization data for presentation"""
     
     if features_df.empty:
@@ -822,6 +822,9 @@ def generate_visualizations_json(ml_results: dict, features_df: pd.DataFrame) ->
     # 8. Sector Importance Heatmap
     sector_heatmap = _generate_sector_heatmap(features_df)
     
+    # 9. Champions Are Boring (Lap-by-lap time series)
+    champions_boring = _generate_champions_boring_chart(loader)
+    
     return {
         'rule_26x': rule_26x,
         'archetype_matrix': archetype_matrix,
@@ -830,7 +833,8 @@ def generate_visualizations_json(ml_results: dict, features_df: pd.DataFrame) ->
         'consistency_scatter': consistency_scatter,
         'training_allocation': training_allocation,
         'fcy_impact': fcy_impact,
-        'sector_heatmap': sector_heatmap
+        'sector_heatmap': sector_heatmap,
+        'champions_boring': champions_boring
     }
 
 def _generate_26x_rule(features_df: pd.DataFrame) -> dict:
@@ -1250,6 +1254,270 @@ def _generate_sector_heatmap(features_df: pd.DataFrame) -> dict:
         'total_tracks': len(heatmap_data),
         'most_important_sector': most_important_sector,
         'insight': f'{most_important_sector} consistency shows the strongest relationship with race success (|correlation|: {max_importance:.3f}). Note: Lower std = better performance, so negative correlations are expected.'
+    }
+
+def _generate_champions_boring_chart(loader: RaceDataLoader) -> dict:
+    """Generate lap-by-lap time series chart: Champion (boring/flat) vs 4th Place (exciting/spiky) for ALL races"""
+    
+    def parse_lap_time(time_str):
+        """Convert lap time string (e.g., '1:54.168') to seconds"""
+        if pd.isna(time_str):
+            return None
+        try:
+            if isinstance(time_str, (int, float)):
+                return float(time_str)
+            parts = str(time_str).split(':')
+            if len(parts) == 2:
+                minutes = float(parts[0])
+                seconds = float(parts[1])
+                return minutes * 60 + seconds
+            else:
+                return float(time_str)
+        except:
+            return None
+    
+    all_races = []
+    
+    # Process ALL races
+    for track_name in loader.tracks.keys():
+        for race_num in [1, 2]:
+            race_data = loader.load_track_data(track_name, race_num)
+            
+            if race_data['endurance'].empty or race_data['results'].empty:
+                continue
+            
+            endurance_df = race_data['endurance'].copy()
+            results_df = race_data['results'].copy()
+            
+            # Find winner and 4th place
+            if 'POSITION' not in results_df.columns or 'NUMBER' not in results_df.columns:
+                continue
+            
+            # Get position and driver number
+            results_df = results_df.sort_values('POSITION')
+            winner_row = results_df[results_df['POSITION'] == 1]
+            fourth_place_row = results_df[results_df['POSITION'] == 4]
+            
+            if winner_row.empty or fourth_place_row.empty:
+                continue
+            
+            winner_num = int(winner_row.iloc[0]['NUMBER'])
+            fourth_place_num = int(fourth_place_row.iloc[0]['NUMBER'])
+            
+            # Get lap times for both drivers
+            winner_laps = endurance_df[endurance_df['NUMBER'] == winner_num].copy()
+            fourth_place_laps = endurance_df[endurance_df['NUMBER'] == fourth_place_num].copy()
+            
+            if len(winner_laps) < 5 or len(fourth_place_laps) < 5:
+                continue
+            
+            # Convert lap times to seconds
+            winner_laps['LAP_TIME_SEC'] = winner_laps['LAP_TIME'].apply(parse_lap_time)
+            fourth_place_laps['LAP_TIME_SEC'] = fourth_place_laps['LAP_TIME'].apply(parse_lap_time)
+            
+            # Remove NaN values
+            winner_laps = winner_laps[winner_laps['LAP_TIME_SEC'].notna()]
+            fourth_place_laps = fourth_place_laps[fourth_place_laps['LAP_TIME_SEC'].notna()]
+            
+            if len(winner_laps) < 5 or len(fourth_place_laps) < 5:
+                continue
+            
+            winner_std = winner_laps['LAP_TIME_SEC'].std()
+            fourth_place_std = fourth_place_laps['LAP_TIME_SEC'].std()
+            
+            if winner_std == 0 or fourth_place_std == 0:
+                continue
+            
+            ratio = fourth_place_std / winner_std
+            
+            # Sort by lap number
+            winner_laps = winner_laps.sort_values('LAP_NUMBER')
+            fourth_place_laps = fourth_place_laps.sort_values('LAP_NUMBER')
+            
+            # Prepare lap data
+            champion_lap_data = []
+            for _, row in winner_laps.iterrows():
+                lap_time = row['LAP_TIME_SEC']
+                if pd.isna(lap_time) or lap_time <= 0:
+                    continue
+                minutes = int(lap_time // 60)
+                seconds = lap_time % 60
+                champion_lap_data.append({
+                    'lap': int(row['LAP_NUMBER']),
+                    'time': float(lap_time),
+                    'time_formatted': f"{minutes}:{seconds:05.2f}" if minutes > 0 else f"{seconds:.2f}s"
+                })
+            
+            fourth_place_lap_data = []
+            for _, row in fourth_place_laps.iterrows():
+                lap_time = row['LAP_TIME_SEC']
+                if pd.isna(lap_time) or lap_time <= 0:
+                    continue
+                minutes = int(lap_time // 60)
+                seconds = lap_time % 60
+                fourth_place_lap_data.append({
+                    'lap': int(row['LAP_NUMBER']),
+                    'time': float(lap_time),
+                    'time_formatted': f"{minutes}:{seconds:05.2f}" if minutes > 0 else f"{seconds:.2f}s"
+                })
+            
+            # Calculate statistics
+            champion_times = [d['time'] for d in champion_lap_data]
+            fourth_place_times = [d['time'] for d in fourth_place_lap_data]
+            
+            if len(champion_times) == 0 or len(fourth_place_times) == 0:
+                continue
+            
+            champion_stats = {
+                'driver': int(winner_num),
+                'average_lap': float(np.mean(champion_times)),
+                'std_dev': float(winner_std),
+                'best_lap': float(np.min(champion_times)),
+                'worst_lap': float(np.max(champion_times)),
+                'range': float(np.max(champion_times) - np.min(champion_times))
+            }
+            
+            fourth_place_stats = {
+                'driver': int(fourth_place_num),
+                'average_lap': float(np.mean(fourth_place_times)),
+                'std_dev': float(fourth_place_std),
+                'best_lap': float(np.min(fourth_place_times)),
+                'worst_lap': float(np.max(fourth_place_times)),
+                'range': float(np.max(fourth_place_times) - np.min(fourth_place_times))
+            }
+            
+            track_display = track_name.replace('_', ' ').title()
+            
+            all_races.append({
+                'track': track_display,
+                'track_key': track_name,
+                'race': int(race_num),
+                'champion': {
+                    'laps': champion_lap_data,
+                    'stats': champion_stats
+                },
+                'fourth_place': {
+                    'laps': fourth_place_lap_data,
+                    'stats': fourth_place_stats
+                },
+                'variance_ratio': float(ratio),
+                'insight': f"{track_display} Race {race_num}: Champion (Driver #{winner_num}) has {winner_std:.2f}s std dev vs 4th Place (Driver #{fourth_place_num}) with {fourth_place_std:.2f}s ({ratio:.1f}× more variable)"
+            })
+    
+    # Sort races by variance ratio (most dramatic first)
+    all_races.sort(key=lambda x: x['variance_ratio'], reverse=True)
+    
+    if len(all_races) == 0:
+        return {
+            'races': [],
+            'best_example': None,
+            'total_races': 0
+        }
+    
+    # Return all races, with the best example highlighted
+    return {
+        'races': all_races,
+        'best_example': all_races[0] if all_races else None,  # Most dramatic example
+        'total_races': len(all_races)
+    }
+
+def _generate_position_progression(features_df: pd.DataFrame) -> dict:
+    """Generate position progression line graph: track all positions for drivers who finished 1st or 2nd at least once"""
+    
+    if features_df.empty or 'finishing_position' not in features_df.columns:
+        return {
+            'winners': [],
+            'runners_up': [],
+            'total_races': 0,
+            'insight': 'No position data available'
+        }
+    
+    # Filter out invalid positions (999 = no data)
+    valid_data = features_df[features_df['finishing_position'] < 999].copy()
+    
+    if len(valid_data) == 0:
+        return {
+            'winners': [],
+            'runners_up': [],
+            'total_races': 0,
+            'insight': 'No valid position data available'
+        }
+    
+    # Ensure race column is numeric
+    valid_data['race'] = pd.to_numeric(valid_data['race'], errors='coerce')
+    valid_data = valid_data.dropna(subset=['race'])
+    
+    # Create a combined race index across all tracks/races
+    valid_data['race_key'] = valid_data['track'].astype(str) + '_R' + valid_data['race'].astype(int).astype(str)
+    unique_races = sorted(valid_data['race_key'].unique())
+    race_index_map = {race: idx + 1 for idx, race in enumerate(unique_races)}
+    valid_data['race_index'] = valid_data['race_key'].map(race_index_map)
+    
+    # Find drivers who finished 1st at least once
+    winners = valid_data[valid_data['finishing_position'] == 1]['driver'].unique()
+    
+    # Find drivers who finished 2nd at least once (but not necessarily 1st)
+    runners_up = valid_data[valid_data['finishing_position'] == 2]['driver'].unique()
+    # Exclude drivers who also won (they're already in winners)
+    runners_up = [d for d in runners_up if d not in winners]
+    
+    # Generate line data for winners - ALL their race positions
+    winners_data = []
+    for driver_id in winners:
+        driver_races = valid_data[valid_data['driver'] == driver_id].sort_values('race_index')
+        if len(driver_races) > 0:
+            line_data = []
+            for _, row in driver_races.iterrows():
+                line_data.append({
+                    'race': int(row['race_index']),
+                    'position': int(row['finishing_position']),
+                    'track': row['track'].replace('_', ' ').title(),
+                    'race_num': int(row['race'])
+                })
+            
+            winners_data.append({
+                'driver': int(driver_id),
+                'driver_label': f'Driver #{int(driver_id)}',
+                'data': line_data,
+                'wins': len(driver_races[driver_races['finishing_position'] == 1]),
+                'total_races': len(driver_races)
+            })
+    
+    # Generate line data for runners-up - ALL their race positions
+    runners_up_data = []
+    for driver_id in runners_up:
+        driver_races = valid_data[valid_data['driver'] == driver_id].sort_values('race_index')
+        if len(driver_races) > 0:
+            line_data = []
+            for _, row in driver_races.iterrows():
+                line_data.append({
+                    'race': int(row['race_index']),
+                    'position': int(row['finishing_position']),
+                    'track': row['track'].replace('_', ' ').title(),
+                    'race_num': int(row['race'])
+                })
+            
+            runners_up_data.append({
+                'driver': int(driver_id),
+                'driver_label': f'Driver #{int(driver_id)}',
+                'data': line_data,
+                'second_places': len(driver_races[driver_races['finishing_position'] == 2]),
+                'total_races': len(driver_races)
+            })
+    
+    # Sort by number of wins/second places, then by total races
+    winners_data.sort(key=lambda x: (-x['wins'], -x['total_races']))
+    runners_up_data.sort(key=lambda x: (-x['second_places'], -x['total_races']))
+    
+    total_races = len(unique_races)
+    
+    insight = f'Tracking {len(winners_data)} race winners and {len(runners_up_data)} runners-up across {total_races} races'
+    
+    return {
+        'winners': winners_data,
+        'runners_up': runners_up_data,
+        'total_races': total_races,
+        'insight': insight
     }
 
 def generate_podium_calculator_json(ml_results: dict, features_df: pd.DataFrame) -> dict:

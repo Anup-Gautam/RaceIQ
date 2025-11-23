@@ -4,6 +4,7 @@ import {
   ScatterChart, Scatter,
   ComposedChart, Line, Area,
   PieChart, Pie, Cell as PieCell,
+  LineChart,
   Legend
 } from 'recharts';
 import { loadVisualizations } from '../utils/dataLoader';
@@ -15,6 +16,11 @@ const Visualizations = () => {
   useEffect(() => {
     const fetchData = async () => {
       const vizData = await loadVisualizations();
+      console.log('Visualizations data loaded:', {
+        hasChampionsBoring: !!vizData?.champions_boring,
+        totalRaces: vizData?.champions_boring?.total_races,
+        racesCount: vizData?.champions_boring?.races?.length
+      });
       setData(vizData);
       setLoading(false);
     };
@@ -1030,6 +1036,159 @@ const Visualizations = () => {
             )}
           </div>
         </div>
+      </div>
+
+      {/* Champions Are Boring - Lap-by-Lap Chart */}
+      <div className="section">
+        <h2 className="section-title">Champions Are Boring</h2>
+        
+        {!data?.champions_boring ? (
+          <div className="error" style={{ padding: '2rem', textAlign: 'center' }}>
+            Lap-by-lap data not available. Please run the analysis pipeline to generate it.
+            <br />
+            <code style={{ marginTop: '1rem', display: 'block', color: '#9ca3af' }}>
+              cd Data_analysis && python main.py
+            </code>
+          </div>
+        ) : (!data.champions_boring.races || data.champions_boring.races.length === 0) ? (
+          <div className="error" style={{ padding: '2rem', textAlign: 'center' }}>
+            No lap data found for any race.
+          </div>
+        ) : (() => {
+          // Only show the best example (first race, highest variance ratio)
+          const bestRace = data.champions_boring.races[0];
+          
+          if (!bestRace || !bestRace.champion?.laps || bestRace.champion.laps.length === 0 || !bestRace.fourth_place?.laps || bestRace.fourth_place.laps.length === 0) {
+            return (
+              <div className="error" style={{ padding: '2rem', textAlign: 'center' }}>
+                No lap data found for best example race.
+              </div>
+            );
+          }
+
+          return (
+            <>
+              {/* Combined Chart - Both Lines Together */}
+              <div className="chart-container">
+                <ResponsiveContainer width="100%" height={600}>
+                  <LineChart margin={{ top: 20, right: 30, left: 80, bottom: 60 }}>
+                    <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
+                    <XAxis 
+                      dataKey="lap" 
+                      type="number"
+                      label={{ value: 'Lap Number', position: 'insideBottom', offset: -10, style: { fill: '#9ca3af', fontSize: '14px' } }}
+                      stroke="#9ca3af"
+                      domain={['dataMin', 'dataMax']}
+                      tick={{ fill: '#9ca3af', fontSize: '12px' }}
+                    />
+                    <YAxis 
+                      label={{ value: 'Lap Time (seconds)', angle: -90, position: 'insideLeft', style: { fill: '#9ca3af', fontSize: '14px' } }}
+                      stroke="#9ca3af"
+                      domain={['dataMin - 2', 'dataMax + 2']}
+                      tick={{ fill: '#9ca3af', fontSize: '12px' }}
+                    />
+                    <Tooltip
+                      content={({ active, payload }) => {
+                        if (active && payload && payload.length) {
+                          const data = payload[0].payload;
+                          const driverName = payload[0].name;
+                          return (
+                            <div style={{
+                              background: '#1f2937',
+                              border: '1px solid #374151',
+                              borderRadius: '0.5rem',
+                              padding: '0.75rem',
+                              boxShadow: '0 4px 6px rgba(0,0,0,0.3)'
+                            }}>
+                              <p style={{ margin: 0, color: '#f9fafb', fontWeight: 'bold', fontSize: '0.9rem' }}>
+                                {driverName}
+                              </p>
+                              <p style={{ margin: '0.5rem 0 0 0', color: '#d1d5db', fontSize: '0.85rem' }}>
+                                Lap {data.lap}: {data.time_formatted || data.time.toFixed(2)}s
+                              </p>
+                            </div>
+                          );
+                        }
+                        return null;
+                      }}
+                    />
+                    <Legend 
+                      wrapperStyle={{ paddingTop: '20px' }}
+                      formatter={(value) => <span style={{ color: '#d1d5db' }}>{value}</span>}
+                    />
+                    
+                    {/* Champion Line (Blue - Boring/Flat) */}
+                    <Line
+                      type="monotone"
+                      dataKey="time"
+                      data={bestRace.champion.laps}
+                      name={`P1 - Champion (Driver #${bestRace.champion.stats.driver})`}
+                      stroke="#3b82f6"
+                      strokeWidth={3}
+                      dot={{ r: 4, fill: '#3b82f6' }}
+                      activeDot={{ r: 6, stroke: '#3b82f6', strokeWidth: 2 }}
+                      connectNulls
+                    />
+                    
+                    {/* 4th Place Line (Red - Exciting/Spiky) */}
+                    <Line
+                      type="monotone"
+                      dataKey="time"
+                      data={bestRace.fourth_place.laps}
+                      name={`P4 - 4th Place (Driver #${bestRace.fourth_place.stats.driver})`}
+                      stroke="#ef4444"
+                      strokeWidth={3}
+                      dot={{ r: 4, fill: '#ef4444' }}
+                      activeDot={{ r: 6, stroke: '#ef4444', strokeWidth: 2 }}
+                      connectNulls
+                    />
+                  </LineChart>
+                </ResponsiveContainer>
+              </div>
+
+              {/* Statistics Cards */}
+              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '1.5rem', marginTop: '2rem' }}>
+                {/* Champion Stats */}
+                <div style={{
+                  padding: '1.5rem',
+                  background: 'linear-gradient(135deg, #1e3a8a 0%, #1e40af 100%)',
+                  border: '2px solid #3b82f6',
+                  borderRadius: '0.75rem'
+                }}>
+                  <h3 style={{ color: '#fbbf24', fontSize: '1.25rem', marginBottom: '1rem' }}>
+                    🏆 Champion (Driver #{bestRace.champion.stats.driver})
+                  </h3>
+                  <div style={{ color: '#d1d5db', fontSize: '0.95rem', lineHeight: '1.8' }}>
+                    <p><strong>Average Lap:</strong> {bestRace.champion.stats.average_lap.toFixed(2)}s</p>
+                    <p><strong>Std Dev:</strong> {bestRace.champion.stats.std_dev.toFixed(2)}s ✓</p>
+                    <p><strong>Best Lap:</strong> {bestRace.champion.stats.best_lap.toFixed(2)}s</p>
+                    <p><strong>Worst Lap:</strong> {bestRace.champion.stats.worst_lap.toFixed(2)}s</p>
+                    <p><strong>Range:</strong> {bestRace.champion.stats.range.toFixed(2)}s</p>
+                  </div>
+                </div>
+
+                {/* 4th Place Stats */}
+                <div style={{
+                  padding: '1.5rem',
+                  background: 'linear-gradient(135deg, #7f1d1d 0%, #991b1b 100%)',
+                  border: '2px solid #ef4444',
+                  borderRadius: '0.75rem'
+                }}>
+                  <h3 style={{ color: '#fbbf24', fontSize: '1.25rem', marginBottom: '1rem' }}>
+                    🏁 4th Place (Driver #{bestRace.fourth_place.stats.driver})
+                  </h3>
+                  <div style={{ color: '#d1d5db', fontSize: '0.95rem', lineHeight: '1.8' }}>
+                    <p><strong>Average Lap:</strong> {bestRace.fourth_place.stats.average_lap.toFixed(2)}s</p>
+                    <p><strong>Std Dev:</strong> {bestRace.fourth_place.stats.std_dev.toFixed(2)}s ✗ ({bestRace.variance_ratio.toFixed(1)}× more variable!)</p>
+                    <p><strong>Best Lap:</strong> {bestRace.fourth_place.stats.best_lap.toFixed(2)}s {bestRace.fourth_place.stats.best_lap < bestRace.champion.stats.best_lap ? '🔥 (FASTEST OF RACE!)' : ''}</p>
+                    <p><strong>Worst Lap:</strong> {bestRace.fourth_place.stats.worst_lap.toFixed(2)}s</p>
+                    <p><strong>Range:</strong> {bestRace.fourth_place.stats.range.toFixed(2)}s</p>
+                  </div>
+                </div>
+              </div>
+            </>
+          );
+        })()}
       </div>
 
     </div>

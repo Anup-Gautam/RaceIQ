@@ -15,20 +15,6 @@
       "correlation_value": 0.915
     },
     {
-      "id": 3,
-      "title": "Post-FCY Performance is Critical",
-      "finding": "Performance after Full Course Yellow periods is the #14 most important predictor (importance: 0.0328).",
-      "implication": "Restart performance determines race outcomes. Drivers who excel at restarts have significant advantage.",
-      "recommendations": [
-        "Practice restart scenarios extensively",
-        "Develop restart-specific strategies",
-        "Analyze restart performance patterns"
-      ],
-      "impact": "High",
-      "metric": "post_fcy_performance",
-      "importance": 0.0328
-    },
-    {
       "id": 4,
       "title": "Four Distinct Driver Archetypes Identified",
       "finding": "Machine learning identified 4 distinct driver archetypes: Smooth Operators, Qualifying Heroes, Clutch Performers, All-Rounders. Each archetype has unique strengths and weaknesses.",
@@ -72,5 +58,5 @@
       "impact": "Medium"
     }
   ],
-  "total": 5
+  "total": 4
 }

@@ -113,6 +113,12 @@
         "metric": "s1_std"
       },
       {
+        "source": "indianapolis",
+        "target": "sebring",
+        "strength": 0.778,
+        "metric": "sector_balance"
+      },
+      {
         "source": "sebring",
         "target": "sonoma",
         "strength": 0.774,
@@ -120,39 +126,39 @@
       },
       {
         "source": "indianapolis",
-        "target": "sebring",
-        "strength": 0.755,
-        "metric": "s1_std"
+        "target": "road_america",
+        "strength": 0.673,
+        "metric": "clutch_score"
       },
       {
-        "source": "sebring",
-        "target": "sonoma",
-        "strength": 0.725,
-        "metric": "lap_mean"
-      },
-      {
-        "source": "sebring",
-        "target": "sonoma",
-        "strength": 0.721,
-        "metric": "avg_speed_kph"
-      },
-      {
-        "source": "sebring",
-        "target": "sonoma",
-        "strength": 0.684,
+        "source": "cota",
+        "target": "vir",
+        "strength": 0.637,
         "metric": "tire_degradation"
       },
       {
-        "source": "indianapolis",
-        "target": "cota",
-        "strength": 0.641,
-        "metric": "s1_mean"
+        "source": "barber",
+        "target": "road_america",
+        "strength": 0.6,
+        "metric": "s1_std"
       },
       {
-        "source": "sebring",
-        "target": "sonoma",
-        "strength": 0.639,
-        "metric": "s1_std"
+        "source": "barber",
+        "target": "indianapolis",
+        "strength": 0.552,
+        "metric": "s3_mean"
+      },
+      {
+        "source": "barber",
+        "target": "cota",
+        "strength": 0.527,
+        "metric": "s2_mean"
+      },
+      {
+        "source": "cota",
+        "target": "sebring",
+        "strength": 0.523,
+        "metric": "sector_balance"
       }
     ]
   },
@@ -3550,6 +3556,9 @@
         "s1_importance": 0.194,
         "s2_importance": 0.004,
         "s3_importance": 0.144,
+        "s1_correlation": -0.194,
+        "s2_correlation": -0.004,
+        "s3_correlation": -0.144,
         "data_count": 44,
         "has_podiums": "True"
       },
@@ -3559,6 +3568,9 @@
         "s1_importance": 0.1,
         "s2_importance": 0.215,
         "s3_importance": 0.449,
+        "s1_correlation": -0.1,
+        "s2_correlation": 0.215,
+        "s3_correlation": 0.449,
         "data_count": 29,
         "has_podiums": "True"
       },
@@ -3568,6 +3580,9 @@
         "s1_importance": 0.042,
         "s2_importance": 0.087,
         "s3_importance": 0.058,
+        "s1_correlation": -0.042,
+        "s2_correlation": 0.087,
+        "s3_correlation": 0.058,
         "data_count": 52,
         "has_podiums": "True"
       },
@@ -3577,6 +3592,9 @@
         "s1_importance": 0.075,
         "s2_importance": 0.149,
         "s3_importance": 0.034,
+        "s1_correlation": -0.075,
+        "s2_correlation": 0.149,
+        "s3_correlation": 0.034,
         "data_count": 54,
         "has_podiums": "True"
       },
@@ -3586,6 +3604,9 @@
         "s1_importance": 0.129,
         "s2_importance": 0.03,
         "s3_importance": 0.057,
+        "s1_correlation": -0.129,
+        "s2_correlation": -0.03,
+        "s3_correlation": -0.057,
         "data_count": 43,
         "has_podiums": "True"
       },
@@ -3595,6 +3616,9 @@
         "s1_importance": 0.047,
         "s2_importance": 0.031,
         "s3_importance": 0.082,
+        "s1_correlation": -0.047,
+        "s2_correlation": -0.031,
+        "s3_correlation": -0.082,
         "data_count": 43,
         "has_podiums": "True"
       }
@@ -3602,9 +3626,2960 @@
     "overall": {
       "s1_importance": 0.057,
       "s2_importance": 0.008,
-      "s3_importance": 0.065
+      "s3_importance": 0.065,
+      "s1_correlation": -0.057,
+      "s2_correlation": -0.008,
+      "s3_correlation": -0.065
     },
     "total_tracks": 6,
-    "insight": "Sector 2 consistency is the most important across 6 tracks (correlation: 0.008)"
+    "most_important_sector": "S3",
+    "insight": "S3 consistency shows the strongest relationship with race success (|correlation|: 0.065). Note: Lower std = better performance, so negative correlations are expected."
+  },
+  "champions_boring": {
+    "races": [
+      {
+        "track": "Barber",
+        "track_key": "barber",
+        "race": 2,
+        "champion": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 98.22200000000001,
+              "time_formatted": "1:38.22"
+            },
+            {
+              "lap": 2,
+              "time": 97.35,
+              "time_formatted": "1:37.35"
+            },
+            {
+              "lap": 3,
+              "time": 97.437,
+              "time_formatted": "1:37.44"
+            },
+            {
+              "lap": 4,
+              "time": 97.594,
+              "time_formatted": "1:37.59"
+            },
+            {
+              "lap": 5,
+              "time": 97.584,
+              "time_formatted": "1:37.58"
+            },
+            {
+              "lap": 6,
+              "time": 97.509,
+              "time_formatted": "1:37.51"
+            },
+            {
+              "lap": 7,
+              "time": 97.44200000000001,
+              "time_formatted": "1:37.44"
+            },
+            {
+              "lap": 8,
+              "time": 97.411,
+              "time_formatted": "1:37.41"
+            },
+            {
+              "lap": 9,
+              "time": 97.65,
+              "time_formatted": "1:37.65"
+            },
+            {
+              "lap": 10,
+              "time": 97.616,
+              "time_formatted": "1:37.62"
+            },
+            {
+              "lap": 11,
+              "time": 97.50800000000001,
+              "time_formatted": "1:37.51"
+            },
+            {
+              "lap": 12,
+              "time": 97.601,
+              "time_formatted": "1:37.60"
+            },
+            {
+              "lap": 13,
+              "time": 97.723,
+              "time_formatted": "1:37.72"
+            },
+            {
+              "lap": 14,
+              "time": 97.72399999999999,
+              "time_formatted": "1:37.72"
+            },
+            {
+              "lap": 15,
+              "time": 97.71000000000001,
+              "time_formatted": "1:37.71"
+            },
+            {
+              "lap": 16,
+              "time": 97.73599999999999,
+              "time_formatted": "1:37.74"
+            },
+            {
+              "lap": 17,
+              "time": 97.475,
+              "time_formatted": "1:37.47"
+            },
+            {
+              "lap": 18,
+              "time": 97.923,
+              "time_formatted": "1:37.92"
+            },
+            {
+              "lap": 19,
+              "time": 97.72800000000001,
+              "time_formatted": "1:37.73"
+            },
+            {
+              "lap": 20,
+              "time": 97.52600000000001,
+              "time_formatted": "1:37.53"
+            },
+            {
+              "lap": 21,
+              "time": 97.87700000000001,
+              "time_formatted": "1:37.88"
+            },
+            {
+              "lap": 22,
+              "time": 97.919,
+              "time_formatted": "1:37.92"
+            },
+            {
+              "lap": 23,
+              "time": 98.221,
+              "time_formatted": "1:38.22"
+            },
+            {
+              "lap": 24,
+              "time": 97.78999999999999,
+              "time_formatted": "1:37.79"
+            },
+            {
+              "lap": 25,
+              "time": 98.25,
+              "time_formatted": "1:38.25"
+            },
+            {
+              "lap": 26,
+              "time": 97.732,
+              "time_formatted": "1:37.73"
+            },
+            {
+              "lap": 27,
+              "time": 97.944,
+              "time_formatted": "1:37.94"
+            },
+            {
+              "lap": 28,
+              "time": 98.812,
+              "time_formatted": "1:38.81"
+            }
+          ],
+          "stats": {
+            "driver": 13,
+            "average_lap": 97.7505,
+            "std_dev": 0.3192917509460937,
+            "best_lap": 97.35,
+            "worst_lap": 98.812,
+            "range": 1.4620000000000033
+          }
+        },
+        "fourth_place": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 99.632,
+              "time_formatted": "1:39.63"
+            },
+            {
+              "lap": 2,
+              "time": 98.36,
+              "time_formatted": "1:38.36"
+            },
+            {
+              "lap": 3,
+              "time": 98.066,
+              "time_formatted": "1:38.07"
+            },
+            {
+              "lap": 4,
+              "time": 97.999,
+              "time_formatted": "1:38.00"
+            },
+            {
+              "lap": 5,
+              "time": 98.396,
+              "time_formatted": "1:38.40"
+            },
+            {
+              "lap": 6,
+              "time": 98.249,
+              "time_formatted": "1:38.25"
+            },
+            {
+              "lap": 7,
+              "time": 98.536,
+              "time_formatted": "1:38.54"
+            },
+            {
+              "lap": 8,
+              "time": 98.313,
+              "time_formatted": "1:38.31"
+            },
+            {
+              "lap": 9,
+              "time": 98.406,
+              "time_formatted": "1:38.41"
+            },
+            {
+              "lap": 10,
+              "time": 99.071,
+              "time_formatted": "1:39.07"
+            },
+            {
+              "lap": 11,
+              "time": 99.464,
+              "time_formatted": "1:39.46"
+            },
+            {
+              "lap": 12,
+              "time": 98.69200000000001,
+              "time_formatted": "1:38.69"
+            },
+            {
+              "lap": 13,
+              "time": 98.24799999999999,
+              "time_formatted": "1:38.25"
+            },
+            {
+              "lap": 14,
+              "time": 97.945,
+              "time_formatted": "1:37.94"
+            },
+            {
+              "lap": 15,
+              "time": 98.22999999999999,
+              "time_formatted": "1:38.23"
+            },
+            {
+              "lap": 16,
+              "time": 97.967,
+              "time_formatted": "1:37.97"
+            },
+            {
+              "lap": 17,
+              "time": 98.001,
+              "time_formatted": "1:38.00"
+            },
+            {
+              "lap": 18,
+              "time": 98.32,
+              "time_formatted": "1:38.32"
+            },
+            {
+              "lap": 19,
+              "time": 98.75800000000001,
+              "time_formatted": "1:38.76"
+            },
+            {
+              "lap": 20,
+              "time": 98.517,
+              "time_formatted": "1:38.52"
+            },
+            {
+              "lap": 21,
+              "time": 99.119,
+              "time_formatted": "1:39.12"
+            },
+            {
+              "lap": 22,
+              "time": 98.439,
+              "time_formatted": "1:38.44"
+            },
+            {
+              "lap": 23,
+              "time": 98.18,
+              "time_formatted": "1:38.18"
+            },
+            {
+              "lap": 24,
+              "time": 98.52199999999999,
+              "time_formatted": "1:38.52"
+            },
+            {
+              "lap": 25,
+              "time": 98.908,
+              "time_formatted": "1:38.91"
+            },
+            {
+              "lap": 26,
+              "time": 98.524,
+              "time_formatted": "1:38.52"
+            },
+            {
+              "lap": 27,
+              "time": 98.316,
+              "time_formatted": "1:38.32"
+            },
+            {
+              "lap": 28,
+              "time": 98.53,
+              "time_formatted": "1:38.53"
+            }
+          ],
+          "stats": {
+            "driver": 72,
+            "average_lap": 98.48957142857144,
+            "std_dev": 0.4267356219080991,
+            "best_lap": 97.945,
+            "worst_lap": 99.632,
+            "range": 1.6870000000000118
+          }
+        },
+        "variance_ratio": 1.336506880129657,
+        "insight": "Barber Race 2: Champion (Driver #13) has 0.32s std dev vs 4th Place (Driver #72) with 0.43s (1.3\u00d7 more variable)"
+      },
+      {
+        "track": "Vir",
+        "track_key": "vir",
+        "race": 2,
+        "champion": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 132.189,
+              "time_formatted": "2:12.19"
+            },
+            {
+              "lap": 2,
+              "time": 129.139,
+              "time_formatted": "2:09.14"
+            },
+            {
+              "lap": 3,
+              "time": 129.176,
+              "time_formatted": "2:09.18"
+            },
+            {
+              "lap": 4,
+              "time": 129.815,
+              "time_formatted": "2:09.81"
+            },
+            {
+              "lap": 5,
+              "time": 128.501,
+              "time_formatted": "2:08.50"
+            },
+            {
+              "lap": 6,
+              "time": 129.367,
+              "time_formatted": "2:09.37"
+            },
+            {
+              "lap": 7,
+              "time": 130.294,
+              "time_formatted": "2:10.29"
+            },
+            {
+              "lap": 8,
+              "time": 129.446,
+              "time_formatted": "2:09.45"
+            },
+            {
+              "lap": 9,
+              "time": 130.497,
+              "time_formatted": "2:10.50"
+            },
+            {
+              "lap": 10,
+              "time": 129.457,
+              "time_formatted": "2:09.46"
+            },
+            {
+              "lap": 11,
+              "time": 129.551,
+              "time_formatted": "2:09.55"
+            },
+            {
+              "lap": 12,
+              "time": 129.359,
+              "time_formatted": "2:09.36"
+            },
+            {
+              "lap": 13,
+              "time": 129.75,
+              "time_formatted": "2:09.75"
+            },
+            {
+              "lap": 14,
+              "time": 129.659,
+              "time_formatted": "2:09.66"
+            },
+            {
+              "lap": 15,
+              "time": 129.276,
+              "time_formatted": "2:09.28"
+            },
+            {
+              "lap": 16,
+              "time": 130.025,
+              "time_formatted": "2:10.03"
+            },
+            {
+              "lap": 17,
+              "time": 130.681,
+              "time_formatted": "2:10.68"
+            },
+            {
+              "lap": 18,
+              "time": 130.60399999999998,
+              "time_formatted": "2:10.60"
+            },
+            {
+              "lap": 19,
+              "time": 130.627,
+              "time_formatted": "2:10.63"
+            },
+            {
+              "lap": 20,
+              "time": 130.064,
+              "time_formatted": "2:10.06"
+            },
+            {
+              "lap": 21,
+              "time": 130.315,
+              "time_formatted": "2:10.31"
+            }
+          ],
+          "stats": {
+            "driver": 13,
+            "average_lap": 129.89485714285715,
+            "std_dev": 0.7822428833625963,
+            "best_lap": 128.501,
+            "worst_lap": 132.189,
+            "range": 3.687999999999988
+          }
+        },
+        "fourth_place": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 133.24,
+              "time_formatted": "2:13.24"
+            },
+            {
+              "lap": 2,
+              "time": 129.058,
+              "time_formatted": "2:09.06"
+            },
+            {
+              "lap": 3,
+              "time": 129.256,
+              "time_formatted": "2:09.26"
+            },
+            {
+              "lap": 4,
+              "time": 129.147,
+              "time_formatted": "2:09.15"
+            },
+            {
+              "lap": 5,
+              "time": 129.701,
+              "time_formatted": "2:09.70"
+            },
+            {
+              "lap": 6,
+              "time": 129.891,
+              "time_formatted": "2:09.89"
+            },
+            {
+              "lap": 7,
+              "time": 128.908,
+              "time_formatted": "2:08.91"
+            },
+            {
+              "lap": 8,
+              "time": 129.578,
+              "time_formatted": "2:09.58"
+            },
+            {
+              "lap": 9,
+              "time": 130.1,
+              "time_formatted": "2:10.10"
+            },
+            {
+              "lap": 10,
+              "time": 129.916,
+              "time_formatted": "2:09.92"
+            },
+            {
+              "lap": 11,
+              "time": 129.343,
+              "time_formatted": "2:09.34"
+            },
+            {
+              "lap": 12,
+              "time": 129.302,
+              "time_formatted": "2:09.30"
+            },
+            {
+              "lap": 13,
+              "time": 131.147,
+              "time_formatted": "2:11.15"
+            },
+            {
+              "lap": 14,
+              "time": 130.019,
+              "time_formatted": "2:10.02"
+            },
+            {
+              "lap": 15,
+              "time": 129.73,
+              "time_formatted": "2:09.73"
+            },
+            {
+              "lap": 16,
+              "time": 129.695,
+              "time_formatted": "2:09.69"
+            },
+            {
+              "lap": 17,
+              "time": 129.337,
+              "time_formatted": "2:09.34"
+            },
+            {
+              "lap": 18,
+              "time": 130.418,
+              "time_formatted": "2:10.42"
+            },
+            {
+              "lap": 19,
+              "time": 130.237,
+              "time_formatted": "2:10.24"
+            },
+            {
+              "lap": 20,
+              "time": 130.314,
+              "time_formatted": "2:10.31"
+            },
+            {
+              "lap": 21,
+              "time": 130.29,
+              "time_formatted": "2:10.29"
+            }
+          ],
+          "stats": {
+            "driver": 71,
+            "average_lap": 129.93461904761904,
+            "std_dev": 0.9305679167148705,
+            "best_lap": 128.908,
+            "worst_lap": 133.24,
+            "range": 4.332000000000022
+          }
+        },
+        "variance_ratio": 1.1896150626704014,
+        "insight": "Vir Race 2: Champion (Driver #13) has 0.78s std dev vs 4th Place (Driver #71) with 0.93s (1.2\u00d7 more variable)"
+      },
+      {
+        "track": "Road America",
+        "track_key": "road_america",
+        "race": 1,
+        "champion": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 254.487,
+              "time_formatted": "4:14.49"
+            },
+            {
+              "lap": 2,
+              "time": 229.185,
+              "time_formatted": "3:49.19"
+            },
+            {
+              "lap": 3,
+              "time": 211.299,
+              "time_formatted": "3:31.30"
+            },
+            {
+              "lap": 4,
+              "time": 170.786,
+              "time_formatted": "2:50.79"
+            },
+            {
+              "lap": 5,
+              "time": 169.10399999999998,
+              "time_formatted": "2:49.10"
+            },
+            {
+              "lap": 6,
+              "time": 169.349,
+              "time_formatted": "2:49.35"
+            },
+            {
+              "lap": 7,
+              "time": 168.894,
+              "time_formatted": "2:48.89"
+            },
+            {
+              "lap": 8,
+              "time": 168.397,
+              "time_formatted": "2:48.40"
+            },
+            {
+              "lap": 9,
+              "time": 167.204,
+              "time_formatted": "2:47.20"
+            },
+            {
+              "lap": 10,
+              "time": 166.844,
+              "time_formatted": "2:46.84"
+            },
+            {
+              "lap": 11,
+              "time": 167.53,
+              "time_formatted": "2:47.53"
+            },
+            {
+              "lap": 12,
+              "time": 165.974,
+              "time_formatted": "2:45.97"
+            },
+            {
+              "lap": 13,
+              "time": 166.315,
+              "time_formatted": "2:46.31"
+            },
+            {
+              "lap": 14,
+              "time": 163.767,
+              "time_formatted": "2:43.77"
+            },
+            {
+              "lap": 15,
+              "time": 164.554,
+              "time_formatted": "2:44.55"
+            }
+          ],
+          "stats": {
+            "driver": 55,
+            "average_lap": 180.2459333333333,
+            "std_dev": 27.90244582588893,
+            "best_lap": 163.767,
+            "worst_lap": 254.487,
+            "range": 90.72
+          }
+        },
+        "fourth_place": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 257.449,
+              "time_formatted": "4:17.45"
+            },
+            {
+              "lap": 2,
+              "time": 229.273,
+              "time_formatted": "3:49.27"
+            },
+            {
+              "lap": 3,
+              "time": 209.789,
+              "time_formatted": "3:29.79"
+            },
+            {
+              "lap": 4,
+              "time": 171.45499999999998,
+              "time_formatted": "2:51.45"
+            },
+            {
+              "lap": 5,
+              "time": 169.434,
+              "time_formatted": "2:49.43"
+            },
+            {
+              "lap": 6,
+              "time": 168.653,
+              "time_formatted": "2:48.65"
+            },
+            {
+              "lap": 7,
+              "time": 168.814,
+              "time_formatted": "2:48.81"
+            },
+            {
+              "lap": 8,
+              "time": 168.263,
+              "time_formatted": "2:48.26"
+            },
+            {
+              "lap": 9,
+              "time": 166.696,
+              "time_formatted": "2:46.70"
+            },
+            {
+              "lap": 10,
+              "time": 166.541,
+              "time_formatted": "2:46.54"
+            },
+            {
+              "lap": 11,
+              "time": 167.458,
+              "time_formatted": "2:47.46"
+            },
+            {
+              "lap": 12,
+              "time": 167.004,
+              "time_formatted": "2:47.00"
+            },
+            {
+              "lap": 13,
+              "time": 165.547,
+              "time_formatted": "2:45.55"
+            },
+            {
+              "lap": 14,
+              "time": 164.618,
+              "time_formatted": "2:44.62"
+            },
+            {
+              "lap": 15,
+              "time": 164.29500000000002,
+              "time_formatted": "2:44.30"
+            }
+          ],
+          "stats": {
+            "driver": 21,
+            "average_lap": 180.3526,
+            "std_dev": 28.365563049484596,
+            "best_lap": 164.29500000000002,
+            "worst_lap": 257.449,
+            "range": 93.154
+          }
+        },
+        "variance_ratio": 1.0165977286179684,
+        "insight": "Road America Race 1: Champion (Driver #55) has 27.90s std dev vs 4th Place (Driver #21) with 28.37s (1.0\u00d7 more variable)"
+      },
+      {
+        "track": "Vir",
+        "track_key": "vir",
+        "race": 1,
+        "champion": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 133.448,
+              "time_formatted": "2:13.45"
+            },
+            {
+              "lap": 2,
+              "time": 134.788,
+              "time_formatted": "2:14.79"
+            },
+            {
+              "lap": 3,
+              "time": 207.062,
+              "time_formatted": "3:27.06"
+            },
+            {
+              "lap": 4,
+              "time": 197.728,
+              "time_formatted": "3:17.73"
+            },
+            {
+              "lap": 5,
+              "time": 129.38400000000001,
+              "time_formatted": "2:09.38"
+            },
+            {
+              "lap": 6,
+              "time": 129.413,
+              "time_formatted": "2:09.41"
+            },
+            {
+              "lap": 7,
+              "time": 130.721,
+              "time_formatted": "2:10.72"
+            },
+            {
+              "lap": 8,
+              "time": 128.777,
+              "time_formatted": "2:08.78"
+            },
+            {
+              "lap": 9,
+              "time": 128.61,
+              "time_formatted": "2:08.61"
+            },
+            {
+              "lap": 10,
+              "time": 128.511,
+              "time_formatted": "2:08.51"
+            },
+            {
+              "lap": 11,
+              "time": 129.05,
+              "time_formatted": "2:09.05"
+            },
+            {
+              "lap": 12,
+              "time": 129.365,
+              "time_formatted": "2:09.37"
+            },
+            {
+              "lap": 13,
+              "time": 129.654,
+              "time_formatted": "2:09.65"
+            },
+            {
+              "lap": 14,
+              "time": 129.279,
+              "time_formatted": "2:09.28"
+            },
+            {
+              "lap": 15,
+              "time": 129.578,
+              "time_formatted": "2:09.58"
+            },
+            {
+              "lap": 16,
+              "time": 129.467,
+              "time_formatted": "2:09.47"
+            },
+            {
+              "lap": 17,
+              "time": 129.418,
+              "time_formatted": "2:09.42"
+            },
+            {
+              "lap": 18,
+              "time": 129.448,
+              "time_formatted": "2:09.45"
+            },
+            {
+              "lap": 19,
+              "time": 129.062,
+              "time_formatted": "2:09.06"
+            },
+            {
+              "lap": 20,
+              "time": 128.997,
+              "time_formatted": "2:09.00"
+            }
+          ],
+          "stats": {
+            "driver": 72,
+            "average_lap": 137.088,
+            "std_dev": 22.439952795709804,
+            "best_lap": 128.511,
+            "worst_lap": 207.062,
+            "range": 78.55100000000002
+          }
+        },
+        "fourth_place": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 131.567,
+              "time_formatted": "2:11.57"
+            },
+            {
+              "lap": 2,
+              "time": 135.051,
+              "time_formatted": "2:15.05"
+            },
+            {
+              "lap": 3,
+              "time": 207.025,
+              "time_formatted": "3:27.03"
+            },
+            {
+              "lap": 4,
+              "time": 198.546,
+              "time_formatted": "3:18.55"
+            },
+            {
+              "lap": 5,
+              "time": 129.69,
+              "time_formatted": "2:09.69"
+            },
+            {
+              "lap": 6,
+              "time": 129.64,
+              "time_formatted": "2:09.64"
+            },
+            {
+              "lap": 7,
+              "time": 129.932,
+              "time_formatted": "2:09.93"
+            },
+            {
+              "lap": 8,
+              "time": 128.776,
+              "time_formatted": "2:08.78"
+            },
+            {
+              "lap": 9,
+              "time": 128.845,
+              "time_formatted": "2:08.84"
+            },
+            {
+              "lap": 10,
+              "time": 128.987,
+              "time_formatted": "2:08.99"
+            },
+            {
+              "lap": 11,
+              "time": 129.186,
+              "time_formatted": "2:09.19"
+            },
+            {
+              "lap": 12,
+              "time": 134.291,
+              "time_formatted": "2:14.29"
+            },
+            {
+              "lap": 13,
+              "time": 129.137,
+              "time_formatted": "2:09.14"
+            },
+            {
+              "lap": 14,
+              "time": 128.853,
+              "time_formatted": "2:08.85"
+            },
+            {
+              "lap": 15,
+              "time": 128.794,
+              "time_formatted": "2:08.79"
+            },
+            {
+              "lap": 16,
+              "time": 128.891,
+              "time_formatted": "2:08.89"
+            },
+            {
+              "lap": 17,
+              "time": 128.843,
+              "time_formatted": "2:08.84"
+            },
+            {
+              "lap": 18,
+              "time": 128.943,
+              "time_formatted": "2:08.94"
+            },
+            {
+              "lap": 19,
+              "time": 128.786,
+              "time_formatted": "2:08.79"
+            },
+            {
+              "lap": 20,
+              "time": 129.434,
+              "time_formatted": "2:09.43"
+            }
+          ],
+          "stats": {
+            "driver": 7,
+            "average_lap": 137.16085000000004,
+            "std_dev": 22.55516756351903,
+            "best_lap": 128.776,
+            "worst_lap": 207.025,
+            "range": 78.249
+          }
+        },
+        "variance_ratio": 1.0051343587421118,
+        "insight": "Vir Race 1: Champion (Driver #72) has 22.44s std dev vs 4th Place (Driver #7) with 22.56s (1.0\u00d7 more variable)"
+      },
+      {
+        "track": "Road America",
+        "track_key": "road_america",
+        "race": 2,
+        "champion": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 156.198,
+              "time_formatted": "2:36.20"
+            },
+            {
+              "lap": 2,
+              "time": 152.321,
+              "time_formatted": "2:32.32"
+            },
+            {
+              "lap": 3,
+              "time": 155.33100000000002,
+              "time_formatted": "2:35.33"
+            },
+            {
+              "lap": 4,
+              "time": 159.675,
+              "time_formatted": "2:39.68"
+            },
+            {
+              "lap": 5,
+              "time": 267.596,
+              "time_formatted": "4:27.60"
+            },
+            {
+              "lap": 6,
+              "time": 251.711,
+              "time_formatted": "4:11.71"
+            },
+            {
+              "lap": 7,
+              "time": 152.994,
+              "time_formatted": "2:32.99"
+            },
+            {
+              "lap": 8,
+              "time": 151.882,
+              "time_formatted": "2:31.88"
+            },
+            {
+              "lap": 9,
+              "time": 151.977,
+              "time_formatted": "2:31.98"
+            },
+            {
+              "lap": 10,
+              "time": 152.04399999999998,
+              "time_formatted": "2:32.04"
+            },
+            {
+              "lap": 11,
+              "time": 151.903,
+              "time_formatted": "2:31.90"
+            },
+            {
+              "lap": 12,
+              "time": 152.418,
+              "time_formatted": "2:32.42"
+            },
+            {
+              "lap": 13,
+              "time": 152.716,
+              "time_formatted": "2:32.72"
+            },
+            {
+              "lap": 14,
+              "time": 152.355,
+              "time_formatted": "2:32.35"
+            },
+            {
+              "lap": 15,
+              "time": 152.279,
+              "time_formatted": "2:32.28"
+            },
+            {
+              "lap": 16,
+              "time": 152.96,
+              "time_formatted": "2:32.96"
+            },
+            {
+              "lap": 17,
+              "time": 153.06799999999998,
+              "time_formatted": "2:33.07"
+            }
+          ],
+          "stats": {
+            "driver": 2,
+            "average_lap": 165.84870588235293,
+            "std_dev": 35.47537908846907,
+            "best_lap": 151.882,
+            "worst_lap": 267.596,
+            "range": 115.714
+          }
+        },
+        "fourth_place": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 157.62,
+              "time_formatted": "2:37.62"
+            },
+            {
+              "lap": 2,
+              "time": 152.516,
+              "time_formatted": "2:32.52"
+            },
+            {
+              "lap": 3,
+              "time": 153.803,
+              "time_formatted": "2:33.80"
+            },
+            {
+              "lap": 4,
+              "time": 158.836,
+              "time_formatted": "2:38.84"
+            },
+            {
+              "lap": 5,
+              "time": 266.871,
+              "time_formatted": "4:26.87"
+            },
+            {
+              "lap": 6,
+              "time": 252.997,
+              "time_formatted": "4:13.00"
+            },
+            {
+              "lap": 7,
+              "time": 153.994,
+              "time_formatted": "2:33.99"
+            },
+            {
+              "lap": 8,
+              "time": 152.566,
+              "time_formatted": "2:32.57"
+            },
+            {
+              "lap": 9,
+              "time": 151.703,
+              "time_formatted": "2:31.70"
+            },
+            {
+              "lap": 10,
+              "time": 151.744,
+              "time_formatted": "2:31.74"
+            },
+            {
+              "lap": 11,
+              "time": 152.064,
+              "time_formatted": "2:32.06"
+            },
+            {
+              "lap": 12,
+              "time": 152.325,
+              "time_formatted": "2:32.32"
+            },
+            {
+              "lap": 13,
+              "time": 152.492,
+              "time_formatted": "2:32.49"
+            },
+            {
+              "lap": 14,
+              "time": 153.01,
+              "time_formatted": "2:33.01"
+            },
+            {
+              "lap": 15,
+              "time": 152.83100000000002,
+              "time_formatted": "2:32.83"
+            },
+            {
+              "lap": 16,
+              "time": 154.249,
+              "time_formatted": "2:34.25"
+            },
+            {
+              "lap": 17,
+              "time": 152.297,
+              "time_formatted": "2:32.30"
+            }
+          ],
+          "stats": {
+            "driver": 55,
+            "average_lap": 165.99517647058823,
+            "std_dev": 35.496062641219964,
+            "best_lap": 151.703,
+            "worst_lap": 266.871,
+            "range": 115.16799999999998
+          }
+        },
+        "variance_ratio": 1.000583039654046,
+        "insight": "Road America Race 2: Champion (Driver #2) has 35.48s std dev vs 4th Place (Driver #55) with 35.50s (1.0\u00d7 more variable)"
+      },
+      {
+        "track": "Cota",
+        "track_key": "cota",
+        "race": 1,
+        "champion": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 221.204,
+              "time_formatted": "3:41.20"
+            },
+            {
+              "lap": 2,
+              "time": 160.534,
+              "time_formatted": "2:40.53"
+            },
+            {
+              "lap": 3,
+              "time": 150.039,
+              "time_formatted": "2:30.04"
+            },
+            {
+              "lap": 4,
+              "time": 150.143,
+              "time_formatted": "2:30.14"
+            },
+            {
+              "lap": 5,
+              "time": 149.095,
+              "time_formatted": "2:29.09"
+            },
+            {
+              "lap": 6,
+              "time": 149.007,
+              "time_formatted": "2:29.01"
+            },
+            {
+              "lap": 7,
+              "time": 148.933,
+              "time_formatted": "2:28.93"
+            },
+            {
+              "lap": 8,
+              "time": 148.63,
+              "time_formatted": "2:28.63"
+            },
+            {
+              "lap": 9,
+              "time": 148.659,
+              "time_formatted": "2:28.66"
+            },
+            {
+              "lap": 10,
+              "time": 148.796,
+              "time_formatted": "2:28.80"
+            },
+            {
+              "lap": 11,
+              "time": 149.011,
+              "time_formatted": "2:29.01"
+            },
+            {
+              "lap": 12,
+              "time": 209.328,
+              "time_formatted": "3:29.33"
+            },
+            {
+              "lap": 13,
+              "time": 225.413,
+              "time_formatted": "3:45.41"
+            },
+            {
+              "lap": 14,
+              "time": 149.258,
+              "time_formatted": "2:29.26"
+            },
+            {
+              "lap": 15,
+              "time": 149.935,
+              "time_formatted": "2:29.94"
+            },
+            {
+              "lap": 16,
+              "time": 149.558,
+              "time_formatted": "2:29.56"
+            },
+            {
+              "lap": 17,
+              "time": 150.032,
+              "time_formatted": "2:30.03"
+            }
+          ],
+          "stats": {
+            "driver": 46,
+            "average_lap": 162.21029411764707,
+            "std_dev": 27.22955052825126,
+            "best_lap": 148.63,
+            "worst_lap": 225.413,
+            "range": 76.78300000000002
+          }
+        },
+        "fourth_place": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 222.39600000000002,
+              "time_formatted": "3:42.40"
+            },
+            {
+              "lap": 2,
+              "time": 161.321,
+              "time_formatted": "2:41.32"
+            },
+            {
+              "lap": 3,
+              "time": 149.734,
+              "time_formatted": "2:29.73"
+            },
+            {
+              "lap": 4,
+              "time": 150.548,
+              "time_formatted": "2:30.55"
+            },
+            {
+              "lap": 5,
+              "time": 149.288,
+              "time_formatted": "2:29.29"
+            },
+            {
+              "lap": 6,
+              "time": 148.90800000000002,
+              "time_formatted": "2:28.91"
+            },
+            {
+              "lap": 7,
+              "time": 149.059,
+              "time_formatted": "2:29.06"
+            },
+            {
+              "lap": 8,
+              "time": 148.856,
+              "time_formatted": "2:28.86"
+            },
+            {
+              "lap": 9,
+              "time": 148.744,
+              "time_formatted": "2:28.74"
+            },
+            {
+              "lap": 10,
+              "time": 148.679,
+              "time_formatted": "2:28.68"
+            },
+            {
+              "lap": 11,
+              "time": 149.726,
+              "time_formatted": "2:29.73"
+            },
+            {
+              "lap": 12,
+              "time": 208.272,
+              "time_formatted": "3:28.27"
+            },
+            {
+              "lap": 13,
+              "time": 224.57999999999998,
+              "time_formatted": "3:44.58"
+            },
+            {
+              "lap": 14,
+              "time": 149.726,
+              "time_formatted": "2:29.73"
+            },
+            {
+              "lap": 15,
+              "time": 149.538,
+              "time_formatted": "2:29.54"
+            },
+            {
+              "lap": 16,
+              "time": 149.149,
+              "time_formatted": "2:29.15"
+            },
+            {
+              "lap": 17,
+              "time": 150.356,
+              "time_formatted": "2:30.36"
+            }
+          ],
+          "stats": {
+            "driver": 55,
+            "average_lap": 162.2870588235294,
+            "std_dev": 27.121750022976457,
+            "best_lap": 148.679,
+            "worst_lap": 224.57999999999998,
+            "range": 75.90099999999998
+          }
+        },
+        "variance_ratio": 0.9960410472011664,
+        "insight": "Cota Race 1: Champion (Driver #46) has 27.23s std dev vs 4th Place (Driver #55) with 27.12s (1.0\u00d7 more variable)"
+      },
+      {
+        "track": "Sebring",
+        "track_key": "sebring",
+        "race": 1,
+        "champion": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 148.993,
+              "time_formatted": "2:28.99"
+            },
+            {
+              "lap": 2,
+              "time": 146.12,
+              "time_formatted": "2:26.12"
+            },
+            {
+              "lap": 3,
+              "time": 146.147,
+              "time_formatted": "2:26.15"
+            },
+            {
+              "lap": 4,
+              "time": 145.437,
+              "time_formatted": "2:25.44"
+            },
+            {
+              "lap": 5,
+              "time": 145.69,
+              "time_formatted": "2:25.69"
+            },
+            {
+              "lap": 6,
+              "time": 145.913,
+              "time_formatted": "2:25.91"
+            },
+            {
+              "lap": 7,
+              "time": 145.767,
+              "time_formatted": "2:25.77"
+            },
+            {
+              "lap": 8,
+              "time": 145.847,
+              "time_formatted": "2:25.85"
+            },
+            {
+              "lap": 9,
+              "time": 146.388,
+              "time_formatted": "2:26.39"
+            },
+            {
+              "lap": 10,
+              "time": 146.133,
+              "time_formatted": "2:26.13"
+            },
+            {
+              "lap": 11,
+              "time": 146.587,
+              "time_formatted": "2:26.59"
+            },
+            {
+              "lap": 12,
+              "time": 146.32,
+              "time_formatted": "2:26.32"
+            },
+            {
+              "lap": 13,
+              "time": 146.57999999999998,
+              "time_formatted": "2:26.58"
+            },
+            {
+              "lap": 14,
+              "time": 146.477,
+              "time_formatted": "2:26.48"
+            },
+            {
+              "lap": 15,
+              "time": 146.626,
+              "time_formatted": "2:26.63"
+            },
+            {
+              "lap": 16,
+              "time": 146.504,
+              "time_formatted": "2:26.50"
+            },
+            {
+              "lap": 17,
+              "time": 146.984,
+              "time_formatted": "2:26.98"
+            },
+            {
+              "lap": 18,
+              "time": 146.983,
+              "time_formatted": "2:26.98"
+            },
+            {
+              "lap": 19,
+              "time": 147.526,
+              "time_formatted": "2:27.53"
+            }
+          ],
+          "stats": {
+            "driver": 13,
+            "average_lap": 146.47484210526315,
+            "std_dev": 0.7922055192911241,
+            "best_lap": 145.437,
+            "worst_lap": 148.993,
+            "range": 3.555999999999983
+          }
+        },
+        "fourth_place": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 149.344,
+              "time_formatted": "2:29.34"
+            },
+            {
+              "lap": 2,
+              "time": 146.11599999999999,
+              "time_formatted": "2:26.12"
+            },
+            {
+              "lap": 3,
+              "time": 146.7,
+              "time_formatted": "2:26.70"
+            },
+            {
+              "lap": 4,
+              "time": 146.471,
+              "time_formatted": "2:26.47"
+            },
+            {
+              "lap": 5,
+              "time": 147.9,
+              "time_formatted": "2:27.90"
+            },
+            {
+              "lap": 6,
+              "time": 146.697,
+              "time_formatted": "2:26.70"
+            },
+            {
+              "lap": 7,
+              "time": 146.648,
+              "time_formatted": "2:26.65"
+            },
+            {
+              "lap": 8,
+              "time": 146.181,
+              "time_formatted": "2:26.18"
+            },
+            {
+              "lap": 9,
+              "time": 146.133,
+              "time_formatted": "2:26.13"
+            },
+            {
+              "lap": 10,
+              "time": 146.469,
+              "time_formatted": "2:26.47"
+            },
+            {
+              "lap": 11,
+              "time": 146.609,
+              "time_formatted": "2:26.61"
+            },
+            {
+              "lap": 12,
+              "time": 146.563,
+              "time_formatted": "2:26.56"
+            },
+            {
+              "lap": 13,
+              "time": 146.72,
+              "time_formatted": "2:26.72"
+            },
+            {
+              "lap": 14,
+              "time": 147.026,
+              "time_formatted": "2:27.03"
+            },
+            {
+              "lap": 15,
+              "time": 146.87,
+              "time_formatted": "2:26.87"
+            },
+            {
+              "lap": 16,
+              "time": 147.887,
+              "time_formatted": "2:27.89"
+            },
+            {
+              "lap": 17,
+              "time": 147.207,
+              "time_formatted": "2:27.21"
+            },
+            {
+              "lap": 18,
+              "time": 147.597,
+              "time_formatted": "2:27.60"
+            },
+            {
+              "lap": 19,
+              "time": 147.243,
+              "time_formatted": "2:27.24"
+            }
+          ],
+          "stats": {
+            "driver": 16,
+            "average_lap": 146.96742105263158,
+            "std_dev": 0.7831734812634973,
+            "best_lap": 146.11599999999999,
+            "worst_lap": 149.344,
+            "range": 3.2280000000000086
+          }
+        },
+        "variance_ratio": 0.9885988701067006,
+        "insight": "Sebring Race 1: Champion (Driver #13) has 0.79s std dev vs 4th Place (Driver #16) with 0.78s (1.0\u00d7 more variable)"
+      },
+      {
+        "track": "Indianapolis",
+        "track_key": "indianapolis",
+        "race": 1,
+        "champion": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 104.336,
+              "time_formatted": "1:44.34"
+            },
+            {
+              "lap": 2,
+              "time": 100.279,
+              "time_formatted": "1:40.28"
+            },
+            {
+              "lap": 3,
+              "time": 100.994,
+              "time_formatted": "1:40.99"
+            },
+            {
+              "lap": 4,
+              "time": 100.12,
+              "time_formatted": "1:40.12"
+            },
+            {
+              "lap": 5,
+              "time": 102.787,
+              "time_formatted": "1:42.79"
+            },
+            {
+              "lap": 6,
+              "time": 100.499,
+              "time_formatted": "1:40.50"
+            },
+            {
+              "lap": 7,
+              "time": 99.74799999999999,
+              "time_formatted": "1:39.75"
+            },
+            {
+              "lap": 8,
+              "time": 99.85,
+              "time_formatted": "1:39.85"
+            },
+            {
+              "lap": 9,
+              "time": 100.13300000000001,
+              "time_formatted": "1:40.13"
+            },
+            {
+              "lap": 10,
+              "time": 100.869,
+              "time_formatted": "1:40.87"
+            },
+            {
+              "lap": 11,
+              "time": 100.87,
+              "time_formatted": "1:40.87"
+            },
+            {
+              "lap": 12,
+              "time": 142.218,
+              "time_formatted": "2:22.22"
+            },
+            {
+              "lap": 13,
+              "time": 154.076,
+              "time_formatted": "2:34.08"
+            },
+            {
+              "lap": 14,
+              "time": 146.45,
+              "time_formatted": "2:26.45"
+            },
+            {
+              "lap": 15,
+              "time": 134.181,
+              "time_formatted": "2:14.18"
+            },
+            {
+              "lap": 16,
+              "time": 103.12700000000001,
+              "time_formatted": "1:43.13"
+            },
+            {
+              "lap": 17,
+              "time": 101.465,
+              "time_formatted": "1:41.47"
+            },
+            {
+              "lap": 18,
+              "time": 101.624,
+              "time_formatted": "1:41.62"
+            },
+            {
+              "lap": 19,
+              "time": 100.479,
+              "time_formatted": "1:40.48"
+            },
+            {
+              "lap": 20,
+              "time": 100.386,
+              "time_formatted": "1:40.39"
+            },
+            {
+              "lap": 21,
+              "time": 100.292,
+              "time_formatted": "1:40.29"
+            },
+            {
+              "lap": 22,
+              "time": 100.146,
+              "time_formatted": "1:40.15"
+            },
+            {
+              "lap": 23,
+              "time": 102.168,
+              "time_formatted": "1:42.17"
+            },
+            {
+              "lap": 24,
+              "time": 101.38300000000001,
+              "time_formatted": "1:41.38"
+            },
+            {
+              "lap": 25,
+              "time": 100.81700000000001,
+              "time_formatted": "1:40.82"
+            },
+            {
+              "lap": 26,
+              "time": 102.256,
+              "time_formatted": "1:42.26"
+            }
+          ],
+          "stats": {
+            "driver": 55,
+            "average_lap": 107.75203846153843,
+            "std_dev": 16.157970089044646,
+            "best_lap": 99.74799999999999,
+            "worst_lap": 154.076,
+            "range": 54.328
+          }
+        },
+        "fourth_place": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 105.187,
+              "time_formatted": "1:45.19"
+            },
+            {
+              "lap": 2,
+              "time": 100.625,
+              "time_formatted": "1:40.62"
+            },
+            {
+              "lap": 3,
+              "time": 100.515,
+              "time_formatted": "1:40.52"
+            },
+            {
+              "lap": 4,
+              "time": 100.312,
+              "time_formatted": "1:40.31"
+            },
+            {
+              "lap": 5,
+              "time": 102.044,
+              "time_formatted": "1:42.04"
+            },
+            {
+              "lap": 6,
+              "time": 101.029,
+              "time_formatted": "1:41.03"
+            },
+            {
+              "lap": 7,
+              "time": 100.73599999999999,
+              "time_formatted": "1:40.74"
+            },
+            {
+              "lap": 8,
+              "time": 101.625,
+              "time_formatted": "1:41.62"
+            },
+            {
+              "lap": 9,
+              "time": 100.229,
+              "time_formatted": "1:40.23"
+            },
+            {
+              "lap": 10,
+              "time": 100.468,
+              "time_formatted": "1:40.47"
+            },
+            {
+              "lap": 11,
+              "time": 100.63900000000001,
+              "time_formatted": "1:40.64"
+            },
+            {
+              "lap": 12,
+              "time": 140.858,
+              "time_formatted": "2:20.86"
+            },
+            {
+              "lap": 13,
+              "time": 154.575,
+              "time_formatted": "2:34.57"
+            },
+            {
+              "lap": 14,
+              "time": 146.07999999999998,
+              "time_formatted": "2:26.08"
+            },
+            {
+              "lap": 15,
+              "time": 133.472,
+              "time_formatted": "2:13.47"
+            },
+            {
+              "lap": 16,
+              "time": 102.684,
+              "time_formatted": "1:42.68"
+            },
+            {
+              "lap": 17,
+              "time": 101.878,
+              "time_formatted": "1:41.88"
+            },
+            {
+              "lap": 18,
+              "time": 101.46600000000001,
+              "time_formatted": "1:41.47"
+            },
+            {
+              "lap": 19,
+              "time": 101.995,
+              "time_formatted": "1:42.00"
+            },
+            {
+              "lap": 20,
+              "time": 100.77600000000001,
+              "time_formatted": "1:40.78"
+            },
+            {
+              "lap": 21,
+              "time": 100.477,
+              "time_formatted": "1:40.48"
+            },
+            {
+              "lap": 22,
+              "time": 100.80799999999999,
+              "time_formatted": "1:40.81"
+            },
+            {
+              "lap": 23,
+              "time": 100.606,
+              "time_formatted": "1:40.61"
+            },
+            {
+              "lap": 24,
+              "time": 100.961,
+              "time_formatted": "1:40.96"
+            },
+            {
+              "lap": 25,
+              "time": 101.432,
+              "time_formatted": "1:41.43"
+            },
+            {
+              "lap": 26,
+              "time": 101.09100000000001,
+              "time_formatted": "1:41.09"
+            }
+          ],
+          "stats": {
+            "driver": 46,
+            "average_lap": 107.79107692307691,
+            "std_dev": 15.966159590641892,
+            "best_lap": 100.229,
+            "worst_lap": 154.575,
+            "range": 54.34599999999999
+          }
+        },
+        "variance_ratio": 0.9881290473156152,
+        "insight": "Indianapolis Race 1: Champion (Driver #55) has 16.16s std dev vs 4th Place (Driver #46) with 15.97s (1.0\u00d7 more variable)"
+      },
+      {
+        "track": "Indianapolis",
+        "track_key": "indianapolis",
+        "race": 2,
+        "champion": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 108.34100000000001,
+              "time_formatted": "1:48.34"
+            },
+            {
+              "lap": 2,
+              "time": 123.304,
+              "time_formatted": "2:03.30"
+            },
+            {
+              "lap": 3,
+              "time": 136.553,
+              "time_formatted": "2:16.55"
+            },
+            {
+              "lap": 4,
+              "time": 103.616,
+              "time_formatted": "1:43.62"
+            },
+            {
+              "lap": 5,
+              "time": 102.414,
+              "time_formatted": "1:42.41"
+            },
+            {
+              "lap": 6,
+              "time": 101.562,
+              "time_formatted": "1:41.56"
+            },
+            {
+              "lap": 7,
+              "time": 102.245,
+              "time_formatted": "1:42.25"
+            },
+            {
+              "lap": 8,
+              "time": 101.09899999999999,
+              "time_formatted": "1:41.10"
+            },
+            {
+              "lap": 9,
+              "time": 101.083,
+              "time_formatted": "1:41.08"
+            },
+            {
+              "lap": 10,
+              "time": 100.892,
+              "time_formatted": "1:40.89"
+            },
+            {
+              "lap": 11,
+              "time": 101.03399999999999,
+              "time_formatted": "1:41.03"
+            },
+            {
+              "lap": 12,
+              "time": 101.711,
+              "time_formatted": "1:41.71"
+            },
+            {
+              "lap": 13,
+              "time": 100.747,
+              "time_formatted": "1:40.75"
+            },
+            {
+              "lap": 14,
+              "time": 124.462,
+              "time_formatted": "2:04.46"
+            },
+            {
+              "lap": 15,
+              "time": 153.691,
+              "time_formatted": "2:33.69"
+            },
+            {
+              "lap": 16,
+              "time": 152.18200000000002,
+              "time_formatted": "2:32.18"
+            },
+            {
+              "lap": 17,
+              "time": 134.656,
+              "time_formatted": "2:14.66"
+            },
+            {
+              "lap": 18,
+              "time": 101.763,
+              "time_formatted": "1:41.76"
+            },
+            {
+              "lap": 19,
+              "time": 133.032,
+              "time_formatted": "2:13.03"
+            },
+            {
+              "lap": 20,
+              "time": 142.537,
+              "time_formatted": "2:22.54"
+            },
+            {
+              "lap": 21,
+              "time": 142.073,
+              "time_formatted": "2:22.07"
+            },
+            {
+              "lap": 22,
+              "time": 133.35399999999998,
+              "time_formatted": "2:13.35"
+            },
+            {
+              "lap": 23,
+              "time": 128.343,
+              "time_formatted": "2:08.34"
+            }
+          ],
+          "stats": {
+            "driver": 13,
+            "average_lap": 118.7258260869565,
+            "std_dev": 18.964638825629173,
+            "best_lap": 100.747,
+            "worst_lap": 153.691,
+            "range": 52.944
+          }
+        },
+        "fourth_place": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 112.476,
+              "time_formatted": "1:52.48"
+            },
+            {
+              "lap": 2,
+              "time": 124.809,
+              "time_formatted": "2:04.81"
+            },
+            {
+              "lap": 3,
+              "time": 133.716,
+              "time_formatted": "2:13.72"
+            },
+            {
+              "lap": 4,
+              "time": 103.84700000000001,
+              "time_formatted": "1:43.85"
+            },
+            {
+              "lap": 5,
+              "time": 102.299,
+              "time_formatted": "1:42.30"
+            },
+            {
+              "lap": 6,
+              "time": 101.336,
+              "time_formatted": "1:41.34"
+            },
+            {
+              "lap": 7,
+              "time": 101.112,
+              "time_formatted": "1:41.11"
+            },
+            {
+              "lap": 8,
+              "time": 101.282,
+              "time_formatted": "1:41.28"
+            },
+            {
+              "lap": 9,
+              "time": 101.76599999999999,
+              "time_formatted": "1:41.77"
+            },
+            {
+              "lap": 10,
+              "time": 101.012,
+              "time_formatted": "1:41.01"
+            },
+            {
+              "lap": 11,
+              "time": 101.43,
+              "time_formatted": "1:41.43"
+            },
+            {
+              "lap": 12,
+              "time": 101.003,
+              "time_formatted": "1:41.00"
+            },
+            {
+              "lap": 13,
+              "time": 101.714,
+              "time_formatted": "1:41.71"
+            },
+            {
+              "lap": 14,
+              "time": 122.838,
+              "time_formatted": "2:02.84"
+            },
+            {
+              "lap": 15,
+              "time": 153.535,
+              "time_formatted": "2:33.53"
+            },
+            {
+              "lap": 16,
+              "time": 151.921,
+              "time_formatted": "2:31.92"
+            },
+            {
+              "lap": 17,
+              "time": 134.002,
+              "time_formatted": "2:14.00"
+            },
+            {
+              "lap": 18,
+              "time": 102.80199999999999,
+              "time_formatted": "1:42.80"
+            },
+            {
+              "lap": 19,
+              "time": 133.136,
+              "time_formatted": "2:13.14"
+            },
+            {
+              "lap": 20,
+              "time": 142.581,
+              "time_formatted": "2:22.58"
+            },
+            {
+              "lap": 21,
+              "time": 142.175,
+              "time_formatted": "2:22.18"
+            },
+            {
+              "lap": 22,
+              "time": 133.315,
+              "time_formatted": "2:13.31"
+            },
+            {
+              "lap": 23,
+              "time": 128.226,
+              "time_formatted": "2:08.23"
+            }
+          ],
+          "stats": {
+            "driver": 2,
+            "average_lap": 118.79708695652177,
+            "std_dev": 18.659627051990284,
+            "best_lap": 101.003,
+            "worst_lap": 153.535,
+            "range": 52.532
+          }
+        },
+        "variance_ratio": 0.9839168161100601,
+        "insight": "Indianapolis Race 2: Champion (Driver #13) has 18.96s std dev vs 4th Place (Driver #2) with 18.66s (1.0\u00d7 more variable)"
+      },
+      {
+        "track": "Sebring",
+        "track_key": "sebring",
+        "race": 2,
+        "champion": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 150.003,
+              "time_formatted": "2:30.00"
+            },
+            {
+              "lap": 2,
+              "time": 225.178,
+              "time_formatted": "3:45.18"
+            },
+            {
+              "lap": 3,
+              "time": 146.781,
+              "time_formatted": "2:26.78"
+            },
+            {
+              "lap": 4,
+              "time": 145.891,
+              "time_formatted": "2:25.89"
+            },
+            {
+              "lap": 5,
+              "time": 145.567,
+              "time_formatted": "2:25.57"
+            },
+            {
+              "lap": 6,
+              "time": 145.055,
+              "time_formatted": "2:25.06"
+            },
+            {
+              "lap": 7,
+              "time": 145.154,
+              "time_formatted": "2:25.15"
+            },
+            {
+              "lap": 8,
+              "time": 145.176,
+              "time_formatted": "2:25.18"
+            },
+            {
+              "lap": 9,
+              "time": 145.51,
+              "time_formatted": "2:25.51"
+            },
+            {
+              "lap": 10,
+              "time": 145.48,
+              "time_formatted": "2:25.48"
+            },
+            {
+              "lap": 11,
+              "time": 145.299,
+              "time_formatted": "2:25.30"
+            },
+            {
+              "lap": 12,
+              "time": 145.341,
+              "time_formatted": "2:25.34"
+            },
+            {
+              "lap": 13,
+              "time": 145.486,
+              "time_formatted": "2:25.49"
+            },
+            {
+              "lap": 14,
+              "time": 145.669,
+              "time_formatted": "2:25.67"
+            },
+            {
+              "lap": 15,
+              "time": 146.26,
+              "time_formatted": "2:26.26"
+            },
+            {
+              "lap": 16,
+              "time": 146.481,
+              "time_formatted": "2:26.48"
+            }
+          ],
+          "stats": {
+            "driver": 13,
+            "average_lap": 150.8956875,
+            "std_dev": 19.8442292928994,
+            "best_lap": 145.055,
+            "worst_lap": 225.178,
+            "range": 80.12299999999999
+          }
+        },
+        "fourth_place": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 151.365,
+              "time_formatted": "2:31.37"
+            },
+            {
+              "lap": 2,
+              "time": 224.339,
+              "time_formatted": "3:44.34"
+            },
+            {
+              "lap": 3,
+              "time": 146.692,
+              "time_formatted": "2:26.69"
+            },
+            {
+              "lap": 4,
+              "time": 145.836,
+              "time_formatted": "2:25.84"
+            },
+            {
+              "lap": 5,
+              "time": 147.406,
+              "time_formatted": "2:27.41"
+            },
+            {
+              "lap": 6,
+              "time": 145.404,
+              "time_formatted": "2:25.40"
+            },
+            {
+              "lap": 7,
+              "time": 145.299,
+              "time_formatted": "2:25.30"
+            },
+            {
+              "lap": 8,
+              "time": 145.952,
+              "time_formatted": "2:25.95"
+            },
+            {
+              "lap": 9,
+              "time": 146.337,
+              "time_formatted": "2:26.34"
+            },
+            {
+              "lap": 10,
+              "time": 145.906,
+              "time_formatted": "2:25.91"
+            },
+            {
+              "lap": 11,
+              "time": 146.477,
+              "time_formatted": "2:26.48"
+            },
+            {
+              "lap": 12,
+              "time": 146.118,
+              "time_formatted": "2:26.12"
+            },
+            {
+              "lap": 13,
+              "time": 145.942,
+              "time_formatted": "2:25.94"
+            },
+            {
+              "lap": 14,
+              "time": 146.552,
+              "time_formatted": "2:26.55"
+            },
+            {
+              "lap": 15,
+              "time": 146.44,
+              "time_formatted": "2:26.44"
+            },
+            {
+              "lap": 16,
+              "time": 146.425,
+              "time_formatted": "2:26.43"
+            }
+          ],
+          "stats": {
+            "driver": 16,
+            "average_lap": 151.40562500000001,
+            "std_dev": 19.498080773501783,
+            "best_lap": 145.299,
+            "worst_lap": 224.339,
+            "range": 79.03999999999999
+          }
+        },
+        "variance_ratio": 0.9825567163990857,
+        "insight": "Sebring Race 2: Champion (Driver #13) has 19.84s std dev vs 4th Place (Driver #16) with 19.50s (1.0\u00d7 more variable)"
+      },
+      {
+        "track": "Barber",
+        "track_key": "barber",
+        "race": 1,
+        "champion": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 102.28399999999999,
+              "time_formatted": "1:42.28"
+            },
+            {
+              "lap": 2,
+              "time": 134.965,
+              "time_formatted": "2:14.97"
+            },
+            {
+              "lap": 3,
+              "time": 123.122,
+              "time_formatted": "2:03.12"
+            },
+            {
+              "lap": 4,
+              "time": 97.864,
+              "time_formatted": "1:37.86"
+            },
+            {
+              "lap": 5,
+              "time": 97.798,
+              "time_formatted": "1:37.80"
+            },
+            {
+              "lap": 6,
+              "time": 97.543,
+              "time_formatted": "1:37.54"
+            },
+            {
+              "lap": 7,
+              "time": 97.513,
+              "time_formatted": "1:37.51"
+            },
+            {
+              "lap": 8,
+              "time": 97.428,
+              "time_formatted": "1:37.43"
+            },
+            {
+              "lap": 9,
+              "time": 97.642,
+              "time_formatted": "1:37.64"
+            },
+            {
+              "lap": 10,
+              "time": 97.679,
+              "time_formatted": "1:37.68"
+            },
+            {
+              "lap": 11,
+              "time": 97.694,
+              "time_formatted": "1:37.69"
+            },
+            {
+              "lap": 12,
+              "time": 97.94800000000001,
+              "time_formatted": "1:37.95"
+            },
+            {
+              "lap": 13,
+              "time": 97.923,
+              "time_formatted": "1:37.92"
+            },
+            {
+              "lap": 14,
+              "time": 98.101,
+              "time_formatted": "1:38.10"
+            },
+            {
+              "lap": 15,
+              "time": 98.262,
+              "time_formatted": "1:38.26"
+            },
+            {
+              "lap": 16,
+              "time": 98.83500000000001,
+              "time_formatted": "1:38.84"
+            },
+            {
+              "lap": 17,
+              "time": 98.295,
+              "time_formatted": "1:38.30"
+            },
+            {
+              "lap": 18,
+              "time": 98.286,
+              "time_formatted": "1:38.29"
+            },
+            {
+              "lap": 19,
+              "time": 98.485,
+              "time_formatted": "1:38.48"
+            },
+            {
+              "lap": 20,
+              "time": 98.416,
+              "time_formatted": "1:38.42"
+            },
+            {
+              "lap": 21,
+              "time": 98.281,
+              "time_formatted": "1:38.28"
+            },
+            {
+              "lap": 22,
+              "time": 98.26599999999999,
+              "time_formatted": "1:38.27"
+            },
+            {
+              "lap": 23,
+              "time": 98.199,
+              "time_formatted": "1:38.20"
+            },
+            {
+              "lap": 24,
+              "time": 98.328,
+              "time_formatted": "1:38.33"
+            },
+            {
+              "lap": 25,
+              "time": 98.63499999999999,
+              "time_formatted": "1:38.63"
+            },
+            {
+              "lap": 26,
+              "time": 98.55,
+              "time_formatted": "1:38.55"
+            },
+            {
+              "lap": 27,
+              "time": 98.693,
+              "time_formatted": "1:38.69"
+            }
+          ],
+          "stats": {
+            "driver": 13,
+            "average_lap": 100.55685185185187,
+            "std_dev": 8.420141880330776,
+            "best_lap": 97.428,
+            "worst_lap": 134.965,
+            "range": 37.537000000000006
+          }
+        },
+        "fourth_place": {
+          "laps": [
+            {
+              "lap": 1,
+              "time": 106.5,
+              "time_formatted": "1:46.50"
+            },
+            {
+              "lap": 2,
+              "time": 135.118,
+              "time_formatted": "2:15.12"
+            },
+            {
+              "lap": 3,
+              "time": 120.377,
+              "time_formatted": "2:00.38"
+            },
+            {
+              "lap": 4,
+              "time": 98.68299999999999,
+              "time_formatted": "1:38.68"
+            },
+            {
+              "lap": 5,
+              "time": 98.96600000000001,
+              "time_formatted": "1:38.97"
+            },
+            {
+              "lap": 6,
+              "time": 98.32900000000001,
+              "time_formatted": "1:38.33"
+            },
+            {
+              "lap": 7,
+              "time": 98.094,
+              "time_formatted": "1:38.09"
+            },
+            {
+              "lap": 8,
+              "time": 98.523,
+              "time_formatted": "1:38.52"
+            },
+            {
+              "lap": 9,
+              "time": 99.314,
+              "time_formatted": "1:39.31"
+            },
+            {
+              "lap": 10,
+              "time": 98.399,
+              "time_formatted": "1:38.40"
+            },
+            {
+              "lap": 11,
+              "time": 98.459,
+              "time_formatted": "1:38.46"
+            },
+            {
+              "lap": 12,
+              "time": 98.405,
+              "time_formatted": "1:38.41"
+            },
+            {
+              "lap": 13,
+              "time": 98.249,
+              "time_formatted": "1:38.25"
+            },
+            {
+              "lap": 14,
+              "time": 98.386,
+              "time_formatted": "1:38.39"
+            },
+            {
+              "lap": 15,
+              "time": 98.149,
+              "time_formatted": "1:38.15"
+            },
+            {
+              "lap": 16,
+              "time": 98.333,
+              "time_formatted": "1:38.33"
+            },
+            {
+              "lap": 17,
+              "time": 98.38300000000001,
+              "time_formatted": "1:38.38"
+            },
+            {
+              "lap": 18,
+              "time": 98.55,
+              "time_formatted": "1:38.55"
+            },
+            {
+              "lap": 19,
+              "time": 98.61500000000001,
+              "time_formatted": "1:38.62"
+            },
+            {
+              "lap": 20,
+              "time": 98.16499999999999,
+              "time_formatted": "1:38.16"
+            },
+            {
+              "lap": 21,
+              "time": 98.404,
+              "time_formatted": "1:38.40"
+            },
+            {
+              "lap": 22,
+              "time": 98.55199999999999,
+              "time_formatted": "1:38.55"
+            },
+            {
+              "lap": 23,
+              "time": 98.269,
+              "time_formatted": "1:38.27"
+            },
+            {
+              "lap": 24,
+              "time": 98.576,
+              "time_formatted": "1:38.58"
+            },
+            {
+              "lap": 25,
+              "time": 98.64099999999999,
+              "time_formatted": "1:38.64"
+            },
+            {
+              "lap": 26,
+              "time": 98.656,
+              "time_formatted": "1:38.66"
+            },
+            {
+              "lap": 27,
+              "time": 99.049,
+              "time_formatted": "1:39.05"
+            }
+          ],
+          "stats": {
+            "driver": 55,
+            "average_lap": 100.96829629629629,
+            "std_dev": 8.135624579185501,
+            "best_lap": 98.094,
+            "worst_lap": 135.118,
+            "range": 37.024
+          }
+        },
+        "variance_ratio": 0.9662099160336123,
+        "insight": "Barber Race 1: Champion (Driver #13) has 8.42s std dev vs 4th Place (Driver #55) with 8.14s (1.0\u00d7 more variable)"
+      }
+    ],
+    "best_example": {
+      "track": "Barber",
+      "track_key": "barber",
+      "race": 2,
+      "champion": {
+        "laps": [
+          {
+            "lap": 1,
+            "time": 98.22200000000001,
+            "time_formatted": "1:38.22"
+          },
+          {
+            "lap": 2,
+            "time": 97.35,
+            "time_formatted": "1:37.35"
+          },
+          {
+            "lap": 3,
+            "time": 97.437,
+            "time_formatted": "1:37.44"
+          },
+          {
+            "lap": 4,
+            "time": 97.594,
+            "time_formatted": "1:37.59"
+          },
+          {
+            "lap": 5,
+            "time": 97.584,
+            "time_formatted": "1:37.58"
+          },
+          {
+            "lap": 6,
+            "time": 97.509,
+            "time_formatted": "1:37.51"
+          },
+          {
+            "lap": 7,
+            "time": 97.44200000000001,
+            "time_formatted": "1:37.44"
+          },
+          {
+            "lap": 8,
+            "time": 97.411,
+            "time_formatted": "1:37.41"
+          },
+          {
+            "lap": 9,
+            "time": 97.65,
+            "time_formatted": "1:37.65"
+          },
+          {
+            "lap": 10,
+            "time": 97.616,
+            "time_formatted": "1:37.62"
+          },
+          {
+            "lap": 11,
+            "time": 97.50800000000001,
+            "time_formatted": "1:37.51"
+          },
+          {
+            "lap": 12,
+            "time": 97.601,
+            "time_formatted": "1:37.60"
+          },
+          {
+            "lap": 13,
+            "time": 97.723,
+            "time_formatted": "1:37.72"
+          },
+          {
+            "lap": 14,
+            "time": 97.72399999999999,
+            "time_formatted": "1:37.72"
+          },
+          {
+            "lap": 15,
+            "time": 97.71000000000001,
+            "time_formatted": "1:37.71"
+          },
+          {
+            "lap": 16,
+            "time": 97.73599999999999,
+            "time_formatted": "1:37.74"
+          },
+          {
+            "lap": 17,
+            "time": 97.475,
+            "time_formatted": "1:37.47"
+          },
+          {
+            "lap": 18,
+            "time": 97.923,
+            "time_formatted": "1:37.92"
+          },
+          {
+            "lap": 19,
+            "time": 97.72800000000001,
+            "time_formatted": "1:37.73"
+          },
+          {
+            "lap": 20,
+            "time": 97.52600000000001,
+            "time_formatted": "1:37.53"
+          },
+          {
+            "lap": 21,
+            "time": 97.87700000000001,
+            "time_formatted": "1:37.88"
+          },
+          {
+            "lap": 22,
+            "time": 97.919,
+            "time_formatted": "1:37.92"
+          },
+          {
+            "lap": 23,
+            "time": 98.221,
+            "time_formatted": "1:38.22"
+          },
+          {
+            "lap": 24,
+            "time": 97.78999999999999,
+            "time_formatted": "1:37.79"
+          },
+          {
+            "lap": 25,
+            "time": 98.25,
+            "time_formatted": "1:38.25"
+          },
+          {
+            "lap": 26,
+            "time": 97.732,
+            "time_formatted": "1:37.73"
+          },
+          {
+            "lap": 27,
+            "time": 97.944,
+            "time_formatted": "1:37.94"
+          },
+          {
+            "lap": 28,
+            "time": 98.812,
+            "time_formatted": "1:38.81"
+          }
+        ],
+        "stats": {
+          "driver": 13,
+          "average_lap": 97.7505,
+          "std_dev": 0.3192917509460937,
+          "best_lap": 97.35,
+          "worst_lap": 98.812,
+          "range": 1.4620000000000033
+        }
+      },
+      "fourth_place": {
+        "laps": [
+          {
+            "lap": 1,
+            "time": 99.632,
+            "time_formatted": "1:39.63"
+          },
+          {
+            "lap": 2,
+            "time": 98.36,
+            "time_formatted": "1:38.36"
+          },
+          {
+            "lap": 3,
+            "time": 98.066,
+            "time_formatted": "1:38.07"
+          },
+          {
+            "lap": 4,
+            "time": 97.999,
+            "time_formatted": "1:38.00"
+          },
+          {
+            "lap": 5,
+            "time": 98.396,
+            "time_formatted": "1:38.40"
+          },
+          {
+            "lap": 6,
+            "time": 98.249,
+            "time_formatted": "1:38.25"
+          },
+          {
+            "lap": 7,
+            "time": 98.536,
+            "time_formatted": "1:38.54"
+          },
+          {
+            "lap": 8,
+            "time": 98.313,
+            "time_formatted": "1:38.31"
+          },
+          {
+            "lap": 9,
+            "time": 98.406,
+            "time_formatted": "1:38.41"
+          },
+          {
+            "lap": 10,
+            "time": 99.071,
+            "time_formatted": "1:39.07"
+          },
+          {
+            "lap": 11,
+            "time": 99.464,
+            "time_formatted": "1:39.46"
+          },
+          {
+            "lap": 12,
+            "time": 98.69200000000001,
+            "time_formatted": "1:38.69"
+          },
+          {
+            "lap": 13,
+            "time": 98.24799999999999,
+            "time_formatted": "1:38.25"
+          },
+          {
+            "lap": 14,
+            "time": 97.945,
+            "time_formatted": "1:37.94"
+          },
+          {
+            "lap": 15,
+            "time": 98.22999999999999,
+            "time_formatted": "1:38.23"
+          },
+          {
+            "lap": 16,
+            "time": 97.967,
+            "time_formatted": "1:37.97"
+          },
+          {
+            "lap": 17,
+            "time": 98.001,
+            "time_formatted": "1:38.00"
+          },
+          {
+            "lap": 18,
+            "time": 98.32,
+            "time_formatted": "1:38.32"
+          },
+          {
+            "lap": 19,
+            "time": 98.75800000000001,
+            "time_formatted": "1:38.76"
+          },
+          {
+            "lap": 20,
+            "time": 98.517,
+            "time_formatted": "1:38.52"
+          },
+          {
+            "lap": 21,
+            "time": 99.119,
+            "time_formatted": "1:39.12"
+          },
+          {
+            "lap": 22,
+            "time": 98.439,
+            "time_formatted": "1:38.44"
+          },
+          {
+            "lap": 23,
+            "time": 98.18,
+            "time_formatted": "1:38.18"
+          },
+          {
+            "lap": 24,
+            "time": 98.52199999999999,
+            "time_formatted": "1:38.52"
+          },
+          {
+            "lap": 25,
+            "time": 98.908,
+            "time_formatted": "1:38.91"
+          },
+          {
+            "lap": 26,
+            "time": 98.524,
+            "time_formatted": "1:38.52"
+          },
+          {
+            "lap": 27,
+            "time": 98.316,
+            "time_formatted": "1:38.32"
+          },
+          {
+            "lap": 28,
+            "time": 98.53,
+            "time_formatted": "1:38.53"
+          }
+        ],
+        "stats": {
+          "driver": 72,
+          "average_lap": 98.48957142857144,
+          "std_dev": 0.4267356219080991,
+          "best_lap": 97.945,
+          "worst_lap": 99.632,
+          "range": 1.6870000000000118
+        }
+      },
+      "variance_ratio": 1.336506880129657,
+      "insight": "Barber Race 2: Champion (Driver #13) has 0.32s std dev vs 4th Place (Driver #72) with 0.43s (1.3\u00d7 more variable)"
+    },
+    "total_races": 11
   }
 }
