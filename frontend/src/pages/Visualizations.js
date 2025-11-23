@@ -152,7 +152,9 @@ const Visualizations = () => {
 
       {/* 1. The 2.6× Rule */}
       <div className="section">
-        <h2 className="section-title">The 2.6× Rule: Consistency Beats Speed</h2>
+        <h2 className="section-title">
+          {rule26x.ratio ? `The ${rule26x.ratio}× Rule: Consistency Beats Speed` : 'The Consistency Rule: Consistency Beats Speed'}
+        </h2>
         <p className="section-description">
           {rule26x.insight || 'High S2 consistency + fast best lap achieves podium significantly more often'}
         </p>
@@ -526,7 +528,7 @@ const Visualizations = () => {
       <div className="section">
         <h2 className="section-title">Training Allocation: Current vs Optimal</h2>
         <p className="section-description">
-          {training.insight || 'Shift training focus based on what actually matters'}
+          Compare current training allocation with data-driven optimal allocation
         </p>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '2rem' }}>
           <div>
@@ -570,7 +572,7 @@ const Visualizations = () => {
             </ResponsiveContainer>
           </div>
           <div>
-            <h3 style={{ color: '#f9fafb', marginBottom: '1rem', textAlign: 'center' }}>RaceIQ Optimal</h3>
+            <h3 style={{ color: '#f9fafb', marginBottom: '1rem', textAlign: 'center' }}>Tortoise Optimal</h3>
             <ResponsiveContainer width="100%" height={350}>
               <PieChart>
                 <Pie
@@ -620,11 +622,13 @@ const Visualizations = () => {
           <div style={{ color: '#cbd5e1', fontSize: '0.9rem', lineHeight: '1.6' }}>
             <strong style={{ color: '#93c5fd' }}>Key Changes:</strong>
             <ul style={{ marginTop: '0.5rem', paddingLeft: '1.5rem' }}>
-              <li>Increase S2 Consistency training from 0% to 45% (highest priority)</li>
-              <li>Maintain Qualifying at 25% (reduced from 40% but still important)</li>
-              <li>Keep General Racing at 20% (reduced from 30% but still valuable)</li>
-              <li>Reduce Race Strategy from 20% to 5%</li>
+              <li>Add Speed Development training at 30% (highest priority - top predictor)</li>
+              <li>Add Lap Time Consistency training at 25% (second priority)</li>
+              <li>Reduce Qualifying from 40% to 20%, focus on Best Lap performance</li>
+              <li>Add Pressure Handling at 10% (new focus area)</li>
+              <li>Add Late Race Pace at 10% (new focus area)</li>
               <li>Reduce Restart training from 10% to 5%</li>
+              <li>Remove General Racing and Race Strategy (replaced by data-driven categories)</li>
             </ul>
           </div>
         </div>

@@ -1,5 +1,5 @@
 """
-RaceIQ Machine Learning Analysis
+Tortoise Machine Learning Analysis
 Implements 7 ML algorithms including XGBoost and Hierarchical Clustering
 """
 

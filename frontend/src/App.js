@@ -14,7 +14,7 @@ function App() {
         <nav className="navbar">
           <div className="nav-container">
             <Link to="/" className="nav-logo">
-              🏁 RaceIQ
+              🏁 Tortoise
             </Link>
             <div className="nav-links">
               <Link to="/" className="nav-link">Overview</Link>

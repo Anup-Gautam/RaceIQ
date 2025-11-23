@@ -1,8 +1,8 @@
-# RaceIQ: Complete Metrics & System Explanation
+# Tortoise: Complete Metrics & System Explanation
 
 ## 🎯 What We Built
 
-**RaceIQ** is a comprehensive racing analytics system that:
+**Tortoise** is a comprehensive racing analytics system that:
 
 1. **Loads race data** from 7 different racetracks (Barber, Indianapolis, COTA, Sebring, Sonoma, VIR, Road America)
 2. **Extracts 57 performance features** for each driver at each track/race

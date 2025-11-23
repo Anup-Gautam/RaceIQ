@@ -163,65 +163,65 @@
     ]
   },
   "feature_waterfall": {
-    "baseline": 50.0,
+    "baseline": 89.2,
     "steps": [
       {
         "feature": "Avg Speed Kph",
-        "contribution": 8.2,
-        "cumulative": 58.2,
+        "contribution": 0.6,
+        "cumulative": 89.8,
         "importance": 0.1156
       },
       {
         "feature": "Speed Std",
-        "contribution": 6.8,
-        "cumulative": 65.0,
+        "contribution": 0.5,
+        "cumulative": 90.3,
         "importance": 0.095
       },
       {
         "feature": "Speed Variance",
-        "contribution": 5.0,
-        "cumulative": 70.0,
+        "contribution": 0.4,
+        "cumulative": 90.7,
         "importance": 0.0707
       },
       {
         "feature": "Lap Best",
-        "contribution": 3.9,
-        "cumulative": 73.9,
+        "contribution": 0.3,
+        "cumulative": 91.0,
         "importance": 0.0553
       },
       {
         "feature": "Sector Balance",
-        "contribution": 3.8,
-        "cumulative": 77.7,
+        "contribution": 0.3,
+        "cumulative": 91.2,
         "importance": 0.0532
       },
       {
         "feature": "S2 Ratio",
-        "contribution": 3.1,
-        "cumulative": 80.8,
+        "contribution": 0.2,
+        "cumulative": 91.5,
         "importance": 0.044
       },
       {
         "feature": "Consistency Score",
-        "contribution": 3.1,
-        "cumulative": 83.9,
+        "contribution": 0.2,
+        "cumulative": 91.7,
         "importance": 0.0433
       },
       {
         "feature": "S1 Std",
-        "contribution": 2.9,
-        "cumulative": 86.8,
+        "contribution": 0.2,
+        "cumulative": 91.9,
         "importance": 0.0407
       },
       {
         "feature": "Late Pace",
-        "contribution": 2.8,
-        "cumulative": 89.6,
+        "contribution": 0.2,
+        "cumulative": 92.1,
         "importance": 0.0389
       },
       {
         "feature": "Lap Std",
-        "contribution": 2.7,
+        "contribution": 0.2,
         "cumulative": 92.3,
         "importance": 0.0387
       }
@@ -3512,27 +3512,30 @@
     ],
     "optimal": [
       {
-        "category": "S2 Consistency Drills",
-        "percentage": 45
+        "category": "Speed Development",
+        "percentage": 30
       },
       {
-        "category": "Qualifying",
+        "category": "Lap Time Consistency",
         "percentage": 25
       },
       {
-        "category": "General Racing",
+        "category": "Qualifying (Best Lap)",
         "percentage": 20
       },
       {
-        "category": "Race Strategy",
-        "percentage": 5
+        "category": "Pressure Handling",
+        "percentage": 10
+      },
+      {
+        "category": "Late Race Pace",
+        "percentage": 10
       },
       {
         "category": "Restart Scenarios",
         "percentage": 5
       }
-    ],
-    "insight": "Prioritize S2 consistency drills while maintaining strong qualifying and general racing skills"
+    ]
   },
   "fcy_impact": {
     "high_fcy": {
@@ -3560,7 +3563,7 @@
         "s2_correlation": -0.004,
         "s3_correlation": -0.144,
         "data_count": 44,
-        "has_podiums": "True"
+        "has_podiums": 1.0
       },
       {
         "track": "Cota",
@@ -3572,7 +3575,7 @@
         "s2_correlation": 0.215,
         "s3_correlation": 0.449,
         "data_count": 29,
-        "has_podiums": "True"
+        "has_podiums": 1.0
       },
       {
         "track": "Indianapolis",
@@ -3584,7 +3587,7 @@
         "s2_correlation": 0.087,
         "s3_correlation": 0.058,
         "data_count": 52,
-        "has_podiums": "True"
+        "has_podiums": 1.0
       },
       {
         "track": "Road America",
@@ -3596,7 +3599,7 @@
         "s2_correlation": 0.149,
         "s3_correlation": 0.034,
         "data_count": 54,
-        "has_podiums": "True"
+        "has_podiums": 1.0
       },
       {
         "track": "Sebring",
@@ -3608,7 +3611,7 @@
         "s2_correlation": -0.03,
         "s3_correlation": -0.057,
         "data_count": 43,
-        "has_podiums": "True"
+        "has_podiums": 1.0
       },
       {
         "track": "Vir",
@@ -3620,20 +3623,20 @@
         "s2_correlation": -0.031,
         "s3_correlation": -0.082,
         "data_count": 43,
-        "has_podiums": "True"
+        "has_podiums": 1.0
       }
     ],
     "overall": {
-      "s1_importance": 0.057,
-      "s2_importance": 0.008,
-      "s3_importance": 0.065,
-      "s1_correlation": -0.057,
-      "s2_correlation": -0.008,
-      "s3_correlation": -0.065
+      "s1_importance": 0.0567,
+      "s2_importance": 0.0079,
+      "s3_importance": 0.0646,
+      "s1_correlation": -0.0567,
+      "s2_correlation": -0.0079,
+      "s3_correlation": -0.0646
     },
     "total_tracks": 6,
     "most_important_sector": "S3",
-    "insight": "S3 consistency shows the strongest relationship with race success (|correlation|: 0.065). Note: Lower std = better performance, so negative correlations are expected."
+    "insight": "S3 consistency shows the strongest relationship with race success (|correlation|: 0.0646). Note: Lower std = better performance, so negative correlations are expected."
   },
   "champions_boring": {
     "races": [

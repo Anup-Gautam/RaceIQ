@@ -24,11 +24,11 @@ const Overview = () => {
 
   return (
     <div className="page">
-      <h1 className="page-title">RaceIQ Overview</h1>
+      <h1 className="page-title">Tortoise Overview</h1>
       
-      {/* About RaceIQ Section */}
+      {/* About Tortoise Section */}
       <div className="section" style={{ marginBottom: '2rem' }}>
-        <h2 className="section-title">What is RaceIQ?</h2>
+        <h2 className="section-title">What is Tortoise?</h2>
         <div style={{
           background: '#1f2937',
           border: '1px solid #374151',
@@ -38,12 +38,12 @@ const Overview = () => {
           color: '#d1d5db'
         }}>
           <p style={{ fontSize: '1.1rem', marginBottom: '1.5rem' }}>
-            <strong style={{ color: '#93c5fd', fontSize: '1.2rem' }}>RaceIQ</strong> is a pattern recognition engine that uses machine learning to discover hidden insights in racing data across multiple tracks and drivers.
+            <strong style={{ color: '#93c5fd', fontSize: '1.2rem' }}>Tortoise</strong> is a pattern recognition engine that uses machine learning to discover hidden insights in racing data across multiple tracks and drivers.
           </p>
           
           <h3 style={{ color: '#f9fafb', marginTop: '1.5rem', marginBottom: '1rem' }}>🎯 What We Do</h3>
           <p style={{ marginBottom: '1rem' }}>
-            Traditional racing analysis looks at single races or tracks in isolation. <strong>RaceIQ goes deeper</strong> by analyzing patterns across <strong>7 different racetracks</strong> and <strong>hundreds of drivers</strong> to answer questions like:
+            Traditional racing analysis looks at single races or tracks in isolation. <strong>Tortoise goes deeper</strong> by analyzing patterns across <strong>7 different racetracks</strong> and <strong>hundreds of drivers</strong> to answer questions like:
           </p>
           <ul style={{ marginLeft: '2rem', marginBottom: '1.5rem' }}>
             <li>Do skills learned at technical tracks transfer to high-speed tracks?</li>
@@ -55,7 +55,7 @@ const Overview = () => {
           
           <h3 style={{ color: '#f9fafb', marginTop: '1.5rem', marginBottom: '1rem' }}>🔬 How It Works</h3>
           <p style={{ marginBottom: '1rem' }}>
-            RaceIQ processes <strong>{summary.total_laps?.toLocaleString() || 0} laps</strong> of racing data, extracting <strong>57 performance features</strong> per driver-track-race combination. Using advanced machine learning algorithms including:
+            Tortoise processes <strong>{summary.total_laps?.toLocaleString() || 0} laps</strong> of racing data, extracting <strong>57 performance features</strong> per driver-track-race combination. Using advanced machine learning algorithms including:
           </p>
           <ul style={{ marginLeft: '2rem', marginBottom: '1.5rem' }}>
             <li><strong>Random Forest & Gradient Boosting:</strong> Identify which features predict race success</li>
@@ -66,7 +66,7 @@ const Overview = () => {
           
           <h3 style={{ color: '#f9fafb', marginTop: '1.5rem', marginBottom: '1rem' }}>🏆 Key Discoveries</h3>
           <p style={{ marginBottom: '1rem' }}>
-            RaceIQ has uncovered counterintuitive insights that challenge conventional racing wisdom:
+            Tortoise has uncovered counterintuitive insights that challenge conventional racing wisdom:
           </p>
           <ul style={{ marginLeft: '2rem' }}>
             <li><strong>Consistency beats speed:</strong> Drivers with high S2 consistency achieve podium 2.6× more often than those with fast best laps but low consistency</li>

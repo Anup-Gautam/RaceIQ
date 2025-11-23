@@ -1,5 +1,5 @@
 """
-RaceIQ Main Pipeline
+Tortoise Main Pipeline
 Runs the complete data analysis pipeline
 """
 
@@ -10,11 +10,11 @@ from run_analysis import run_all_analysis
 from generate_outputs import generate_all_outputs
 
 def main():
-    """Run complete RaceIQ pipeline"""
+    """Run complete Tortoise pipeline"""
     base_path = Path(__file__).parent.parent
     
     print("="*60)
-    print("RACEIQ DATA ANALYSIS PIPELINE")
+    print("TORTOISE DATA ANALYSIS PIPELINE")
     print("="*60)
     
     # Step 1: Load data

@@ -1,6 +1,6 @@
-# 🏁 RaceIQ - Pattern Recognition Engine
+# 🏁 Tortoise - Pattern Recognition Engine
 
-**RaceIQ** is a comprehensive pattern recognition engine that analyzes racing data across seven different racetracks to discover hidden performance patterns, skill transfer correlations, and driver archetypes using unsupervised machine learning techniques.
+**Tortoise** is a comprehensive pattern recognition engine that analyzes racing data across seven different racetracks to discover hidden performance patterns, skill transfer correlations, and driver archetypes using unsupervised machine learning techniques.
 
 ## 📋 Table of Contents
 
@@ -17,7 +17,7 @@
 
 ## 🎯 Overview
 
-Unlike traditional racing analytics that focus on single-track or single-race analysis, RaceIQ performs cross-track machine learning analysis to answer questions like:
+Unlike traditional racing analytics that focus on single-track or single-race analysis, Tortoise performs cross-track machine learning analysis to answer questions like:
 
 - Do skills learned at technical tracks transfer to high-speed tracks?
 - What are the hidden predictors of race success that human engineers miss?
@@ -207,7 +207,7 @@ Creates 9 JSON files for frontend:
 
 1. **Overview** (`/`)
    - Hero statistics (laps, patterns, drivers, tracks)
-   - About RaceIQ section explaining the project
+   - About Tortoise section explaining the project
    - Track clustering visualization
 
 2. **Correlations** (`/correlations`)
