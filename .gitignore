@@ -1,0 +1,69 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Production builds
+frontend/build/
+frontend/dist/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+
+# Data files - EXCLUDE ALL CSV AND DATA FILES
+*.csv
+*.CSV
+Data_analysis/features_matrix.csv
+Data_analysis/ml_results.json
+Data_analysis/data_summary.json
+
+# Frontend data files (generated JSON)
+frontend/public/data/*.json
+Data_analysis/frontend/public/data/*.json
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Netlify
+.netlify/
+
+# Keep code files - these are explicitly tracked:
+# - All .py files
+# - All .js files
+# - All .jsx files
+# - All .json config files (package.json, etc.)
+# - All .md files
+# - All .css files
+# - All .html files
+# - netlify.toml
+# - requirements.txt
+# - tailwind.config.js
+# - postcss.config.js
