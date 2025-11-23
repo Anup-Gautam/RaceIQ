@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { 
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell,
-  ScatterChart, Scatter, ZAxis,
+  ScatterChart, Scatter,
   ComposedChart, Line, Area,
   PieChart, Pie, Cell as PieCell,
   Legend

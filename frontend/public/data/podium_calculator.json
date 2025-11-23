@@ -1,0 +1,6267 @@
+{
+  "model": {
+    "coefficients": {
+      "s2_std": 0.20422267088321724,
+      "consistency_score": 2.6228193121863876,
+      "tire_degradation": 0.05957382827011995,
+      "clutch_score": 0.011581526458859749,
+      "post_fcy_performance": 0.08632946258541688,
+      "s1_std": -0.12773547414703734,
+      "s3_std": -0.02672523730868399,
+      "late_pace": 0.005509172396547305
+    },
+    "intercept": -1.5482344295336705,
+    "features": [
+      "s2_std",
+      "consistency_score",
+      "tire_degradation",
+      "clutch_score",
+      "post_fcy_performance",
+      "s1_std",
+      "s3_std",
+      "late_pace"
+    ],
+    "accuracy": 0.6615384615384615,
+    "roc_auc": 0.5640394088669951,
+    "n_samples": 260
+  },
+  "improvement_limits": {
+    "s2_std": {
+      "max_improvement": 0.2,
+      "direction": "decrease",
+      "min_value": 0.3
+    },
+    "s1_std": {
+      "max_improvement": 0.2,
+      "direction": "decrease",
+      "min_value": 0.3
+    },
+    "s3_std": {
+      "max_improvement": 0.2,
+      "direction": "decrease",
+      "min_value": 0.3
+    },
+    "consistency_score": {
+      "max_improvement": 0.1,
+      "direction": "increase",
+      "max_value": 0.98
+    },
+    "tire_degradation": {
+      "max_improvement": 0.3,
+      "direction": "decrease",
+      "min_value": 0.5
+    },
+    "clutch_score": {
+      "max_improvement": 0.15,
+      "direction": "increase",
+      "max_value": 10.0
+    },
+    "post_fcy_performance": {
+      "max_improvement": 0.2,
+      "direction": "increase",
+      "max_value": 15.0
+    },
+    "late_pace": {
+      "max_improvement": 0.15,
+      "direction": "decrease",
+      "min_value": 80.0
+    }
+  },
+  "baseline_probabilities": [
+    {
+      "driver": 3,
+      "track": "barber",
+      "race": 1,
+      "probability": 66.68,
+      "features": {
+        "s2_std": 2.923985587849009,
+        "consistency_score": 0.1158579885083714,
+        "tire_degradation": -7.323777777777792,
+        "clutch_score": 2.412587159548568,
+        "post_fcy_performance": 18.800576134011685,
+        "s1_std": 2.8536349738714946,
+        "s3_std": 2.227439723269234,
+        "late_pace": 99.92211111111112
+      }
+    },
+    {
+      "driver": 111,
+      "track": "barber",
+      "race": 1,
+      "probability": 66.89,
+      "features": {
+        "s2_std": 3.33574136781233,
+        "consistency_score": 0.1136738390428417,
+        "tire_degradation": -7.40933333333335,
+        "clutch_score": 2.5749729368111494,
+        "post_fcy_performance": 17.589102303481294,
+        "s1_std": 2.537136627737313,
+        "s3_std": 2.152808672290034,
+        "late_pace": 99.26977777777778
+      }
+    },
+    {
+      "driver": 113,
+      "track": "barber",
+      "race": 1,
+      "probability": 66.65,
+      "features": {
+        "s2_std": 3.185271881663159,
+        "consistency_score": 0.1144359325932127,
+        "tire_degradation": -7.652444444444455,
+        "clutch_score": 2.703529502434966,
+        "post_fcy_performance": 18.225199388067317,
+        "s1_std": 2.730736606321712,
+        "s3_std": 2.1163911954805736,
+        "late_pace": 99.20044444444444
+      }
+    },
+    {
+      "driver": 13,
+      "track": "barber",
+      "race": 1,
+      "probability": 67.03,
+      "features": {
+        "s2_std": 3.794366830430954,
+        "consistency_score": 0.1061555136539924,
+        "tire_degradation": -6.700666666666677,
+        "clutch_score": 1.9246344890581768,
+        "post_fcy_performance": 16.449434981812356,
+        "s1_std": 2.5187275571451755,
+        "s3_std": 2.211780433634788,
+        "late_pace": 98.42811111111112
+      }
+    },
+    {
+      "driver": 18,
+      "track": "barber",
+      "race": 1,
+      "probability": 62.67,
+      "features": {
+        "s2_std": 2.5637470714081454,
+        "consistency_score": 0.1252003280351312,
+        "tire_degradation": -7.878749999999982,
+        "clutch_score": 0.863166774712163,
+        "post_fcy_performance": 17.629123056140582,
+        "s1_std": 2.8253002661391857,
+        "s3_std": 1.9587527322645517,
+        "late_pace": 102.598
+      }
+    },
+    {
+      "driver": 2,
+      "track": "barber",
+      "race": 1,
+      "probability": 67.11,
+      "features": {
+        "s2_std": 3.705113389731713,
+        "consistency_score": 0.1082840898786197,
+        "tire_degradation": -7.2592222222222205,
+        "clutch_score": 1.995145695102164,
+        "post_fcy_performance": 16.90584332950872,
+        "s1_std": 2.4611332934888126,
+        "s3_std": 2.193528035418112,
+        "late_pace": 98.68655555555556
+      }
+    },
+    {
+      "driver": 21,
+      "track": "barber",
+      "race": 1,
+      "probability": 66.29,
+      "features": {
+        "s2_std": 3.08761713827874,
+        "consistency_score": 0.1143955656837278,
+        "tire_degradation": -7.581888888888869,
+        "clutch_score": 2.5404060521128264,
+        "post_fcy_performance": 18.39718644674928,
+        "s1_std": 2.822890095279745,
+        "s3_std": 2.1638995887516206,
+        "late_pace": 99.17911111111113
+      }
+    },
+    {
+      "driver": 22,
+      "track": "barber",
+      "race": 1,
+      "probability": 67.34,
+      "features": {
+        "s2_std": 3.753312719501317,
+        "consistency_score": 0.105584030087185,
+        "tire_degradation": -7.428333333333342,
+        "clutch_score": 2.679195297623973,
+        "post_fcy_performance": 17.10223500589481,
+        "s1_std": 2.46095766224952,
+        "s3_std": 2.3363893711124644,
+        "late_pace": 98.05622222222222
+      }
+    },
+    {
+      "driver": 31,
+      "track": "barber",
+      "race": 1,
+      "probability": 66.85,
+      "features": {
+        "s2_std": 3.4533548513503107,
+        "consistency_score": 0.112902711525691,
+        "tire_degradation": -7.578111111111099,
+        "clutch_score": 2.7375952544715383,
+        "post_fcy_performance": 17.379945589766585,
+        "s1_std": 2.5215681781231054,
+        "s3_std": 2.135759338400971,
+        "late_pace": 99.21977777777778
+      }
+    },
+    {
+      "driver": 41,
+      "track": "barber",
+      "race": 1,
+      "probability": 68.25,
+      "features": {
+        "s2_std": 3.3327684935964017,
+        "consistency_score": 0.1122789842271409,
+        "tire_degradation": -7.311999999999998,
+        "clutch_score": 2.351107200769315,
+        "post_fcy_performance": 18.48013574013124,
+        "s1_std": 2.621621820297689,
+        "s3_std": 2.202726271156048,
+        "late_pace": 98.98044444444446
+      }
+    },
+    {
+      "driver": 46,
+      "track": "barber",
+      "race": 1,
+      "probability": 59.33,
+      "features": {
+        "s2_std": 3.3004976811111293,
+        "consistency_score": 0.1056723284541662,
+        "tire_degradation": -10.039888888888882,
+        "clutch_score": 2.4680184096028257,
+        "post_fcy_performance": 17.309718854446576,
+        "s1_std": 3.0461348817720983,
+        "s3_std": 4.028534838253226,
+        "late_pace": 99.25566666666668
+      }
+    },
+    {
+      "driver": 47,
+      "track": "barber",
+      "race": 1,
+      "probability": 66.84,
+      "features": {
+        "s2_std": 3.625641343796454,
+        "consistency_score": 0.1088569150956931,
+        "tire_degradation": -7.349333333333348,
+        "clutch_score": 1.908803037114291,
+        "post_fcy_performance": 17.062852954405372,
+        "s1_std": 2.4970222419760457,
+        "s3_std": 2.186921393074561,
+        "late_pace": 98.65977777777778
+      }
+    },
+    {
+      "driver": 5,
+      "track": "barber",
+      "race": 1,
+      "probability": 65.6,
+      "features": {
+        "s2_std": 2.937840717222784,
+        "consistency_score": 0.114930555190052,
+        "tire_degradation": -8.123222222222225,
+        "clutch_score": 2.956923210311837,
+        "post_fcy_performance": 19.056415529332373,
+        "s1_std": 3.091921492481579,
+        "s3_std": 2.171496725415452,
+        "late_pace": 99.84688888888888
+      }
+    },
+    {
+      "driver": 51,
+      "track": "barber",
+      "race": 1,
+      "probability": 66.55,
+      "features": {
+        "s2_std": 2.9685139370233715,
+        "consistency_score": 0.1062787961400341,
+        "tire_degradation": -3.625333333333316,
+        "clutch_score": 3.3933956566107355,
+        "post_fcy_performance": 17.261112641592,
+        "s1_std": 3.2559185508373227,
+        "s3_std": 4.4002165402556725,
+        "late_pace": 103.711
+      }
+    },
+    {
+      "driver": 55,
+      "track": "barber",
+      "race": 1,
+      "probability": 68.1,
+      "features": {
+        "s2_std": 3.638779294624195,
+        "consistency_score": 0.1094615908668563,
+        "tire_degradation": -7.441888888888897,
+        "clutch_score": 2.095505593248177,
+        "post_fcy_performance": 17.73705601403869,
+        "s1_std": 2.520704826702606,
+        "s3_std": 2.1205261630022885,
+        "late_pace": 98.54744444444444
+      }
+    },
+    {
+      "driver": 58,
+      "track": "barber",
+      "race": 1,
+      "probability": 65.81,
+      "features": {
+        "s2_std": 2.7726877304724105,
+        "consistency_score": 0.1194457475079499,
+        "tire_degradation": -6.805555555555543,
+        "clutch_score": 2.0594117604891897,
+        "post_fcy_performance": 18.181888420307104,
+        "s1_std": 2.8506849829111025,
+        "s3_std": 2.135489051055867,
+        "late_pace": 101.03344444444446
+      }
+    },
+    {
+      "driver": 7,
+      "track": "barber",
+      "race": 1,
+      "probability": 67.81,
+      "features": {
+        "s2_std": 3.508634057801832,
+        "consistency_score": 0.1110067294274418,
+        "tire_degradation": -7.224111111111114,
+        "clutch_score": 2.185451516015173,
+        "post_fcy_performance": 17.667165897191516,
+        "s1_std": 2.5245186644545705,
+        "s3_std": 2.14713978767249,
+        "late_pace": 98.99977777777778
+      }
+    },
+    {
+      "driver": 72,
+      "track": "barber",
+      "race": 1,
+      "probability": 66.64,
+      "features": {
+        "s2_std": 3.7400227572932265,
+        "consistency_score": 0.107462498900949,
+        "tire_degradation": -6.6003333333333245,
+        "clutch_score": 2.055424498017007,
+        "post_fcy_performance": 16.206995550429166,
+        "s1_std": 2.5194608912099,
+        "s3_std": 2.165418177440764,
+        "late_pace": 98.83422222222222
+      }
+    },
+    {
+      "driver": 80,
+      "track": "barber",
+      "race": 1,
+      "probability": 58.54,
+      "features": {
+        "s2_std": 2.9648776642726027,
+        "consistency_score": 0.1119067632289154,
+        "tire_degradation": -8.585444444444448,
+        "clutch_score": 3.2839151721292885,
+        "post_fcy_performance": 17.239470009417737,
+        "s1_std": 4.049291813500627,
+        "s3_std": 2.1759051370044067,
+        "late_pace": 100.69144444444444
+      }
+    },
+    {
+      "driver": 88,
+      "track": "barber",
+      "race": 1,
+      "probability": 17.42,
+      "features": {
+        "s2_std": 3.766322299892385,
+        "consistency_score": 0.0148382204207601,
+        "tire_degradation": 43.207250000000016,
+        "clutch_score": -176.34992329133627,
+        "post_fcy_performance": 1.1922336818741817,
+        "s1_std": 4.316825174794966,
+        "s3_std": 66.75048607985889,
+        "late_pace": 160.56425000000002
+      }
+    },
+    {
+      "driver": 93,
+      "track": "barber",
+      "race": 1,
+      "probability": 66.82,
+      "features": {
+        "s2_std": 2.9688778290968068,
+        "consistency_score": 0.1161776293882336,
+        "tire_degradation": -7.036666666666662,
+        "clutch_score": 2.590372549586545,
+        "post_fcy_performance": 18.45442225305732,
+        "s1_std": 2.8329198225148766,
+        "s3_std": 2.110610392935947,
+        "late_pace": 100.11355555555556
+      }
+    },
+    {
+      "driver": 98,
+      "track": "barber",
+      "race": 1,
+      "probability": 66.95,
+      "features": {
+        "s2_std": 3.5983783436019765,
+        "consistency_score": 0.1095076989648661,
+        "tire_degradation": -7.393888888888895,
+        "clutch_score": 2.041886024915348,
+        "post_fcy_performance": 17.19529200463981,
+        "s1_std": 2.5204571053566887,
+        "s3_std": 2.144237399552817,
+        "late_pace": 98.65444444444444
+      }
+    },
+    {
+      "driver": 3,
+      "track": "barber",
+      "race": 2,
+      "probability": 53.34,
+      "features": {
+        "s2_std": 0.2611767504460249,
+        "consistency_score": 0.4630639526969559,
+        "tire_degradation": -0.4325555555555382,
+        "clutch_score": -0.0410714708102205,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.7902681707787753,
+        "s3_std": 0.2707438215938028,
+        "late_pace": 99.58611111111112
+      }
+    },
+    {
+      "driver": 111,
+      "track": "barber",
+      "race": 2,
+      "probability": 61.69,
+      "features": {
+        "s2_std": 0.4309258320770788,
+        "consistency_score": 0.5632527630605689,
+        "tire_degradation": -0.4087777777777717,
+        "clutch_score": 0.0718294035414597,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.4524404883547068,
+        "s3_std": 0.1267900140861169,
+        "late_pace": 98.77088888888888
+      }
+    },
+    {
+      "driver": 113,
+      "track": "barber",
+      "race": 2,
+      "probability": 8.46,
+      "features": {
+        "s2_std": 1.8385188701423676,
+        "consistency_score": 0.0129551467335687,
+        "tire_degradation": 30.374000000000024,
+        "clutch_score": -136.0559485233238,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.9168903410759175,
+        "s3_std": 75.81063074098523,
+        "late_pace": 144.23725000000002
+      }
+    },
+    {
+      "driver": 13,
+      "track": "barber",
+      "race": 2,
+      "probability": 72.96,
+      "features": {
+        "s2_std": 0.1130703531519408,
+        "consistency_score": 0.7579824548155308,
+        "tire_degradation": 0.4302222222222269,
+        "clutch_score": -0.6419404504324763,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.1829097559890636,
+        "s3_std": 0.1981091837276825,
+        "late_pace": 98.00788888888889
+      }
+    },
+    {
+      "driver": 18,
+      "track": "barber",
+      "race": 2,
+      "probability": 47.42,
+      "features": {
+        "s2_std": 0.718352396280659,
+        "consistency_score": 0.3175799764575031,
+        "tire_degradation": 1.009777777777785,
+        "clutch_score": 0.2410349101989493,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.9142633779259256,
+        "s3_std": 1.721790295988982,
+        "late_pace": 102.60677777777776
+      }
+    },
+    {
+      "driver": 2,
+      "track": "barber",
+      "race": 2,
+      "probability": 65.48,
+      "features": {
+        "s2_std": 0.1867502470196624,
+        "consistency_score": 0.6420048682205893,
+        "tire_degradation": -0.2250000000000227,
+        "clutch_score": -0.1506544825882798,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.42353594076736,
+        "s3_std": 0.2237839655281702,
+        "late_pace": 98.28699999999998
+      }
+    },
+    {
+      "driver": 21,
+      "track": "barber",
+      "race": 2,
+      "probability": 58.45,
+      "features": {
+        "s2_std": 0.2883001540686004,
+        "consistency_score": 0.5358184386503876,
+        "tire_degradation": -0.63344444444445,
+        "clutch_score": -0.111855284601108,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.5834828969261144,
+        "s3_std": 0.1333547006688411,
+        "late_pace": 98.48877777777776
+      }
+    },
+    {
+      "driver": 22,
+      "track": "barber",
+      "race": 2,
+      "probability": 67.88,
+      "features": {
+        "s2_std": 0.1483447784063301,
+        "consistency_score": 0.6714707195819657,
+        "tire_degradation": 0.2324444444444395,
+        "clutch_score": -0.5131431276961508,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.2963445638595391,
+        "s3_std": 0.1721452990013205,
+        "late_pace": 97.95333333333332
+      }
+    },
+    {
+      "driver": 31,
+      "track": "barber",
+      "race": 2,
+      "probability": 18.92,
+      "features": {
+        "s2_std": 0.3822618246229962,
+        "consistency_score": 0.0534624748339149,
+        "tire_degradation": -0.0027777777777799,
+        "clutch_score": 3.970860887953223,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.95845472255166,
+        "s3_std": 17.595668176119442,
+        "late_pace": 99.66144444444446
+      }
+    },
+    {
+      "driver": 41,
+      "track": "barber",
+      "race": 2,
+      "probability": 28.34,
+      "features": {
+        "s2_std": 0.3694466815781413,
+        "consistency_score": 0.2037851910858779,
+        "tire_degradation": -3.7141111111111087,
+        "clutch_score": 0.8382717998019767,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.7706125714867378,
+        "s3_std": 3.510540621286656,
+        "late_pace": 98.44288888888887
+      }
+    },
+    {
+      "driver": 46,
+      "track": "barber",
+      "race": 2,
+      "probability": 62.81,
+      "features": {
+        "s2_std": 0.2413497319693831,
+        "consistency_score": 0.5886351862074448,
+        "tire_degradation": -0.0705555555555577,
+        "clutch_score": 0.309039598621981,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.4570658129934982,
+        "s3_std": 0.173643510627575,
+        "late_pace": 98.5081111111111
+      }
+    },
+    {
+      "driver": 47,
+      "track": "barber",
+      "race": 2,
+      "probability": 63.81,
+      "features": {
+        "s2_std": 0.4308979473208144,
+        "consistency_score": 0.5871564328028763,
+        "tire_degradation": 0.2569999999999908,
+        "clutch_score": -1.070794405808151,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.4278458902690383,
+        "s3_std": 0.190270247794465,
+        "late_pace": 98.79966666666664
+      }
+    },
+    {
+      "driver": 5,
+      "track": "barber",
+      "race": 2,
+      "probability": 54.22,
+      "features": {
+        "s2_std": 0.3532887269687144,
+        "consistency_score": 0.4665906261725748,
+        "tire_degradation": -0.4838888888888988,
+        "clutch_score": -0.1583356918829444,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.669081921534925,
+        "s3_std": 0.2545715146764384,
+        "late_pace": 98.796
+      }
+    },
+    {
+      "driver": 51,
+      "track": "barber",
+      "race": 2,
+      "probability": 54.24,
+      "features": {
+        "s2_std": 0.3515124163325936,
+        "consistency_score": 0.4531914978039371,
+        "tire_degradation": 0.330888888888893,
+        "clutch_score": -0.6258048482931555,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.7171063730469494,
+        "s3_std": 0.5284875732497079,
+        "late_pace": 100.00755555555556
+      }
+    },
+    {
+      "driver": 55,
+      "track": "barber",
+      "race": 2,
+      "probability": 67.06,
+      "features": {
+        "s2_std": 0.181556945929878,
+        "consistency_score": 0.6666758512565012,
+        "tire_degradation": -0.2438749999999885,
+        "clutch_score": 0.3098633176720494,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.3979713808805852,
+        "s3_std": 0.2255941352210952,
+        "late_pace": 98.222
+      }
+    },
+    {
+      "driver": 58,
+      "track": "barber",
+      "race": 2,
+      "probability": 12.11,
+      "features": {
+        "s2_std": 2.7033399854482,
+        "consistency_score": 0.0413442748282621,
+        "tire_degradation": -14.85566666666665,
+        "clutch_score": 5.106244954547686,
+        "post_fcy_performance": 0.0,
+        "s1_std": 2.3689647419744237,
+        "s3_std": 19.212963514993984,
+        "late_pace": 99.43533333333336
+      }
+    },
+    {
+      "driver": 7,
+      "track": "barber",
+      "race": 2,
+      "probability": 57.87,
+      "features": {
+        "s2_std": 0.3035769124932619,
+        "consistency_score": 0.5201652187415428,
+        "tire_degradation": -0.4385555555555669,
+        "clutch_score": 0.1930173455508692,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.5900547055617434,
+        "s3_std": 0.2041274986724861,
+        "late_pace": 98.77433333333332
+      }
+    },
+    {
+      "driver": 72,
+      "track": "barber",
+      "race": 2,
+      "probability": 69.65,
+      "features": {
+        "s2_std": 0.1752974305386105,
+        "consistency_score": 0.700900702726278,
+        "tire_degradation": 0.1220000000000141,
+        "clutch_score": 0.0675923629332838,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.3130114587046665,
+        "s3_std": 0.2352282354466035,
+        "late_pace": 98.56166666666668
+      }
+    },
+    {
+      "driver": 80,
+      "track": "barber",
+      "race": 2,
+      "probability": 11.34,
+      "features": {
+        "s2_std": 0.6741537144963532,
+        "consistency_score": 0.0528134363393413,
+        "tire_degradation": -10.85333333333334,
+        "clutch_score": 3.8444345105051383,
+        "post_fcy_performance": 0.0,
+        "s1_std": 2.106105200117058,
+        "s3_std": 17.33293555986715,
+        "late_pace": 99.8412222222222
+      }
+    },
+    {
+      "driver": 88,
+      "track": "barber",
+      "race": 2,
+      "probability": 53.57,
+      "features": {
+        "s2_std": 0.3037659983375891,
+        "consistency_score": 0.4632164766195338,
+        "tire_degradation": -0.5827777777777925,
+        "clutch_score": 0.2638028721027365,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.7181626937970985,
+        "s3_std": 0.2369048069713605,
+        "late_pace": 98.73444444444443
+      }
+    },
+    {
+      "driver": 93,
+      "track": "barber",
+      "race": 2,
+      "probability": 1.8,
+      "features": {
+        "s2_std": 2.3220765815024964,
+        "consistency_score": 0.0182624798809039,
+        "tire_degradation": -28.93025,
+        "clutch_score": 14.69121765658867,
+        "post_fcy_performance": 0.0,
+        "s1_std": 5.148241050401921,
+        "s3_std": 49.188371033758685,
+        "late_pace": 100.40775
+      }
+    },
+    {
+      "driver": 98,
+      "track": "barber",
+      "race": 2,
+      "probability": 35.26,
+      "features": {
+        "s2_std": 0.9589526880594824,
+        "consistency_score": 0.0997738741303624,
+        "tire_degradation": 6.411888888888896,
+        "clutch_score": -3.087953316249864,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.8103572186889685,
+        "s3_std": 7.856708488197747,
+        "late_pace": 104.90766666666669
+      }
+    },
+    {
+      "driver": 21,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 42.52,
+      "features": {
+        "s2_std": 4.20650849170656,
+        "consistency_score": 0.0635768649103985,
+        "tire_degradation": -0.639941176470586,
+        "clutch_score": 5.700334957840041,
+        "post_fcy_performance": 6.068338243916432,
+        "s1_std": 5.931516660648483,
+        "s3_std": 5.029941679597372,
+        "late_pace": 101.89235294117644
+      }
+    },
+    {
+      "driver": 3,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 38.81,
+      "features": {
+        "s2_std": 3.642172561372881,
+        "consistency_score": 0.0670096231266803,
+        "tire_degradation": -0.8845294117647029,
+        "clutch_score": 5.298273443261782,
+        "post_fcy_performance": 5.754799424884636,
+        "s1_std": 6.04923964719539,
+        "s3_std": 4.684565413917282,
+        "late_pace": 102.7179411764706
+      }
+    },
+    {
+      "driver": 11,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 40.05,
+      "features": {
+        "s2_std": 3.8627303346805792,
+        "consistency_score": 0.0667530388929365,
+        "tire_degradation": -0.6817500000000081,
+        "clutch_score": 5.142872513702557,
+        "post_fcy_performance": 5.550616844321487,
+        "s1_std": 5.968142599348129,
+        "s3_std": 4.60231045872196,
+        "late_pace": 103.1035
+      }
+    },
+    {
+      "driver": 111,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 39.31,
+      "features": {
+        "s2_std": 3.7902850026796746,
+        "consistency_score": 0.0651242171618742,
+        "tire_degradation": -1.5426249999999868,
+        "clutch_score": 5.387735866491711,
+        "post_fcy_performance": 6.268538061472362,
+        "s1_std": 6.056631890745879,
+        "s3_std": 4.899965230645873,
+        "late_pace": 101.989
+      }
+    },
+    {
+      "driver": 113,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 43.93,
+      "features": {
+        "s2_std": 4.531250078493367,
+        "consistency_score": 0.0612115007423245,
+        "tire_degradation": -0.9353749999999934,
+        "clutch_score": 6.000446288851567,
+        "post_fcy_performance": 6.336133740938001,
+        "s1_std": 5.941222669943128,
+        "s3_std": 5.292755762796483,
+        "late_pace": 101.258375
+      }
+    },
+    {
+      "driver": 13,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 44.79,
+      "features": {
+        "s2_std": 4.7505989881439,
+        "consistency_score": 0.0583166865843071,
+        "tire_degradation": -0.0674999999999954,
+        "clutch_score": 6.159465806322673,
+        "post_fcy_performance": 6.094932521873784,
+        "s1_std": 6.153138220828083,
+        "s3_std": 5.526508634405076,
+        "late_pace": 100.973625
+      }
+    },
+    {
+      "driver": 18,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 37.29,
+      "features": {
+        "s2_std": 3.572335439715334,
+        "consistency_score": 0.0678978004358564,
+        "tire_degradation": -0.9170000000000158,
+        "clutch_score": 4.618811132363277,
+        "post_fcy_performance": 5.640995972886086,
+        "s1_std": 6.396721857206357,
+        "s3_std": 4.366255308085478,
+        "late_pace": 103.242125
+      }
+    },
+    {
+      "driver": 2,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 45.93,
+      "features": {
+        "s2_std": 4.955102415019627,
+        "consistency_score": 0.0589095119307556,
+        "tire_degradation": -0.5036249999999995,
+        "clutch_score": 5.904937782928572,
+        "post_fcy_performance": 6.312753636991965,
+        "s1_std": 6.061783762353986,
+        "s3_std": 5.479526764237949,
+        "late_pace": 100.957125
+      }
+    },
+    {
+      "driver": 20,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 32.03,
+      "features": {
+        "s2_std": 1.8469882994923208,
+        "consistency_score": 0.1074017727638483,
+        "tire_degradation": -2.5773749999999893,
+        "clutch_score": 3.5597940907872223,
+        "post_fcy_performance": 3.607819834631983,
+        "s1_std": 4.460856619357042,
+        "s3_std": 2.8279555749421084,
+        "late_pace": 105.838625
+      }
+    },
+    {
+      "driver": 22,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 45.59,
+      "features": {
+        "s2_std": 4.816678512770456,
+        "consistency_score": 0.0583225912561088,
+        "tire_degradation": 0.2507499999999965,
+        "clutch_score": 6.15940813253767,
+        "post_fcy_performance": 6.051957324727483,
+        "s1_std": 6.1466826450095455,
+        "s3_std": 5.477673002288472,
+        "late_pace": 101.1665
+      }
+    },
+    {
+      "driver": 46,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 45.66,
+      "features": {
+        "s2_std": 4.841693358574203,
+        "consistency_score": 0.0589408578091871,
+        "tire_degradation": -0.4908749999999884,
+        "clutch_score": 6.05762286588584,
+        "post_fcy_performance": 6.388423342135474,
+        "s1_std": 6.067671098662028,
+        "s3_std": 5.356668779553778,
+        "late_pace": 101.01825
+      }
+    },
+    {
+      "driver": 47,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 46.02,
+      "features": {
+        "s2_std": 4.85348219671672,
+        "consistency_score": 0.059494463783915,
+        "tire_degradation": -0.4573749999999847,
+        "clutch_score": 6.24426986029425,
+        "post_fcy_performance": 6.326401983973651,
+        "s1_std": 5.990429621808953,
+        "s3_std": 5.309926419307667,
+        "late_pace": 101.18425
+      }
+    },
+    {
+      "driver": 5,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 39.61,
+      "features": {
+        "s2_std": 3.825712655782629,
+        "consistency_score": 0.06515811570755,
+        "tire_degradation": -1.3788750000000078,
+        "clutch_score": 5.285466682073124,
+        "post_fcy_performance": 6.218561677366131,
+        "s1_std": 6.0526630970304165,
+        "s3_std": 4.885246550427269,
+        "late_pace": 102.057125
+      }
+    },
+    {
+      "driver": 51,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 39.91,
+      "features": {
+        "s2_std": 3.985202511020757,
+        "consistency_score": 0.0646823699552584,
+        "tire_degradation": -2.022625000000005,
+        "clutch_score": 5.73362599601257,
+        "post_fcy_performance": 6.433943472966806,
+        "s1_std": 6.099581345028147,
+        "s3_std": 4.738210141133302,
+        "late_pace": 101.660625
+      }
+    },
+    {
+      "driver": 55,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 45.21,
+      "features": {
+        "s2_std": 4.8014494992498,
+        "consistency_score": 0.0582819526325261,
+        "tire_degradation": -0.0857500000000044,
+        "clutch_score": 5.76837204222084,
+        "post_fcy_performance": 6.2354617380953,
+        "s1_std": 6.167940202743164,
+        "s3_std": 5.464387175718229,
+        "late_pace": 100.990875
+      }
+    },
+    {
+      "driver": 57,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 41.23,
+      "features": {
+        "s2_std": 5.106657348337886,
+        "consistency_score": 0.0588379200823391,
+        "tire_degradation": -6.895250000000004,
+        "clutch_score": 7.155097719983525,
+        "post_fcy_performance": 10.565904901248576,
+        "s1_std": 7.59332978299595,
+        "s3_std": 7.519656217097516,
+        "late_pace": 105.8915
+      }
+    },
+    {
+      "driver": 61,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 37.57,
+      "features": {
+        "s2_std": 3.6605607601106063,
+        "consistency_score": 0.0669995213932652,
+        "tire_degradation": -1.720624999999984,
+        "clutch_score": 5.373774805145459,
+        "post_fcy_performance": 6.1584942002229255,
+        "s1_std": 6.429474676471213,
+        "s3_std": 4.381786918422842,
+        "late_pace": 102.373375
+      }
+    },
+    {
+      "driver": 7,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 56.48,
+      "features": {
+        "s2_std": 0.1627103393932127,
+        "consistency_score": 0.5240460422980546,
+        "tire_degradation": -0.7829999999999728,
+        "clutch_score": -0.0627396116814716,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.8162749870879623,
+        "s3_std": 0.0874620956861785,
+        "late_pace": 100.8
+      }
+    },
+    {
+      "driver": 72,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 45.38,
+      "features": {
+        "s2_std": 5.474365897750727,
+        "consistency_score": 0.0500125191098219,
+        "tire_degradation": 19.32833333333336,
+        "clutch_score": -19.58531496136999,
+        "post_fcy_performance": -4.024296784813994,
+        "s1_std": 6.990285330371001,
+        "s3_std": 8.763415109759716,
+        "late_pace": 120.47216666666668
+      }
+    },
+    {
+      "driver": 8,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 26.56,
+      "features": {
+        "s2_std": 2.4099815297728235,
+        "consistency_score": 0.0853802405556808,
+        "tire_degradation": -5.168749999999989,
+        "clutch_score": 4.498772224081159,
+        "post_fcy_performance": 4.896597869581036,
+        "s1_std": 6.542927833928784,
+        "s3_std": 3.40137931659858,
+        "late_pace": 104.335625
+      }
+    },
+    {
+      "driver": 80,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 37.79,
+      "features": {
+        "s2_std": 4.142984464034445,
+        "consistency_score": 0.0638898661183434,
+        "tire_degradation": 14.448750000000018,
+        "clutch_score": -41.5326493391264,
+        "post_fcy_performance": 0.0,
+        "s1_std": 6.718832630022599,
+        "s3_std": 5.317927421853607,
+        "late_pace": 119.21625
+      }
+    },
+    {
+      "driver": 88,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 43.46,
+      "features": {
+        "s2_std": 4.444039110989011,
+        "consistency_score": 0.0625264784519279,
+        "tire_degradation": -0.8498749999999973,
+        "clutch_score": 6.053942853888763,
+        "post_fcy_performance": 6.114274262340582,
+        "s1_std": 5.91949537363292,
+        "s3_std": 5.166381728652447,
+        "late_pace": 101.714
+      }
+    },
+    {
+      "driver": 89,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 39.72,
+      "features": {
+        "s2_std": 3.847989711324804,
+        "consistency_score": 0.064471961687761,
+        "tire_degradation": -1.0578749999999957,
+        "clutch_score": 4.916638378869283,
+        "post_fcy_performance": 6.122522071762895,
+        "s1_std": 6.075372915429839,
+        "s3_std": 4.967681480715743,
+        "late_pace": 102.0725
+      }
+    },
+    {
+      "driver": 93,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 39.65,
+      "features": {
+        "s2_std": 3.9102801339742728,
+        "consistency_score": 0.0668154085704542,
+        "tire_degradation": -1.451625000000007,
+        "clutch_score": 5.352626445353037,
+        "post_fcy_performance": 5.900696150565049,
+        "s1_std": 6.059262011550199,
+        "s3_std": 4.557211550431318,
+        "late_pace": 102.56325
+      }
+    },
+    {
+      "driver": 98,
+      "track": "indianapolis",
+      "race": 1,
+      "probability": 45.3,
+      "features": {
+        "s2_std": 4.836862000703158,
+        "consistency_score": 0.0590629563296657,
+        "tire_degradation": -0.6444999999999936,
+        "clutch_score": 6.442953403258285,
+        "post_fcy_performance": 6.285132487719503,
+        "s1_std": 6.064049386469281,
+        "s3_std": 5.365319265860642,
+        "late_pace": 100.971125
+      }
+    },
+    {
+      "driver": 21,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 47.7,
+      "features": {
+        "s2_std": 6.111820709179828,
+        "consistency_score": 0.0544933888854794,
+        "tire_degradation": 19.98586666666668,
+        "clutch_score": -10.374723265607454,
+        "post_fcy_performance": -8.955352980019262,
+        "s1_std": 6.2809225998506,
+        "s3_std": 5.903895493491364,
+        "late_pace": 132.08133333333336
+      }
+    },
+    {
+      "driver": 3,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 48.78,
+      "features": {
+        "s2_std": 6.128337891986496,
+        "consistency_score": 0.0579804274461353,
+        "tire_degradation": 18.895200000000017,
+        "clutch_score": -10.111516923305516,
+        "post_fcy_performance": -8.793904102792613,
+        "s1_std": 5.697082968820376,
+        "s3_std": 5.717260163555423,
+        "late_pace": 131.9738
+      }
+    },
+    {
+      "driver": 11,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 44.64,
+      "features": {
+        "s2_std": 6.130137931183603,
+        "consistency_score": 0.0601462772852137,
+        "tire_degradation": 17.50085714285713,
+        "clutch_score": -10.609414262329942,
+        "post_fcy_performance": -9.705430273935118,
+        "s1_std": 5.6455225012617705,
+        "s3_std": 5.894024428892321,
+        "late_pace": 130.74242857142855
+      }
+    },
+    {
+      "driver": 111,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 43.95,
+      "features": {
+        "s2_std": 6.117346139181702,
+        "consistency_score": 0.0540744035713277,
+        "tire_degradation": 18.001428571428548,
+        "clutch_score": -10.437601575048411,
+        "post_fcy_performance": -9.066215068334463,
+        "s1_std": 6.356560278414933,
+        "s3_std": 6.046732628636182,
+        "late_pace": 130.47071428571428
+      }
+    },
+    {
+      "driver": 113,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 75.33,
+      "features": {
+        "s2_std": 10.794914277102896,
+        "consistency_score": 0.0284546971334638,
+        "tire_degradation": 77.89599999999999,
+        "clutch_score": -35.12608529225528,
+        "post_fcy_performance": -37.39230498125289,
+        "s1_std": 9.620918506913291,
+        "s3_std": 16.168761589352886,
+        "late_pace": 188.861
+      }
+    },
+    {
+      "driver": 13,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 44.87,
+      "features": {
+        "s2_std": 6.296997865536964,
+        "consistency_score": 0.0500885595143485,
+        "tire_degradation": 19.674714285714288,
+        "clutch_score": -10.210646084841455,
+        "post_fcy_performance": -8.49981420646178,
+        "s1_std": 7.329652378127473,
+        "s3_std": 6.717904085382229,
+        "late_pace": 130.82257142857142
+      }
+    },
+    {
+      "driver": 18,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 42.99,
+      "features": {
+        "s2_std": 5.856814391307722,
+        "consistency_score": 0.0612511673220014,
+        "tire_degradation": 15.382428571428576,
+        "clutch_score": -10.084809349574812,
+        "post_fcy_performance": -8.8231948534523,
+        "s1_std": 5.415424712631671,
+        "s3_std": 5.797711655363275,
+        "late_pace": 130.35285714285715
+      }
+    },
+    {
+      "driver": 2,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 44.86,
+      "features": {
+        "s2_std": 6.220645157370178,
+        "consistency_score": 0.0508656648142652,
+        "tire_degradation": 19.52028571428572,
+        "clutch_score": -10.078877647783022,
+        "post_fcy_performance": -8.327806806709532,
+        "s1_std": 7.309844750247933,
+        "s3_std": 6.606112360067304,
+        "late_pace": 130.891
+      }
+    },
+    {
+      "driver": 20,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 38.22,
+      "features": {
+        "s2_std": 5.35009774478821,
+        "consistency_score": 0.0625235562345508,
+        "tire_degradation": 10.328428571428615,
+        "clutch_score": -5.486304826699088,
+        "post_fcy_performance": -4.598559915899463,
+        "s1_std": 6.966329288160463,
+        "s3_std": 6.364960147530673,
+        "late_pace": 130.09757142857146
+      }
+    },
+    {
+      "driver": 22,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 45.77,
+      "features": {
+        "s2_std": 6.557632118077943,
+        "consistency_score": 0.0526157709699957,
+        "tire_degradation": 21.56,
+        "clutch_score": -9.514715704204468,
+        "post_fcy_performance": -9.185135352083606,
+        "s1_std": 7.897906538802048,
+        "s3_std": 7.586468896410604,
+        "late_pace": 132.78714285714287
+      }
+    },
+    {
+      "driver": 31,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 18.46,
+      "features": {
+        "s2_std": 5.996521232621512,
+        "consistency_score": 0.0411155131514455,
+        "tire_degradation": 21.26414285714289,
+        "clutch_score": 0.901843866733815,
+        "post_fcy_performance": -9.212824892188074,
+        "s1_std": 17.898505869586888,
+        "s3_std": 7.387829498279733,
+        "late_pace": 132.8654285714286
+      }
+    },
+    {
+      "driver": 46,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 26.81,
+      "features": {
+        "s2_std": 2.7558746389560307,
+        "consistency_score": 0.0842524281592647,
+        "tire_degradation": -15.781249999999986,
+        "clutch_score": 2.2829534531237043,
+        "post_fcy_performance": 9.3986599638751,
+        "s1_std": 4.408078125034793,
+        "s3_std": 5.1167023497461175,
+        "late_pace": 102.09325
+      }
+    },
+    {
+      "driver": 47,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 49.05,
+      "features": {
+        "s2_std": 6.80119783887208,
+        "consistency_score": 0.051826013469552,
+        "tire_degradation": 20.60542857142856,
+        "clutch_score": -10.574560650357398,
+        "post_fcy_performance": -9.608828598559857,
+        "s1_std": 6.64473090548625,
+        "s3_std": 6.322480013549993,
+        "late_pace": 132.0917142857143
+      }
+    },
+    {
+      "driver": 5,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 4.06,
+      "features": {
+        "s2_std": 4.193305078967438,
+        "consistency_score": 0.0511717501741996,
+        "tire_degradation": -6.6494,
+        "clutch_score": -9.126184327159116,
+        "post_fcy_performance": -9.752196059376852,
+        "s1_std": 13.78323102514962,
+        "s3_std": 6.123118740502597,
+        "late_pace": 120.5678
+      }
+    },
+    {
+      "driver": 51,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 44.05,
+      "features": {
+        "s2_std": 6.096045469288789,
+        "consistency_score": 0.0539970623612399,
+        "tire_degradation": 18.322571428571425,
+        "clutch_score": -10.600192301364746,
+        "post_fcy_performance": -9.056974746191813,
+        "s1_std": 6.445278123320709,
+        "s3_std": 6.007380811092816,
+        "late_pace": 130.60271428571428
+      }
+    },
+    {
+      "driver": 55,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 45.09,
+      "features": {
+        "s2_std": 6.165620533670345,
+        "consistency_score": 0.0505833925538278,
+        "tire_degradation": 19.47314285714286,
+        "clutch_score": -10.074225973597978,
+        "post_fcy_performance": -7.977176347024625,
+        "s1_std": 7.3446065697239105,
+        "s3_std": 6.650989427418776,
+        "late_pace": 130.7597142857143
+      }
+    },
+    {
+      "driver": 57,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 17.56,
+      "features": {
+        "s2_std": 4.038563169072416,
+        "consistency_score": 0.0691686835356496,
+        "tire_degradation": 3.5194000000000045,
+        "clutch_score": -10.36498432436826,
+        "post_fcy_performance": -11.084603181024498,
+        "s1_std": 5.090968828980103,
+        "s3_std": 6.280684708247324,
+        "late_pace": 123.6606
+      }
+    },
+    {
+      "driver": 61,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 2.56,
+      "features": {
+        "s2_std": 4.824068690776837,
+        "consistency_score": 0.0185630788968133,
+        "tire_degradation": 47.00042857142856,
+        "clutch_score": -0.4754674531380912,
+        "post_fcy_performance": 0.9397676961545328,
+        "s1_std": 52.80764364004784,
+        "s3_std": 5.999587460023911,
+        "late_pace": 164.4592857142857
+      }
+    },
+    {
+      "driver": 7,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 45.13,
+      "features": {
+        "s2_std": 6.217371027538178,
+        "consistency_score": 0.0510573056574046,
+        "tire_degradation": 19.30814285714287,
+        "clutch_score": -10.100798030166224,
+        "post_fcy_performance": -8.231477562283048,
+        "s1_std": 7.192625671024335,
+        "s3_std": 6.537548066314127,
+        "late_pace": 130.65257142857143
+      }
+    },
+    {
+      "driver": 72,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 21.39,
+      "features": {
+        "s2_std": 5.709972786326413,
+        "consistency_score": 0.0541777123275668,
+        "tire_degradation": 13.29480000000001,
+        "clutch_score": -14.629477742008254,
+        "post_fcy_performance": -15.687255321230731,
+        "s1_std": 6.9215484948222725,
+        "s3_std": 6.166069918132141,
+        "late_pace": 130.4856
+      }
+    },
+    {
+      "driver": 8,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 44.03,
+      "features": {
+        "s2_std": 6.103229524801691,
+        "consistency_score": 0.0630372419023787,
+        "tire_degradation": 16.051714285714283,
+        "clutch_score": -10.19257847864457,
+        "post_fcy_performance": -9.400701996997114,
+        "s1_std": 5.514617112836191,
+        "s3_std": 5.500773622918225,
+        "late_pace": 130.93714285714285
+      }
+    },
+    {
+      "driver": 80,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 69.6,
+      "features": {
+        "s2_std": 10.927216565872133,
+        "consistency_score": 0.0528315130533208,
+        "tire_degradation": 18.26157142857141,
+        "clutch_score": -9.61935888535734,
+        "post_fcy_performance": -9.344690152201236,
+        "s1_std": 5.756770748139995,
+        "s3_std": 5.729343130198899,
+        "late_pace": 131.614
+      }
+    },
+    {
+      "driver": 86,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 36.86,
+      "features": {
+        "s2_std": 5.881146279869034,
+        "consistency_score": 0.0647395217659556,
+        "tire_degradation": 13.468142857142864,
+        "clutch_score": -10.361040266609423,
+        "post_fcy_performance": -9.291763848842692,
+        "s1_std": 6.545107915722896,
+        "s3_std": 4.630222618624694,
+        "late_pace": 130.43257142857144
+      }
+    },
+    {
+      "driver": 88,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 45.47,
+      "features": {
+        "s2_std": 6.136311178988195,
+        "consistency_score": 0.0533613745441886,
+        "tire_degradation": 18.297428571428554,
+        "clutch_score": -10.06954266294532,
+        "post_fcy_performance": -8.359058712225915,
+        "s1_std": 6.547757394198462,
+        "s3_std": 6.008057442897343,
+        "late_pace": 130.446
+      }
+    },
+    {
+      "driver": 89,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 43.09,
+      "features": {
+        "s2_std": 6.062006240844001,
+        "consistency_score": 0.0545130919094193,
+        "tire_degradation": 17.37999999999998,
+        "clutch_score": -10.321716062633646,
+        "post_fcy_performance": -9.2071996805461,
+        "s1_std": 6.1569647811405845,
+        "s3_std": 6.1323839608653214,
+        "late_pace": 130.38771428571428
+      }
+    },
+    {
+      "driver": 93,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 42.46,
+      "features": {
+        "s2_std": 5.976212030806316,
+        "consistency_score": 0.0548224492120019,
+        "tire_degradation": 17.204142857142884,
+        "clutch_score": -10.273840205008357,
+        "post_fcy_performance": -9.171989570764392,
+        "s1_std": 6.182767957844881,
+        "s3_std": 6.086741820394741,
+        "late_pace": 130.37228571428574
+      }
+    },
+    {
+      "driver": 98,
+      "track": "indianapolis",
+      "race": 2,
+      "probability": 45.33,
+      "features": {
+        "s2_std": 6.215990375779121,
+        "consistency_score": 0.053638773347666,
+        "tire_degradation": 18.734428571428538,
+        "clutch_score": -10.214494413329287,
+        "post_fcy_performance": -9.014888624685996,
+        "s1_std": 6.454633347923528,
+        "s3_std": 6.198899828756431,
+        "late_pace": 130.95871428571428
+      }
+    },
+    {
+      "driver": 3,
+      "track": "cota",
+      "race": 1,
+      "probability": 57.3,
+      "features": {
+        "s2_std": 10.053511417364238,
+        "consistency_score": 0.0414182195279862,
+        "tire_degradation": -1.6897272727272536,
+        "clutch_score": 6.445593766687198,
+        "post_fcy_performance": -2.5152977724715506,
+        "s1_std": 6.138163990969583,
+        "s3_std": 8.063805787969864,
+        "late_pace": 167.61136363636365
+      }
+    },
+    {
+      "driver": 11,
+      "track": "cota",
+      "race": 1,
+      "probability": 77.69,
+      "features": {
+        "s2_std": 9.086896243737156,
+        "consistency_score": 0.041447749781281,
+        "tire_degradation": -29.029666666666685,
+        "clutch_score": 5.7799540644513865,
+        "post_fcy_performance": 31.79934455365266,
+        "s1_std": 6.936480847262858,
+        "s3_std": 7.668030968464677,
+        "late_pace": 152.412
+      }
+    },
+    {
+      "driver": 113,
+      "track": "cota",
+      "race": 1,
+      "probability": 57.41,
+      "features": {
+        "s2_std": 11.24971203814464,
+        "consistency_score": 0.0380384777921858,
+        "tire_degradation": 3.846799999999945,
+        "clutch_score": 8.067160099562575,
+        "post_fcy_performance": -6.390690440447767,
+        "s1_std": 7.961876021353998,
+        "s3_std": 9.433559909502694,
+        "late_pace": 172.03879999999998
+      }
+    },
+    {
+      "driver": 13,
+      "track": "cota",
+      "race": 1,
+      "probability": 81.05,
+      "features": {
+        "s2_std": 10.98010516497103,
+        "consistency_score": 0.0356098605757673,
+        "tire_degradation": -1.4617999999999824,
+        "clutch_score": 7.069994188767947,
+        "post_fcy_performance": 9.641922992688396,
+        "s1_std": 6.1438801473259455,
+        "s3_std": 10.710286894740356,
+        "late_pace": 165.0618
+      }
+    },
+    {
+      "driver": 14,
+      "track": "cota",
+      "race": 1,
+      "probability": 55.31,
+      "features": {
+        "s2_std": 10.228711123956574,
+        "consistency_score": 0.0393586973918614,
+        "tire_degradation": -3.3274000000000115,
+        "clutch_score": 7.600115488337529,
+        "post_fcy_performance": -1.9944265138111823,
+        "s1_std": 6.408978915185642,
+        "s3_std": 8.952792726048573,
+        "late_pace": 165.0654
+      }
+    },
+    {
+      "driver": 15,
+      "track": "cota",
+      "race": 1,
+      "probability": 0.0,
+      "features": {
+        "s2_std": 11.313571698038896,
+        "consistency_score": 0.0104589411691906,
+        "tire_degradation": -149.8145,
+        "clutch_score": 21.64243777997485,
+        "post_fcy_performance": 9.676950216129605,
+        "s1_std": 95.0722634308591,
+        "s3_std": 9.309734861960354,
+        "late_pace": 156.334
+      }
+    },
+    {
+      "driver": 16,
+      "track": "cota",
+      "race": 1,
+      "probability": 81.45,
+      "features": {
+        "s2_std": 11.053230518921232,
+        "consistency_score": 0.0354621967087192,
+        "tire_degradation": -1.5829999999999984,
+        "clutch_score": 7.180557589607426,
+        "post_fcy_performance": 9.823385527879916,
+        "s1_std": 6.117834736869495,
+        "s3_std": 10.700569123127211,
+        "late_pace": 164.815
+      }
+    },
+    {
+      "driver": 18,
+      "track": "cota",
+      "race": 1,
+      "probability": 51.5,
+      "features": {
+        "s2_std": 9.87042457442494,
+        "consistency_score": 0.046682989369799,
+        "tire_degradation": -5.673199999999952,
+        "clutch_score": 0.2507172405960634,
+        "post_fcy_performance": -2.570830667587694,
+        "s1_std": 5.6851403075189335,
+        "s3_std": 6.37797105277219,
+        "late_pace": 167.67040000000003
+      }
+    },
+    {
+      "driver": 21,
+      "track": "cota",
+      "race": 1,
+      "probability": 61.98,
+      "features": {
+        "s2_std": 11.323010201771073,
+        "consistency_score": 0.0368053918819358,
+        "tire_degradation": -2.3817999999999984,
+        "clutch_score": 6.710406938634359,
+        "post_fcy_performance": -2.2170433953709154,
+        "s1_std": 5.948945905763969,
+        "s3_std": 9.957609093936508,
+        "late_pace": 165.137
+      }
+    },
+    {
+      "driver": 31,
+      "track": "cota",
+      "race": 1,
+      "probability": 0.0,
+      "features": {
+        "s2_std": 7.01946775595722,
+        "consistency_score": 0.0061448429811045,
+        "tire_degradation": -49.732500000000016,
+        "clutch_score": 29.610806906975505,
+        "post_fcy_performance": 39.70379132809614,
+        "s1_std": 162.79187726724055,
+        "s3_std": 8.027657115024923,
+        "late_pace": 151.33599999999998
+      }
+    },
+    {
+      "driver": 41,
+      "track": "cota",
+      "race": 1,
+      "probability": 61.46,
+      "features": {
+        "s2_std": 11.192783053943602,
+        "consistency_score": 0.0365455523254807,
+        "tire_degradation": -1.9128000000000327,
+        "clutch_score": 6.7652579254584095,
+        "post_fcy_performance": -2.31030542506509,
+        "s1_std": 6.047866855346602,
+        "s3_std": 10.080617894008284,
+        "late_pace": 165.19379999999998
+      }
+    },
+    {
+      "driver": 46,
+      "track": "cota",
+      "race": 1,
+      "probability": 82.49,
+      "features": {
+        "s2_std": 11.191584277141148,
+        "consistency_score": 0.0354238725479965,
+        "tire_degradation": -1.363800000000026,
+        "clutch_score": 7.507719644977922,
+        "post_fcy_performance": 9.85492117814038,
+        "s1_std": 5.910174964440064,
+        "s3_std": 10.845465161355524,
+        "late_pace": 164.8392
+      }
+    },
+    {
+      "driver": 47,
+      "track": "cota",
+      "race": 1,
+      "probability": 60.75,
+      "features": {
+        "s2_std": 11.159458037190854,
+        "consistency_score": 0.0376072394149431,
+        "tire_degradation": -1.9650000000000036,
+        "clutch_score": 6.636269497470818,
+        "post_fcy_performance": -2.430583990766888,
+        "s1_std": 6.270146589781848,
+        "s3_std": 9.479750359318542,
+        "late_pace": 165.5198
+      }
+    },
+    {
+      "driver": 5,
+      "track": "cota",
+      "race": 1,
+      "probability": 57.13,
+      "features": {
+        "s2_std": 10.280918416787824,
+        "consistency_score": 0.0397089953356754,
+        "tire_degradation": -2.1299999999999955,
+        "clutch_score": 6.917871233445622,
+        "post_fcy_performance": -2.641611205269552,
+        "s1_std": 5.997729437413109,
+        "s3_std": 9.087806542689655,
+        "late_pace": 166.18900000000002
+      }
+    },
+    {
+      "driver": 51,
+      "track": "cota",
+      "race": 1,
+      "probability": 2.25,
+      "features": {
+        "s2_std": 11.284136663797224,
+        "consistency_score": 0.0299052912307094,
+        "tire_degradation": 21.221000000000004,
+        "clutch_score": -38.28237079347832,
+        "post_fcy_performance": -44.48255714464105,
+        "s1_std": 18.919789540247343,
+        "s3_std": 9.572682905016755,
+        "late_pace": 196.91525
+      }
+    },
+    {
+      "driver": 55,
+      "track": "cota",
+      "race": 1,
+      "probability": 81.43,
+      "features": {
+        "s2_std": 11.141266141810233,
+        "consistency_score": 0.0355596646433086,
+        "tire_degradation": -1.9875999999999865,
+        "clutch_score": 7.351823928550718,
+        "post_fcy_performance": 9.91207164816993,
+        "s1_std": 6.1948513910628185,
+        "s3_std": 10.483244880312023,
+        "late_pace": 164.6698
+      }
+    },
+    {
+      "driver": 57,
+      "track": "cota",
+      "race": 1,
+      "probability": 54.3,
+      "features": {
+        "s2_std": 10.344397807509145,
+        "consistency_score": 0.0432861918007991,
+        "tire_degradation": -5.081199999999996,
+        "clutch_score": 5.550915248304649,
+        "post_fcy_performance": -2.950143210089136,
+        "s1_std": 5.990663081363512,
+        "s3_std": 6.331256067298643,
+        "late_pace": 167.40800000000002
+      }
+    },
+    {
+      "driver": 7,
+      "track": "cota",
+      "race": 1,
+      "probability": 82.41,
+      "features": {
+        "s2_std": 11.177559724931545,
+        "consistency_score": 0.0353929315967217,
+        "tire_degradation": -0.9351999999999804,
+        "clutch_score": 7.1134001556778985,
+        "post_fcy_performance": 9.695772527217947,
+        "s1_std": 6.015503839345169,
+        "s3_std": 10.792153807689342,
+        "late_pace": 165.17600000000002
+      }
+    },
+    {
+      "driver": 71,
+      "track": "cota",
+      "race": 1,
+      "probability": 56.36,
+      "features": {
+        "s2_std": 11.1599184298226,
+        "consistency_score": 0.0368387665482447,
+        "tire_degradation": -3.980400000000003,
+        "clutch_score": 7.447371962681738,
+        "post_fcy_performance": -1.6914707424534343,
+        "s1_std": 7.470922548158844,
+        "s3_std": 8.48909127290465,
+        "late_pace": 164.5268
+      }
+    },
+    {
+      "driver": 72,
+      "track": "cota",
+      "race": 1,
+      "probability": 81.38,
+      "features": {
+        "s2_std": 11.207345603901672,
+        "consistency_score": 0.0356940946349511,
+        "tire_degradation": -2.158200000000022,
+        "clutch_score": 7.543862891166114,
+        "post_fcy_performance": 9.820834669921704,
+        "s1_std": 6.238460291516131,
+        "s3_std": 10.311949694764465,
+        "late_pace": 164.56079999999997
+      }
+    },
+    {
+      "driver": 73,
+      "track": "cota",
+      "race": 1,
+      "probability": 56.1,
+      "features": {
+        "s2_std": 10.306601657218945,
+        "consistency_score": 0.0417684909471243,
+        "tire_degradation": 0.1787999999999954,
+        "clutch_score": 6.142209325619668,
+        "post_fcy_performance": -5.554575821875161,
+        "s1_std": 5.785123550335556,
+        "s3_std": 8.484886795580927,
+        "late_pace": 171.084
+      }
+    },
+    {
+      "driver": 78,
+      "track": "cota",
+      "race": 1,
+      "probability": 61.84,
+      "features": {
+        "s2_std": 11.308476989240262,
+        "consistency_score": 0.0364737301437715,
+        "tire_degradation": -2.373199999999997,
+        "clutch_score": 6.982992096569952,
+        "post_fcy_performance": -2.1064547986596844,
+        "s1_std": 6.054908969175342,
+        "s3_std": 9.99220006503602,
+        "late_pace": 164.9072
+      }
+    },
+    {
+      "driver": 8,
+      "track": "cota",
+      "race": 1,
+      "probability": 53.29,
+      "features": {
+        "s2_std": 10.178648124368278,
+        "consistency_score": 0.0456035045699747,
+        "tire_degradation": -7.66160000000005,
+        "clutch_score": 5.811047144121456,
+        "post_fcy_performance": -1.5624912320617323,
+        "s1_std": 5.842410396629721,
+        "s3_std": 6.054781146771045,
+        "late_pace": 165.908
+      }
+    },
+    {
+      "driver": 80,
+      "track": "cota",
+      "race": 1,
+      "probability": 37.55,
+      "features": {
+        "s2_std": 7.6075200667613405,
+        "consistency_score": 0.049866994234438,
+        "tire_degradation": -10.226599999999962,
+        "clutch_score": 6.302457333863866,
+        "post_fcy_performance": 2.0018783445684902,
+        "s1_std": 7.637035830701056,
+        "s3_std": 7.311996435150053,
+        "late_pace": 161.47420000000002
+      }
+    },
+    {
+      "driver": 86,
+      "track": "cota",
+      "race": 1,
+      "probability": 53.33,
+      "features": {
+        "s2_std": 10.41766697412734,
+        "consistency_score": 0.0420624883327529,
+        "tire_degradation": -4.875399999999985,
+        "clutch_score": 6.117590322652513,
+        "post_fcy_performance": -3.057067876454937,
+        "s1_std": 6.431339809868547,
+        "s3_std": 6.451463931565775,
+        "late_pace": 167.19180000000003
+      }
+    },
+    {
+      "driver": 88,
+      "track": "cota",
+      "race": 1,
+      "probability": 56.21,
+      "features": {
+        "s2_std": 10.417315824752894,
+        "consistency_score": 0.0391208338788358,
+        "tire_degradation": -3.958800000000025,
+        "clutch_score": 6.939192527301439,
+        "post_fcy_performance": -1.8604995953734385,
+        "s1_std": 6.117338709140841,
+        "s3_std": 9.097752291896382,
+        "late_pace": 164.88939999999997
+      }
+    },
+    {
+      "driver": 89,
+      "track": "cota",
+      "race": 1,
+      "probability": 16.83,
+      "features": {
+        "s2_std": 9.775743885114473,
+        "consistency_score": 0.0399859943667359,
+        "tire_degradation": -18.464199999999977,
+        "clutch_score": 6.122917544474914,
+        "post_fcy_performance": 0.6036992635725263,
+        "s1_std": 14.42609693351927,
+        "s3_std": 8.482742864191984,
+        "late_pace": 162.50500000000002
+      }
+    },
+    {
+      "driver": 93,
+      "track": "cota",
+      "race": 1,
+      "probability": 56.55,
+      "features": {
+        "s2_std": 10.451624729452076,
+        "consistency_score": 0.0396501733852112,
+        "tire_degradation": -3.248400000000004,
+        "clutch_score": 7.244196905376921,
+        "post_fcy_performance": -2.376547180316284,
+        "s1_std": 6.186911588183559,
+        "s3_std": 8.790801332007428,
+        "late_pace": 165.7966
+      }
+    },
+    {
+      "driver": 98,
+      "track": "cota",
+      "race": 1,
+      "probability": 61.89,
+      "features": {
+        "s2_std": 11.228054521847865,
+        "consistency_score": 0.0376332802739774,
+        "tire_degradation": -2.7387999999999977,
+        "clutch_score": 7.684544056559776,
+        "post_fcy_performance": -1.985309202624752,
+        "s1_std": 5.993888986611575,
+        "s3_std": 9.570388381848032,
+        "late_pace": 164.87539999999998
+      }
+    },
+    {
+      "driver": 3,
+      "track": "sebring",
+      "race": 1,
+      "probability": 48.33,
+      "features": {
+        "s2_std": 0.6278815584662353,
+        "consistency_score": 0.3050272192937099,
+        "tire_degradation": -1.2428333333333512,
+        "clutch_score": 0.0546825635016967,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.455818071501361,
+        "s3_std": 0.3638785463464817,
+        "late_pace": 149.27316666666667
+      }
+    },
+    {
+      "driver": 11,
+      "track": "sebring",
+      "race": 1,
+      "probability": 51.31,
+      "features": {
+        "s2_std": 0.8243522213200624,
+        "consistency_score": 0.3173487792488463,
+        "tire_degradation": 0.1418333333333521,
+        "clutch_score": -2.2633939521356687,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.56403683531502,
+        "s3_std": 0.4559427736739532,
+        "late_pace": 150.59366666666668
+      }
+    },
+    {
+      "driver": 113,
+      "track": "sebring",
+      "race": 1,
+      "probability": 47.68,
+      "features": {
+        "s2_std": 0.5369297382895174,
+        "consistency_score": 0.3064133704540367,
+        "tire_degradation": -1.6826666666666483,
+        "clutch_score": 0.0318028801594095,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.220409170671726,
+        "s3_std": 0.6814122503820718,
+        "late_pace": 148.14633333333333
+      }
+    },
+    {
+      "driver": 13,
+      "track": "sebring",
+      "race": 1,
+      "probability": 66.89,
+      "features": {
+        "s2_std": 0.2381858456668303,
+        "consistency_score": 0.5579717221245545,
+        "tire_degradation": 0.466666666666697,
+        "clutch_score": -0.7176371584558208,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.66426036341886,
+        "s3_std": 0.1579315122864957,
+        "late_pace": 146.85000000000002
+      }
+    },
+    {
+      "driver": 15,
+      "track": "sebring",
+      "race": 1,
+      "probability": 55.57,
+      "features": {
+        "s2_std": 0.5670546607727455,
+        "consistency_score": 0.3838916011519488,
+        "tire_degradation": -0.3848333333333471,
+        "clutch_score": -0.5790762026393961,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.0275682729412945,
+        "s3_std": 0.2937691837707506,
+        "late_pace": 148.49583333333334
+      }
+    },
+    {
+      "driver": 16,
+      "track": "sebring",
+      "race": 1,
+      "probability": 66.58,
+      "features": {
+        "s2_std": 0.2690835431912811,
+        "consistency_score": 0.560797931613156,
+        "tire_degradation": 0.1003333333333102,
+        "clutch_score": -0.1875102287259476,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.7653088930323406,
+        "s3_std": 0.21394744394811,
+        "late_pace": 147.30499999999998
+      }
+    },
+    {
+      "driver": 2,
+      "track": "sebring",
+      "race": 1,
+      "probability": 60.21,
+      "features": {
+        "s2_std": 0.3671155227139598,
+        "consistency_score": 0.4471988754809571,
+        "tire_degradation": 0.7640000000000384,
+        "clutch_score": -2.207814608147023,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.8927096900130937,
+        "s3_std": 0.3051412193439131,
+        "late_pace": 148.26033333333336
+      }
+    },
+    {
+      "driver": 21,
+      "track": "sebring",
+      "race": 1,
+      "probability": 54.97,
+      "features": {
+        "s2_std": 0.5017935492629131,
+        "consistency_score": 0.3750271977114465,
+        "tire_degradation": -0.1860000000000354,
+        "clutch_score": 0.0482567087085024,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.0745074759113933,
+        "s3_std": 0.4385072298643138,
+        "late_pace": 149.00933333333333
+      }
+    },
+    {
+      "driver": 31,
+      "track": "sebring",
+      "race": 1,
+      "probability": 40.28,
+      "features": {
+        "s2_std": 0.4135046755076261,
+        "consistency_score": 0.1797720033313266,
+        "tire_degradation": 2.975599999999986,
+        "clutch_score": -10.477760517388951,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.6442156336685283,
+        "s3_std": 3.250196240229194,
+        "late_pace": 152.4056
+      }
+    },
+    {
+      "driver": 41,
+      "track": "sebring",
+      "race": 1,
+      "probability": 29.21,
+      "features": {
+        "s2_std": 0.6963524012069372,
+        "consistency_score": 0.0645145792770729,
+        "tire_degradation": 15.508333333333354,
+        "clutch_score": 1.26577293682679,
+        "post_fcy_performance": 0.0,
+        "s1_std": 11.02788483931709,
+        "s3_std": 3.166062030918808,
+        "late_pace": 164.51416666666668
+      }
+    },
+    {
+      "driver": 46,
+      "track": "sebring",
+      "race": 1,
+      "probability": 63.85,
+      "features": {
+        "s2_std": 0.2037023685938873,
+        "consistency_score": 0.5247697805148462,
+        "tire_degradation": 0.0909999999999797,
+        "clutch_score": -0.1247702425658159,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.8603674449622534,
+        "s3_std": 0.2327813018756528,
+        "late_pace": 147.24716666666666
+      }
+    },
+    {
+      "driver": 47,
+      "track": "sebring",
+      "race": 1,
+      "probability": 30.05,
+      "features": {
+        "s2_std": 0.4963398489080193,
+        "consistency_score": 0.1395122617162976,
+        "tire_degradation": -4.415166666666664,
+        "clutch_score": 0.7793582533906883,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.3202863104343951,
+        "s3_std": 6.26746705041759,
+        "late_pace": 150.00383333333335
+      }
+    },
+    {
+      "driver": 5,
+      "track": "sebring",
+      "race": 1,
+      "probability": 0.03,
+      "features": {
+        "s2_std": 1.5184711609598214,
+        "consistency_score": 0.0283872368485852,
+        "tire_degradation": -50.86850000000001,
+        "clutch_score": 4.614360762326545,
+        "post_fcy_performance": 0.0,
+        "s1_std": 35.35686518155516,
+        "s3_std": 8.554200738038983,
+        "late_pace": 155.2985
+      }
+    },
+    {
+      "driver": 51,
+      "track": "sebring",
+      "race": 1,
+      "probability": 44.01,
+      "features": {
+        "s2_std": 0.6190341845467237,
+        "consistency_score": 0.1998797924735669,
+        "tire_degradation": 1.558500000000009,
+        "clutch_score": 0.4074565558184624,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.4791187454555148,
+        "s3_std": 3.5738223676883374,
+        "late_pace": 153.1585
+      }
+    },
+    {
+      "driver": 55,
+      "track": "sebring",
+      "race": 1,
+      "probability": 54.48,
+      "features": {
+        "s2_std": 0.674551971736129,
+        "consistency_score": 0.3574541568908276,
+        "tire_degradation": 0.0036666666666462,
+        "clutch_score": -2.107025687604623,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.0323904753373367,
+        "s3_std": 0.2609907349748074,
+        "late_pace": 148.0665
+      }
+    },
+    {
+      "driver": 7,
+      "track": "sebring",
+      "race": 1,
+      "probability": 70.79,
+      "features": {
+        "s2_std": 0.2286050630537326,
+        "consistency_score": 0.6223314767892736,
+        "tire_degradation": 0.4678333333333455,
+        "clutch_score": -0.2255215790879696,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.5904974907226178,
+        "s3_std": 0.2722420985702211,
+        "late_pace": 147.38750000000002
+      }
+    },
+    {
+      "driver": 71,
+      "track": "sebring",
+      "race": 1,
+      "probability": 49.25,
+      "features": {
+        "s2_std": 0.4147264933995481,
+        "consistency_score": 0.3336899065808418,
+        "tire_degradation": -1.116833333333318,
+        "clutch_score": 0.2251227364071207,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.4590511596752556,
+        "s3_std": 0.3779149630515384,
+        "late_pace": 148.63133333333334
+      }
+    },
+    {
+      "driver": 72,
+      "track": "sebring",
+      "race": 1,
+      "probability": 60.72,
+      "features": {
+        "s2_std": 0.1963356566150926,
+        "consistency_score": 0.4728433660635429,
+        "tire_degradation": 0.3104999999999904,
+        "clutch_score": -0.3065605677932163,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.918823134893965,
+        "s3_std": 0.2681567687595803,
+        "late_pace": 147.594
+      }
+    },
+    {
+      "driver": 78,
+      "track": "sebring",
+      "race": 1,
+      "probability": 59.0,
+      "features": {
+        "s2_std": 0.2970958063128041,
+        "consistency_score": 0.4636825756996078,
+        "tire_degradation": -0.6341666666666868,
+        "clutch_score": 0.0374524064691358,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.023002872524306,
+        "s3_std": 0.2382040380486655,
+        "late_pace": 146.97883333333334
+      }
+    },
+    {
+      "driver": 80,
+      "track": "sebring",
+      "race": 1,
+      "probability": 46.85,
+      "features": {
+        "s2_std": 0.6220675956576194,
+        "consistency_score": 0.2917663410923972,
+        "tire_degradation": -1.1025000000000205,
+        "clutch_score": -0.0908925075948522,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.6938328158903806,
+        "s3_std": 0.4254365147353657,
+        "late_pace": 149.60866666666666
+      }
+    },
+    {
+      "driver": 88,
+      "track": "sebring",
+      "race": 1,
+      "probability": 53.97,
+      "features": {
+        "s2_std": 0.5043016478723668,
+        "consistency_score": 0.3289233183401661,
+        "tire_degradation": 1.9150000000000205,
+        "clutch_score": -0.7618054568147093,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.380277302844807,
+        "s3_std": 0.6926733490044593,
+        "late_pace": 150.8745
+      }
+    },
+    {
+      "driver": 98,
+      "track": "sebring",
+      "race": 1,
+      "probability": 1.77,
+      "features": {
+        "s2_std": 4.943300719155167,
+        "consistency_score": 0.0386972154855696,
+        "tire_degradation": -26.67733333333331,
+        "clutch_score": 5.37728900676151,
+        "post_fcy_performance": 0.0,
+        "s1_std": 20.504361983561964,
+        "s3_std": 9.424090664511942,
+        "late_pace": 148.66316666666668
+      }
+    },
+    {
+      "driver": 3,
+      "track": "sebring",
+      "race": 2,
+      "probability": 32.22,
+      "features": {
+        "s2_std": 6.402283910189135,
+        "consistency_score": 0.0518323114510347,
+        "tire_degradation": -17.141999999999996,
+        "clutch_score": 3.0940822033446835,
+        "post_fcy_performance": 4.7156099461897405,
+        "s1_std": 5.524158750057183,
+        "s3_std": 6.492818550778493,
+        "late_pace": 148.584
+      }
+    },
+    {
+      "driver": 11,
+      "track": "sebring",
+      "race": 2,
+      "probability": 31.57,
+      "features": {
+        "s2_std": 6.300890460548677,
+        "consistency_score": 0.0516294364533715,
+        "tire_degradation": -16.647199999999998,
+        "clutch_score": 3.0051584173477743,
+        "post_fcy_performance": 4.313358146196062,
+        "s1_std": 5.513194608920796,
+        "s3_std": 6.659883160887033,
+        "late_pace": 148.696
+      }
+    },
+    {
+      "driver": 113,
+      "track": "sebring",
+      "race": 2,
+      "probability": 28.62,
+      "features": {
+        "s2_std": 6.463702364937609,
+        "consistency_score": 0.0505422140901846,
+        "tire_degradation": -16.294399999999996,
+        "clutch_score": 3.1766639925085625,
+        "post_fcy_performance": 2.3264348504904424,
+        "s1_std": 5.346280669384403,
+        "s3_std": 8.067988210359506,
+        "late_pace": 147.6634
+      }
+    },
+    {
+      "driver": 13,
+      "track": "sebring",
+      "race": 2,
+      "probability": 24.09,
+      "features": {
+        "s2_std": 6.760537373858185,
+        "consistency_score": 0.0479749088319926,
+        "tire_degradation": -16.836600000000004,
+        "clutch_score": 2.925655181497492,
+        "post_fcy_performance": -0.6347873042538993,
+        "s1_std": 5.29984363291346,
+        "s3_std": 7.797127372468656,
+        "late_pace": 145.8474
+      }
+    },
+    {
+      "driver": 15,
+      "track": "sebring",
+      "race": 2,
+      "probability": 29.84,
+      "features": {
+        "s2_std": 6.69809793367988,
+        "consistency_score": 0.0502034010070811,
+        "tire_degradation": -15.468400000000033,
+        "clutch_score": 1.7539368398941844,
+        "post_fcy_performance": 1.4156173895020612,
+        "s1_std": 5.097691826944819,
+        "s3_std": 7.186373452583717,
+        "late_pace": 148.12779999999998
+      }
+    },
+    {
+      "driver": 16,
+      "track": "sebring",
+      "race": 2,
+      "probability": 25.09,
+      "features": {
+        "s2_std": 6.665508287695194,
+        "consistency_score": 0.0487850551009983,
+        "tire_degradation": -16.8322,
+        "clutch_score": 3.28959046270573,
+        "post_fcy_performance": -0.0286283707153716,
+        "s1_std": 5.2465650969626445,
+        "s3_std": 7.621279573230031,
+        "late_pace": 146.29539999999997
+      }
+    },
+    {
+      "driver": 2,
+      "track": "sebring",
+      "race": 2,
+      "probability": 29.73,
+      "features": {
+        "s2_std": 6.884070684074456,
+        "consistency_score": 0.049764986206156,
+        "tire_degradation": -17.130800000000022,
+        "clutch_score": 3.288183634493782,
+        "post_fcy_performance": 2.0497275776710486,
+        "s1_std": 5.160139151870488,
+        "s3_std": 7.1184904108361815,
+        "late_pace": 146.4192
+      }
+    },
+    {
+      "driver": 21,
+      "track": "sebring",
+      "race": 2,
+      "probability": 30.82,
+      "features": {
+        "s2_std": 6.271544306096651,
+        "consistency_score": 0.0515229767418226,
+        "tire_degradation": -16.50339999999997,
+        "clutch_score": 3.130110476415217,
+        "post_fcy_performance": 3.893246435022049,
+        "s1_std": 5.464121991073526,
+        "s3_std": 6.743740316026409,
+        "late_pace": 147.55720000000002
+      }
+    },
+    {
+      "driver": 31,
+      "track": "sebring",
+      "race": 2,
+      "probability": 3.68,
+      "features": {
+        "s2_std": 10.496329004534328,
+        "consistency_score": 0.0237238809755972,
+        "tire_degradation": 22.215000000000032,
+        "clutch_score": -75.63520409593603,
+        "post_fcy_performance": -5.834769168398105,
+        "s1_std": 36.721929232311,
+        "s3_std": 7.729293664519478,
+        "late_pace": 186.9416
+      }
+    },
+    {
+      "driver": 41,
+      "track": "sebring",
+      "race": 2,
+      "probability": 28.97,
+      "features": {
+        "s2_std": 7.2826981218044,
+        "consistency_score": 0.0512577836285962,
+        "tire_degradation": -20.5488,
+        "clutch_score": 4.313647348424558,
+        "post_fcy_performance": 2.956461839267297,
+        "s1_std": 5.3652186158472,
+        "s3_std": 6.727759260457129,
+        "late_pace": 147.6724
+      }
+    },
+    {
+      "driver": 46,
+      "track": "sebring",
+      "race": 2,
+      "probability": 27.76,
+      "features": {
+        "s2_std": 6.64800546404709,
+        "consistency_score": 0.0494984380258216,
+        "tire_degradation": -16.83239999999998,
+        "clutch_score": 3.4194219735223275,
+        "post_fcy_performance": 1.3367318778696953,
+        "s1_std": 5.1288317171977225,
+        "s3_std": 7.469136923589857,
+        "late_pace": 146.418
+      }
+    },
+    {
+      "driver": 47,
+      "track": "sebring",
+      "race": 2,
+      "probability": 25.23,
+      "features": {
+        "s2_std": 7.064434874053521,
+        "consistency_score": 0.047015167652368,
+        "tire_degradation": -20.07450000000003,
+        "clutch_score": 3.576519101761528,
+        "post_fcy_performance": 2.084881080131473,
+        "s1_std": 5.870253442089106,
+        "s3_std": 7.417625849528255,
+        "late_pace": 148.57625
+      }
+    },
+    {
+      "driver": 5,
+      "track": "sebring",
+      "race": 2,
+      "probability": 31.67,
+      "features": {
+        "s2_std": 6.974182169497246,
+        "consistency_score": 0.051727250546324,
+        "tire_degradation": -18.979600000000005,
+        "clutch_score": 2.82881027866249,
+        "post_fcy_performance": 4.503328514793744,
+        "s1_std": 5.620022977414478,
+        "s3_std": 6.465016550313953,
+        "late_pace": 148.65759999999997
+      }
+    },
+    {
+      "driver": 51,
+      "track": "sebring",
+      "race": 2,
+      "probability": 31.03,
+      "features": {
+        "s2_std": 6.361682122612437,
+        "consistency_score": 0.0515536856268942,
+        "tire_degradation": -16.838599999999957,
+        "clutch_score": 2.610823532474409,
+        "post_fcy_performance": 3.9201083276912616,
+        "s1_std": 5.403660227105327,
+        "s3_std": 6.724020481019273,
+        "late_pace": 148.76820000000004
+      }
+    },
+    {
+      "driver": 55,
+      "track": "sebring",
+      "race": 2,
+      "probability": 30.36,
+      "features": {
+        "s2_std": 6.749956518378472,
+        "consistency_score": 0.0502703424134305,
+        "tire_degradation": -17.148799999999966,
+        "clutch_score": 3.334181013446834,
+        "post_fcy_performance": 2.6575761077513533,
+        "s1_std": 5.157673861991148,
+        "s3_std": 7.024797428870577,
+        "late_pace": 146.626
+      }
+    },
+    {
+      "driver": 7,
+      "track": "sebring",
+      "race": 2,
+      "probability": 24.55,
+      "features": {
+        "s2_std": 6.686789436082163,
+        "consistency_score": 0.0483991336168566,
+        "tire_degradation": -16.424199999999985,
+        "clutch_score": 3.023377455475008,
+        "post_fcy_performance": -0.5917099500967424,
+        "s1_std": 5.260382124507052,
+        "s3_std": 7.744483218986707,
+        "late_pace": 146.364
+      }
+    },
+    {
+      "driver": 71,
+      "track": "sebring",
+      "race": 2,
+      "probability": 30.47,
+      "features": {
+        "s2_std": 6.473327124954113,
+        "consistency_score": 0.0508447657314403,
+        "tire_degradation": -15.907399999999967,
+        "clutch_score": 1.6127715390072197,
+        "post_fcy_performance": 2.9343394363439934,
+        "s1_std": 5.380102148968302,
+        "s3_std": 6.881298745815841,
+        "late_pace": 147.8574
+      }
+    },
+    {
+      "driver": 72,
+      "track": "sebring",
+      "race": 2,
+      "probability": 26.74,
+      "features": {
+        "s2_std": 6.697138054174087,
+        "consistency_score": 0.0490544959012587,
+        "tire_degradation": -16.56899999999999,
+        "clutch_score": 2.9463013092286734,
+        "post_fcy_performance": 0.5902371723277112,
+        "s1_std": 5.147295522488809,
+        "s3_std": 7.580471277950557,
+        "late_pace": 146.3178
+      }
+    },
+    {
+      "driver": 78,
+      "track": "sebring",
+      "race": 2,
+      "probability": 28.36,
+      "features": {
+        "s2_std": 6.650539887545473,
+        "consistency_score": 0.0495784084418805,
+        "tire_degradation": -16.794399999999996,
+        "clutch_score": 2.990369367499475,
+        "post_fcy_performance": 1.7004402805841052,
+        "s1_std": 5.1343158871622485,
+        "s3_std": 7.425010531698479,
+        "late_pace": 146.423
+      }
+    },
+    {
+      "driver": 88,
+      "track": "sebring",
+      "race": 2,
+      "probability": 32.61,
+      "features": {
+        "s2_std": 6.358280071423929,
+        "consistency_score": 0.0518894262685906,
+        "tire_degradation": -15.291000000000023,
+        "clutch_score": 2.839782588617824,
+        "post_fcy_performance": 3.66097958602078,
+        "s1_std": 5.455223456697259,
+        "s3_std": 6.598192924329104,
+        "late_pace": 149.38299999999998
+      }
+    },
+    {
+      "driver": 98,
+      "track": "sebring",
+      "race": 2,
+      "probability": 28.42,
+      "features": {
+        "s2_std": 6.593252812534948,
+        "consistency_score": 0.0499923687104048,
+        "tire_degradation": -17.212399999999974,
+        "clutch_score": 3.4505764139159623,
+        "post_fcy_performance": 2.169849077552709,
+        "s1_std": 5.235356543095544,
+        "s3_std": 7.224969985808475,
+        "late_pace": 146.42440000000002
+      }
+    },
+    {
+      "driver": 3,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 36.87,
+      "features": {
+        "s2_std": 6.671228271411147,
+        "consistency_score": 0.0505310863558596,
+        "tire_degradation": -25.95753333333336,
+        "clutch_score": 7.478694893218813,
+        "post_fcy_performance": 16.7632121285439,
+        "s1_std": 7.632030734912389,
+        "s3_std": 4.877336273731097,
+        "late_pace": 114.95053333333333
+      }
+    },
+    {
+      "driver": 11,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 39.68,
+      "features": {
+        "s2_std": 6.992396942111298,
+        "consistency_score": 0.0518517306865695,
+        "tire_degradation": -26.25257142857143,
+        "clutch_score": 7.852344121103348,
+        "post_fcy_performance": 17.07524344202159,
+        "s1_std": 7.326837808005725,
+        "s3_std": 5.014289384116954,
+        "late_pace": 115.11285714285714
+      }
+    },
+    {
+      "driver": 113,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 37.55,
+      "features": {
+        "s2_std": 6.774875374493686,
+        "consistency_score": 0.0485174254440123,
+        "tire_degradation": -25.58828571428573,
+        "clutch_score": 7.307510351824543,
+        "post_fcy_performance": 16.922620099965354,
+        "s1_std": 7.575217207911308,
+        "s3_std": 5.762487542706006,
+        "late_pace": 114.203
+      }
+    },
+    {
+      "driver": 12,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 38.08,
+      "features": {
+        "s2_std": 6.765750034814828,
+        "consistency_score": 0.0538227041070753,
+        "tire_degradation": -22.73414285714284,
+        "clutch_score": 7.602427712252783,
+        "post_fcy_performance": 15.140346747203138,
+        "s1_std": 8.251108244403873,
+        "s3_std": 3.752955756346044,
+        "late_pace": 118.50914285714283
+      }
+    },
+    {
+      "driver": 13,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 40.96,
+      "features": {
+        "s2_std": 7.237673859278315,
+        "consistency_score": 0.0474022548090602,
+        "tire_degradation": -26.43114285714283,
+        "clutch_score": 7.694492484889554,
+        "post_fcy_performance": 17.31675779784746,
+        "s1_std": 6.771658489295822,
+        "s3_std": 6.822890149206734,
+        "late_pace": 112.19685714285716
+      }
+    },
+    {
+      "driver": 14,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 37.93,
+      "features": {
+        "s2_std": 6.84902646350819,
+        "consistency_score": 0.049369607918468,
+        "tire_degradation": -24.81971428571427,
+        "clutch_score": 6.970593228199576,
+        "post_fcy_performance": 16.241881137920934,
+        "s1_std": 7.528952665354866,
+        "s3_std": 5.613261751350767,
+        "late_pace": 115.22014285714286
+      }
+    },
+    {
+      "driver": 15,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 35.88,
+      "features": {
+        "s2_std": 6.684222139093155,
+        "consistency_score": 0.0489055217056786,
+        "tire_degradation": -25.74999999999997,
+        "clutch_score": 7.869654921173488,
+        "post_fcy_performance": 16.868300590001436,
+        "s1_std": 8.086001752406498,
+        "s3_std": 5.115856427245562,
+        "late_pace": 114.46757142857145
+      }
+    },
+    {
+      "driver": 16,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 39.45,
+      "features": {
+        "s2_std": 6.995661501663,
+        "consistency_score": 0.0476343458141717,
+        "tire_degradation": -26.63571428571429,
+        "clutch_score": 8.091084891717387,
+        "post_fcy_performance": 17.500512564115486,
+        "s1_std": 6.993749541992941,
+        "s3_std": 6.637684176374803,
+        "late_pace": 112.37128571428572
+      }
+    },
+    {
+      "driver": 17,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 37.93,
+      "features": {
+        "s2_std": 6.717652364665063,
+        "consistency_score": 0.049312035078226,
+        "tire_degradation": -24.70128571428569,
+        "clutch_score": 7.561780940615337,
+        "post_fcy_performance": 16.319090152339218,
+        "s1_std": 7.483235876134442,
+        "s3_std": 5.580791441244865,
+        "late_pace": 115.16514285714284
+      }
+    },
+    {
+      "driver": 2,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 40.14,
+      "features": {
+        "s2_std": 7.089977293317858,
+        "consistency_score": 0.0475801874145826,
+        "tire_degradation": -26.656714285714315,
+        "clutch_score": 7.936204201289295,
+        "post_fcy_performance": 17.482049967501492,
+        "s1_std": 6.852289881532549,
+        "s3_std": 6.752975907897807,
+        "late_pace": 112.25071428571428
+      }
+    },
+    {
+      "driver": 21,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 13.36,
+      "features": {
+        "s2_std": 6.864436214683224,
+        "consistency_score": 0.0306239812792995,
+        "tire_degradation": 0.3427142857142939,
+        "clutch_score": 13.684458070224045,
+        "post_fcy_performance": 8.195492163030831,
+        "s1_std": 23.971778173077208,
+        "s3_std": 14.897236068060828,
+        "late_pace": 139.76128571428572
+      }
+    },
+    {
+      "driver": 31,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 37.97,
+      "features": {
+        "s2_std": 6.771793472776961,
+        "consistency_score": 0.048298796548558,
+        "tire_degradation": -26.052142857142822,
+        "clutch_score": 7.432630084025568,
+        "post_fcy_performance": 17.132653802882935,
+        "s1_std": 7.236992622995856,
+        "s3_std": 6.218991452936691,
+        "late_pace": 113.49800000000002
+      }
+    },
+    {
+      "driver": 41,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 3.41,
+      "features": {
+        "s2_std": 6.952294537297258,
+        "consistency_score": 0.0402640432175984,
+        "tire_degradation": -48.81699999999998,
+        "clutch_score": 10.3653226809681,
+        "post_fcy_performance": 0.0,
+        "s1_std": 6.98173452063788,
+        "s3_std": 9.978362373990366,
+        "late_pace": 113.484
+      }
+    },
+    {
+      "driver": 46,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 40.59,
+      "features": {
+        "s2_std": 7.249992792690979,
+        "consistency_score": 0.0471888688650296,
+        "tire_degradation": -26.01857142857141,
+        "clutch_score": 7.757155521828325,
+        "post_fcy_performance": 17.078333421096374,
+        "s1_std": 6.957851364088133,
+        "s3_std": 6.780919177901562,
+        "late_pace": 112.34100000000002
+      }
+    },
+    {
+      "driver": 47,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 44.33,
+      "features": {
+        "s2_std": 6.822703322907355,
+        "consistency_score": 0.0484812424682148,
+        "tire_degradation": -19.24799999999996,
+        "clutch_score": 8.577134488001047,
+        "post_fcy_performance": 14.884000598852111,
+        "s1_std": 6.9471980020042166,
+        "s3_std": 7.9275169026061825,
+        "late_pace": 120.06614285714286
+      }
+    },
+    {
+      "driver": 5,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 0.0,
+      "features": {
+        "s2_std": 3.3924070589842463,
+        "consistency_score": 0.0033538725282302,
+        "tire_degradation": -303.80250000000007,
+        "clutch_score": 43.704769693544826,
+        "post_fcy_performance": 0.0,
+        "s1_std": 290.64188044135864,
+        "s3_std": 11.203122187464206,
+        "late_pace": 116.6135
+      }
+    },
+    {
+      "driver": 50,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 33.32,
+      "features": {
+        "s2_std": 6.730235893474923,
+        "consistency_score": 0.0481090639911894,
+        "tire_degradation": -26.822999999999997,
+        "clutch_score": 8.12698338754122,
+        "post_fcy_performance": 17.507146319556323,
+        "s1_std": 9.00625982457024,
+        "s3_std": 4.80001541581846,
+        "late_pace": 113.45900000000002
+      }
+    },
+    {
+      "driver": 51,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 35.75,
+      "features": {
+        "s2_std": 6.831224453463437,
+        "consistency_score": 0.0496922173671766,
+        "tire_degradation": -25.971142857142866,
+        "clutch_score": 7.695474274671405,
+        "post_fcy_performance": 17.138232702725443,
+        "s1_std": 8.621859441057008,
+        "s3_std": 4.367731060018259,
+        "late_pace": 114.92842857142855
+      }
+    },
+    {
+      "driver": 55,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 40.13,
+      "features": {
+        "s2_std": 7.166282137614267,
+        "consistency_score": 0.0474882913653583,
+        "tire_degradation": -26.214142857142846,
+        "clutch_score": 7.944260805260297,
+        "post_fcy_performance": 17.087420538742418,
+        "s1_std": 6.9261063538828544,
+        "s3_std": 6.701972409217532,
+        "late_pace": 112.24057142857144
+      }
+    },
+    {
+      "driver": 67,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 53.76,
+      "features": {
+        "s2_std": 8.926222025182723,
+        "consistency_score": 0.0374373198701449,
+        "tire_degradation": 14.976999999999975,
+        "clutch_score": -3.926292000894036,
+        "post_fcy_performance": -4.51250142710356,
+        "s1_std": 10.588203243637295,
+        "s3_std": 7.17455053843594,
+        "late_pace": 156.95299999999995
+      }
+    },
+    {
+      "driver": 7,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 34.9,
+      "features": {
+        "s2_std": 7.024559349830319,
+        "consistency_score": 0.0477962318400184,
+        "tire_degradation": -25.66785714285716,
+        "clutch_score": 8.908897607255708,
+        "post_fcy_performance": 15.816562642284548,
+        "s1_std": 7.98340206538224,
+        "s3_std": 6.634259459285754,
+        "late_pace": 113.013
+      }
+    },
+    {
+      "driver": 71,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 38.18,
+      "features": {
+        "s2_std": 6.910495069868145,
+        "consistency_score": 0.048100304218339,
+        "tire_degradation": -26.41585714285713,
+        "clutch_score": 7.80029049633656,
+        "post_fcy_performance": 17.359669047733522,
+        "s1_std": 7.460124236268009,
+        "s3_std": 5.890356652871176,
+        "late_pace": 113.23742857142858
+      }
+    },
+    {
+      "driver": 72,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 36.89,
+      "features": {
+        "s2_std": 7.0731460979764975,
+        "consistency_score": 0.0480017653552485,
+        "tire_degradation": -25.078142857142865,
+        "clutch_score": 8.44201407703323,
+        "post_fcy_performance": 15.228972393222328,
+        "s1_std": 6.92266158061217,
+        "s3_std": 8.21089477246097,
+        "late_pace": 113.67142857142858
+      }
+    },
+    {
+      "driver": 73,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 36.56,
+      "features": {
+        "s2_std": 6.776887262189542,
+        "consistency_score": 0.0496357262459922,
+        "tire_degradation": -25.683428571428564,
+        "clutch_score": 7.290049973875937,
+        "post_fcy_performance": 16.863474930432893,
+        "s1_std": 8.097916863835836,
+        "s3_std": 4.7132658667249805,
+        "late_pace": 114.87971428571429
+      }
+    },
+    {
+      "driver": 78,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 39.0,
+      "features": {
+        "s2_std": 6.996653266866874,
+        "consistency_score": 0.0476327693324719,
+        "tire_degradation": -26.8924285714286,
+        "clutch_score": 7.809356732224335,
+        "post_fcy_performance": 17.55377195648647,
+        "s1_std": 7.0446095797023975,
+        "s3_std": 6.558242651495087,
+        "late_pace": 112.23014285714284
+      }
+    },
+    {
+      "driver": 80,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 35.75,
+      "features": {
+        "s2_std": 6.51367741012418,
+        "consistency_score": 0.0511987704329983,
+        "tire_degradation": -23.71885714285717,
+        "clutch_score": 6.639769314714945,
+        "post_fcy_performance": 15.833436282020005,
+        "s1_std": 8.346598335058326,
+        "s3_std": 4.260493918647231,
+        "late_pace": 117.35928571428568
+      }
+    },
+    {
+      "driver": 88,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 38.34,
+      "features": {
+        "s2_std": 6.824231157088358,
+        "consistency_score": 0.0480312840613271,
+        "tire_degradation": -26.32542857142857,
+        "clutch_score": 7.607084189057243,
+        "post_fcy_performance": 17.275315930562368,
+        "s1_std": 7.123005038788664,
+        "s3_std": 6.403738512522111,
+        "late_pace": 113.13785714285714
+      }
+    },
+    {
+      "driver": 89,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 37.58,
+      "features": {
+        "s2_std": 6.822260926569552,
+        "consistency_score": 0.0482551530743634,
+        "tire_degradation": -26.650714285714287,
+        "clutch_score": 8.346723455393738,
+        "post_fcy_performance": 17.38879238795656,
+        "s1_std": 7.472514073129776,
+        "s3_std": 5.942488698252084,
+        "late_pace": 113.28542857142858
+      }
+    },
+    {
+      "driver": 93,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 36.93,
+      "features": {
+        "s2_std": 6.707126079112179,
+        "consistency_score": 0.0496297830281088,
+        "tire_degradation": -25.97028571428575,
+        "clutch_score": 7.514896052414446,
+        "post_fcy_performance": 17.003914689571285,
+        "s1_std": 7.737481161419405,
+        "s3_std": 5.130560219894166,
+        "late_pace": 114.47142857142856
+      }
+    },
+    {
+      "driver": 98,
+      "track": "sonoma",
+      "race": 1,
+      "probability": 39.41,
+      "features": {
+        "s2_std": 7.00291895182643,
+        "consistency_score": 0.047775360760302,
+        "tire_degradation": -26.51642857142862,
+        "clutch_score": 7.503425799702914,
+        "post_fcy_performance": 17.469878590708042,
+        "s1_std": 7.052009046008111,
+        "s3_std": 6.4629668232246695,
+        "late_pace": 112.68214285714284
+      }
+    },
+    {
+      "driver": 3,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 34.57,
+      "features": {
+        "s2_std": 5.067059754117474,
+        "consistency_score": 0.0538550558475764,
+        "tire_degradation": -12.565357142857138,
+        "clutch_score": 6.977904229350483,
+        "post_fcy_performance": 8.940719783185694,
+        "s1_std": 6.283973291116634,
+        "s3_std": 7.927477535349264,
+        "late_pace": 117.03192857142857
+      }
+    },
+    {
+      "driver": 11,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 33.45,
+      "features": {
+        "s2_std": 5.127504750821493,
+        "consistency_score": 0.0575850774830024,
+        "tire_degradation": -12.920285714285695,
+        "clutch_score": 7.005498771750752,
+        "post_fcy_performance": 9.520671331497232,
+        "s1_std": 7.495515012961005,
+        "s3_std": 5.8212788112094,
+        "late_pace": 116.47742857142858
+      }
+    },
+    {
+      "driver": 113,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 31.73,
+      "features": {
+        "s2_std": 5.187979472234735,
+        "consistency_score": 0.0578662409489488,
+        "tire_degradation": -14.919571428571402,
+        "clutch_score": 7.507110411887933,
+        "post_fcy_performance": 10.173356899207072,
+        "s1_std": 7.443970981104943,
+        "s3_std": 7.13032627924451,
+        "late_pace": 115.37528571428572
+      }
+    },
+    {
+      "driver": 12,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 37.66,
+      "features": {
+        "s2_std": 5.985374845136813,
+        "consistency_score": 0.0626642008656313,
+        "tire_degradation": -11.188000000000017,
+        "clutch_score": 5.456739530332105,
+        "post_fcy_performance": 8.247832013451314,
+        "s1_std": 7.97720748329901,
+        "s3_std": 3.2199160175652337,
+        "late_pace": 118.69585714285714
+      }
+    },
+    {
+      "driver": 13,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 34.11,
+      "features": {
+        "s2_std": 5.363287768553136,
+        "consistency_score": 0.0540059460552437,
+        "tire_degradation": -14.517285714285704,
+        "clutch_score": 7.403247850590552,
+        "post_fcy_performance": 10.15020576131686,
+        "s1_std": 6.945634802331555,
+        "s3_std": 6.894016865137228,
+        "late_pace": 113.8724285714286
+      }
+    },
+    {
+      "driver": 14,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 31.8,
+      "features": {
+        "s2_std": 5.237555026935103,
+        "consistency_score": 0.0539605122566935,
+        "tire_degradation": -13.311428571428564,
+        "clutch_score": 6.300301861143888,
+        "post_fcy_performance": 9.532116107747012,
+        "s1_std": 7.697493784663622,
+        "s3_std": 6.700134844058844,
+        "late_pace": 114.99257142857144
+      }
+    },
+    {
+      "driver": 15,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 31.0,
+      "features": {
+        "s2_std": 4.9389896376377065,
+        "consistency_score": 0.0556729954868895,
+        "tire_degradation": -13.631428571428556,
+        "clutch_score": 7.82546513168523,
+        "post_fcy_performance": 9.432420281806465,
+        "s1_std": 7.493694852271544,
+        "s3_std": 6.624987232202022,
+        "late_pace": 115.23685714285716
+      }
+    },
+    {
+      "driver": 16,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 37.29,
+      "features": {
+        "s2_std": 5.6785466970410825,
+        "consistency_score": 0.0527576399603679,
+        "tire_degradation": -14.56542857142857,
+        "clutch_score": 9.583520030725028,
+        "post_fcy_performance": 10.290361219214631,
+        "s1_std": 6.514476302088772,
+        "s3_std": 7.273204373392986,
+        "late_pace": 113.52542857142858
+      }
+    },
+    {
+      "driver": 17,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 37.46,
+      "features": {
+        "s2_std": 5.044721736884742,
+        "consistency_score": 0.0587345596182676,
+        "tire_degradation": -11.631714285714269,
+        "clutch_score": 7.161947665900296,
+        "post_fcy_performance": 8.424905757710896,
+        "s1_std": 5.643199954954788,
+        "s3_std": 7.062844599569095,
+        "late_pace": 116.83314285714287
+      }
+    },
+    {
+      "driver": 2,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 46.18,
+      "features": {
+        "s2_std": 7.050151230609091,
+        "consistency_score": 0.0508873278559484,
+        "tire_degradation": -14.22971428571428,
+        "clutch_score": 8.877882470987611,
+        "post_fcy_performance": 10.30584744154068,
+        "s1_std": 5.835065102742791,
+        "s3_std": 7.468159746115941,
+        "late_pace": 112.90142857142858
+      }
+    },
+    {
+      "driver": 21,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 37.18,
+      "features": {
+        "s2_std": 5.152105527852654,
+        "consistency_score": 0.0578629515006065,
+        "tire_degradation": -13.479857142857128,
+        "clutch_score": 7.2595775058655425,
+        "post_fcy_performance": 9.695643684193946,
+        "s1_std": 5.883259637030305,
+        "s3_std": 6.809111030362886,
+        "late_pace": 115.27157142857143
+      }
+    },
+    {
+      "driver": 31,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 33.1,
+      "features": {
+        "s2_std": 5.178327601962506,
+        "consistency_score": 0.0547122624139789,
+        "tire_degradation": -14.281857142857149,
+        "clutch_score": 8.288761295262942,
+        "post_fcy_performance": 9.988710088192605,
+        "s1_std": 7.114202715640087,
+        "s3_std": 6.914015673213161,
+        "late_pace": 114.26585714285716
+      }
+    },
+    {
+      "driver": 41,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 33.41,
+      "features": {
+        "s2_std": 4.933531545977133,
+        "consistency_score": 0.0571391988667051,
+        "tire_degradation": -12.645999999999988,
+        "clutch_score": 7.113768326225493,
+        "post_fcy_performance": 9.218993341819624,
+        "s1_std": 6.99064642685982,
+        "s3_std": 6.43597755720785,
+        "late_pace": 116.38828571428571
+      }
+    },
+    {
+      "driver": 46,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 2.15,
+      "features": {
+        "s2_std": 6.678640602697527,
+        "consistency_score": 0.0403572136779615,
+        "tire_degradation": -53.68600000000001,
+        "clutch_score": 8.900778364829492,
+        "post_fcy_performance": 0.0,
+        "s1_std": 8.086641935933605,
+        "s3_std": 9.032954649504225,
+        "late_pace": 114.558
+      }
+    },
+    {
+      "driver": 47,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 37.3,
+      "features": {
+        "s2_std": 5.497531695051447,
+        "consistency_score": 0.0549981869913067,
+        "tire_degradation": -14.170142857142892,
+        "clutch_score": 8.231789695241634,
+        "post_fcy_performance": 10.05304355527926,
+        "s1_std": 6.22791908713048,
+        "s3_std": 7.112726948425416,
+        "late_pace": 114.06871428571428
+      }
+    },
+    {
+      "driver": 5,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 17.53,
+      "features": {
+        "s2_std": 4.214022940664235,
+        "consistency_score": 0.0541558224751189,
+        "tire_degradation": -10.333666666666645,
+        "clutch_score": 8.201046909134638,
+        "post_fcy_performance": 2.277961597821309,
+        "s1_std": 9.543820260019334,
+        "s3_std": 5.921053250900552,
+        "late_pace": 126.78666666666668
+      }
+    },
+    {
+      "driver": 50,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 38.47,
+      "features": {
+        "s2_std": 5.737002159408368,
+        "consistency_score": 0.0542015462502837,
+        "tire_degradation": -13.52457142857142,
+        "clutch_score": 8.016410177195242,
+        "post_fcy_performance": 9.579543147889718,
+        "s1_std": 6.196858256494355,
+        "s3_std": 7.04270463914249,
+        "late_pace": 114.43628571428572
+      }
+    },
+    {
+      "driver": 51,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 31.98,
+      "features": {
+        "s2_std": 4.939522526524531,
+        "consistency_score": 0.0570429544196022,
+        "tire_degradation": -9.8544285714286,
+        "clutch_score": -0.8725022627021487,
+        "post_fcy_performance": 7.475259456249785,
+        "s1_std": 6.803954054755278,
+        "s3_std": 7.422374461093474,
+        "late_pace": 118.78814285714284
+      }
+    },
+    {
+      "driver": 55,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 39.95,
+      "features": {
+        "s2_std": 6.1061548448411855,
+        "consistency_score": 0.0535392083120862,
+        "tire_degradation": -12.997,
+        "clutch_score": 5.535955582727299,
+        "post_fcy_performance": 9.24857726585897,
+        "s1_std": 6.069865774598728,
+        "s3_std": 7.148822430351214,
+        "late_pace": 114.60285714285712
+      }
+    },
+    {
+      "driver": 67,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 32.68,
+      "features": {
+        "s2_std": 5.137903451048334,
+        "consistency_score": 0.0566673868176144,
+        "tire_degradation": -12.474857142857148,
+        "clutch_score": 7.143546144283497,
+        "post_fcy_performance": 9.024419892134189,
+        "s1_std": 7.626369437028557,
+        "s3_std": 5.995799121917745,
+        "late_pace": 116.81371428571428
+      }
+    },
+    {
+      "driver": 7,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 44.66,
+      "features": {
+        "s2_std": 6.826917282669798,
+        "consistency_score": 0.0512243423212568,
+        "tire_degradation": -14.23599999999999,
+        "clutch_score": 8.678213455861894,
+        "post_fcy_performance": 10.285598417408496,
+        "s1_std": 5.949250148828281,
+        "s3_std": 7.386756124091044,
+        "late_pace": 112.97171428571428
+      }
+    },
+    {
+      "driver": 71,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 41.15,
+      "features": {
+        "s2_std": 6.166834236813003,
+        "consistency_score": 0.0529006784368457,
+        "tire_degradation": -13.47242857142858,
+        "clutch_score": 7.404860231209801,
+        "post_fcy_performance": 9.75771115262826,
+        "s1_std": 6.030221156376041,
+        "s3_std": 7.138662964898044,
+        "late_pace": 113.94171428571428
+      }
+    },
+    {
+      "driver": 72,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 39.71,
+      "features": {
+        "s2_std": 6.106674745027645,
+        "consistency_score": 0.0530330349955866,
+        "tire_degradation": -13.747142857142876,
+        "clutch_score": 7.381059529132193,
+        "post_fcy_performance": 9.717000513610651,
+        "s1_std": 6.272310457573864,
+        "s3_std": 7.00852083251097,
+        "late_pace": 113.91885714285714
+      }
+    },
+    {
+      "driver": 73,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 9.05,
+      "features": {
+        "s2_std": 5.08601551595858,
+        "consistency_score": 0.0219046442458114,
+        "tire_degradation": 15.120000000000031,
+        "clutch_score": -58.898537154008814,
+        "post_fcy_performance": -9.57361771873679,
+        "s1_std": 6.907991299247285,
+        "s3_std": 43.38528430163082,
+        "late_pace": 144.09257142857146
+      }
+    },
+    {
+      "driver": 78,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 42.38,
+      "features": {
+        "s2_std": 6.481687771090549,
+        "consistency_score": 0.051659030076496,
+        "tire_degradation": -13.78085714285713,
+        "clutch_score": 9.043100223491694,
+        "post_fcy_performance": 9.687592323874222,
+        "s1_std": 5.995700523033548,
+        "s3_std": 7.402405975665711,
+        "late_pace": 113.54528571428573
+      }
+    },
+    {
+      "driver": 80,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 29.92,
+      "features": {
+        "s2_std": 4.667145741256626,
+        "consistency_score": 0.0596386104881221,
+        "tire_degradation": -10.455142857142832,
+        "clutch_score": 6.4395003310299765,
+        "post_fcy_performance": 7.881644619499664,
+        "s1_std": 8.42265099962428,
+        "s3_std": 4.6779537894088,
+        "late_pace": 119.14528571428572
+      }
+    },
+    {
+      "driver": 88,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 28.21,
+      "features": {
+        "s2_std": 5.372516754469573,
+        "consistency_score": 0.0526411058863768,
+        "tire_degradation": -7.346571428571437,
+        "clutch_score": 8.450419427028235,
+        "post_fcy_performance": 6.2231212201818416,
+        "s1_std": 10.180157668090713,
+        "s3_std": 6.871375964622088,
+        "late_pace": 120.80842857142856
+      }
+    },
+    {
+      "driver": 89,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 40.81,
+      "features": {
+        "s2_std": 5.875249751898735,
+        "consistency_score": 0.0550975765823746,
+        "tire_degradation": -12.819142857142865,
+        "clutch_score": 8.05982197708539,
+        "post_fcy_performance": 9.077994395806876,
+        "s1_std": 5.667988705472864,
+        "s3_std": 7.128057462928115,
+        "late_pace": 114.93385714285714
+      }
+    },
+    {
+      "driver": 93,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 27.46,
+      "features": {
+        "s2_std": 4.7597196525631285,
+        "consistency_score": 0.0561198525685454,
+        "tire_degradation": -13.94257142857144,
+        "clutch_score": 6.946248094404592,
+        "post_fcy_performance": 9.630382316163775,
+        "s1_std": 8.756637453954573,
+        "s3_std": 5.336885619212211,
+        "late_pace": 115.74185714285714
+      }
+    },
+    {
+      "driver": 98,
+      "track": "sonoma",
+      "race": 2,
+      "probability": 40.87,
+      "features": {
+        "s2_std": 5.890780533175828,
+        "consistency_score": 0.0554252807652768,
+        "tire_degradation": -12.969285714285704,
+        "clutch_score": 8.055293540357816,
+        "post_fcy_performance": 8.944091148142915,
+        "s1_std": 5.500879920167673,
+        "s3_std": 7.206406775101244,
+        "late_pace": 114.86571428571428
+      }
+    },
+    {
+      "driver": 3,
+      "track": "vir",
+      "race": 1,
+      "probability": 58.4,
+      "features": {
+        "s2_std": 10.808306543799397,
+        "consistency_score": 0.0449619127301737,
+        "tire_degradation": -28.01866666666666,
+        "clutch_score": 6.15512441941072,
+        "post_fcy_performance": 15.806794515054012,
+        "s1_std": 6.0931960317701055,
+        "s3_std": 5.581857789208478,
+        "late_pace": 131.20883333333333
+      }
+    },
+    {
+      "driver": 111,
+      "track": "vir",
+      "race": 1,
+      "probability": 62.34,
+      "features": {
+        "s2_std": 10.916604807163694,
+        "consistency_score": 0.043910479152807,
+        "tire_degradation": -25.92983333333333,
+        "clutch_score": 5.808580117216545,
+        "post_fcy_performance": 16.14859605706763,
+        "s1_std": 6.166850936341224,
+        "s3_std": 5.233892925719319,
+        "late_pace": 130.40683333333334
+      }
+    },
+    {
+      "driver": 113,
+      "track": "vir",
+      "race": 1,
+      "probability": 62.96,
+      "features": {
+        "s2_std": 10.926464817010505,
+        "consistency_score": 0.0437489933859889,
+        "tire_degradation": -25.11099999999996,
+        "clutch_score": 5.531118918297269,
+        "post_fcy_performance": 15.93596665561464,
+        "s1_std": 6.191563564110526,
+        "s3_std": 5.298176692082506,
+        "late_pace": 130.87383333333335
+      }
+    },
+    {
+      "driver": 12,
+      "track": "vir",
+      "race": 1,
+      "probability": 63.06,
+      "features": {
+        "s2_std": 10.29922465400596,
+        "consistency_score": 0.0481263068877249,
+        "tire_degradation": -22.75716666666665,
+        "clutch_score": 3.9935044902034567,
+        "post_fcy_performance": 14.22379092809776,
+        "s1_std": 5.388926496944792,
+        "s3_std": 4.74154293564092,
+        "late_pace": 136.172
+      }
+    },
+    {
+      "driver": 13,
+      "track": "vir",
+      "race": 1,
+      "probability": 60.44,
+      "features": {
+        "s2_std": 10.973206453975926,
+        "consistency_score": 0.042737464956901,
+        "tire_degradation": -26.263000000000037,
+        "clutch_score": 5.780933506577602,
+        "post_fcy_performance": 15.917487334558071,
+        "s1_std": 6.440017883883307,
+        "s3_std": 5.49995013470218,
+        "late_pace": 129.24766666666665
+      }
+    },
+    {
+      "driver": 15,
+      "track": "vir",
+      "race": 1,
+      "probability": 0.01,
+      "features": {
+        "s2_std": 11.208955645943435,
+        "consistency_score": 0.0106646313235526,
+        "tire_degradation": -107.39766666666668,
+        "clutch_score": 17.91259010050409,
+        "post_fcy_performance": -20.22115467371687,
+        "s1_std": 5.307317171946328,
+        "s3_std": 76.64559355240196,
+        "late_pace": 130.862
+      }
+    },
+    {
+      "driver": 2,
+      "track": "vir",
+      "race": 1,
+      "probability": 51.97,
+      "features": {
+        "s2_std": 10.906280545003224,
+        "consistency_score": 0.0425866372635093,
+        "tire_degradation": -28.83750000000001,
+        "clutch_score": 6.2852796566430325,
+        "post_fcy_performance": 14.94305350464627,
+        "s1_std": 7.227048318460891,
+        "s3_std": 5.480565106283341,
+        "late_pace": 129.423
+      }
+    },
+    {
+      "driver": 21,
+      "track": "vir",
+      "race": 1,
+      "probability": 62.24,
+      "features": {
+        "s2_std": 10.819559616852787,
+        "consistency_score": 0.043365931820617,
+        "tire_degradation": -24.67616666666666,
+        "clutch_score": 5.540693984814973,
+        "post_fcy_performance": 15.66232714652731,
+        "s1_std": 6.219058968204111,
+        "s3_std": 5.533979138254098,
+        "late_pace": 130.81466666666665
+      }
+    },
+    {
+      "driver": 31,
+      "track": "vir",
+      "race": 1,
+      "probability": 62.39,
+      "features": {
+        "s2_std": 10.88252203064016,
+        "consistency_score": 0.0433966828532597,
+        "tire_degradation": -24.98783333333336,
+        "clutch_score": 5.428773528840496,
+        "post_fcy_performance": 15.747997381250055,
+        "s1_std": 6.187910737244458,
+        "s3_std": 5.491207104137149,
+        "late_pace": 130.9235
+      }
+    },
+    {
+      "driver": 41,
+      "track": "vir",
+      "race": 1,
+      "probability": 58.61,
+      "features": {
+        "s2_std": 10.797784167913443,
+        "consistency_score": 0.044890328125286,
+        "tire_degradation": -27.56183333333331,
+        "clutch_score": 5.956216238112445,
+        "post_fcy_performance": 15.52261853465241,
+        "s1_std": 6.049688916534642,
+        "s3_std": 5.428918047679579,
+        "late_pace": 131.38916666666668
+      }
+    },
+    {
+      "driver": 46,
+      "track": "vir",
+      "race": 1,
+      "probability": 58.94,
+      "features": {
+        "s2_std": 10.894580247342688,
+        "consistency_score": 0.0423969301728254,
+        "tire_degradation": -25.99000000000004,
+        "clutch_score": 6.017013284220308,
+        "post_fcy_performance": 15.380146462074611,
+        "s1_std": 6.583750107971178,
+        "s3_std": 5.479823526739755,
+        "late_pace": 129.248
+      }
+    },
+    {
+      "driver": 5,
+      "track": "vir",
+      "race": 1,
+      "probability": 60.72,
+      "features": {
+        "s2_std": 10.87609741577228,
+        "consistency_score": 0.0438825548934049,
+        "tire_degradation": -25.986166666666666,
+        "clutch_score": 5.6093679051581935,
+        "post_fcy_performance": 15.508436646412331,
+        "s1_std": 6.148745582594363,
+        "s3_std": 5.371066485051373,
+        "late_pace": 130.86583333333334
+      }
+    },
+    {
+      "driver": 51,
+      "track": "vir",
+      "race": 1,
+      "probability": 61.8,
+      "features": {
+        "s2_std": 10.778461170681776,
+        "consistency_score": 0.0448264586270552,
+        "tire_degradation": -25.144833333333334,
+        "clutch_score": 5.325180990394345,
+        "post_fcy_performance": 15.32469709161775,
+        "s1_std": 6.003875250948122,
+        "s3_std": 5.146351423709402,
+        "late_pace": 132.1665
+      }
+    },
+    {
+      "driver": 55,
+      "track": "vir",
+      "race": 1,
+      "probability": 59.25,
+      "features": {
+        "s2_std": 10.906737817442076,
+        "consistency_score": 0.0425403698221766,
+        "tire_degradation": -25.342166666666685,
+        "clutch_score": 5.303075781770442,
+        "post_fcy_performance": 15.0019873949491,
+        "s1_std": 6.533962346644523,
+        "s3_std": 5.4278319263820825,
+        "late_pace": 130.03833333333333
+      }
+    },
+    {
+      "driver": 61,
+      "track": "vir",
+      "race": 1,
+      "probability": 62.95,
+      "features": {
+        "s2_std": 10.635290637159008,
+        "consistency_score": 0.0461823420631938,
+        "tire_degradation": -24.68499999999997,
+        "clutch_score": 4.962641016033533,
+        "post_fcy_performance": 15.43506447496793,
+        "s1_std": 5.772447092142027,
+        "s3_std": 4.912335594141923,
+        "late_pace": 133.28366666666668
+      }
+    },
+    {
+      "driver": 7,
+      "track": "vir",
+      "race": 1,
+      "probability": 58.67,
+      "features": {
+        "s2_std": 10.918363743205637,
+        "consistency_score": 0.0424535294560479,
+        "tire_degradation": -26.30466666666669,
+        "clutch_score": 5.869641373613551,
+        "post_fcy_performance": 15.439886407372322,
+        "s1_std": 6.5750933655568335,
+        "s3_std": 5.500708772273663,
+        "late_pace": 128.9485
+      }
+    },
+    {
+      "driver": 71,
+      "track": "vir",
+      "race": 1,
+      "probability": 45.28,
+      "features": {
+        "s2_std": 10.983426432584686,
+        "consistency_score": 0.0328358803676107,
+        "tire_degradation": -26.28666666666666,
+        "clutch_score": 9.16501419701168,
+        "post_fcy_performance": 12.250253872867152,
+        "s1_std": 6.429370250531624,
+        "s3_std": 17.276783851762637,
+        "late_pace": 129.751
+      }
+    },
+    {
+      "driver": 72,
+      "track": "vir",
+      "race": 1,
+      "probability": 60.19,
+      "features": {
+        "s2_std": 10.914539532563651,
+        "consistency_score": 0.042662201955587,
+        "tire_degradation": -25.97550000000001,
+        "clutch_score": 5.8783409197012,
+        "post_fcy_performance": 15.84987053323575,
+        "s1_std": 6.533406426730401,
+        "s3_std": 5.474575502649545,
+        "late_pace": 129.32833333333335
+      }
+    },
+    {
+      "driver": 80,
+      "track": "vir",
+      "race": 1,
+      "probability": 65.85,
+      "features": {
+        "s2_std": 11.085997769946696,
+        "consistency_score": 0.0459037823964439,
+        "tire_degradation": -22.94666666666666,
+        "clutch_score": 4.362479652250373,
+        "post_fcy_performance": 14.728249267975304,
+        "s1_std": 5.774004394470826,
+        "s3_std": 5.140917764675669,
+        "late_pace": 134.4305
+      }
+    },
+    {
+      "driver": 88,
+      "track": "vir",
+      "race": 1,
+      "probability": 63.43,
+      "features": {
+        "s2_std": 10.950147160150289,
+        "consistency_score": 0.0439925604600833,
+        "tire_degradation": -25.427166666666665,
+        "clutch_score": 5.644314548137183,
+        "post_fcy_performance": 16.22253321383491,
+        "s1_std": 6.133558154036479,
+        "s3_std": 5.270112162992958,
+        "late_pace": 130.78916666666666
+      }
+    },
+    {
+      "driver": 93,
+      "track": "vir",
+      "race": 1,
+      "probability": 63.2,
+      "features": {
+        "s2_std": 11.054901228660462,
+        "consistency_score": 0.0443168620102417,
+        "tire_degradation": -25.2621666666667,
+        "clutch_score": 5.898581375259286,
+        "post_fcy_performance": 15.42815816947972,
+        "s1_std": 6.018610439286052,
+        "s3_std": 5.203267320911496,
+        "late_pace": 132.07949999999997
+      }
+    },
+    {
+      "driver": 98,
+      "track": "vir",
+      "race": 1,
+      "probability": 97.29,
+      "features": {
+        "s2_std": 20.379766802313192,
+        "consistency_score": 0.0244664044916118,
+        "tire_degradation": 65.542,
+        "clutch_score": -17.730629252989637,
+        "post_fcy_performance": -25.1258281492838,
+        "s1_std": 11.458223171591657,
+        "s3_std": 9.485375704209083,
+        "late_pace": 198.055
+      }
+    },
+    {
+      "driver": 3,
+      "track": "vir",
+      "race": 2,
+      "probability": 47.84,
+      "features": {
+        "s2_std": 0.7850708248304733,
+        "consistency_score": 0.3079282840411345,
+        "tire_degradation": -0.4758571428571372,
+        "clutch_score": -0.4994569385262849,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.4988748578429365,
+        "s3_std": 0.1949690663723489,
+        "late_pace": 131.523
+      }
+    },
+    {
+      "driver": 111,
+      "track": "vir",
+      "race": 2,
+      "probability": 47.37,
+      "features": {
+        "s2_std": 0.8876794637758372,
+        "consistency_score": 0.3118213909639998,
+        "tire_degradation": -1.5675714285714264,
+        "clutch_score": 0.3257364743261451,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.3848239949813197,
+        "s3_std": 0.1283957697286426,
+        "late_pace": 129.52942857142858
+      }
+    },
+    {
+      "driver": 113,
+      "track": "vir",
+      "race": 2,
+      "probability": 46.39,
+      "features": {
+        "s2_std": 1.2341696324164462,
+        "consistency_score": 0.2756782420842336,
+        "tire_degradation": -1.6995714285714314,
+        "clutch_score": -0.2163924933139228,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.3857343587996565,
+        "s3_std": 0.4569755809438252,
+        "late_pace": 130.94414285714288
+      }
+    },
+    {
+      "driver": 12,
+      "track": "vir",
+      "race": 2,
+      "probability": 47.06,
+      "features": {
+        "s2_std": 0.7776727314191899,
+        "consistency_score": 0.3029790764304852,
+        "tire_degradation": -0.9008571428571486,
+        "clutch_score": -0.4416591884027853,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.583569760649055,
+        "s3_std": 0.3136883393896011,
+        "late_pace": 135.47842857142857
+      }
+    },
+    {
+      "driver": 13,
+      "track": "vir",
+      "race": 2,
+      "probability": 65.5,
+      "features": {
+        "s2_std": 0.3585293058564319,
+        "consistency_score": 0.5610907521837194,
+        "tire_degradation": 0.444428571428574,
+        "clutch_score": -0.2268318112231462,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.722072929688874,
+        "s3_std": 0.1639550323460032,
+        "late_pace": 130.22742857142856
+      }
+    },
+    {
+      "driver": 15,
+      "track": "vir",
+      "race": 2,
+      "probability": 51.52,
+      "features": {
+        "s2_std": 0.4657644847593666,
+        "consistency_score": 0.3628059389848801,
+        "tire_degradation": 0.3921428571428578,
+        "clutch_score": -0.4000934228296873,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.3887763982047383,
+        "s3_std": 0.1736298164426109,
+        "late_pace": 131.75542857142858
+      }
+    },
+    {
+      "driver": 2,
+      "track": "vir",
+      "race": 2,
+      "probability": 66.17,
+      "features": {
+        "s2_std": 0.1742276523798713,
+        "consistency_score": 0.5843583991198671,
+        "tire_degradation": 0.3439999999999941,
+        "clutch_score": -0.2636294075570423,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.6183529433689949,
+        "s3_std": 0.166546310929454,
+        "late_pace": 130.15514285714286
+      }
+    },
+    {
+      "driver": 41,
+      "track": "vir",
+      "race": 2,
+      "probability": 46.56,
+      "features": {
+        "s2_std": 1.0329603485027616,
+        "consistency_score": 0.2857460917713829,
+        "tire_degradation": -1.3999999999999773,
+        "clutch_score": -0.1035057752486378,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.419549302085923,
+        "s3_std": 0.2094703785113413,
+        "late_pace": 130.935
+      }
+    },
+    {
+      "driver": 46,
+      "track": "vir",
+      "race": 2,
+      "probability": 63.4,
+      "features": {
+        "s2_std": 0.1316051821799134,
+        "consistency_score": 0.5529560424617156,
+        "tire_degradation": 0.1850000000000307,
+        "clutch_score": -0.238307172558499,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.7489372079957488,
+        "s3_std": 0.3263115076119758,
+        "late_pace": 130.10085714285714
+      }
+    },
+    {
+      "driver": 5,
+      "track": "vir",
+      "race": 2,
+      "probability": 50.17,
+      "features": {
+        "s2_std": 0.6514745137802882,
+        "consistency_score": 0.351129516882365,
+        "tire_degradation": -0.7421428571428521,
+        "clutch_score": -0.5929986034071925,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.2916630844319308,
+        "s3_std": 0.2477233760722464,
+        "late_pace": 131.33714285714285
+      }
+    },
+    {
+      "driver": 51,
+      "track": "vir",
+      "race": 2,
+      "probability": 41.68,
+      "features": {
+        "s2_std": 1.0233741135654095,
+        "consistency_score": 0.2314717850590212,
+        "tire_degradation": -1.0718571428571408,
+        "clutch_score": 0.357130195219229,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.610461110823134,
+        "s3_std": 2.544428647994838,
+        "late_pace": 132.40928571428572
+      }
+    },
+    {
+      "driver": 55,
+      "track": "vir",
+      "race": 2,
+      "probability": 30.94,
+      "features": {
+        "s2_std": 0.8071127228388983,
+        "consistency_score": 0.0928014660091051,
+        "tire_degradation": -0.0620000000000118,
+        "clutch_score": 1.972458745065694,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.2217642237441122,
+        "s3_std": 8.983289013642587,
+        "late_pace": 129.58642857142857
+      }
+    },
+    {
+      "driver": 61,
+      "track": "vir",
+      "race": 2,
+      "probability": 43.5,
+      "features": {
+        "s2_std": 1.0439309868296645,
+        "consistency_score": 0.258098408888844,
+        "tire_degradation": -1.822714285714284,
+        "clutch_score": 0.573951687599709,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.7513542992721216,
+        "s3_std": 0.25230897411914,
+        "late_pace": 132.354
+      }
+    },
+    {
+      "driver": 7,
+      "track": "vir",
+      "race": 2,
+      "probability": 64.7,
+      "features": {
+        "s2_std": 0.7241958234091631,
+        "consistency_score": 0.5126832195851585,
+        "tire_degradation": 0.4158571428571349,
+        "clutch_score": -0.4698785818643253,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.5300385068213929,
+        "s3_std": 0.2626514801024353,
+        "late_pace": 130.10142857142856
+      }
+    },
+    {
+      "driver": 71,
+      "track": "vir",
+      "race": 2,
+      "probability": 61.09,
+      "features": {
+        "s2_std": 0.1609440533356047,
+        "consistency_score": 0.5179822949205739,
+        "tire_degradation": 0.1171428571428521,
+        "clutch_score": -0.282742932617762,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.85309013804271,
+        "s3_std": 0.1136729380376232,
+        "late_pace": 130.003
+      }
+    },
+    {
+      "driver": 72,
+      "track": "vir",
+      "race": 2,
+      "probability": 63.89,
+      "features": {
+        "s2_std": 0.3134688116965273,
+        "consistency_score": 0.5404055032963354,
+        "tire_degradation": 0.5691428571428503,
+        "clutch_score": -0.1989211738420357,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.8333864123446589,
+        "s3_std": 0.2035351450319023,
+        "late_pace": 130.292
+      }
+    },
+    {
+      "driver": 80,
+      "track": "vir",
+      "race": 2,
+      "probability": 45.6,
+      "features": {
+        "s2_std": 1.017940721829074,
+        "consistency_score": 0.2860035690897876,
+        "tire_degradation": -1.7109999999999843,
+        "clutch_score": 0.3663060434189676,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.6361148943055384,
+        "s3_std": 0.1914221017872067,
+        "late_pace": 131.6887142857143
+      }
+    },
+    {
+      "driver": 88,
+      "track": "vir",
+      "race": 2,
+      "probability": 60.35,
+      "features": {
+        "s2_std": 0.1915678769052584,
+        "consistency_score": 0.5033788432797078,
+        "tire_degradation": 0.2782857142857153,
+        "clutch_score": -0.1253101219868127,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.9424409330460468,
+        "s3_std": 0.1563713865332011,
+        "late_pace": 130.37085714285715
+      }
+    },
+    {
+      "driver": 89,
+      "track": "vir",
+      "race": 2,
+      "probability": 32.86,
+      "features": {
+        "s2_std": 0.9884805604669484,
+        "consistency_score": 0.1786129915960252,
+        "tire_degradation": -0.934000000000026,
+        "clutch_score": 0.8165394301610847,
+        "post_fcy_performance": 0.0,
+        "s1_std": 3.511999376573497,
+        "s3_std": 3.069107454687935,
+        "late_pace": 134.3902857142857
+      }
+    },
+    {
+      "driver": 93,
+      "track": "vir",
+      "race": 2,
+      "probability": 46.32,
+      "features": {
+        "s2_std": 1.0769945254711082,
+        "consistency_score": 0.2745903874455494,
+        "tire_degradation": -0.8887142857142578,
+        "clutch_score": -0.4344692549736656,
+        "post_fcy_performance": 0.0,
+        "s1_std": 1.580653345930093,
+        "s3_std": 0.1947166564929404,
+        "late_pace": 131.73628571428574
+      }
+    },
+    {
+      "driver": 98,
+      "track": "vir",
+      "race": 2,
+      "probability": 59.83,
+      "features": {
+        "s2_std": 0.2258960584865662,
+        "consistency_score": 0.5033207703165048,
+        "tire_degradation": -0.0475714285714161,
+        "clutch_score": -0.2828894217822384,
+        "post_fcy_performance": 0.0,
+        "s1_std": 0.972827109406046,
+        "s3_std": 0.191808367909224,
+        "late_pace": 129.9651428571429
+      }
+    },
+    {
+      "driver": 3,
+      "track": "road_america",
+      "race": 1,
+      "probability": 35.03,
+      "features": {
+        "s2_std": 8.173106395460366,
+        "consistency_score": 0.0332896846815269,
+        "tire_degradation": -42.50619999999998,
+        "clutch_score": 9.250182780196898,
+        "post_fcy_performance": 30.830693012002143,
+        "s1_std": 13.54484171747736,
+        "s3_std": 9.304867465599978,
+        "late_pace": 166.34980000000002
+      }
+    },
+    {
+      "driver": 11,
+      "track": "road_america",
+      "race": 1,
+      "probability": 36.13,
+      "features": {
+        "s2_std": 7.655558747968024,
+        "consistency_score": 0.0342971176354008,
+        "tire_degradation": -40.156600000000026,
+        "clutch_score": 8.111621293533993,
+        "post_fcy_performance": 29.99169907159605,
+        "s1_std": 12.965806313491434,
+        "s3_std": 8.995160046751069,
+        "late_pace": 168.9348
+      }
+    },
+    {
+      "driver": 113,
+      "track": "road_america",
+      "race": 1,
+      "probability": 46.3,
+      "features": {
+        "s2_std": 9.365943144842603,
+        "consistency_score": 0.0343643017385902,
+        "tire_degradation": -41.985600000000005,
+        "clutch_score": 8.139402277877505,
+        "post_fcy_performance": 29.608694218490477,
+        "s1_std": 11.103787160039342,
+        "s3_std": 9.325238623271384,
+        "late_pace": 166.2062
+      }
+    },
+    {
+      "driver": 12,
+      "track": "road_america",
+      "race": 1,
+      "probability": 24.11,
+      "features": {
+        "s2_std": 6.542535559158782,
+        "consistency_score": 0.0334496013815254,
+        "tire_degradation": -41.476,
+        "clutch_score": 7.966649704070168,
+        "post_fcy_performance": 30.58673987347154,
+        "s1_std": 15.608096092672394,
+        "s3_std": 8.422023042227416,
+        "late_pace": 169.59300000000002
+      }
+    },
+    {
+      "driver": 13,
+      "track": "road_america",
+      "race": 1,
+      "probability": 48.5,
+      "features": {
+        "s2_std": 9.246157638550354,
+        "consistency_score": 0.0341940624326312,
+        "tire_degradation": -41.89560000000003,
+        "clutch_score": 8.664110423776753,
+        "post_fcy_performance": 29.704522180042908,
+        "s1_std": 10.361540098305426,
+        "s3_std": 9.231059652839738,
+        "late_pace": 165.4702
+      }
+    },
+    {
+      "driver": 15,
+      "track": "road_america",
+      "race": 1,
+      "probability": 30.76,
+      "features": {
+        "s2_std": 7.358997412900544,
+        "consistency_score": 0.0334919468642137,
+        "tire_degradation": -40.77760000000001,
+        "clutch_score": 7.426629147663522,
+        "post_fcy_performance": 30.49684602667044,
+        "s1_std": 14.377497281854849,
+        "s3_std": 8.90073199772008,
+        "late_pace": 169.02079999999998
+      }
+    },
+    {
+      "driver": 18,
+      "track": "road_america",
+      "race": 1,
+      "probability": 15.82,
+      "features": {
+        "s2_std": 5.340078940918205,
+        "consistency_score": 0.0349033797548299,
+        "tire_degradation": -38.8646,
+        "clutch_score": 6.833801249106148,
+        "post_fcy_performance": 29.14316770530696,
+        "s1_std": 18.73132437618105,
+        "s3_std": 5.926483409240254,
+        "late_pace": 175.3604
+      }
+    },
+    {
+      "driver": 2,
+      "track": "road_america",
+      "race": 1,
+      "probability": 42.91,
+      "features": {
+        "s2_std": 9.492283357197747,
+        "consistency_score": 0.0346794791189071,
+        "tire_degradation": -43.16800000000004,
+        "clutch_score": 10.05209643387116,
+        "post_fcy_performance": 28.248739515100933,
+        "s1_std": 10.72152831504242,
+        "s3_std": 10.497499387949492,
+        "late_pace": 163.32979999999998
+      }
+    },
+    {
+      "driver": 21,
+      "track": "road_america",
+      "race": 1,
+      "probability": 48.65,
+      "features": {
+        "s2_std": 9.40096507934568,
+        "consistency_score": 0.0340534931448403,
+        "tire_degradation": -41.69559999999996,
+        "clutch_score": 8.903448023482877,
+        "post_fcy_performance": 29.87413759805392,
+        "s1_std": 10.78701993554029,
+        "s3_std": 9.297559878038662,
+        "late_pace": 165.7844
+      }
+    },
+    {
+      "driver": 22,
+      "track": "road_america",
+      "race": 1,
+      "probability": 50.29,
+      "features": {
+        "s2_std": 9.705689721482804,
+        "consistency_score": 0.0349947886401715,
+        "tire_degradation": -41.773600000000016,
+        "clutch_score": 9.351529279637088,
+        "post_fcy_performance": 28.70489417332871,
+        "s1_std": 9.84926280082408,
+        "s3_std": 9.76170588770709,
+        "late_pace": 164.6778
+      }
+    },
+    {
+      "driver": 31,
+      "track": "road_america",
+      "race": 1,
+      "probability": 44.89,
+      "features": {
+        "s2_std": 9.456317035653356,
+        "consistency_score": 0.0341783349849724,
+        "tire_degradation": -42.48779999999999,
+        "clutch_score": 6.332334470477649,
+        "post_fcy_performance": 29.70664243355024,
+        "s1_std": 11.362539929922836,
+        "s3_std": 9.312714169860676,
+        "late_pace": 166.26479999999998
+      }
+    },
+    {
+      "driver": 41,
+      "track": "road_america",
+      "race": 1,
+      "probability": 41.17,
+      "features": {
+        "s2_std": 9.001458822651882,
+        "consistency_score": 0.0339407292058312,
+        "tire_degradation": -43.313000000000045,
+        "clutch_score": 10.269970464263146,
+        "post_fcy_performance": 29.713440424692,
+        "s1_std": 11.759731520025316,
+        "s3_std": 9.276015321143838,
+        "late_pace": 165.2376
+      }
+    },
+    {
+      "driver": 46,
+      "track": "road_america",
+      "race": 1,
+      "probability": 15.5,
+      "features": {
+        "s2_std": 7.326546002949366,
+        "consistency_score": 0.0308464098361923,
+        "tire_degradation": -44.13200000000003,
+        "clutch_score": 9.002194490893558,
+        "post_fcy_performance": 32.96007271578478,
+        "s1_std": 21.670371411005146,
+        "s3_std": 7.075707545303627,
+        "late_pace": 165.4554
+      }
+    },
+    {
+      "driver": 47,
+      "track": "road_america",
+      "race": 1,
+      "probability": 51.85,
+      "features": {
+        "s2_std": 9.022521558115928,
+        "consistency_score": 0.0353854664566028,
+        "tire_degradation": -40.60339999999999,
+        "clutch_score": 7.430123721437377,
+        "post_fcy_performance": 28.69370160998212,
+        "s1_std": 8.748912156594644,
+        "s3_std": 9.54264710105315,
+        "late_pace": 166.1144
+      }
+    },
+    {
+      "driver": 5,
+      "track": "road_america",
+      "race": 1,
+      "probability": 27.32,
+      "features": {
+        "s2_std": 7.699035501872353,
+        "consistency_score": 0.0325210833205374,
+        "tire_degradation": -43.86339999999996,
+        "clutch_score": 9.507969457138037,
+        "post_fcy_performance": 31.25889917014612,
+        "s1_std": 15.263679980445556,
+        "s3_std": 9.147049158842744,
+        "late_pace": 165.36100000000002
+      }
+    },
+    {
+      "driver": 51,
+      "track": "road_america",
+      "race": 1,
+      "probability": 44.5,
+      "features": {
+        "s2_std": 9.267301130449155,
+        "consistency_score": 0.033989784089366,
+        "tire_degradation": -42.36019999999999,
+        "clutch_score": 8.23169440757317,
+        "post_fcy_performance": 29.934648625060067,
+        "s1_std": 11.546260999154924,
+        "s3_std": 9.28159777809218,
+        "late_pace": 165.6652
+      }
+    },
+    {
+      "driver": 55,
+      "track": "road_america",
+      "race": 1,
+      "probability": 50.85,
+      "features": {
+        "s2_std": 9.120572584364792,
+        "consistency_score": 0.0345991479760603,
+        "tire_degradation": -41.34420000000003,
+        "clutch_score": 8.705845975628101,
+        "post_fcy_performance": 29.385807546627284,
+        "s1_std": 9.455386679912497,
+        "s3_std": 9.373151741619708,
+        "late_pace": 165.628
+      }
+    },
+    {
+      "driver": 57,
+      "track": "road_america",
+      "race": 1,
+      "probability": 20.66,
+      "features": {
+        "s2_std": 5.451996167416465,
+        "consistency_score": 0.0348138370643282,
+        "tire_degradation": -37.45999999999998,
+        "clutch_score": 7.071859214599987,
+        "post_fcy_performance": 29.404616328774477,
+        "s1_std": 16.891606017134524,
+        "s3_std": 7.451111608983172,
+        "late_pace": 175.3352
+      }
+    },
+    {
+      "driver": 58,
+      "track": "road_america",
+      "race": 1,
+      "probability": 46.19,
+      "features": {
+        "s2_std": 9.39220660933437,
+        "consistency_score": 0.0338262172500453,
+        "tire_degradation": -41.6566,
+        "clutch_score": 8.825168319508204,
+        "post_fcy_performance": 30.093729027507734,
+        "s1_std": 11.729113160758525,
+        "s3_std": 9.26622335458966,
+        "late_pace": 166.2628
+      }
+    },
+    {
+      "driver": 7,
+      "track": "road_america",
+      "race": 1,
+      "probability": 52.1,
+      "features": {
+        "s2_std": 9.181916958270286,
+        "consistency_score": 0.0347636169943047,
+        "tire_degradation": -41.0,
+        "clutch_score": 8.537606758910941,
+        "post_fcy_performance": 29.21434668772219,
+        "s1_std": 9.191524057262654,
+        "s3_std": 9.444093941768708,
+        "late_pace": 165.8964
+      }
+    },
+    {
+      "driver": 71,
+      "track": "road_america",
+      "race": 1,
+      "probability": 51.45,
+      "features": {
+        "s2_std": 9.622004016599378,
+        "consistency_score": 0.0350451302381884,
+        "tire_degradation": -39.86760000000001,
+        "clutch_score": 6.818195197908897,
+        "post_fcy_performance": 29.011280936848667,
+        "s1_std": 10.451714126487492,
+        "s3_std": 9.171739607542913,
+        "late_pace": 167.17960000000002
+      }
+    },
+    {
+      "driver": 72,
+      "track": "road_america",
+      "race": 1,
+      "probability": 50.39,
+      "features": {
+        "s2_std": 9.599811892096444,
+        "consistency_score": 0.0352291364073857,
+        "tire_degradation": -42.03040000000004,
+        "clutch_score": 9.609492011866864,
+        "post_fcy_performance": 28.7400144546565,
+        "s1_std": 9.657745449857456,
+        "s3_std": 9.523996731564807,
+        "late_pace": 165.29919999999998
+      }
+    },
+    {
+      "driver": 8,
+      "track": "road_america",
+      "race": 1,
+      "probability": 22.41,
+      "features": {
+        "s2_std": 6.269944195088487,
+        "consistency_score": 0.0333080801412313,
+        "tire_degradation": -41.18119999999996,
+        "clutch_score": 8.261355872375493,
+        "post_fcy_performance": 30.68227101757889,
+        "s1_std": 16.154564865107087,
+        "s3_std": 8.495994242666868,
+        "late_pace": 170.2314
+      }
+    },
+    {
+      "driver": 80,
+      "track": "road_america",
+      "race": 1,
+      "probability": 0.03,
+      "features": {
+        "s2_std": 7.345216766334704,
+        "consistency_score": 0.0111443176899591,
+        "tire_degradation": 28.58699999999999,
+        "clutch_score": 18.72030380426823,
+        "post_fcy_performance": 0.5808967410998357,
+        "s1_std": 88.56516648685557,
+        "s3_std": 12.00866408566008,
+        "late_pace": 261.95866666666666
+      }
+    },
+    {
+      "driver": 86,
+      "track": "road_america",
+      "race": 1,
+      "probability": 27.79,
+      "features": {
+        "s2_std": 6.630063659106866,
+        "consistency_score": 0.0338072709988413,
+        "tire_degradation": -40.464999999999975,
+        "clutch_score": 8.43983429182087,
+        "post_fcy_performance": 30.212261933106177,
+        "s1_std": 14.537699533085892,
+        "s3_std": 8.430375838653479,
+        "late_pace": 170.1704
+      }
+    },
+    {
+      "driver": 88,
+      "track": "road_america",
+      "race": 1,
+      "probability": 37.6,
+      "features": {
+        "s2_std": 8.520870205595553,
+        "consistency_score": 0.0329828142228806,
+        "tire_degradation": -43.25639999999999,
+        "clutch_score": 9.996365079048456,
+        "post_fcy_performance": 31.05445641710981,
+        "s1_std": 12.950241116276445,
+        "s3_std": 9.667050321779104,
+        "late_pace": 164.792
+      }
+    },
+    {
+      "driver": 89,
+      "track": "road_america",
+      "race": 1,
+      "probability": 49.93,
+      "features": {
+        "s2_std": 9.489196397227298,
+        "consistency_score": 0.0349395911929293,
+        "tire_degradation": -40.60479999999998,
+        "clutch_score": 8.521025022699474,
+        "post_fcy_performance": 29.09484125876433,
+        "s1_std": 10.581461879870451,
+        "s3_std": 9.095450259804151,
+        "late_pace": 166.8112
+      }
+    },
+    {
+      "driver": 98,
+      "track": "road_america",
+      "race": 1,
+      "probability": 52.1,
+      "features": {
+        "s2_std": 9.519710246338509,
+        "consistency_score": 0.0355082491819106,
+        "tire_degradation": -40.66980000000001,
+        "clutch_score": 9.009293977704967,
+        "post_fcy_performance": 28.53070934172765,
+        "s1_std": 9.474349546714716,
+        "s3_std": 9.51269647416146,
+        "late_pace": 166.0682
+      }
+    },
+    {
+      "driver": 3,
+      "track": "road_america",
+      "race": 2,
+      "probability": 35.74,
+      "features": {
+        "s2_std": 11.636700183231143,
+        "consistency_score": 0.0280413934125043,
+        "tire_degradation": -26.700199999999995,
+        "clutch_score": 7.4784321030737635,
+        "post_fcy_performance": 10.653710019118469,
+        "s1_std": 11.12430421155303,
+        "s3_std": 12.386009471078532,
+        "late_pace": 153.9278
+      }
+    },
+    {
+      "driver": 11,
+      "track": "road_america",
+      "race": 2,
+      "probability": 38.4,
+      "features": {
+        "s2_std": 11.70192389862311,
+        "consistency_score": 0.0288839581895233,
+        "tire_degradation": -24.934399999999982,
+        "clutch_score": 6.733358459110949,
+        "post_fcy_performance": 10.034923403987174,
+        "s1_std": 10.803876251720952,
+        "s3_std": 12.2707630719384,
+        "late_pace": 155.9758
+      }
+    },
+    {
+      "driver": 113,
+      "track": "road_america",
+      "race": 2,
+      "probability": 34.27,
+      "features": {
+        "s2_std": 11.969725638042,
+        "consistency_score": 0.0275965830345361,
+        "tire_degradation": -25.55679999999998,
+        "clutch_score": 7.282807952860637,
+        "post_fcy_performance": 10.021950120365611,
+        "s1_std": 12.309705621818637,
+        "s3_std": 11.99890064633374,
+        "late_pace": 153.5918
+      }
+    },
+    {
+      "driver": 12,
+      "track": "road_america",
+      "race": 2,
+      "probability": 35.25,
+      "features": {
+        "s2_std": 10.21923619296702,
+        "consistency_score": 0.0355543534438965,
+        "tire_degradation": -21.374799999999997,
+        "clutch_score": -5.354261981782228,
+        "post_fcy_performance": 9.463617938865765,
+        "s1_std": 9.779778078123906,
+        "s3_std": 13.552465200645448,
+        "late_pace": 161.48180000000002
+      }
+    },
+    {
+      "driver": 13,
+      "track": "road_america",
+      "race": 2,
+      "probability": 37.5,
+      "features": {
+        "s2_std": 12.558330937403,
+        "consistency_score": 0.0273276151255464,
+        "tire_degradation": -23.755799999999997,
+        "clutch_score": 6.048735153148043,
+        "post_fcy_performance": 9.092192967244472,
+        "s1_std": 12.30972030534542,
+        "s3_std": 11.751182354154334,
+        "late_pace": 153.855
+      }
+    },
+    {
+      "driver": 18,
+      "track": "road_america",
+      "race": 2,
+      "probability": 45.15,
+      "features": {
+        "s2_std": 10.529826262113447,
+        "consistency_score": 0.0337332024257526,
+        "tire_degradation": -20.44480000000001,
+        "clutch_score": 6.634106898383043,
+        "post_fcy_performance": 7.483820684650754,
+        "s1_std": 7.4978294849439004,
+        "s3_std": 12.017871633958071,
+        "late_pace": 161.279
+      }
+    },
+    {
+      "driver": 2,
+      "track": "road_america",
+      "race": 2,
+      "probability": 37.26,
+      "features": {
+        "s2_std": 12.54884325196948,
+        "consistency_score": 0.0274157534476764,
+        "tire_degradation": -25.54860000000002,
+        "clutch_score": 7.70624396154114,
+        "post_fcy_performance": 9.837019888432671,
+        "s1_std": 12.130697780836844,
+        "s3_std": 11.810078391992157,
+        "late_pace": 152.6756
+      }
+    },
+    {
+      "driver": 21,
+      "track": "road_america",
+      "race": 2,
+      "probability": 34.21,
+      "features": {
+        "s2_std": 11.912534681142036,
+        "consistency_score": 0.0276942512036742,
+        "tire_degradation": -25.786999999999978,
+        "clutch_score": 8.407366769725813,
+        "post_fcy_performance": 9.35440284428154,
+        "s1_std": 11.769891866912946,
+        "s3_std": 11.993247503650691,
+        "late_pace": 153.192
+      }
+    },
+    {
+      "driver": 31,
+      "track": "road_america",
+      "race": 2,
+      "probability": 34.67,
+      "features": {
+        "s2_std": 11.82949224396381,
+        "consistency_score": 0.0275592499177031,
+        "tire_degradation": -27.36320000000001,
+        "clutch_score": 6.820155678543697,
+        "post_fcy_performance": 11.051670464605948,
+        "s1_std": 11.656282548921595,
+        "s3_std": 12.34343920308656,
+        "late_pace": 152.91
+      }
+    },
+    {
+      "driver": 41,
+      "track": "road_america",
+      "race": 2,
+      "probability": 34.85,
+      "features": {
+        "s2_std": 11.867950742616296,
+        "consistency_score": 0.0278953375881372,
+        "tire_degradation": -25.17440000000002,
+        "clutch_score": 7.969030843560175,
+        "post_fcy_performance": 9.797448387845051,
+        "s1_std": 12.07908286098328,
+        "s3_std": 11.999515469690971,
+        "late_pace": 154.45059999999998
+      }
+    },
+    {
+      "driver": 46,
+      "track": "road_america",
+      "race": 2,
+      "probability": 36.61,
+      "features": {
+        "s2_std": 12.30763781407708,
+        "consistency_score": 0.0276135805507822,
+        "tire_degradation": -22.970399999999984,
+        "clutch_score": -0.1570635425458216,
+        "post_fcy_performance": 9.277036418304402,
+        "s1_std": 12.148239912123074,
+        "s3_std": 12.088138389371135,
+        "late_pace": 155.65040000000002
+      }
+    },
+    {
+      "driver": 47,
+      "track": "road_america",
+      "race": 2,
+      "probability": 36.09,
+      "features": {
+        "s2_std": 12.126036487839368,
+        "consistency_score": 0.0274621753116187,
+        "tire_degradation": -25.52759999999995,
+        "clutch_score": 7.751106675706008,
+        "post_fcy_performance": 9.816703188092433,
+        "s1_std": 11.856365252781009,
+        "s3_std": 11.812918125186211,
+        "late_pace": 152.81520000000003
+      }
+    },
+    {
+      "driver": 5,
+      "track": "road_america",
+      "race": 2,
+      "probability": 38.84,
+      "features": {
+        "s2_std": 11.80090738725205,
+        "consistency_score": 0.0293048395589449,
+        "tire_degradation": -27.496200000000016,
+        "clutch_score": 7.371120758738392,
+        "post_fcy_performance": 10.893976615992855,
+        "s1_std": 10.089918255367582,
+        "s3_std": 12.685836649876624,
+        "late_pace": 153.8072
+      }
+    },
+    {
+      "driver": 51,
+      "track": "road_america",
+      "race": 2,
+      "probability": 36.03,
+      "features": {
+        "s2_std": 11.668942979437038,
+        "consistency_score": 0.028092663200182,
+        "tire_degradation": -26.87239999999997,
+        "clutch_score": 7.27475208033454,
+        "post_fcy_performance": 10.76062084090372,
+        "s1_std": 11.0339052103585,
+        "s3_std": 12.46203508395894,
+        "late_pace": 153.87600000000003
+      }
+    },
+    {
+      "driver": 55,
+      "track": "road_america",
+      "race": 2,
+      "probability": 35.81,
+      "features": {
+        "s2_std": 12.090148490792483,
+        "consistency_score": 0.0274002160131806,
+        "tire_degradation": -24.953399999999988,
+        "clutch_score": 8.252153322669193,
+        "post_fcy_performance": 9.501831814751768,
+        "s1_std": 12.01225772143507,
+        "s3_std": 11.74801115364539,
+        "late_pace": 152.9758
+      }
+    },
+    {
+      "driver": 57,
+      "track": "road_america",
+      "race": 2,
+      "probability": 46.06,
+      "features": {
+        "s2_std": 10.718837642413089,
+        "consistency_score": 0.0331888459412748,
+        "tire_degradation": -19.113400000000013,
+        "clutch_score": 3.8929184756457658,
+        "post_fcy_performance": 7.508013712290924,
+        "s1_std": 7.97459946071422,
+        "s3_std": 11.838034507157303,
+        "late_pace": 162.388
+      }
+    },
+    {
+      "driver": 58,
+      "track": "road_america",
+      "race": 2,
+      "probability": 34.09,
+      "features": {
+        "s2_std": 11.509627304616622,
+        "consistency_score": 0.0277901131044031,
+        "tire_degradation": -24.74960000000001,
+        "clutch_score": 6.852808861347038,
+        "post_fcy_performance": 9.753959874068984,
+        "s1_std": 11.83300821791712,
+        "s3_std": 12.045764489633102,
+        "late_pace": 154.629
+      }
+    },
+    {
+      "driver": 7,
+      "track": "road_america",
+      "race": 2,
+      "probability": 37.06,
+      "features": {
+        "s2_std": 12.57357722103512,
+        "consistency_score": 0.0273598297845528,
+        "tire_degradation": -24.484999999999985,
+        "clutch_score": 7.064270272069317,
+        "post_fcy_performance": 9.229348932719,
+        "s1_std": 12.315740350597416,
+        "s3_std": 11.668045020293173,
+        "late_pace": 153.23139999999998
+      }
+    },
+    {
+      "driver": 71,
+      "track": "road_america",
+      "race": 2,
+      "probability": 35.13,
+      "features": {
+        "s2_std": 0.869972988086414,
+        "consistency_score": 0.2286488406506831,
+        "tire_degradation": -5.721000000000004,
+        "clutch_score": 1.1805658707964963,
+        "post_fcy_performance": 0.0,
+        "s1_std": 2.739522099442405,
+        "s3_std": 0.3123817109456518,
+        "late_pace": 153.013
+      }
+    },
+    {
+      "driver": 72,
+      "track": "road_america",
+      "race": 2,
+      "probability": 36.51,
+      "features": {
+        "s2_std": 12.273856275936792,
+        "consistency_score": 0.0272484308647111,
+        "tire_degradation": -24.54060000000004,
+        "clutch_score": 7.653169537593187,
+        "post_fcy_performance": 9.214889021830633,
+        "s1_std": 12.011595901277577,
+        "s3_std": 11.749488313639576,
+        "late_pace": 152.9808
+      }
+    },
+    {
+      "driver": 8,
+      "track": "road_america",
+      "race": 2,
+      "probability": 45.32,
+      "features": {
+        "s2_std": 11.25281873870616,
+        "consistency_score": 0.0322305813865542,
+        "tire_degradation": -25.043999999999983,
+        "clutch_score": 7.315699015172962,
+        "post_fcy_performance": 9.890570817614492,
+        "s1_std": 7.817427903691327,
+        "s3_std": 12.525589816451758,
+        "late_pace": 156.90320000000003
+      }
+    },
+    {
+      "driver": 80,
+      "track": "road_america",
+      "race": 2,
+      "probability": 33.57,
+      "features": {
+        "s2_std": 10.65093674801865,
+        "consistency_score": 0.0348342950389374,
+        "tire_degradation": -26.251000000000005,
+        "clutch_score": 7.539117817233139,
+        "post_fcy_performance": 10.590430250122958,
+        "s1_std": 10.621348848787854,
+        "s3_std": 12.761449859140338,
+        "late_pace": 155.9314
+      }
+    },
+    {
+      "driver": 86,
+      "track": "road_america",
+      "race": 2,
+      "probability": 38.4,
+      "features": {
+        "s2_std": 11.305820544472812,
+        "consistency_score": 0.0292974993359195,
+        "tire_degradation": -24.906200000000013,
+        "clutch_score": 7.7907848672987265,
+        "post_fcy_performance": 9.805049649525186,
+        "s1_std": 10.12064886172586,
+        "s3_std": 12.376812891273271,
+        "late_pace": 156.20999999999998
+      }
+    },
+    {
+      "driver": 88,
+      "track": "road_america",
+      "race": 2,
+      "probability": 34.68,
+      "features": {
+        "s2_std": 12.01851616031835,
+        "consistency_score": 0.0276291923327579,
+        "tire_degradation": -26.77680000000001,
+        "clutch_score": 7.989638089208249,
+        "post_fcy_performance": 10.617370722465152,
+        "s1_std": 12.08349757434356,
+        "s3_std": 12.209407340966516,
+        "late_pace": 153.2042
+      }
+    },
+    {
+      "driver": 89,
+      "track": "road_america",
+      "race": 2,
+      "probability": 35.89,
+      "features": {
+        "s2_std": 11.90724581924804,
+        "consistency_score": 0.0278883829913218,
+        "tire_degradation": -25.706199999999995,
+        "clutch_score": 7.6701056013998015,
+        "post_fcy_performance": 10.304936949481236,
+        "s1_std": 11.807179948199598,
+        "s3_std": 12.267861475571996,
+        "late_pace": 154.6994
+      }
+    },
+    {
+      "driver": 98,
+      "track": "road_america",
+      "race": 2,
+      "probability": 35.26,
+      "features": {
+        "s2_std": 11.933540976702895,
+        "consistency_score": 0.0275035845610521,
+        "tire_degradation": -25.7894,
+        "clutch_score": 7.657653032501985,
+        "post_fcy_performance": 10.014146225771302,
+        "s1_std": 11.793508846158202,
+        "s3_std": 12.037792904627734,
+        "late_pace": 152.9862
+      }
+    }
+  ],
+  "driver_baselines": {
+    "3": {
+      "probabilities": [
+        66.68,
+        53.34,
+        38.81,
+        48.78,
+        57.3,
+        48.33,
+        32.22,
+        36.87,
+        34.57,
+        58.4,
+        47.84,
+        35.03,
+        35.74
+      ],
+      "features": {
+        "s2_std": 2.923985587849009,
+        "consistency_score": 0.1158579885083714,
+        "tire_degradation": -7.323777777777792,
+        "clutch_score": 2.412587159548568,
+        "post_fcy_performance": 18.800576134011685,
+        "s1_std": 2.8536349738714946,
+        "s3_std": 2.227439723269234,
+        "late_pace": 99.92211111111112
+      },
+      "average_probability": 45.69,
+      "min_probability": 32.22,
+      "max_probability": 66.68
+    },
+    "111": {
+      "probabilities": [
+        66.89,
+        61.69,
+        39.31,
+        43.95,
+        62.34,
+        47.37
+      ],
+      "features": {
+        "s2_std": 3.33574136781233,
+        "consistency_score": 0.1136738390428417,
+        "tire_degradation": -7.40933333333335,
+        "clutch_score": 2.5749729368111494,
+        "post_fcy_performance": 17.589102303481294,
+        "s1_std": 2.537136627737313,
+        "s3_std": 2.152808672290034,
+        "late_pace": 99.26977777777778
+      },
+      "average_probability": 53.59,
+      "min_probability": 39.31,
+      "max_probability": 66.89
+    },
+    "113": {
+      "probabilities": [
+        66.65,
+        8.46,
+        43.93,
+        75.33,
+        57.41,
+        47.68,
+        28.62,
+        37.55,
+        31.73,
+        62.96,
+        46.39,
+        46.3,
+        34.27
+      ],
+      "features": {
+        "s2_std": 3.185271881663159,
+        "consistency_score": 0.1144359325932127,
+        "tire_degradation": -7.652444444444455,
+        "clutch_score": 2.703529502434966,
+        "post_fcy_performance": 18.225199388067317,
+        "s1_std": 2.730736606321712,
+        "s3_std": 2.1163911954805736,
+        "late_pace": 99.20044444444444
+      },
+      "average_probability": 45.18,
+      "min_probability": 8.46,
+      "max_probability": 75.33
+    },
+    "13": {
+      "probabilities": [
+        67.03,
+        72.96,
+        44.79,
+        44.87,
+        81.05,
+        66.89,
+        24.09,
+        40.96,
+        34.11,
+        60.44,
+        65.5,
+        48.5,
+        37.5
+      ],
+      "features": {
+        "s2_std": 3.794366830430954,
+        "consistency_score": 0.1061555136539924,
+        "tire_degradation": -6.700666666666677,
+        "clutch_score": 1.9246344890581768,
+        "post_fcy_performance": 16.449434981812356,
+        "s1_std": 2.5187275571451755,
+        "s3_std": 2.211780433634788,
+        "late_pace": 98.42811111111112
+      },
+      "average_probability": 52.98,
+      "min_probability": 24.09,
+      "max_probability": 81.05
+    },
+    "18": {
+      "probabilities": [
+        62.67,
+        47.42,
+        37.29,
+        42.99,
+        51.5,
+        15.82,
+        45.15
+      ],
+      "features": {
+        "s2_std": 2.5637470714081454,
+        "consistency_score": 0.1252003280351312,
+        "tire_degradation": -7.878749999999982,
+        "clutch_score": 0.863166774712163,
+        "post_fcy_performance": 17.629123056140582,
+        "s1_std": 2.8253002661391857,
+        "s3_std": 1.9587527322645517,
+        "late_pace": 102.598
+      },
+      "average_probability": 43.26,
+      "min_probability": 15.82,
+      "max_probability": 62.67
+    },
+    "2": {
+      "probabilities": [
+        67.11,
+        65.48,
+        45.93,
+        44.86,
+        60.21,
+        29.73,
+        40.14,
+        46.18,
+        51.97,
+        66.17,
+        42.91,
+        37.26
+      ],
+      "features": {
+        "s2_std": 3.705113389731713,
+        "consistency_score": 0.1082840898786197,
+        "tire_degradation": -7.2592222222222205,
+        "clutch_score": 1.995145695102164,
+        "post_fcy_performance": 16.90584332950872,
+        "s1_std": 2.4611332934888126,
+        "s3_std": 2.193528035418112,
+        "late_pace": 98.68655555555556
+      },
+      "average_probability": 49.83,
+      "min_probability": 29.73,
+      "max_probability": 67.11
+    },
+    "21": {
+      "probabilities": [
+        66.29,
+        58.45,
+        42.52,
+        47.7,
+        61.98,
+        54.97,
+        30.82,
+        13.36,
+        37.18,
+        62.24,
+        48.65,
+        34.21
+      ],
+      "features": {
+        "s2_std": 3.08761713827874,
+        "consistency_score": 0.1143955656837278,
+        "tire_degradation": -7.581888888888869,
+        "clutch_score": 2.5404060521128264,
+        "post_fcy_performance": 18.39718644674928,
+        "s1_std": 2.822890095279745,
+        "s3_std": 2.1638995887516206,
+        "late_pace": 99.17911111111113
+      },
+      "average_probability": 46.53,
+      "min_probability": 13.36,
+      "max_probability": 66.29
+    },
+    "22": {
+      "probabilities": [
+        67.34,
+        67.88,
+        45.59,
+        45.77,
+        50.29
+      ],
+      "features": {
+        "s2_std": 3.753312719501317,
+        "consistency_score": 0.105584030087185,
+        "tire_degradation": -7.428333333333342,
+        "clutch_score": 2.679195297623973,
+        "post_fcy_performance": 17.10223500589481,
+        "s1_std": 2.46095766224952,
+        "s3_std": 2.3363893711124644,
+        "late_pace": 98.05622222222222
+      },
+      "average_probability": 55.37,
+      "min_probability": 45.59,
+      "max_probability": 67.88
+    },
+    "31": {
+      "probabilities": [
+        66.85,
+        18.92,
+        18.46,
+        0.0,
+        40.28,
+        3.68,
+        37.97,
+        33.1,
+        62.39,
+        44.89,
+        34.67
+      ],
+      "features": {
+        "s2_std": 3.4533548513503107,
+        "consistency_score": 0.112902711525691,
+        "tire_degradation": -7.578111111111099,
+        "clutch_score": 2.7375952544715383,
+        "post_fcy_performance": 17.379945589766585,
+        "s1_std": 2.5215681781231054,
+        "s3_std": 2.135759338400971,
+        "late_pace": 99.21977777777778
+      },
+      "average_probability": 32.84,
+      "min_probability": 0.0,
+      "max_probability": 66.85
+    },
+    "41": {
+      "probabilities": [
+        68.25,
+        28.34,
+        61.46,
+        29.21,
+        28.97,
+        3.41,
+        33.41,
+        58.61,
+        46.56,
+        41.17,
+        34.85
+      ],
+      "features": {
+        "s2_std": 3.3327684935964017,
+        "consistency_score": 0.1122789842271409,
+        "tire_degradation": -7.311999999999998,
+        "clutch_score": 2.351107200769315,
+        "post_fcy_performance": 18.48013574013124,
+        "s1_std": 2.621621820297689,
+        "s3_std": 2.202726271156048,
+        "late_pace": 98.98044444444446
+      },
+      "average_probability": 39.48,
+      "min_probability": 3.41,
+      "max_probability": 68.25
+    },
+    "46": {
+      "probabilities": [
+        59.33,
+        62.81,
+        45.66,
+        26.81,
+        82.49,
+        63.85,
+        27.76,
+        40.59,
+        2.15,
+        58.94,
+        63.4,
+        15.5,
+        36.61
+      ],
+      "features": {
+        "s2_std": 3.3004976811111293,
+        "consistency_score": 0.1056723284541662,
+        "tire_degradation": -10.039888888888882,
+        "clutch_score": 2.4680184096028257,
+        "post_fcy_performance": 17.309718854446576,
+        "s1_std": 3.0461348817720983,
+        "s3_std": 4.028534838253226,
+        "late_pace": 99.25566666666668
+      },
+      "average_probability": 45.07,
+      "min_probability": 2.15,
+      "max_probability": 82.49
+    },
+    "47": {
+      "probabilities": [
+        66.84,
+        63.81,
+        46.02,
+        49.05,
+        60.75,
+        30.05,
+        25.23,
+        44.33,
+        37.3,
+        51.85,
+        36.09
+      ],
+      "features": {
+        "s2_std": 3.625641343796454,
+        "consistency_score": 0.1088569150956931,
+        "tire_degradation": -7.349333333333348,
+        "clutch_score": 1.908803037114291,
+        "post_fcy_performance": 17.062852954405372,
+        "s1_std": 2.4970222419760457,
+        "s3_std": 2.186921393074561,
+        "late_pace": 98.65977777777778
+      },
+      "average_probability": 46.48,
+      "min_probability": 25.23,
+      "max_probability": 66.84
+    },
+    "5": {
+      "probabilities": [
+        65.6,
+        54.22,
+        39.61,
+        4.06,
+        57.13,
+        0.03,
+        31.67,
+        0.0,
+        17.53,
+        60.72,
+        50.17,
+        27.32,
+        38.84
+      ],
+      "features": {
+        "s2_std": 2.937840717222784,
+        "consistency_score": 0.114930555190052,
+        "tire_degradation": -8.123222222222225,
+        "clutch_score": 2.956923210311837,
+        "post_fcy_performance": 19.056415529332373,
+        "s1_std": 3.091921492481579,
+        "s3_std": 2.171496725415452,
+        "late_pace": 99.84688888888888
+      },
+      "average_probability": 34.38,
+      "min_probability": 0.0,
+      "max_probability": 65.6
+    },
+    "51": {
+      "probabilities": [
+        66.55,
+        54.24,
+        39.91,
+        44.05,
+        2.25,
+        44.01,
+        31.03,
+        35.75,
+        31.98,
+        61.8,
+        41.68,
+        44.5,
+        36.03
+      ],
+      "features": {
+        "s2_std": 2.9685139370233715,
+        "consistency_score": 0.1062787961400341,
+        "tire_degradation": -3.625333333333316,
+        "clutch_score": 3.3933956566107355,
+        "post_fcy_performance": 17.261112641592,
+        "s1_std": 3.2559185508373227,
+        "s3_std": 4.4002165402556725,
+        "late_pace": 103.711
+      },
+      "average_probability": 41.06,
+      "min_probability": 2.25,
+      "max_probability": 66.55
+    },
+    "55": {
+      "probabilities": [
+        68.1,
+        67.06,
+        45.21,
+        45.09,
+        81.43,
+        54.48,
+        30.36,
+        40.13,
+        39.95,
+        59.25,
+        30.94,
+        50.85,
+        35.81
+      ],
+      "features": {
+        "s2_std": 3.638779294624195,
+        "consistency_score": 0.1094615908668563,
+        "tire_degradation": -7.441888888888897,
+        "clutch_score": 2.095505593248177,
+        "post_fcy_performance": 17.73705601403869,
+        "s1_std": 2.520704826702606,
+        "s3_std": 2.1205261630022885,
+        "late_pace": 98.54744444444444
+      },
+      "average_probability": 49.9,
+      "min_probability": 30.36,
+      "max_probability": 81.43
+    },
+    "58": {
+      "probabilities": [
+        65.81,
+        12.11,
+        46.19,
+        34.09
+      ],
+      "features": {
+        "s2_std": 2.7726877304724105,
+        "consistency_score": 0.1194457475079499,
+        "tire_degradation": -6.805555555555543,
+        "clutch_score": 2.0594117604891897,
+        "post_fcy_performance": 18.181888420307104,
+        "s1_std": 2.8506849829111025,
+        "s3_std": 2.135489051055867,
+        "late_pace": 101.03344444444446
+      },
+      "average_probability": 39.55,
+      "min_probability": 12.11,
+      "max_probability": 65.81
+    },
+    "7": {
+      "probabilities": [
+        67.81,
+        57.87,
+        56.48,
+        45.13,
+        82.41,
+        70.79,
+        24.55,
+        34.9,
+        44.66,
+        58.67,
+        64.7,
+        52.1,
+        37.06
+      ],
+      "features": {
+        "s2_std": 3.508634057801832,
+        "consistency_score": 0.1110067294274418,
+        "tire_degradation": -7.224111111111114,
+        "clutch_score": 2.185451516015173,
+        "post_fcy_performance": 17.667165897191516,
+        "s1_std": 2.5245186644545705,
+        "s3_std": 2.14713978767249,
+        "late_pace": 98.99977777777778
+      },
+      "average_probability": 53.63,
+      "min_probability": 24.55,
+      "max_probability": 82.41
+    },
+    "72": {
+      "probabilities": [
+        66.64,
+        69.65,
+        45.38,
+        21.39,
+        81.38,
+        60.72,
+        26.74,
+        36.89,
+        39.71,
+        60.19,
+        63.89,
+        50.39,
+        36.51
+      ],
+      "features": {
+        "s2_std": 3.7400227572932265,
+        "consistency_score": 0.107462498900949,
+        "tire_degradation": -6.6003333333333245,
+        "clutch_score": 2.055424498017007,
+        "post_fcy_performance": 16.206995550429166,
+        "s1_std": 2.5194608912099,
+        "s3_std": 2.165418177440764,
+        "late_pace": 98.83422222222222
+      },
+      "average_probability": 50.73,
+      "min_probability": 21.39,
+      "max_probability": 81.38
+    },
+    "80": {
+      "probabilities": [
+        58.54,
+        11.34,
+        37.79,
+        69.6,
+        37.55,
+        46.85,
+        35.75,
+        29.92,
+        65.85,
+        45.6,
+        0.03,
+        33.57
+      ],
+      "features": {
+        "s2_std": 2.9648776642726027,
+        "consistency_score": 0.1119067632289154,
+        "tire_degradation": -8.585444444444448,
+        "clutch_score": 3.2839151721292885,
+        "post_fcy_performance": 17.239470009417737,
+        "s1_std": 4.049291813500627,
+        "s3_std": 2.1759051370044067,
+        "late_pace": 100.69144444444444
+      },
+      "average_probability": 39.37,
+      "min_probability": 0.03,
+      "max_probability": 69.6
+    },
+    "88": {
+      "probabilities": [
+        17.42,
+        53.57,
+        43.46,
+        45.47,
+        56.21,
+        53.97,
+        32.61,
+        38.34,
+        28.21,
+        63.43,
+        60.35,
+        37.6,
+        34.68
+      ],
+      "features": {
+        "s2_std": 3.766322299892385,
+        "consistency_score": 0.0148382204207601,
+        "tire_degradation": 43.207250000000016,
+        "clutch_score": -176.34992329133627,
+        "post_fcy_performance": 1.1922336818741817,
+        "s1_std": 4.316825174794966,
+        "s3_std": 66.75048607985889,
+        "late_pace": 160.56425000000002
+      },
+      "average_probability": 43.49,
+      "min_probability": 17.42,
+      "max_probability": 63.43
+    },
+    "93": {
+      "probabilities": [
+        66.82,
+        1.8,
+        39.65,
+        42.46,
+        56.55,
+        36.93,
+        27.46,
+        63.2,
+        46.32
+      ],
+      "features": {
+        "s2_std": 2.9688778290968068,
+        "consistency_score": 0.1161776293882336,
+        "tire_degradation": -7.036666666666662,
+        "clutch_score": 2.590372549586545,
+        "post_fcy_performance": 18.45442225305732,
+        "s1_std": 2.8329198225148766,
+        "s3_std": 2.110610392935947,
+        "late_pace": 100.11355555555556
+      },
+      "average_probability": 42.35,
+      "min_probability": 1.8,
+      "max_probability": 66.82
+    },
+    "98": {
+      "probabilities": [
+        66.95,
+        35.26,
+        45.3,
+        45.33,
+        61.89,
+        1.77,
+        28.42,
+        39.41,
+        40.87,
+        97.29,
+        59.83,
+        52.1,
+        35.26
+      ],
+      "features": {
+        "s2_std": 3.5983783436019765,
+        "consistency_score": 0.1095076989648661,
+        "tire_degradation": -7.393888888888895,
+        "clutch_score": 2.041886024915348,
+        "post_fcy_performance": 17.19529200463981,
+        "s1_std": 2.5204571053566887,
+        "s3_std": 2.144237399552817,
+        "late_pace": 98.65444444444444
+      },
+      "average_probability": 46.9,
+      "min_probability": 1.77,
+      "max_probability": 97.29
+    },
+    "11": {
+      "probabilities": [
+        40.05,
+        44.64,
+        77.69,
+        51.31,
+        31.57,
+        39.68,
+        33.45,
+        36.13,
+        38.4
+      ],
+      "features": {
+        "s2_std": 3.8627303346805792,
+        "consistency_score": 0.0667530388929365,
+        "tire_degradation": -0.6817500000000081,
+        "clutch_score": 5.142872513702557,
+        "post_fcy_performance": 5.550616844321487,
+        "s1_std": 5.968142599348129,
+        "s3_std": 4.60231045872196,
+        "late_pace": 103.1035
+      },
+      "average_probability": 43.66,
+      "min_probability": 31.57,
+      "max_probability": 77.69
+    },
+    "20": {
+      "probabilities": [
+        32.03,
+        38.22
+      ],
+      "features": {
+        "s2_std": 1.8469882994923208,
+        "consistency_score": 0.1074017727638483,
+        "tire_degradation": -2.5773749999999893,
+        "clutch_score": 3.5597940907872223,
+        "post_fcy_performance": 3.607819834631983,
+        "s1_std": 4.460856619357042,
+        "s3_std": 2.8279555749421084,
+        "late_pace": 105.838625
+      },
+      "average_probability": 35.12,
+      "min_probability": 32.03,
+      "max_probability": 38.22
+    },
+    "57": {
+      "probabilities": [
+        41.23,
+        17.56,
+        54.3,
+        20.66,
+        46.06
+      ],
+      "features": {
+        "s2_std": 5.106657348337886,
+        "consistency_score": 0.0588379200823391,
+        "tire_degradation": -6.895250000000004,
+        "clutch_score": 7.155097719983525,
+        "post_fcy_performance": 10.565904901248576,
+        "s1_std": 7.59332978299595,
+        "s3_std": 7.519656217097516,
+        "late_pace": 105.8915
+      },
+      "average_probability": 35.96,
+      "min_probability": 17.56,
+      "max_probability": 54.3
+    },
+    "61": {
+      "probabilities": [
+        37.57,
+        2.56,
+        62.95,
+        43.5
+      ],
+      "features": {
+        "s2_std": 3.6605607601106063,
+        "consistency_score": 0.0669995213932652,
+        "tire_degradation": -1.720624999999984,
+        "clutch_score": 5.373774805145459,
+        "post_fcy_performance": 6.1584942002229255,
+        "s1_std": 6.429474676471213,
+        "s3_std": 4.381786918422842,
+        "late_pace": 102.373375
+      },
+      "average_probability": 36.65,
+      "min_probability": 2.56,
+      "max_probability": 62.95
+    },
+    "8": {
+      "probabilities": [
+        26.56,
+        44.03,
+        53.29,
+        22.41,
+        45.32
+      ],
+      "features": {
+        "s2_std": 2.4099815297728235,
+        "consistency_score": 0.0853802405556808,
+        "tire_degradation": -5.168749999999989,
+        "clutch_score": 4.498772224081159,
+        "post_fcy_performance": 4.896597869581036,
+        "s1_std": 6.542927833928784,
+        "s3_std": 3.40137931659858,
+        "late_pace": 104.335625
+      },
+      "average_probability": 38.32,
+      "min_probability": 22.41,
+      "max_probability": 53.29
+    },
+    "89": {
+      "probabilities": [
+        39.72,
+        43.09,
+        16.83,
+        37.58,
+        40.81,
+        32.86,
+        49.93,
+        35.89
+      ],
+      "features": {
+        "s2_std": 3.847989711324804,
+        "consistency_score": 0.064471961687761,
+        "tire_degradation": -1.0578749999999957,
+        "clutch_score": 4.916638378869283,
+        "post_fcy_performance": 6.122522071762895,
+        "s1_std": 6.075372915429839,
+        "s3_std": 4.967681480715743,
+        "late_pace": 102.0725
+      },
+      "average_probability": 37.09,
+      "min_probability": 16.83,
+      "max_probability": 49.93
+    },
+    "86": {
+      "probabilities": [
+        36.86,
+        53.33,
+        27.79,
+        38.4
+      ],
+      "features": {
+        "s2_std": 5.881146279869034,
+        "consistency_score": 0.0647395217659556,
+        "tire_degradation": 13.468142857142864,
+        "clutch_score": -10.361040266609423,
+        "post_fcy_performance": -9.291763848842692,
+        "s1_std": 6.545107915722896,
+        "s3_std": 4.630222618624694,
+        "late_pace": 130.43257142857144
+      },
+      "average_probability": 39.09,
+      "min_probability": 27.79,
+      "max_probability": 53.33
+    },
+    "14": {
+      "probabilities": [
+        55.31,
+        37.93,
+        31.8
+      ],
+      "features": {
+        "s2_std": 10.228711123956574,
+        "consistency_score": 0.0393586973918614,
+        "tire_degradation": -3.3274000000000115,
+        "clutch_score": 7.600115488337529,
+        "post_fcy_performance": -1.9944265138111823,
+        "s1_std": 6.408978915185642,
+        "s3_std": 8.952792726048573,
+        "late_pace": 165.0654
+      },
+      "average_probability": 41.68,
+      "min_probability": 31.8,
+      "max_probability": 55.31
+    },
+    "15": {
+      "probabilities": [
+        0.0,
+        55.57,
+        29.84,
+        35.88,
+        31.0,
+        0.01,
+        51.52,
+        30.76
+      ],
+      "features": {
+        "s2_std": 11.313571698038896,
+        "consistency_score": 0.0104589411691906,
+        "tire_degradation": -149.8145,
+        "clutch_score": 21.64243777997485,
+        "post_fcy_performance": 9.676950216129605,
+        "s1_std": 95.0722634308591,
+        "s3_std": 9.309734861960354,
+        "late_pace": 156.334
+      },
+      "average_probability": 29.32,
+      "min_probability": 0.0,
+      "max_probability": 55.57
+    },
+    "16": {
+      "probabilities": [
+        81.45,
+        66.58,
+        25.09,
+        39.45,
+        37.29
+      ],
+      "features": {
+        "s2_std": 11.053230518921232,
+        "consistency_score": 0.0354621967087192,
+        "tire_degradation": -1.5829999999999984,
+        "clutch_score": 7.180557589607426,
+        "post_fcy_performance": 9.823385527879916,
+        "s1_std": 6.117834736869495,
+        "s3_std": 10.700569123127211,
+        "late_pace": 164.815
+      },
+      "average_probability": 49.97,
+      "min_probability": 25.09,
+      "max_probability": 81.45
+    },
+    "71": {
+      "probabilities": [
+        56.36,
+        49.25,
+        30.47,
+        38.18,
+        41.15,
+        45.28,
+        61.09,
+        51.45,
+        35.13
+      ],
+      "features": {
+        "s2_std": 11.1599184298226,
+        "consistency_score": 0.0368387665482447,
+        "tire_degradation": -3.980400000000003,
+        "clutch_score": 7.447371962681738,
+        "post_fcy_performance": -1.6914707424534343,
+        "s1_std": 7.470922548158844,
+        "s3_std": 8.48909127290465,
+        "late_pace": 164.5268
+      },
+      "average_probability": 45.37,
+      "min_probability": 30.47,
+      "max_probability": 61.09
+    },
+    "73": {
+      "probabilities": [
+        56.1,
+        36.56,
+        9.05
+      ],
+      "features": {
+        "s2_std": 10.306601657218945,
+        "consistency_score": 0.0417684909471243,
+        "tire_degradation": 0.1787999999999954,
+        "clutch_score": 6.142209325619668,
+        "post_fcy_performance": -5.554575821875161,
+        "s1_std": 5.785123550335556,
+        "s3_std": 8.484886795580927,
+        "late_pace": 171.084
+      },
+      "average_probability": 33.9,
+      "min_probability": 9.05,
+      "max_probability": 56.1
+    },
+    "78": {
+      "probabilities": [
+        61.84,
+        59.0,
+        28.36,
+        39.0,
+        42.38
+      ],
+      "features": {
+        "s2_std": 11.308476989240262,
+        "consistency_score": 0.0364737301437715,
+        "tire_degradation": -2.373199999999997,
+        "clutch_score": 6.982992096569952,
+        "post_fcy_performance": -2.1064547986596844,
+        "s1_std": 6.054908969175342,
+        "s3_std": 9.99220006503602,
+        "late_pace": 164.9072
+      },
+      "average_probability": 46.12,
+      "min_probability": 28.36,
+      "max_probability": 61.84
+    },
+    "12": {
+      "probabilities": [
+        38.08,
+        37.66,
+        63.06,
+        47.06,
+        24.11,
+        35.25
+      ],
+      "features": {
+        "s2_std": 6.765750034814828,
+        "consistency_score": 0.0538227041070753,
+        "tire_degradation": -22.73414285714284,
+        "clutch_score": 7.602427712252783,
+        "post_fcy_performance": 15.140346747203138,
+        "s1_std": 8.251108244403873,
+        "s3_std": 3.752955756346044,
+        "late_pace": 118.50914285714283
+      },
+      "average_probability": 40.87,
+      "min_probability": 24.11,
+      "max_probability": 63.06
+    },
+    "17": {
+      "probabilities": [
+        37.93,
+        37.46
+      ],
+      "features": {
+        "s2_std": 6.717652364665063,
+        "consistency_score": 0.049312035078226,
+        "tire_degradation": -24.70128571428569,
+        "clutch_score": 7.561780940615337,
+        "post_fcy_performance": 16.319090152339218,
+        "s1_std": 7.483235876134442,
+        "s3_std": 5.580791441244865,
+        "late_pace": 115.16514285714284
+      },
+      "average_probability": 37.7,
+      "min_probability": 37.46,
+      "max_probability": 37.93
+    },
+    "50": {
+      "probabilities": [
+        33.32,
+        38.47
+      ],
+      "features": {
+        "s2_std": 6.730235893474923,
+        "consistency_score": 0.0481090639911894,
+        "tire_degradation": -26.822999999999997,
+        "clutch_score": 8.12698338754122,
+        "post_fcy_performance": 17.507146319556323,
+        "s1_std": 9.00625982457024,
+        "s3_std": 4.80001541581846,
+        "late_pace": 113.45900000000002
+      },
+      "average_probability": 35.89,
+      "min_probability": 33.32,
+      "max_probability": 38.47
+    },
+    "67": {
+      "probabilities": [
+        53.76,
+        32.68
+      ],
+      "features": {
+        "s2_std": 8.926222025182723,
+        "consistency_score": 0.0374373198701449,
+        "tire_degradation": 14.976999999999975,
+        "clutch_score": -3.926292000894036,
+        "post_fcy_performance": -4.51250142710356,
+        "s1_std": 10.588203243637295,
+        "s3_std": 7.17455053843594,
+        "late_pace": 156.95299999999995
+      },
+      "average_probability": 43.22,
+      "min_probability": 32.68,
+      "max_probability": 53.76
+    }
+  },
+  "validation": {
+    "accuracy": 66.2,
+    "roc_auc": 0.564,
+    "note": "Model trained on 8 trainable features. Probabilities are estimates based on historical data."
+  }
+}

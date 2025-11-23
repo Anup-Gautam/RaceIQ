@@ -1,0 +1,4093 @@
+{
+  "drivers": {
+    "2": {
+      "id": 2,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 45.6,
+        "consistency": 83.1,
+        "tire_management": 52.9,
+        "pressure": 40.6,
+        "s1_skill": 50.0,
+        "s2_skill": 43.7,
+        "s3_skill": 35.7,
+        "race_craft": 52.9,
+        "peak_speed": 45.6,
+        "technical_skill": 43.7,
+        "high_speed_skill": 35.7,
+        "restart_ability": 52.9,
+        "race_pace": 39.1
+      },
+      "fingerprint": {
+        "peak_speed": 45.6,
+        "consistency": 83.1,
+        "tire_management": 52.9,
+        "pressure_handling": 40.6,
+        "technical_skill": 56.3,
+        "high_speed_skill": 64.3,
+        "restart_ability": 52.9,
+        "race_pace": 60.9
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 83.1
+      },
+      "strengths": [
+        "consistency",
+        "tire_management",
+        "race_craft"
+      ],
+      "improvements": [
+        "s3_skill",
+        "high_speed_skill"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 187.14999999999998,
+          "consistency_score": 0.3751444790496045,
+          "tire_degradation": -3.7421111111111216,
+          "clutch_score": 0.9222456062569421,
+          "s2_std": 1.9459318183756877,
+          "s3_std": 1.2086560004731413,
+          "post_fcy_performance": 8.45292166475436,
+          "late_pace": 98.48677777777777,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 213.65,
+          "consistency_score": 0.0548875883725104,
+          "tire_degradation": 9.50833035714286,
+          "clutch_score": -2.086969932427225,
+          "s2_std": 5.587873786194903,
+          "s3_std": 6.042819562152626,
+          "post_fcy_performance": -1.0075265848587835,
+          "late_pace": 115.92406249999999,
+          "races": 2
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.24848193084355655,
+          "tire_degradation": -8.183399999999992,
+          "clutch_score": 0.5401845131733796,
+          "s2_std": 3.625593103394208,
+          "s3_std": 3.711815815090047,
+          "post_fcy_performance": 1.0248637888355243,
+          "late_pace": 147.33976666666666,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 187.64999999999998,
+          "consistency_score": 0.049233757635265496,
+          "tire_degradation": -20.443214285714298,
+          "clutch_score": 8.407043336138454,
+          "s2_std": 7.070064261963475,
+          "s3_std": 7.110567827006873,
+          "post_fcy_performance": 13.893948704521087,
+          "late_pace": 112.57607142857142,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.3134725181916882,
+          "tire_degradation": -14.246750000000008,
+          "clutch_score": 3.010825124542995,
+          "s2_std": 5.540254098691547,
+          "s3_std": 2.8235557086063974,
+          "post_fcy_performance": 7.471526752323135,
+          "late_pace": 129.78907142857145,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 212.14999999999998,
+          "consistency_score": 0.03104761628329175,
+          "tire_degradation": -34.35830000000003,
+          "clutch_score": 8.87917019770615,
+          "s2_std": 11.020563304583614,
+          "s3_std": 11.153788889970825,
+          "post_fcy_performance": 19.0428797017668,
+          "late_pace": 158.0027,
+          "races": 2
+        }
+      }
+    },
+    "3": {
+      "id": 3,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 45.6,
+        "consistency": 82.2,
+        "tire_management": 52.6,
+        "pressure": 41.8,
+        "s1_skill": 50.0,
+        "s2_skill": 42.8,
+        "s3_skill": 33.8,
+        "race_craft": 52.6,
+        "peak_speed": 45.6,
+        "technical_skill": 42.8,
+        "high_speed_skill": 33.8,
+        "restart_ability": 52.6,
+        "race_pace": 54.5
+      },
+      "fingerprint": {
+        "peak_speed": 45.6,
+        "consistency": 82.2,
+        "tire_management": 52.6,
+        "pressure_handling": 41.8,
+        "technical_skill": 57.2,
+        "high_speed_skill": 66.2,
+        "restart_ability": 52.6,
+        "race_pace": 45.5
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 82.2
+      },
+      "strengths": [
+        "consistency",
+        "race_pace",
+        "tire_management"
+      ],
+      "improvements": [
+        "s3_skill",
+        "high_speed_skill"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 184.75,
+          "consistency_score": 0.2894609706026636,
+          "tire_degradation": -3.878166666666665,
+          "clutch_score": 1.1857578443691736,
+          "s2_std": 1.592581169147517,
+          "s3_std": 1.2490917724315183,
+          "post_fcy_performance": 9.400288067005842,
+          "late_pace": 99.75411111111111,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 215.8,
+          "consistency_score": 0.062495025286407796,
+          "tire_degradation": 9.005335294117657,
+          "clutch_score": -2.406621740021867,
+          "s2_std": 4.885255226679689,
+          "s3_std": 5.200912788736352,
+          "post_fcy_performance": -1.5195523389539884,
+          "late_pace": 117.3458705882353,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 208.5,
+          "consistency_score": 0.0414182195279862,
+          "tire_degradation": -1.6897272727272536,
+          "clutch_score": 6.445593766687198,
+          "s2_std": 10.053511417364238,
+          "s3_std": 8.063805787969864,
+          "post_fcy_performance": -2.5152977724715506,
+          "late_pace": 167.61136363636365,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.17842976537237232,
+          "tire_degradation": -9.192416666666674,
+          "clutch_score": 1.57438238342319,
+          "s2_std": 3.5150827343276854,
+          "s3_std": 3.428348548562487,
+          "post_fcy_performance": 2.3578049730948702,
+          "late_pace": 148.92858333333334,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 185.75,
+          "consistency_score": 0.052193071101718,
+          "tire_degradation": -19.26144523809525,
+          "clutch_score": 7.228299561284648,
+          "s2_std": 5.869144012764311,
+          "s3_std": 6.402406904540181,
+          "post_fcy_performance": 12.851965955864795,
+          "late_pace": 115.99123095238095,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.1764450983856541,
+          "tire_degradation": -14.2472619047619,
+          "clutch_score": 2.827833740442218,
+          "s2_std": 5.796688684314935,
+          "s3_std": 2.8884134277904137,
+          "post_fcy_performance": 7.903397257527006,
+          "late_pace": 131.36591666666666,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 211.2,
+          "consistency_score": 0.0306655390470156,
+          "tire_degradation": -34.60319999999999,
+          "clutch_score": 8.364307441635331,
+          "s2_std": 9.904903289345754,
+          "s3_std": 10.845438468339255,
+          "post_fcy_performance": 20.742201515560307,
+          "late_pace": 160.1388,
+          "races": 2
+        }
+      }
+    },
+    "5": {
+      "id": 5,
+      "archetype": "Smooth Operators",
+      "scores": {
+        "speed": 45.6,
+        "consistency": 75.7,
+        "tire_management": 89.8,
+        "pressure": 62.8,
+        "s1_skill": 50.0,
+        "s2_skill": 40.6,
+        "s3_skill": 49.5,
+        "race_craft": 46.8,
+        "peak_speed": 45.6,
+        "technical_skill": 40.6,
+        "high_speed_skill": 49.5,
+        "restart_ability": 46.8,
+        "race_pace": 54.8
+      },
+      "fingerprint": {
+        "peak_speed": 45.6,
+        "consistency": 75.7,
+        "tire_management": 89.8,
+        "pressure_handling": 62.8,
+        "technical_skill": 59.4,
+        "high_speed_skill": 50.5,
+        "restart_ability": 46.8,
+        "race_pace": 45.2
+      },
+      "signature_strength": {
+        "name": "Tire Management",
+        "percentile": 89.8
+      },
+      "strengths": [
+        "tire_management",
+        "consistency",
+        "pressure"
+      ],
+      "improvements": [
+        "s2_skill",
+        "technical_skill"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 185.2,
+          "consistency_score": 0.2907605906813134,
+          "tire_degradation": -4.303555555555562,
+          "clutch_score": 1.3992937592144463,
+          "s2_std": 1.6455647220957492,
+          "s3_std": 1.2130341200459451,
+          "post_fcy_performance": 9.528207764666186,
+          "late_pace": 99.32144444444444,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 216.3,
+          "consistency_score": 0.0581649329408748,
+          "tire_degradation": -4.014137500000004,
+          "clutch_score": -1.9203588225429962,
+          "s2_std": 4.009508867375033,
+          "s3_std": 5.504182645464933,
+          "post_fcy_performance": -1.76681719100536,
+          "late_pace": 111.31246250000001,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 207.7,
+          "consistency_score": 0.0397089953356754,
+          "tire_degradation": -2.1299999999999955,
+          "clutch_score": 6.917871233445622,
+          "s2_std": 10.280918416787824,
+          "s3_std": 9.087806542689655,
+          "post_fcy_performance": -2.641611205269552,
+          "late_pace": 166.18900000000002,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.0400572436974546,
+          "tire_degradation": -34.92405000000001,
+          "clutch_score": 3.721585520494517,
+          "s2_std": 4.246326665228533,
+          "s3_std": 7.509608644176468,
+          "post_fcy_performance": 2.251664257396872,
+          "late_pace": 151.97805,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 184.75,
+          "consistency_score": 0.02875484750167455,
+          "tire_degradation": -157.06808333333336,
+          "clutch_score": 25.952908301339733,
+          "s2_std": 3.803214999824241,
+          "s3_std": 8.56208771918238,
+          "post_fcy_performance": 1.1389807989106544,
+          "late_pace": 121.70008333333334,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.19750603588788496,
+          "tire_degradation": -13.364154761904759,
+          "clutch_score": 2.5081846508755006,
+          "s2_std": 5.763785964776284,
+          "s3_std": 2.80939493056181,
+          "post_fcy_performance": 7.754218323206166,
+          "late_pace": 131.1014880952381,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 210.6,
+          "consistency_score": 0.03091296143974115,
+          "tire_degradation": -35.679799999999986,
+          "clutch_score": 8.439545107938214,
+          "s2_std": 9.7499714445622,
+          "s3_std": 10.916442904359684,
+          "post_fcy_performance": 21.07643789306949,
+          "late_pace": 159.5841,
+          "races": 2
+        }
+      }
+    },
+    "7": {
+      "id": 7,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 45.6,
+        "consistency": 83.7,
+        "tire_management": 52.0,
+        "pressure": 40.3,
+        "s1_skill": 50.0,
+        "s2_skill": 43.7,
+        "s3_skill": 34.2,
+        "race_craft": 52.6,
+        "peak_speed": 45.6,
+        "technical_skill": 43.7,
+        "high_speed_skill": 34.2,
+        "restart_ability": 52.6,
+        "race_pace": 43.7
+      },
+      "fingerprint": {
+        "peak_speed": 45.6,
+        "consistency": 83.7,
+        "tire_management": 52.0,
+        "pressure_handling": 40.3,
+        "technical_skill": 56.3,
+        "high_speed_skill": 65.8,
+        "restart_ability": 52.6,
+        "race_pace": 56.3
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 83.7
+      },
+      "strengths": [
+        "consistency",
+        "race_craft",
+        "restart_ability"
+      ],
+      "improvements": [
+        "s3_skill",
+        "high_speed_skill"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 185.7,
+          "consistency_score": 0.3155859740844923,
+          "tire_degradation": -3.8313333333333404,
+          "clutch_score": 1.189234430783021,
+          "s2_std": 1.906105485147547,
+          "s3_std": 1.175633643172488,
+          "post_fcy_performance": 8.833582948595758,
+          "late_pace": 98.88705555555555,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 215.15,
+          "consistency_score": 0.2875516739777296,
+          "tire_degradation": 9.262571428571448,
+          "clutch_score": -5.081768820923848,
+          "s2_std": 3.1900406834656954,
+          "s3_std": 3.3125050810001526,
+          "post_fcy_performance": -4.115738781141524,
+          "late_pace": 115.72628571428572,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 207.7,
+          "consistency_score": 0.0353929315967217,
+          "tire_degradation": -0.9351999999999804,
+          "clutch_score": 7.1134001556778985,
+          "s2_std": 11.177559724931545,
+          "s3_std": 10.792153807689342,
+          "post_fcy_performance": 9.695772527217947,
+          "late_pace": 165.17600000000002,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.33536530520306507,
+          "tire_degradation": -7.97818333333332,
+          "clutch_score": 1.3989279381935191,
+          "s2_std": 3.457697249567948,
+          "s3_std": 4.008362658778464,
+          "post_fcy_performance": -0.2958549750483712,
+          "late_pace": 146.87575,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 188.64999999999998,
+          "consistency_score": 0.049510287080637594,
+          "tire_degradation": -19.951928571428574,
+          "clutch_score": 8.793555531558802,
+          "s2_std": 6.925738316250058,
+          "s3_std": 7.010507791688399,
+          "post_fcy_performance": 13.051080529846523,
+          "late_pace": 112.99235714285714,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.2775683745206032,
+          "tire_degradation": -12.944404761904778,
+          "clutch_score": 2.699881395874613,
+          "s2_std": 5.8212797833074,
+          "s3_std": 2.881680126188049,
+          "post_fcy_performance": 7.719943203686161,
+          "late_pace": 129.52496428571428,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 211.2,
+          "consistency_score": 0.03106172338942875,
+          "tire_degradation": -32.74249999999999,
+          "clutch_score": 7.800938515490129,
+          "s2_std": 10.877747089652702,
+          "s3_std": 10.55606948103094,
+          "post_fcy_performance": 19.221847810220595,
+          "late_pace": 159.5639,
+          "races": 2
+        }
+      }
+    },
+    "8": {
+      "id": 8,
+      "archetype": "Smooth Operators",
+      "scores": {
+        "speed": 57.3,
+        "consistency": 53.8,
+        "tire_management": 53.5,
+        "pressure": 40.3,
+        "s1_skill": 50.0,
+        "s2_skill": 68.0,
+        "s3_skill": 63.7,
+        "race_craft": 51.7,
+        "peak_speed": 57.3,
+        "technical_skill": 68.0,
+        "high_speed_skill": 63.7,
+        "restart_ability": 51.7,
+        "race_pace": 59.7
+      },
+      "fingerprint": {
+        "peak_speed": 57.3,
+        "consistency": 53.8,
+        "tire_management": 53.5,
+        "pressure_handling": 40.3,
+        "technical_skill": 32.0,
+        "high_speed_skill": 36.3,
+        "restart_ability": 51.7,
+        "race_pace": 40.3
+      },
+      "signature_strength": {
+        "name": "Peak Speed",
+        "percentile": 57.3
+      },
+      "strengths": [
+        "s2_skill",
+        "technical_skill",
+        "s3_skill"
+      ],
+      "improvements": [
+        "s1_skill",
+        "pressure"
+      ],
+      "tracks": [
+        "indianapolis",
+        "cota",
+        "road_america"
+      ],
+      "track_stats": {
+        "indianapolis": {
+          "top_speed_max": 210.35000000000002,
+          "consistency_score": 0.07420874122902975,
+          "tire_degradation": 5.441482142857147,
+          "clutch_score": -2.846903127281706,
+          "s2_std": 4.256605527287257,
+          "s3_std": 4.451076469758402,
+          "post_fcy_performance": -2.252052063708039,
+          "late_pace": 117.63638392857142,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 201.5,
+          "consistency_score": 0.0456035045699747,
+          "tire_degradation": -7.66160000000005,
+          "clutch_score": 5.811047144121456,
+          "s2_std": 10.178648124368278,
+          "s3_std": 6.054781146771045,
+          "post_fcy_performance": -1.5624912320617323,
+          "late_pace": 165.908,
+          "races": 1
+        },
+        "road_america": {
+          "top_speed_max": 205.35000000000002,
+          "consistency_score": 0.032769330763892754,
+          "tire_degradation": -33.11259999999997,
+          "clutch_score": 7.788527443774227,
+          "s2_std": 8.761381466897324,
+          "s3_std": 10.510792029559312,
+          "post_fcy_performance": 20.286420917596693,
+          "late_pace": 163.56730000000002,
+          "races": 2
+        }
+      }
+    },
+    "11": {
+      "id": 11,
+      "archetype": "Smooth Operators",
+      "scores": {
+        "speed": 49.0,
+        "consistency": 74.5,
+        "tire_management": 59.4,
+        "pressure": 42.2,
+        "s1_skill": 50.0,
+        "s2_skill": 52.6,
+        "s3_skill": 50.5,
+        "race_craft": 70.2,
+        "peak_speed": 49.0,
+        "technical_skill": 52.6,
+        "high_speed_skill": 50.5,
+        "restart_ability": 70.2,
+        "race_pace": 58.8
+      },
+      "fingerprint": {
+        "peak_speed": 49.0,
+        "consistency": 74.5,
+        "tire_management": 59.4,
+        "pressure_handling": 42.2,
+        "technical_skill": 47.4,
+        "high_speed_skill": 49.5,
+        "restart_ability": 70.2,
+        "race_pace": 41.2
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 74.5
+      },
+      "strengths": [
+        "consistency",
+        "race_craft",
+        "restart_ability"
+      ],
+      "improvements": [
+        "peak_speed",
+        "pressure"
+      ],
+      "tracks": [
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "road_america"
+      ],
+      "track_stats": {
+        "indianapolis": {
+          "top_speed_max": 215.15,
+          "consistency_score": 0.0634496580890751,
+          "tire_degradation": 8.40955357142856,
+          "clutch_score": -2.7332708743136926,
+          "s2_std": 4.996434132932091,
+          "s3_std": 5.248167443807141,
+          "post_fcy_performance": -2.0774067148068154,
+          "late_pace": 116.92296428571427,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 206.9,
+          "consistency_score": 0.041447749781281,
+          "tire_degradation": -29.029666666666685,
+          "clutch_score": 5.7799540644513865,
+          "s2_std": 9.086896243737156,
+          "s3_std": 7.668030968464677,
+          "post_fcy_performance": 31.79934455365266,
+          "late_pace": 152.412,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.1844891078511089,
+          "tire_degradation": -8.252683333333323,
+          "clutch_score": 0.3708822326060528,
+          "s2_std": 3.5626213409343697,
+          "s3_std": 3.557912967280493,
+          "post_fcy_performance": 2.156679073098031,
+          "late_pace": 149.64483333333334,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 183.7,
+          "consistency_score": 0.054718404084785954,
+          "tire_degradation": -19.586428571428563,
+          "clutch_score": 7.428921446427051,
+          "s2_std": 6.059950846466395,
+          "s3_std": 5.417784097663176,
+          "post_fcy_performance": 13.29795738675941,
+          "late_pace": 115.79514285714285,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 208.6,
+          "consistency_score": 0.03159053791246205,
+          "tire_degradation": -32.545500000000004,
+          "clutch_score": 7.422489876322471,
+          "s2_std": 9.678741323295567,
+          "s3_std": 10.632961559344736,
+          "post_fcy_performance": 20.013311237791612,
+          "late_pace": 162.4553,
+          "races": 2
+        }
+      }
+    },
+    "12": {
+      "id": 12,
+      "archetype": "Smooth Operators",
+      "scores": {
+        "speed": 43.5,
+        "consistency": 75.1,
+        "tire_management": 66.8,
+        "pressure": 40.6,
+        "s1_skill": 50.0,
+        "s2_skill": 59.4,
+        "s3_skill": 41.8,
+        "race_craft": 70.8,
+        "peak_speed": 43.5,
+        "technical_skill": 59.4,
+        "high_speed_skill": 41.8,
+        "restart_ability": 70.8,
+        "race_pace": 59.1
+      },
+      "fingerprint": {
+        "peak_speed": 43.5,
+        "consistency": 75.1,
+        "tire_management": 66.8,
+        "pressure_handling": 40.6,
+        "technical_skill": 40.6,
+        "high_speed_skill": 58.2,
+        "restart_ability": 70.8,
+        "race_pace": 40.9
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 75.1
+      },
+      "strengths": [
+        "consistency",
+        "race_craft",
+        "restart_ability"
+      ],
+      "improvements": [
+        "high_speed_skill",
+        "pressure"
+      ],
+      "tracks": [
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "sonoma": {
+          "top_speed_max": 182.14999999999998,
+          "consistency_score": 0.058243452486353306,
+          "tire_degradation": -16.96107142857143,
+          "clutch_score": 6.529583621292444,
+          "s2_std": 6.375562439975821,
+          "s3_std": 3.486435886955639,
+          "post_fcy_performance": 11.694089380327226,
+          "late_pace": 118.60249999999999,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.17555269165910506,
+          "tire_degradation": -11.829011904761899,
+          "clutch_score": 1.7759226509003356,
+          "s2_std": 5.538448692712574,
+          "s3_std": 2.5276156375152605,
+          "post_fcy_performance": 7.11189546404888,
+          "late_pace": 135.82521428571428,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 206.8,
+          "consistency_score": 0.03450197741271095,
+          "tire_degradation": -31.425399999999996,
+          "clutch_score": 1.3061938611439698,
+          "s2_std": 8.380885876062901,
+          "s3_std": 10.987244121436433,
+          "post_fcy_performance": 20.02517890616865,
+          "late_pace": 165.53740000000002,
+          "races": 2
+        }
+      }
+    },
+    "13": {
+      "id": 13,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 45.6,
+        "consistency": 83.4,
+        "tire_management": 52.0,
+        "pressure": 40.6,
+        "s1_skill": 50.0,
+        "s2_skill": 45.8,
+        "s3_skill": 41.8,
+        "race_craft": 52.9,
+        "peak_speed": 45.6,
+        "technical_skill": 45.8,
+        "high_speed_skill": 41.8,
+        "restart_ability": 52.9,
+        "race_pace": 42.5
+      },
+      "fingerprint": {
+        "peak_speed": 45.6,
+        "consistency": 83.4,
+        "tire_management": 52.0,
+        "pressure_handling": 40.6,
+        "technical_skill": 54.2,
+        "high_speed_skill": 58.2,
+        "restart_ability": 52.9,
+        "race_pace": 57.5
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 83.4
+      },
+      "strengths": [
+        "consistency",
+        "race_craft",
+        "restart_ability"
+      ],
+      "improvements": [
+        "high_speed_skill",
+        "pressure"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 185.2,
+          "consistency_score": 0.4320689842347616,
+          "tire_degradation": -3.1352222222222252,
+          "clutch_score": 0.6413470193128503,
+          "s2_std": 1.9537185917914472,
+          "s3_std": 1.2049448086812353,
+          "post_fcy_performance": 8.224717490906178,
+          "late_pace": 98.218,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 214.75,
+          "consistency_score": 0.0542026230493278,
+          "tire_degradation": 9.803607142857146,
+          "clutch_score": -2.0255901392593914,
+          "s2_std": 5.5237984268404325,
+          "s3_std": 6.122206359893653,
+          "post_fcy_performance": -1.2024408422939978,
+          "late_pace": 115.89809821428571,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 206.9,
+          "consistency_score": 0.0356098605757673,
+          "tire_degradation": -1.4617999999999824,
+          "clutch_score": 7.069994188767947,
+          "s2_std": 10.98010516497103,
+          "s3_std": 10.710286894740356,
+          "post_fcy_performance": 9.641922992688396,
+          "late_pace": 165.0618,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.30297331547827355,
+          "tire_degradation": -8.184966666666654,
+          "clutch_score": 1.1040090115208356,
+          "s2_std": 3.4993616097625075,
+          "s3_std": 3.9775294423775756,
+          "post_fcy_performance": -0.31739365212694964,
+          "late_pace": 146.3487,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 188.64999999999998,
+          "consistency_score": 0.05070410043215195,
+          "tire_degradation": -20.474214285714268,
+          "clutch_score": 7.548870167740053,
+          "s2_std": 6.300480813915726,
+          "s3_std": 6.858453507171982,
+          "post_fcy_performance": 13.73348177958216,
+          "late_pace": 113.03464285714287,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.3019141085703102,
+          "tire_degradation": -12.909285714285732,
+          "clutch_score": 2.777050847677228,
+          "s2_std": 5.6658678799161795,
+          "s3_std": 2.8319525835240915,
+          "post_fcy_performance": 7.958743667279036,
+          "late_pace": 129.7375476190476,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 210.8,
+          "consistency_score": 0.0307608387790888,
+          "tire_degradation": -32.82570000000001,
+          "clutch_score": 7.356422788462398,
+          "s2_std": 10.902244287976677,
+          "s3_std": 10.491121003497035,
+          "post_fcy_performance": 19.39835757364369,
+          "late_pace": 159.6626,
+          "races": 2
+        }
+      }
+    },
+    "14": {
+      "id": 14,
+      "archetype": "Clutch Performers",
+      "scores": {
+        "speed": 43.5,
+        "consistency": 37.5,
+        "tire_management": 57.2,
+        "pressure": 65.8,
+        "s1_skill": 50.0,
+        "s2_skill": 69.5,
+        "s3_skill": 61.2,
+        "race_craft": 52.9,
+        "peak_speed": 43.5,
+        "technical_skill": 69.5,
+        "high_speed_skill": 61.2,
+        "restart_ability": 52.9,
+        "race_pace": 54.5
+      },
+      "fingerprint": {
+        "peak_speed": 43.5,
+        "consistency": 37.5,
+        "tire_management": 57.2,
+        "pressure_handling": 65.8,
+        "technical_skill": 30.5,
+        "high_speed_skill": 38.8,
+        "restart_ability": 52.9,
+        "race_pace": 45.5
+      },
+      "signature_strength": {
+        "name": "Pressure Handling",
+        "percentile": 65.8
+      },
+      "strengths": [
+        "s2_skill",
+        "technical_skill",
+        "pressure"
+      ],
+      "improvements": [
+        "peak_speed",
+        "consistency"
+      ],
+      "tracks": [
+        "cota",
+        "sonoma"
+      ],
+      "track_stats": {
+        "cota": {
+          "top_speed_max": 206.9,
+          "consistency_score": 0.0393586973918614,
+          "tire_degradation": -3.3274000000000115,
+          "clutch_score": 7.600115488337529,
+          "s2_std": 10.228711123956574,
+          "s3_std": 8.952792726048573,
+          "post_fcy_performance": -1.9944265138111823,
+          "late_pace": 165.0654,
+          "races": 1
+        },
+        "sonoma": {
+          "top_speed_max": 186.7,
+          "consistency_score": 0.05166506008758075,
+          "tire_degradation": -19.065571428571417,
+          "clutch_score": 6.635447544671732,
+          "s2_std": 6.043290745221647,
+          "s3_std": 6.156698297704805,
+          "post_fcy_performance": 12.886998622833973,
+          "late_pace": 115.10635714285715,
+          "races": 2
+        }
+      }
+    },
+    "15": {
+      "id": 15,
+      "archetype": "Smooth Operators",
+      "scores": {
+        "speed": 43.5,
+        "consistency": 82.2,
+        "tire_management": 97.5,
+        "pressure": 83.1,
+        "s1_skill": 50.0,
+        "s2_skill": 48.9,
+        "s3_skill": 96.6,
+        "race_craft": 46.8,
+        "peak_speed": 43.5,
+        "technical_skill": 48.9,
+        "high_speed_skill": 96.6,
+        "restart_ability": 46.8,
+        "race_pace": 58.8
+      },
+      "fingerprint": {
+        "peak_speed": 43.5,
+        "consistency": 82.2,
+        "tire_management": 97.5,
+        "pressure_handling": 83.1,
+        "technical_skill": 51.1,
+        "high_speed_skill": 3.4,
+        "restart_ability": 46.8,
+        "race_pace": 41.2
+      },
+      "signature_strength": {
+        "name": "Tire Management",
+        "percentile": 97.5
+      },
+      "strengths": [
+        "tire_management",
+        "s3_skill",
+        "high_speed_skill"
+      ],
+      "improvements": [
+        "speed",
+        "peak_speed"
+      ],
+      "tracks": [
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "cota": {
+          "top_speed_max": 201.5,
+          "consistency_score": 0.0104589411691906,
+          "tire_degradation": -149.8145,
+          "clutch_score": 21.64243777997485,
+          "s2_std": 11.313571698038896,
+          "s3_std": 9.309734861960354,
+          "post_fcy_performance": 9.676950216129605,
+          "late_pace": 156.334,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.21704750107951495,
+          "tire_degradation": -7.92661666666669,
+          "clutch_score": 0.5874303186273941,
+          "s2_std": 3.6325762972263127,
+          "s3_std": 3.740071318177234,
+          "post_fcy_performance": 0.7078086947510306,
+          "late_pace": 148.31181666666666,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 185.7,
+          "consistency_score": 0.05228925859628405,
+          "tire_degradation": -19.690714285714265,
+          "clutch_score": 7.84756002642936,
+          "s2_std": 5.811605888365431,
+          "s3_std": 5.870421829723792,
+          "post_fcy_performance": 13.15036043590395,
+          "late_pace": 114.8522142857143,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.18673528515421636,
+          "tire_degradation": -53.50276190476191,
+          "clutch_score": 8.756248338837201,
+          "s2_std": 5.837360065351401,
+          "s3_std": 38.40961168442229,
+          "post_fcy_performance": -10.110577336858436,
+          "late_pace": 131.3087142857143,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 204.2,
+          "consistency_score": 0.0334919468642137,
+          "tire_degradation": -40.77760000000001,
+          "clutch_score": 7.426629147663522,
+          "s2_std": 7.358997412900544,
+          "s3_std": 8.90073199772008,
+          "post_fcy_performance": 30.49684602667044,
+          "late_pace": 169.02079999999998,
+          "races": 1
+        }
+      }
+    },
+    "16": {
+      "id": 16,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 43.5,
+        "consistency": 82.8,
+        "tire_management": 52.9,
+        "pressure": 51.7,
+        "s1_skill": 50.0,
+        "s2_skill": 48.6,
+        "s3_skill": 52.3,
+        "race_craft": 52.6,
+        "peak_speed": 43.5,
+        "technical_skill": 48.6,
+        "high_speed_skill": 52.3,
+        "restart_ability": 52.6,
+        "race_pace": 58.8
+      },
+      "fingerprint": {
+        "peak_speed": 43.5,
+        "consistency": 82.8,
+        "tire_management": 52.9,
+        "pressure_handling": 51.7,
+        "technical_skill": 51.4,
+        "high_speed_skill": 47.7,
+        "restart_ability": 52.6,
+        "race_pace": 41.2
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 82.8
+      },
+      "strengths": [
+        "consistency",
+        "race_pace",
+        "tire_management"
+      ],
+      "improvements": [
+        "speed",
+        "peak_speed"
+      ],
+      "tracks": [
+        "cota",
+        "sebring",
+        "sonoma"
+      ],
+      "track_stats": {
+        "cota": {
+          "top_speed_max": 207.7,
+          "consistency_score": 0.0354621967087192,
+          "tire_degradation": -1.5829999999999984,
+          "clutch_score": 7.180557589607426,
+          "s2_std": 11.053230518921232,
+          "s3_std": 10.700569123127211,
+          "post_fcy_performance": 9.823385527879916,
+          "late_pace": 164.815,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.30479149335707717,
+          "tire_degradation": -8.365933333333345,
+          "clutch_score": 1.5510401169898913,
+          "s2_std": 3.4672959154432377,
+          "s3_std": 3.9176135085890706,
+          "post_fcy_performance": -0.0143141853576858,
+          "late_pace": 146.80019999999996,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 189.14999999999998,
+          "consistency_score": 0.050195992887269794,
+          "tire_degradation": -20.600571428571428,
+          "clutch_score": 8.837302461221206,
+          "s2_std": 6.337104099352041,
+          "s3_std": 6.955444274883894,
+          "post_fcy_performance": 13.895436891665058,
+          "late_pace": 112.94835714285715,
+          "races": 2
+        }
+      }
+    },
+    "17": {
+      "id": 17,
+      "archetype": "Clutch Performers",
+      "scores": {
+        "speed": 8.4,
+        "consistency": 58.8,
+        "tire_management": 65.5,
+        "pressure": 72.3,
+        "s1_skill": 50.0,
+        "s2_skill": 44.6,
+        "s3_skill": 49.5,
+        "race_craft": 70.8,
+        "peak_speed": 8.4,
+        "technical_skill": 44.6,
+        "high_speed_skill": 49.5,
+        "restart_ability": 70.8,
+        "race_pace": 33.5
+      },
+      "fingerprint": {
+        "peak_speed": 8.4,
+        "consistency": 58.8,
+        "tire_management": 65.5,
+        "pressure_handling": 72.3,
+        "technical_skill": 55.4,
+        "high_speed_skill": 50.5,
+        "restart_ability": 70.8,
+        "race_pace": 66.5
+      },
+      "signature_strength": {
+        "name": "Pressure Handling",
+        "percentile": 72.3
+      },
+      "strengths": [
+        "pressure",
+        "race_craft",
+        "restart_ability"
+      ],
+      "improvements": [
+        "speed",
+        "peak_speed"
+      ],
+      "tracks": [
+        "sonoma"
+      ],
+      "track_stats": {
+        "sonoma": {
+          "top_speed_max": 184.64999999999998,
+          "consistency_score": 0.054023297348246804,
+          "tire_degradation": -18.166499999999978,
+          "clutch_score": 7.361864303257817,
+          "s2_std": 5.881187050774902,
+          "s3_std": 6.32181802040698,
+          "post_fcy_performance": 12.371997955025057,
+          "late_pace": 115.99914285714286,
+          "races": 2
+        }
+      }
+    },
+    "18": {
+      "id": 18,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 45.6,
+        "consistency": 75.4,
+        "tire_management": 50.2,
+        "pressure": 30.5,
+        "s1_skill": 50.0,
+        "s2_skill": 42.5,
+        "s3_skill": 37.2,
+        "race_craft": 51.7,
+        "peak_speed": 45.6,
+        "technical_skill": 42.5,
+        "high_speed_skill": 37.2,
+        "restart_ability": 51.7,
+        "race_pace": 58.2
+      },
+      "fingerprint": {
+        "peak_speed": 45.6,
+        "consistency": 75.4,
+        "tire_management": 50.2,
+        "pressure_handling": 30.5,
+        "technical_skill": 57.5,
+        "high_speed_skill": 62.8,
+        "restart_ability": 51.7,
+        "race_pace": 41.8
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 75.4
+      },
+      "strengths": [
+        "consistency",
+        "race_pace",
+        "race_craft"
+      ],
+      "improvements": [
+        "high_speed_skill",
+        "pressure"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 182.6,
+          "consistency_score": 0.22139015224631714,
+          "tire_degradation": -3.4344861111110987,
+          "clutch_score": 0.5521008424555561,
+          "s2_std": 1.6410497338444021,
+          "s3_std": 1.840271514126767,
+          "post_fcy_performance": 8.814561528070291,
+          "late_pace": 102.60238888888888,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 213.25,
+          "consistency_score": 0.0645744838789289,
+          "tire_degradation": 7.23271428571428,
+          "clutch_score": -2.7329991086057674,
+          "s2_std": 4.714574915511529,
+          "s3_std": 5.081983481724377,
+          "post_fcy_performance": -1.5910994402831071,
+          "late_pace": 116.79749107142857,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 201.5,
+          "consistency_score": 0.046682989369799,
+          "tire_degradation": -5.673199999999952,
+          "clutch_score": 0.2507172405960634,
+          "s2_std": 9.87042457442494,
+          "s3_std": 6.37797105277219,
+          "post_fcy_performance": -2.570830667587694,
+          "late_pace": 167.67040000000003,
+          "races": 1
+        },
+        "road_america": {
+          "top_speed_max": 202.6,
+          "consistency_score": 0.03431829109029125,
+          "tire_degradation": -29.654700000000005,
+          "clutch_score": 6.733954073744595,
+          "s2_std": 7.9349526015158265,
+          "s3_std": 8.972177521599162,
+          "post_fcy_performance": 18.31349419497886,
+          "late_pace": 168.3197,
+          "races": 2
+        }
+      }
+    },
+    "20": {
+      "id": 20,
+      "archetype": "Qualifying Heroes",
+      "scores": {
+        "speed": 53.6,
+        "consistency": 74.8,
+        "tire_management": 11.1,
+        "pressure": 12.3,
+        "s1_skill": 50.0,
+        "s2_skill": 26.5,
+        "s3_skill": 26.799999999999997,
+        "race_craft": 15.7,
+        "peak_speed": 53.6,
+        "technical_skill": 26.5,
+        "high_speed_skill": 26.799999999999997,
+        "restart_ability": 15.7,
+        "race_pace": 35.7
+      },
+      "fingerprint": {
+        "peak_speed": 53.6,
+        "consistency": 74.8,
+        "tire_management": 11.1,
+        "pressure_handling": 12.3,
+        "technical_skill": 73.5,
+        "high_speed_skill": 73.2,
+        "restart_ability": 15.7,
+        "race_pace": 64.3
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 74.8
+      },
+      "strengths": [
+        "consistency",
+        "speed",
+        "peak_speed"
+      ],
+      "improvements": [
+        "pressure",
+        "tire_management"
+      ],
+      "tracks": [
+        "indianapolis"
+      ],
+      "track_stats": {
+        "indianapolis": {
+          "top_speed_max": 205.75,
+          "consistency_score": 0.08496266449919955,
+          "tire_degradation": 3.875526785714313,
+          "clutch_score": -0.963255367955933,
+          "s2_std": 3.598543022140265,
+          "s3_std": 4.596457861236391,
+          "post_fcy_performance": -0.4953700406337398,
+          "late_pace": 117.96809821428573,
+          "races": 2
+        }
+      }
+    },
+    "21": {
+      "id": 21,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 46.9,
+        "consistency": 81.8,
+        "tire_management": 50.5,
+        "pressure": 44.6,
+        "s1_skill": 50.0,
+        "s2_skill": 51.7,
+        "s3_skill": 53.2,
+        "race_craft": 52.3,
+        "peak_speed": 46.9,
+        "technical_skill": 51.7,
+        "high_speed_skill": 53.2,
+        "restart_ability": 52.3,
+        "race_pace": 57.2
+      },
+      "fingerprint": {
+        "peak_speed": 46.9,
+        "consistency": 81.8,
+        "tire_management": 50.5,
+        "pressure_handling": 44.6,
+        "technical_skill": 48.3,
+        "high_speed_skill": 46.8,
+        "restart_ability": 52.3,
+        "race_pace": 42.8
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 81.8
+      },
+      "strengths": [
+        "consistency",
+        "race_pace",
+        "s3_skill"
+      ],
+      "improvements": [
+        "peak_speed",
+        "pressure"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 185.2,
+          "consistency_score": 0.3251070021670577,
+          "tire_degradation": -4.10766666666666,
+          "clutch_score": 1.2142753837558593,
+          "s2_std": 1.6879586461736702,
+          "s3_std": 1.1486271447102308,
+          "post_fcy_performance": 9.19859322337464,
+          "late_pace": 98.83394444444444,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 218.2,
+          "consistency_score": 0.05903512689793895,
+          "tire_degradation": 9.672962745098047,
+          "clutch_score": -2.3371941538837064,
+          "s2_std": 5.159164600443194,
+          "s3_std": 5.466918586544368,
+          "post_fcy_performance": -1.443507368051415,
+          "late_pace": 116.98684313725491,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 208.5,
+          "consistency_score": 0.0368053918819358,
+          "tire_degradation": -2.3817999999999984,
+          "clutch_score": 6.710406938634359,
+          "s2_std": 11.323010201771073,
+          "s3_std": 9.957609093936508,
+          "post_fcy_performance": -2.2170433953709154,
+          "late_pace": 165.137,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.21327508722663455,
+          "tire_degradation": -8.344700000000003,
+          "clutch_score": 1.5891835925618596,
+          "s2_std": 3.386668927679782,
+          "s3_std": 3.5911237729453616,
+          "post_fcy_performance": 1.9466232175110245,
+          "late_pace": 148.2832666666667,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 187.14999999999998,
+          "consistency_score": 0.044243466389953,
+          "tire_degradation": -6.568571428571417,
+          "clutch_score": 10.472017788044793,
+          "s2_std": 6.008270871267939,
+          "s3_std": 10.853173549211856,
+          "post_fcy_performance": 8.945567923612389,
+          "late_pace": 127.51642857142858,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.043365931820617,
+          "tire_degradation": -24.67616666666666,
+          "clutch_score": 5.540693984814973,
+          "s2_std": 10.819559616852787,
+          "s3_std": 5.533979138254098,
+          "post_fcy_performance": 15.66232714652731,
+          "late_pace": 130.81466666666665,
+          "races": 1
+        },
+        "road_america": {
+          "top_speed_max": 213.25,
+          "consistency_score": 0.030873872174257248,
+          "tire_degradation": -33.74129999999997,
+          "clutch_score": 8.655407396604346,
+          "s2_std": 10.656749880243858,
+          "s3_std": 10.645403690844677,
+          "post_fcy_performance": 19.61427022116773,
+          "late_pace": 159.4882,
+          "races": 2
+        }
+      }
+    },
+    "22": {
+      "id": 22,
+      "archetype": "Qualifying Heroes",
+      "scores": {
+        "speed": 46.9,
+        "consistency": 83.4,
+        "tire_management": 42.8,
+        "pressure": 30.8,
+        "s1_skill": 50.0,
+        "s2_skill": 37.5,
+        "s3_skill": 31.400000000000006,
+        "race_craft": 53.8,
+        "peak_speed": 46.9,
+        "technical_skill": 37.5,
+        "high_speed_skill": 31.400000000000006,
+        "restart_ability": 53.8,
+        "race_pace": 36.6
+      },
+      "fingerprint": {
+        "peak_speed": 46.9,
+        "consistency": 83.4,
+        "tire_management": 42.8,
+        "pressure_handling": 30.8,
+        "technical_skill": 62.5,
+        "high_speed_skill": 68.6,
+        "restart_ability": 53.8,
+        "race_pace": 63.4
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 83.4
+      },
+      "strengths": [
+        "consistency",
+        "race_craft",
+        "restart_ability"
+      ],
+      "improvements": [
+        "high_speed_skill",
+        "pressure"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 187.14999999999998,
+          "consistency_score": 0.38852737483457533,
+          "tire_degradation": -3.597944444444451,
+          "clutch_score": 1.083026084963911,
+          "s2_std": 1.9508287489538234,
+          "s3_std": 1.2542673350568925,
+          "post_fcy_performance": 8.551117502947404,
+          "late_pace": 98.00477777777778,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 214.3,
+          "consistency_score": 0.055469181113052254,
+          "tire_degradation": 10.905374999999998,
+          "clutch_score": -1.677653785833399,
+          "s2_std": 5.687155315424199,
+          "s3_std": 6.532070949349539,
+          "post_fcy_performance": -1.5665890136780614,
+          "late_pace": 116.97682142857144,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 206.1,
+          "consistency_score": 0.0349947886401715,
+          "tire_degradation": -41.773600000000016,
+          "clutch_score": 9.351529279637088,
+          "s2_std": 9.705689721482804,
+          "s3_std": 9.76170588770709,
+          "post_fcy_performance": 28.70489417332871,
+          "late_pace": 164.6778,
+          "races": 1
+        }
+      }
+    },
+    "31": {
+      "id": 31,
+      "archetype": "Smooth Operators",
+      "scores": {
+        "speed": 45.6,
+        "consistency": 63.1,
+        "tire_management": 55.1,
+        "pressure": 12.0,
+        "s1_skill": 50.0,
+        "s2_skill": 53.8,
+        "s3_skill": 70.2,
+        "race_craft": 70.5,
+        "peak_speed": 45.6,
+        "technical_skill": 53.8,
+        "high_speed_skill": 70.2,
+        "restart_ability": 70.5,
+        "race_pace": 58.8
+      },
+      "fingerprint": {
+        "peak_speed": 45.6,
+        "consistency": 63.1,
+        "tire_management": 55.1,
+        "pressure_handling": 12.0,
+        "technical_skill": 46.2,
+        "high_speed_skill": 29.8,
+        "restart_ability": 70.5,
+        "race_pace": 41.2
+      },
+      "signature_strength": {
+        "name": "Restart Ability",
+        "percentile": 70.5
+      },
+      "strengths": [
+        "race_craft",
+        "restart_ability",
+        "s3_skill"
+      ],
+      "improvements": [
+        "peak_speed",
+        "pressure"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 185.7,
+          "consistency_score": 0.08318259317980295,
+          "tire_degradation": -3.7904444444444394,
+          "clutch_score": 3.354228071212381,
+          "s2_std": 1.9178083379866535,
+          "s3_std": 9.865713757260206,
+          "post_fcy_performance": 8.689972794883293,
+          "late_pace": 99.44061111111111,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 218.2,
+          "consistency_score": 0.0411155131514455,
+          "tire_degradation": 21.26414285714289,
+          "clutch_score": 0.901843866733815,
+          "s2_std": 5.996521232621512,
+          "s3_std": 7.387829498279733,
+          "post_fcy_performance": -9.212824892188074,
+          "late_pace": 132.8654285714286,
+          "races": 1
+        },
+        "cota": {
+          "top_speed_max": 206.1,
+          "consistency_score": 0.0061448429811045,
+          "tire_degradation": -49.732500000000016,
+          "clutch_score": 29.610806906975505,
+          "s2_std": 7.01946775595722,
+          "s3_std": 8.027657115024923,
+          "post_fcy_performance": 39.70379132809614,
+          "late_pace": 151.33599999999998,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.10174794215346189,
+          "tire_degradation": 12.595300000000009,
+          "clutch_score": -43.05648230666249,
+          "s2_std": 5.454916840020977,
+          "s3_std": 5.489744952374336,
+          "post_fcy_performance": -2.9173845841990524,
+          "late_pace": 169.6736,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 187.64999999999998,
+          "consistency_score": 0.05150552948126845,
+          "tire_degradation": -20.166999999999987,
+          "clutch_score": 7.860695689644255,
+          "s2_std": 5.975060537369734,
+          "s3_std": 6.566503563074926,
+          "post_fcy_performance": 13.56068194553777,
+          "late_pace": 113.88192857142859,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.0433966828532597,
+          "tire_degradation": -24.98783333333336,
+          "clutch_score": 5.428773528840496,
+          "s2_std": 10.88252203064016,
+          "s3_std": 5.491207104137149,
+          "post_fcy_performance": 15.747997381250055,
+          "late_pace": 130.9235,
+          "races": 1
+        },
+        "road_america": {
+          "top_speed_max": 216.14999999999998,
+          "consistency_score": 0.03086879245133775,
+          "tire_degradation": -34.9255,
+          "clutch_score": 6.576245074510673,
+          "s2_std": 10.642904639808583,
+          "s3_std": 10.828076686473619,
+          "post_fcy_performance": 20.379156449078096,
+          "late_pace": 159.5874,
+          "races": 2
+        }
+      }
+    },
+    "41": {
+      "id": 41,
+      "archetype": "Smooth Operators",
+      "scores": {
+        "speed": 43.5,
+        "consistency": 75.1,
+        "tire_management": 61.2,
+        "pressure": 47.4,
+        "s1_skill": 50.0,
+        "s2_skill": 48.6,
+        "s3_skill": 49.2,
+        "race_craft": 52.6,
+        "peak_speed": 43.5,
+        "technical_skill": 48.6,
+        "high_speed_skill": 49.2,
+        "restart_ability": 52.6,
+        "race_pace": 58.2
+      },
+      "fingerprint": {
+        "peak_speed": 43.5,
+        "consistency": 75.1,
+        "tire_management": 61.2,
+        "pressure_handling": 47.4,
+        "technical_skill": 51.4,
+        "high_speed_skill": 50.8,
+        "restart_ability": 52.6,
+        "race_pace": 41.8
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 75.1
+      },
+      "strengths": [
+        "consistency",
+        "tire_management",
+        "race_pace"
+      ],
+      "improvements": [
+        "speed",
+        "peak_speed"
+      ],
+      "tracks": [
+        "barber",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 185.2,
+          "consistency_score": 0.1580320876565094,
+          "tire_degradation": -5.513055555555553,
+          "clutch_score": 1.5946895002856458,
+          "s2_std": 1.8511075875872716,
+          "s3_std": 2.856633446221352,
+          "post_fcy_performance": 9.24006787006562,
+          "late_pace": 98.71166666666667,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 210.9,
+          "consistency_score": 0.0365455523254807,
+          "tire_degradation": -1.9128000000000327,
+          "clutch_score": 6.7652579254584095,
+          "s2_std": 11.192783053943602,
+          "s3_std": 10.080617894008284,
+          "post_fcy_performance": -2.31030542506509,
+          "late_pace": 165.19379999999998,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.05788618145283454,
+          "tire_degradation": -2.520233333333323,
+          "clutch_score": 2.7897101426256743,
+          "s2_std": 3.9895252615056687,
+          "s3_std": 4.946910645687968,
+          "post_fcy_performance": 1.4782309196336485,
+          "late_pace": 156.09328333333335,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 185.75,
+          "consistency_score": 0.04870162104215175,
+          "tire_degradation": -30.731499999999983,
+          "clutch_score": 8.739545503596798,
+          "s2_std": 5.942913041637196,
+          "s3_std": 8.207169965599109,
+          "post_fcy_performance": 4.609496670909812,
+          "late_pace": 114.93614285714285,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.16531820994833443,
+          "tire_degradation": -14.480916666666644,
+          "clutch_score": 2.9263552314319035,
+          "s2_std": 5.9153722582081025,
+          "s3_std": 2.81919421309546,
+          "post_fcy_performance": 7.761309267326205,
+          "late_pace": 131.16208333333333,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 210.1,
+          "consistency_score": 0.0309180333969842,
+          "tire_degradation": -34.24370000000003,
+          "clutch_score": 9.119500653911661,
+          "s2_std": 10.434704782634089,
+          "s3_std": 10.637765395417404,
+          "post_fcy_performance": 19.755444406268523,
+          "late_pace": 159.84409999999997,
+          "races": 2
+        }
+      }
+    },
+    "46": {
+      "id": 46,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 46.9,
+        "consistency": 82.8,
+        "tire_management": 62.8,
+        "pressure": 44.6,
+        "s1_skill": 50.0,
+        "s2_skill": 42.8,
+        "s3_skill": 41.8,
+        "race_craft": 55.4,
+        "peak_speed": 46.9,
+        "technical_skill": 42.8,
+        "high_speed_skill": 41.8,
+        "restart_ability": 55.4,
+        "race_pace": 39.1
+      },
+      "fingerprint": {
+        "peak_speed": 46.9,
+        "consistency": 82.8,
+        "tire_management": 62.8,
+        "pressure_handling": 44.6,
+        "technical_skill": 57.2,
+        "high_speed_skill": 58.2,
+        "restart_ability": 55.4,
+        "race_pace": 60.9
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 82.8
+      },
+      "strengths": [
+        "consistency",
+        "tire_management",
+        "race_craft"
+      ],
+      "improvements": [
+        "high_speed_skill",
+        "race_pace"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 186.7,
+          "consistency_score": 0.3471537573308055,
+          "tire_degradation": -5.05522222222222,
+          "clutch_score": 1.3885290041124034,
+          "s2_std": 1.770923706540256,
+          "s3_std": 2.1010891744404003,
+          "post_fcy_performance": 8.654859427223288,
+          "late_pace": 98.8818888888889,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 215.15,
+          "consistency_score": 0.0715966429842259,
+          "tire_degradation": -8.136062499999987,
+          "clutch_score": 4.170288159504772,
+          "s2_std": 3.7987839987651166,
+          "s3_std": 5.236685564649948,
+          "post_fcy_performance": 7.893541653005286,
+          "late_pace": 101.55574999999999,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 208.5,
+          "consistency_score": 0.0354238725479965,
+          "tire_degradation": -1.363800000000026,
+          "clutch_score": 7.507719644977922,
+          "s2_std": 11.191584277141148,
+          "s3_std": 10.845465161355524,
+          "post_fcy_performance": 9.85492117814038,
+          "late_pace": 164.8392,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.2871341092703339,
+          "tire_degradation": -8.3707,
+          "clutch_score": 1.6473258654782559,
+          "s2_std": 3.425853916320489,
+          "s3_std": 3.8509591127327547,
+          "post_fcy_performance": 0.6683659389348476,
+          "late_pace": 146.83258333333333,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 186.7,
+          "consistency_score": 0.04377304127149555,
+          "tire_degradation": -39.852285714285706,
+          "clutch_score": 8.328966943328908,
+          "s2_std": 6.964316697694253,
+          "s3_std": 7.906936913702893,
+          "post_fcy_performance": 8.539166710548187,
+          "late_pace": 113.44950000000001,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.2976764863172705,
+          "tire_degradation": -12.902500000000005,
+          "clutch_score": 2.8893530558309046,
+          "s2_std": 5.513092714761301,
+          "s3_std": 2.9030675171758653,
+          "post_fcy_performance": 7.690073231037306,
+          "late_pace": 129.67442857142856,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 216.75,
+          "consistency_score": 0.02922999519348725,
+          "tire_degradation": -33.55120000000001,
+          "clutch_score": 4.422565474173868,
+          "s2_std": 9.817091908513223,
+          "s3_std": 9.58192296733738,
+          "post_fcy_performance": 21.11855456704459,
+          "late_pace": 160.55290000000002,
+          "races": 2
+        }
+      }
+    },
+    "47": {
+      "id": 47,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 46.9,
+        "consistency": 78.2,
+        "tire_management": 51.4,
+        "pressure": 43.4,
+        "s1_skill": 50.0,
+        "s2_skill": 49.5,
+        "s3_skill": 55.4,
+        "race_craft": 51.7,
+        "peak_speed": 46.9,
+        "technical_skill": 49.5,
+        "high_speed_skill": 55.4,
+        "restart_ability": 51.7,
+        "race_pace": 53.5
+      },
+      "fingerprint": {
+        "peak_speed": 46.9,
+        "consistency": 78.2,
+        "tire_management": 51.4,
+        "pressure_handling": 43.4,
+        "technical_skill": 50.5,
+        "high_speed_skill": 44.6,
+        "restart_ability": 51.7,
+        "race_pace": 46.5
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 78.2
+      },
+      "strengths": [
+        "consistency",
+        "s3_skill",
+        "high_speed_skill"
+      ],
+      "improvements": [
+        "peak_speed",
+        "pressure"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 188.14999999999998,
+          "consistency_score": 0.3480066739492847,
+          "tire_degradation": -3.5461666666666787,
+          "clutch_score": 0.41900431565306995,
+          "s2_std": 2.028269645558634,
+          "s3_std": 1.1885958204345128,
+          "post_fcy_performance": 8.531426477202686,
+          "late_pace": 98.72972222222221,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 215.15,
+          "consistency_score": 0.0556602386267335,
+          "tire_degradation": 10.074026785714288,
+          "clutch_score": -2.165145395031574,
+          "s2_std": 5.8273400177944,
+          "s3_std": 5.81620321642883,
+          "post_fcy_performance": -1.641213307293103,
+          "late_pace": 116.63798214285714,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 210.1,
+          "consistency_score": 0.0376072394149431,
+          "tire_degradation": -1.9650000000000036,
+          "clutch_score": 6.636269497470818,
+          "s2_std": 11.159458037190854,
+          "s3_std": 9.479750359318542,
+          "post_fcy_performance": -2.430583990766888,
+          "late_pace": 165.5198,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.09326371468433281,
+          "tire_degradation": -12.244833333333347,
+          "clutch_score": 2.1779386775761083,
+          "s2_std": 3.7803873614807704,
+          "s3_std": 6.8425464499729225,
+          "post_fcy_performance": 1.0424405400657366,
+          "late_pace": 149.29004166666667,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 187.64999999999998,
+          "consistency_score": 0.05173971472976075,
+          "tire_degradation": -16.709071428571427,
+          "clutch_score": 8.40446209162134,
+          "s2_std": 6.1601175089794005,
+          "s3_std": 7.520121925515799,
+          "post_fcy_performance": 12.468522077065685,
+          "late_pace": 117.06742857142856,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 212.85000000000002,
+          "consistency_score": 0.03142382088411075,
+          "tire_degradation": -33.06549999999997,
+          "clutch_score": 7.590615198571692,
+          "s2_std": 10.574279022977649,
+          "s3_std": 10.677782613119682,
+          "post_fcy_performance": 19.255202399037277,
+          "late_pace": 159.46480000000003,
+          "races": 2
+        }
+      }
+    },
+    "50": {
+      "id": 50,
+      "archetype": "Clutch Performers",
+      "scores": {
+        "speed": 28.9,
+        "consistency": 49.8,
+        "tire_management": 67.1,
+        "pressure": 85.8,
+        "s1_skill": 50.0,
+        "s2_skill": 50.5,
+        "s3_skill": 44.6,
+        "race_craft": 70.8,
+        "peak_speed": 28.9,
+        "technical_skill": 50.5,
+        "high_speed_skill": 44.6,
+        "restart_ability": 70.8,
+        "race_pace": 27.099999999999994
+      },
+      "fingerprint": {
+        "peak_speed": 28.9,
+        "consistency": 49.8,
+        "tire_management": 67.1,
+        "pressure_handling": 85.8,
+        "technical_skill": 49.5,
+        "high_speed_skill": 55.4,
+        "restart_ability": 70.8,
+        "race_pace": 72.9
+      },
+      "signature_strength": {
+        "name": "Pressure Handling",
+        "percentile": 85.8
+      },
+      "strengths": [
+        "pressure",
+        "race_craft",
+        "restart_ability"
+      ],
+      "improvements": [
+        "peak_speed",
+        "race_pace"
+      ],
+      "tracks": [
+        "sonoma"
+      ],
+      "track_stats": {
+        "sonoma": {
+          "top_speed_max": 186.7,
+          "consistency_score": 0.05115530512073655,
+          "tire_degradation": -20.173785714285707,
+          "clutch_score": 8.071696782368232,
+          "s2_std": 6.233619026441645,
+          "s3_std": 5.921360027480475,
+          "post_fcy_performance": 13.543344733723021,
+          "late_pace": 113.94764285714287,
+          "races": 2
+        }
+      }
+    },
+    "51": {
+      "id": 51,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 45.6,
+        "consistency": 77.5,
+        "tire_management": 50.5,
+        "pressure": 12.9,
+        "s1_skill": 50.0,
+        "s2_skill": 44.0,
+        "s3_skill": 44.3,
+        "race_craft": 44.3,
+        "peak_speed": 45.6,
+        "technical_skill": 44.0,
+        "high_speed_skill": 44.3,
+        "restart_ability": 44.3,
+        "race_pace": 58.2
+      },
+      "fingerprint": {
+        "peak_speed": 45.6,
+        "consistency": 77.5,
+        "tire_management": 50.5,
+        "pressure_handling": 12.9,
+        "technical_skill": 56.0,
+        "high_speed_skill": 55.7,
+        "restart_ability": 44.3,
+        "race_pace": 41.8
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 77.5
+      },
+      "strengths": [
+        "consistency",
+        "race_pace",
+        "tire_management"
+      ],
+      "improvements": [
+        "technical_skill",
+        "pressure"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 184.75,
+          "consistency_score": 0.2797351469719856,
+          "tire_degradation": -1.6472222222222115,
+          "clutch_score": 1.38379540415879,
+          "s2_std": 1.6600131766779826,
+          "s3_std": 2.4643520567526904,
+          "post_fcy_performance": 8.630556320796,
+          "late_pace": 101.85927777777778,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 214.7,
+          "consistency_score": 0.05933971615824915,
+          "tire_degradation": 8.14997321428571,
+          "clutch_score": -2.433283152676088,
+          "s2_std": 5.040623990154773,
+          "s3_std": 5.372795476113059,
+          "post_fcy_performance": -1.3115156366125031,
+          "late_pace": 116.13166964285713,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 203.0,
+          "consistency_score": 0.0299052912307094,
+          "tire_degradation": 21.221000000000004,
+          "clutch_score": -38.28237079347832,
+          "s2_std": 11.284136663797224,
+          "s3_std": 9.572682905016755,
+          "post_fcy_performance": -44.48255714464105,
+          "late_pace": 196.91525,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.12571673905023056,
+          "tire_degradation": -7.640049999999974,
+          "clutch_score": 1.5091400441464358,
+          "s2_std": 3.4903581535795802,
+          "s3_std": 5.148921424353805,
+          "post_fcy_performance": 1.9600541638456308,
+          "late_pace": 150.96335000000002,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 186.2,
+          "consistency_score": 0.0533675858933894,
+          "tire_degradation": -17.912785714285732,
+          "clutch_score": 3.411486005984628,
+          "s2_std": 5.8853734899939845,
+          "s3_std": 5.895052760555867,
+          "post_fcy_performance": 12.306746079487613,
+          "late_pace": 116.8582857142857,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.13814912184303818,
+          "tire_degradation": -13.108345238095238,
+          "clutch_score": 2.841155592806787,
+          "s2_std": 5.900917642123593,
+          "s3_std": 3.84539003585212,
+          "post_fcy_performance": 7.662348545808875,
+          "late_pace": 132.28789285714288,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 213.14999999999998,
+          "consistency_score": 0.031041223644774,
+          "tire_degradation": -34.61629999999998,
+          "clutch_score": 7.7532232439538555,
+          "s2_std": 10.468122054943096,
+          "s3_std": 10.871816431025561,
+          "post_fcy_performance": 20.347634732981895,
+          "late_pace": 159.7706,
+          "races": 2
+        }
+      }
+    },
+    "55": {
+      "id": 55,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 45.6,
+        "consistency": 82.2,
+        "tire_management": 52.0,
+        "pressure": 42.2,
+        "s1_skill": 50.0,
+        "s2_skill": 48.0,
+        "s3_skill": 49.2,
+        "race_craft": 53.5,
+        "peak_speed": 45.6,
+        "technical_skill": 48.0,
+        "high_speed_skill": 49.2,
+        "restart_ability": 53.5,
+        "race_pace": 43.7
+      },
+      "fingerprint": {
+        "peak_speed": 45.6,
+        "consistency": 82.2,
+        "tire_management": 52.0,
+        "pressure_handling": 42.2,
+        "technical_skill": 52.0,
+        "high_speed_skill": 50.8,
+        "restart_ability": 53.5,
+        "race_pace": 56.3
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 82.2
+      },
+      "strengths": [
+        "consistency",
+        "race_craft",
+        "restart_ability"
+      ],
+      "improvements": [
+        "race_pace",
+        "pressure"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 185.2,
+          "consistency_score": 0.3880687210616788,
+          "tire_degradation": -3.842881944444443,
+          "clutch_score": 1.2026844554601133,
+          "s2_std": 1.9101681202770364,
+          "s3_std": 1.1730601491116919,
+          "post_fcy_performance": 8.868528007019345,
+          "late_pace": 98.38472222222222,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 216.64999999999998,
+          "consistency_score": 0.05443267259317695,
+          "tire_degradation": 9.693696428571428,
+          "clutch_score": -2.1529269656885686,
+          "s2_std": 5.483535016460072,
+          "s3_std": 6.057688301568502,
+          "post_fcy_performance": -0.8708573044646624,
+          "late_pace": 115.87529464285714,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 206.9,
+          "consistency_score": 0.0355596646433086,
+          "tire_degradation": -1.9875999999999865,
+          "clutch_score": 7.351823928550718,
+          "s2_std": 11.141266141810233,
+          "s3_std": 10.483244880312023,
+          "post_fcy_performance": 9.91207164816993,
+          "late_pace": 164.6698,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.20386224965212904,
+          "tire_degradation": -8.57256666666666,
+          "clutch_score": 0.6135776629211054,
+          "s2_std": 3.7122542450573004,
+          "s3_std": 3.6428940819226923,
+          "post_fcy_performance": 1.3287880538756767,
+          "late_pace": 147.34625,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 188.64999999999998,
+          "consistency_score": 0.050513749838722255,
+          "tire_degradation": -19.605571428571423,
+          "clutch_score": 6.740108193993798,
+          "s2_std": 6.6362184912277264,
+          "s3_std": 6.925397419784373,
+          "post_fcy_performance": 13.167998902300694,
+          "late_pace": 113.42171428571427,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.06767091791564085,
+          "tire_degradation": -12.702083333333348,
+          "clutch_score": 3.637767263418068,
+          "s2_std": 5.856925270140487,
+          "s3_std": 7.205560470012335,
+          "post_fcy_performance": 7.50099369747455,
+          "late_pace": 129.81238095238095,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 211.2,
+          "consistency_score": 0.03099968199462045,
+          "tire_degradation": -33.14880000000001,
+          "clutch_score": 8.478999649148648,
+          "s2_std": 10.605360537578637,
+          "s3_std": 10.560581447632549,
+          "post_fcy_performance": 19.443819680689526,
+          "late_pace": 159.3019,
+          "races": 2
+        }
+      }
+    },
+    "57": {
+      "id": 57,
+      "archetype": "Smooth Operators",
+      "scores": {
+        "speed": 53.6,
+        "consistency": 39.1,
+        "tire_management": 55.1,
+        "pressure": 36.3,
+        "s1_skill": 50.0,
+        "s2_skill": 67.4,
+        "s3_skill": 70.5,
+        "race_craft": 51.7,
+        "peak_speed": 53.6,
+        "technical_skill": 67.4,
+        "high_speed_skill": 70.5,
+        "restart_ability": 51.7,
+        "race_pace": 62.8
+      },
+      "fingerprint": {
+        "peak_speed": 53.6,
+        "consistency": 39.1,
+        "tire_management": 55.1,
+        "pressure_handling": 36.3,
+        "technical_skill": 32.6,
+        "high_speed_skill": 29.5,
+        "restart_ability": 51.7,
+        "race_pace": 37.2
+      },
+      "signature_strength": {
+        "name": "Tire Management",
+        "percentile": 55.1
+      },
+      "strengths": [
+        "s3_skill",
+        "high_speed_skill",
+        "s2_skill"
+      ],
+      "improvements": [
+        "consistency",
+        "pressure"
+      ],
+      "tracks": [
+        "indianapolis",
+        "cota",
+        "road_america"
+      ],
+      "track_stats": {
+        "indianapolis": {
+          "top_speed_max": 208.75,
+          "consistency_score": 0.06400330180899436,
+          "tire_degradation": -1.687925,
+          "clutch_score": -1.6049433021923676,
+          "s2_std": 4.572610258705151,
+          "s3_std": 6.9001704626724205,
+          "post_fcy_performance": -0.25934913988796104,
+          "late_pace": 114.77605,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 203.0,
+          "consistency_score": 0.0432861918007991,
+          "tire_degradation": -5.081199999999996,
+          "clutch_score": 5.550915248304649,
+          "s2_std": 10.344397807509145,
+          "s3_std": 6.331256067298643,
+          "post_fcy_performance": -2.950143210089136,
+          "late_pace": 167.40800000000002,
+          "races": 1
+        },
+        "road_america": {
+          "top_speed_max": 203.3,
+          "consistency_score": 0.0340013415028015,
+          "tire_degradation": -28.286699999999996,
+          "clutch_score": 5.482388845122876,
+          "s2_std": 8.085416904914776,
+          "s3_std": 9.644573058070238,
+          "post_fcy_performance": 18.4563150205327,
+          "late_pace": 168.8616,
+          "races": 2
+        }
+      }
+    },
+    "58": {
+      "id": 58,
+      "archetype": "Smooth Operators",
+      "scores": {
+        "speed": 43.9,
+        "consistency": 62.2,
+        "tire_management": 68.0,
+        "pressure": 52.6,
+        "s1_skill": 50.0,
+        "s2_skill": 54.8,
+        "s3_skill": 87.1,
+        "race_craft": 71.1,
+        "peak_speed": 43.9,
+        "technical_skill": 54.8,
+        "high_speed_skill": 87.1,
+        "restart_ability": 71.1,
+        "race_pace": 44.3
+      },
+      "fingerprint": {
+        "peak_speed": 43.9,
+        "consistency": 62.2,
+        "tire_management": 68.0,
+        "pressure_handling": 52.6,
+        "technical_skill": 45.2,
+        "high_speed_skill": 12.9,
+        "restart_ability": 71.1,
+        "race_pace": 55.7
+      },
+      "signature_strength": {
+        "name": "Restart Ability",
+        "percentile": 71.1
+      },
+      "strengths": [
+        "s3_skill",
+        "high_speed_skill",
+        "race_craft"
+      ],
+      "improvements": [
+        "speed",
+        "peak_speed"
+      ],
+      "tracks": [
+        "barber",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 183.64999999999998,
+          "consistency_score": 0.08039501116810599,
+          "tire_degradation": -10.830611111111097,
+          "clutch_score": 3.5828283575184376,
+          "s2_std": 2.738013857960305,
+          "s3_std": 10.674226283024925,
+          "post_fcy_performance": 9.090944210153552,
+          "late_pace": 100.2343888888889,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 211.75,
+          "consistency_score": 0.0308081651772242,
+          "tire_degradation": -33.203100000000006,
+          "clutch_score": 7.838988590427621,
+          "s2_std": 10.450916956975496,
+          "s3_std": 10.655993922111382,
+          "post_fcy_performance": 19.92384445078836,
+          "late_pace": 160.4459,
+          "races": 2
+        }
+      }
+    },
+    "61": {
+      "id": 61,
+      "archetype": "Qualifying Heroes",
+      "scores": {
+        "speed": 78.2,
+        "consistency": 75.4,
+        "tire_management": 11.1,
+        "pressure": 36.0,
+        "s1_skill": 50.0,
+        "s2_skill": 37.5,
+        "s3_skill": 24.599999999999994,
+        "race_craft": 45.8,
+        "peak_speed": 78.2,
+        "technical_skill": 37.5,
+        "high_speed_skill": 24.599999999999994,
+        "restart_ability": 45.8,
+        "race_pace": 57.2
+      },
+      "fingerprint": {
+        "peak_speed": 78.2,
+        "consistency": 75.4,
+        "tire_management": 11.1,
+        "pressure_handling": 36.0,
+        "technical_skill": 62.5,
+        "high_speed_skill": 75.4,
+        "restart_ability": 45.8,
+        "race_pace": 42.8
+      },
+      "signature_strength": {
+        "name": "Peak Speed",
+        "percentile": 78.2
+      },
+      "strengths": [
+        "speed",
+        "peak_speed",
+        "consistency"
+      ],
+      "improvements": [
+        "high_speed_skill",
+        "tire_management"
+      ],
+      "tracks": [
+        "indianapolis",
+        "vir"
+      ],
+      "track_stats": {
+        "indianapolis": {
+          "top_speed_max": 213.05,
+          "consistency_score": 0.04278130014503925,
+          "tire_degradation": 22.639901785714287,
+          "clutch_score": 2.4491536760036836,
+          "s2_std": 4.2423147254437215,
+          "s3_std": 5.190687189223377,
+          "post_fcy_performance": 3.549130948188729,
+          "late_pace": 133.41633035714284,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.15214037547601889,
+          "tire_degradation": -13.253857142857127,
+          "clutch_score": 2.768296351816621,
+          "s2_std": 5.839610811994336,
+          "s3_std": 2.5823222841305316,
+          "post_fcy_performance": 7.717532237483965,
+          "late_pace": 132.81883333333334,
+          "races": 2
+        }
+      }
+    },
+    "67": {
+      "id": 67,
+      "archetype": "Clutch Performers",
+      "scores": {
+        "speed": 5.6,
+        "consistency": 36.6,
+        "tire_management": 12.6,
+        "pressure": 30.5,
+        "s1_skill": 50.0,
+        "s2_skill": 66.2,
+        "s3_skill": 53.2,
+        "race_craft": 41.5,
+        "peak_speed": 5.6,
+        "technical_skill": 66.2,
+        "high_speed_skill": 53.2,
+        "restart_ability": 41.5,
+        "race_pace": 58.8
+      },
+      "fingerprint": {
+        "peak_speed": 5.6,
+        "consistency": 36.6,
+        "tire_management": 12.6,
+        "pressure_handling": 30.5,
+        "technical_skill": 33.8,
+        "high_speed_skill": 46.8,
+        "restart_ability": 41.5,
+        "race_pace": 41.2
+      },
+      "signature_strength": {
+        "name": "High-Speed Skill",
+        "percentile": 46.8
+      },
+      "strengths": [
+        "s2_skill",
+        "technical_skill",
+        "race_pace"
+      ],
+      "improvements": [
+        "speed",
+        "peak_speed"
+      ],
+      "tracks": [
+        "sonoma"
+      ],
+      "track_stats": {
+        "sonoma": {
+          "top_speed_max": 184.3,
+          "consistency_score": 0.04705235334387965,
+          "tire_degradation": 1.2510714285714135,
+          "clutch_score": 1.6086270716947304,
+          "s2_std": 7.0320627381155285,
+          "s3_std": 6.585174830176843,
+          "post_fcy_performance": 2.2559592325153144,
+          "late_pace": 136.8833571428571,
+          "races": 2
+        }
+      }
+    },
+    "71": {
+      "id": 71,
+      "archetype": "Smooth Operators",
+      "scores": {
+        "speed": 46.9,
+        "consistency": 82.8,
+        "tire_management": 59.4,
+        "pressure": 45.5,
+        "s1_skill": 50.0,
+        "s2_skill": 44.0,
+        "s3_skill": 48.3,
+        "race_craft": 52.6,
+        "peak_speed": 46.9,
+        "technical_skill": 44.0,
+        "high_speed_skill": 48.3,
+        "restart_ability": 52.6,
+        "race_pace": 59.1
+      },
+      "fingerprint": {
+        "peak_speed": 46.9,
+        "consistency": 82.8,
+        "tire_management": 59.4,
+        "pressure_handling": 45.5,
+        "technical_skill": 56.0,
+        "high_speed_skill": 51.7,
+        "restart_ability": 52.6,
+        "race_pace": 40.9
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 82.8
+      },
+      "strengths": [
+        "consistency",
+        "tire_management",
+        "race_pace"
+      ],
+      "improvements": [
+        "s2_skill",
+        "technical_skill"
+      ],
+      "tracks": [
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "cota": {
+          "top_speed_max": 208.5,
+          "consistency_score": 0.0368387665482447,
+          "tire_degradation": -3.980400000000003,
+          "clutch_score": 7.447371962681738,
+          "s2_std": 11.1599184298226,
+          "s3_std": 8.48909127290465,
+          "post_fcy_performance": -1.6914707424534343,
+          "late_pace": 164.5268,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.19226733615614106,
+          "tire_degradation": -8.512116666666643,
+          "clutch_score": 0.9189471377071702,
+          "s2_std": 3.4440268091768305,
+          "s3_std": 3.62960685443369,
+          "post_fcy_performance": 1.4671697181719967,
+          "late_pace": 148.24436666666668,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 188.14999999999998,
+          "consistency_score": 0.05050049132759235,
+          "tire_degradation": -19.944142857142857,
+          "clutch_score": 7.60257536377318,
+          "s2_std": 6.5386646533405735,
+          "s3_std": 6.51450980888461,
+          "post_fcy_performance": 13.558690100180891,
+          "late_pace": 113.58957142857143,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.2754090876440923,
+          "tire_degradation": -13.084761904761905,
+          "clutch_score": 4.441135632196959,
+          "s2_std": 5.5721852429601455,
+          "s3_std": 8.69522839490013,
+          "post_fcy_performance": 6.125126936433576,
+          "late_pace": 129.877,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 212.7,
+          "consistency_score": 0.13184698544443577,
+          "tire_degradation": -22.794300000000007,
+          "clutch_score": 3.9993805343526967,
+          "s2_std": 5.245988502342896,
+          "s3_std": 4.742060659244282,
+          "post_fcy_performance": 14.505640468424334,
+          "late_pace": 160.0963,
+          "races": 2
+        }
+      }
+    },
+    "72": {
+      "id": 72,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 46.9,
+        "consistency": 82.8,
+        "tire_management": 50.5,
+        "pressure": 30.5,
+        "s1_skill": 50.0,
+        "s2_skill": 47.7,
+        "s3_skill": 45.2,
+        "race_craft": 51.7,
+        "peak_speed": 46.9,
+        "technical_skill": 47.7,
+        "high_speed_skill": 45.2,
+        "restart_ability": 51.7,
+        "race_pace": 53.8
+      },
+      "fingerprint": {
+        "peak_speed": 46.9,
+        "consistency": 82.8,
+        "tire_management": 50.5,
+        "pressure_handling": 30.5,
+        "technical_skill": 52.3,
+        "high_speed_skill": 54.8,
+        "restart_ability": 51.7,
+        "race_pace": 46.2
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 82.8
+      },
+      "strengths": [
+        "consistency",
+        "race_pace",
+        "race_craft"
+      ],
+      "improvements": [
+        "high_speed_skill",
+        "pressure"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 187.14999999999998,
+          "consistency_score": 0.40418160081361354,
+          "tire_degradation": -3.239166666666655,
+          "clutch_score": 1.0615084304751454,
+          "s2_std": 1.9576600939159186,
+          "s3_std": 1.2003232064436837,
+          "post_fcy_performance": 8.103497775214583,
+          "late_pace": 98.69794444444446,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 216.2,
+          "consistency_score": 0.05209511571869435,
+          "tire_degradation": 16.311566666666685,
+          "clutch_score": -17.107396351689122,
+          "s2_std": 5.59216934203857,
+          "s3_std": 7.464742513945929,
+          "post_fcy_performance": -9.855776053022362,
+          "late_pace": 125.47888333333334,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 209.3,
+          "consistency_score": 0.0356940946349511,
+          "tire_degradation": -2.158200000000022,
+          "clutch_score": 7.543862891166114,
+          "s2_std": 11.207345603901672,
+          "s3_std": 10.311949694764465,
+          "post_fcy_performance": 9.820834669921704,
+          "late_pace": 164.56079999999997,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.2609489309824008,
+          "tire_degradation": -8.129249999999999,
+          "clutch_score": 1.3198703707177286,
+          "s2_std": 3.44673685539459,
+          "s3_std": 3.924314023355069,
+          "post_fcy_performance": 0.2951185861638556,
+          "late_pace": 146.95589999999999,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 189.14999999999998,
+          "consistency_score": 0.050517400175417546,
+          "tire_degradation": -19.41264285714287,
+          "clutch_score": 7.911536803082711,
+          "s2_std": 6.589910421502071,
+          "s3_std": 7.6097078024859695,
+          "post_fcy_performance": 12.472986453416489,
+          "late_pace": 113.79514285714285,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.2915338526259612,
+          "tire_degradation": -12.70317857142858,
+          "clutch_score": 2.8397098729295824,
+          "s2_std": 5.614004172130089,
+          "s3_std": 2.8390553238407237,
+          "post_fcy_performance": 7.924935266617875,
+          "late_pace": 129.81016666666667,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 211.65,
+          "consistency_score": 0.0312387836360484,
+          "tire_degradation": -33.28550000000004,
+          "clutch_score": 8.631330774730026,
+          "s2_std": 10.936834084016617,
+          "s3_std": 10.63674252260219,
+          "post_fcy_performance": 18.977451738243566,
+          "late_pace": 159.14,
+          "races": 2
+        }
+      }
+    },
+    "73": {
+      "id": 73,
+      "archetype": "Clutch Performers",
+      "scores": {
+        "speed": 43.5,
+        "consistency": 25.2,
+        "tire_management": 40.3,
+        "pressure": 2.8,
+        "s1_skill": 50.0,
+        "s2_skill": 69.5,
+        "s3_skill": 98.2,
+        "race_craft": 37.8,
+        "peak_speed": 43.5,
+        "technical_skill": 69.5,
+        "high_speed_skill": 98.2,
+        "restart_ability": 37.8,
+        "race_pace": 59.1
+      },
+      "fingerprint": {
+        "peak_speed": 43.5,
+        "consistency": 25.2,
+        "tire_management": 40.3,
+        "pressure_handling": 2.8,
+        "technical_skill": 30.5,
+        "high_speed_skill": 1.8,
+        "restart_ability": 37.8,
+        "race_pace": 40.9
+      },
+      "signature_strength": {
+        "name": "Peak Speed",
+        "percentile": 43.5
+      },
+      "strengths": [
+        "s3_skill",
+        "high_speed_skill",
+        "s2_skill"
+      ],
+      "improvements": [
+        "consistency",
+        "pressure"
+      ],
+      "tracks": [
+        "cota",
+        "sonoma"
+      ],
+      "track_stats": {
+        "cota": {
+          "top_speed_max": 203.8,
+          "consistency_score": 0.0417684909471243,
+          "tire_degradation": 0.1787999999999954,
+          "clutch_score": 6.142209325619668,
+          "s2_std": 10.306601657218945,
+          "s3_std": 8.484886795580927,
+          "post_fcy_performance": -5.554575821875161,
+          "late_pace": 171.084,
+          "races": 1
+        },
+        "sonoma": {
+          "top_speed_max": 184.75,
+          "consistency_score": 0.035770185245901795,
+          "tire_degradation": -5.2817142857142665,
+          "clutch_score": -25.804243590066438,
+          "s2_std": 5.931451389074061,
+          "s3_std": 24.0492750841779,
+          "post_fcy_performance": 3.644928605848052,
+          "late_pace": 129.48614285714288,
+          "races": 2
+        }
+      }
+    },
+    "78": {
+      "id": 78,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 43.5,
+        "consistency": 82.5,
+        "tire_management": 52.9,
+        "pressure": 48.9,
+        "s1_skill": 50.0,
+        "s2_skill": 51.7,
+        "s3_skill": 49.8,
+        "race_craft": 45.5,
+        "peak_speed": 43.5,
+        "technical_skill": 51.7,
+        "high_speed_skill": 49.8,
+        "restart_ability": 45.5,
+        "race_pace": 58.8
+      },
+      "fingerprint": {
+        "peak_speed": 43.5,
+        "consistency": 82.5,
+        "tire_management": 52.9,
+        "pressure_handling": 48.9,
+        "technical_skill": 48.3,
+        "high_speed_skill": 50.2,
+        "restart_ability": 45.5,
+        "race_pace": 41.2
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 82.5
+      },
+      "strengths": [
+        "consistency",
+        "race_pace",
+        "tire_management"
+      ],
+      "improvements": [
+        "speed",
+        "peak_speed"
+      ],
+      "tracks": [
+        "cota",
+        "sebring",
+        "sonoma"
+      ],
+      "track_stats": {
+        "cota": {
+          "top_speed_max": 206.9,
+          "consistency_score": 0.0364737301437715,
+          "tire_degradation": -2.373199999999997,
+          "clutch_score": 6.982992096569952,
+          "s2_std": 11.308476989240262,
+          "s3_std": 9.99220006503602,
+          "post_fcy_performance": -2.1064547986596844,
+          "late_pace": 164.9072,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.2566304920707442,
+          "tire_degradation": -8.714283333333341,
+          "clutch_score": 1.5139108869843054,
+          "s2_std": 3.4738178469291383,
+          "s3_std": 3.8316072848735723,
+          "post_fcy_performance": 0.8502201402920526,
+          "late_pace": 146.70091666666667,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 187.14999999999998,
+          "consistency_score": 0.04964589970448395,
+          "tire_degradation": -20.336642857142863,
+          "clutch_score": 8.426228477858015,
+          "s2_std": 6.739170518978711,
+          "s3_std": 6.9803243135803985,
+          "post_fcy_performance": 13.620682140180346,
+          "late_pace": 112.88771428571428,
+          "races": 2
+        }
+      }
+    },
+    "80": {
+      "id": 80,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 43.9,
+        "consistency": 75.1,
+        "tire_management": 41.8,
+        "pressure": 28.0,
+        "s1_skill": 50.0,
+        "s2_skill": 43.1,
+        "s3_skill": 51.4,
+        "race_craft": 45.5,
+        "peak_speed": 43.9,
+        "technical_skill": 43.1,
+        "high_speed_skill": 51.4,
+        "restart_ability": 45.5,
+        "race_pace": 59.1
+      },
+      "fingerprint": {
+        "peak_speed": 43.9,
+        "consistency": 75.1,
+        "tire_management": 41.8,
+        "pressure_handling": 28.0,
+        "technical_skill": 56.9,
+        "high_speed_skill": 48.6,
+        "restart_ability": 45.5,
+        "race_pace": 40.9
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 75.1
+      },
+      "strengths": [
+        "consistency",
+        "race_pace",
+        "s3_skill"
+      ],
+      "improvements": [
+        "tire_management",
+        "pressure"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 184.14999999999998,
+          "consistency_score": 0.08236009978412835,
+          "tire_degradation": -9.719388888888894,
+          "clutch_score": 3.5641748413172136,
+          "s2_std": 1.819515689384478,
+          "s3_std": 9.754420348435778,
+          "post_fcy_performance": 8.619735004708868,
+          "late_pace": 100.26633333333332,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 214.7,
+          "consistency_score": 0.0583606895858321,
+          "tire_degradation": 16.355160714285716,
+          "clutch_score": -25.57600411224187,
+          "s2_std": 7.535100514953289,
+          "s3_std": 5.523635276026253,
+          "post_fcy_performance": -4.672345076100618,
+          "late_pace": 125.415125,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 206.1,
+          "consistency_score": 0.049866994234438,
+          "tire_degradation": -10.226599999999962,
+          "clutch_score": 6.302457333863866,
+          "s2_std": 7.6075200667613405,
+          "s3_std": 7.311996435150053,
+          "post_fcy_performance": 2.0018783445684902,
+          "late_pace": 161.47420000000002,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.2917663410923972,
+          "tire_degradation": -1.1025000000000205,
+          "clutch_score": -0.0908925075948522,
+          "s2_std": 0.6220675956576194,
+          "s3_std": 0.4254365147353657,
+          "post_fcy_performance": 0.0,
+          "late_pace": 149.60866666666666,
+          "races": 1
+        },
+        "sonoma": {
+          "top_speed_max": 182.75,
+          "consistency_score": 0.0554186904605602,
+          "tire_degradation": -17.087000000000003,
+          "clutch_score": 6.539634822872461,
+          "s2_std": 5.590411575690403,
+          "s3_std": 4.469223854028016,
+          "post_fcy_performance": 11.857540450759835,
+          "late_pace": 118.2522857142857,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.16595367574311573,
+          "tire_degradation": -12.328833333333321,
+          "clutch_score": 2.3643928478346705,
+          "s2_std": 6.051969245887885,
+          "s3_std": 2.666169933231438,
+          "post_fcy_performance": 7.364124633987652,
+          "late_pace": 133.05960714285715,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 205.35000000000002,
+          "consistency_score": 0.02298930636444825,
+          "tire_degradation": 1.1679999999999922,
+          "clutch_score": 13.129710810750684,
+          "s2_std": 8.998076757176676,
+          "s3_std": 12.385056972400209,
+          "post_fcy_performance": 5.585663495611397,
+          "late_pace": 208.94503333333333,
+          "races": 2
+        }
+      }
+    },
+    "86": {
+      "id": 86,
+      "archetype": "Smooth Operators",
+      "scores": {
+        "speed": 49.0,
+        "consistency": 30.5,
+        "tire_management": 57.8,
+        "pressure": 39.1,
+        "s1_skill": 50.0,
+        "s2_skill": 71.1,
+        "s3_skill": 71.1,
+        "race_craft": 51.7,
+        "peak_speed": 49.0,
+        "technical_skill": 71.1,
+        "high_speed_skill": 71.1,
+        "restart_ability": 51.7,
+        "race_pace": 79.4
+      },
+      "fingerprint": {
+        "peak_speed": 49.0,
+        "consistency": 30.5,
+        "tire_management": 57.8,
+        "pressure_handling": 39.1,
+        "technical_skill": 28.9,
+        "high_speed_skill": 28.9,
+        "restart_ability": 51.7,
+        "race_pace": 20.6
+      },
+      "signature_strength": {
+        "name": "Tire Management",
+        "percentile": 57.8
+      },
+      "strengths": [
+        "race_pace",
+        "s2_skill",
+        "s3_skill"
+      ],
+      "improvements": [
+        "pressure",
+        "consistency"
+      ],
+      "tracks": [
+        "indianapolis",
+        "cota",
+        "road_america"
+      ],
+      "track_stats": {
+        "indianapolis": {
+          "top_speed_max": 202.2,
+          "consistency_score": 0.0647395217659556,
+          "tire_degradation": 13.468142857142864,
+          "clutch_score": -10.361040266609423,
+          "s2_std": 5.881146279869034,
+          "s3_std": 4.630222618624694,
+          "post_fcy_performance": -9.291763848842692,
+          "late_pace": 130.43257142857144,
+          "races": 1
+        },
+        "cota": {
+          "top_speed_max": 202.2,
+          "consistency_score": 0.0420624883327529,
+          "tire_degradation": -4.875399999999985,
+          "clutch_score": 6.117590322652513,
+          "s2_std": 10.41766697412734,
+          "s3_std": 6.451463931565775,
+          "post_fcy_performance": -3.057067876454937,
+          "late_pace": 167.19180000000003,
+          "races": 1
+        },
+        "road_america": {
+          "top_speed_max": 205.35000000000002,
+          "consistency_score": 0.0315523851673804,
+          "tire_degradation": -32.685599999999994,
+          "clutch_score": 8.1153095795598,
+          "s2_std": 8.96794210178984,
+          "s3_std": 10.403594364963375,
+          "post_fcy_performance": 20.008655791315682,
+          "late_pace": 163.1902,
+          "races": 2
+        }
+      }
+    },
+    "88": {
+      "id": 88,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 45.6,
+        "consistency": 82.5,
+        "tire_management": 43.7,
+        "pressure": 7.1,
+        "s1_skill": 50.0,
+        "s2_skill": 43.7,
+        "s3_skill": 86.5,
+        "race_craft": 50.5,
+        "peak_speed": 45.6,
+        "technical_skill": 43.7,
+        "high_speed_skill": 86.5,
+        "restart_ability": 50.5,
+        "race_pace": 58.5
+      },
+      "fingerprint": {
+        "peak_speed": 45.6,
+        "consistency": 82.5,
+        "tire_management": 43.7,
+        "pressure_handling": 7.1,
+        "technical_skill": 56.3,
+        "high_speed_skill": 13.5,
+        "restart_ability": 50.5,
+        "race_pace": 41.5
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 82.5
+      },
+      "strengths": [
+        "s3_skill",
+        "high_speed_skill",
+        "consistency"
+      ],
+      "improvements": [
+        "technical_skill",
+        "pressure"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 184.14999999999998,
+          "consistency_score": 0.23902734852014695,
+          "tire_degradation": 21.312236111111112,
+          "clutch_score": -88.04306020961677,
+          "s2_std": 2.035044149114987,
+          "s3_std": 33.49369544341513,
+          "post_fcy_performance": 0.5961168409370908,
+          "late_pace": 129.64934722222222,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 217.35000000000002,
+          "consistency_score": 0.05794392649805825,
+          "tire_degradation": 8.723776785714279,
+          "clutch_score": -2.0077999045282784,
+          "s2_std": 5.290175144988603,
+          "s3_std": 5.5872195857748945,
+          "post_fcy_performance": -1.1223922249426663,
+          "late_pace": 116.08,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 208.5,
+          "consistency_score": 0.0391208338788358,
+          "tire_degradation": -3.958800000000025,
+          "clutch_score": 6.939192527301439,
+          "s2_std": 10.417315824752894,
+          "s3_std": 9.097752291896382,
+          "post_fcy_performance": -1.8604995953734385,
+          "late_pace": 164.88939999999997,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.19040637230437835,
+          "tire_degradation": -6.6880000000000015,
+          "clutch_score": 1.0389885659015572,
+          "s2_std": 3.431290859648148,
+          "s3_std": 3.6454331366667816,
+          "post_fcy_performance": 1.83048979301039,
+          "late_pace": 150.12875,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 185.7,
+          "consistency_score": 0.050336194973851944,
+          "tire_degradation": -16.836000000000006,
+          "clutch_score": 8.028751808042738,
+          "s2_std": 6.098373955778966,
+          "s3_std": 6.6375572385721,
+          "post_fcy_performance": 11.749218575372105,
+          "late_pace": 116.97314285714285,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.27368570186989555,
+          "tire_degradation": -12.574440476190475,
+          "clutch_score": 2.7595022130751854,
+          "s2_std": 5.570857518527774,
+          "s3_std": 2.7132417747630795,
+          "post_fcy_performance": 8.111266606917455,
+          "late_pace": 130.5800119047619,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 211.7,
+          "consistency_score": 0.030306003277819252,
+          "tire_degradation": -35.0166,
+          "clutch_score": 8.993001584128352,
+          "s2_std": 10.269693182956953,
+          "s3_std": 10.938228831372811,
+          "post_fcy_performance": 20.835913569787483,
+          "late_pace": 158.9981,
+          "races": 2
+        }
+      }
+    },
+    "89": {
+      "id": 89,
+      "archetype": "Smooth Operators",
+      "scores": {
+        "speed": 52.3,
+        "consistency": 69.8,
+        "tire_management": 56.3,
+        "pressure": 44.6,
+        "s1_skill": 50.0,
+        "s2_skill": 62.5,
+        "s3_skill": 62.5,
+        "race_craft": 52.9,
+        "peak_speed": 52.3,
+        "technical_skill": 62.5,
+        "high_speed_skill": 62.5,
+        "restart_ability": 52.9,
+        "race_pace": 58.2
+      },
+      "fingerprint": {
+        "peak_speed": 52.3,
+        "consistency": 69.8,
+        "tire_management": 56.3,
+        "pressure_handling": 44.6,
+        "technical_skill": 37.5,
+        "high_speed_skill": 37.5,
+        "restart_ability": 52.9,
+        "race_pace": 41.8
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 69.8
+      },
+      "strengths": [
+        "consistency",
+        "s2_skill",
+        "s3_skill"
+      ],
+      "improvements": [
+        "s1_skill",
+        "pressure"
+      ],
+      "tracks": [
+        "indianapolis",
+        "cota",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "indianapolis": {
+          "top_speed_max": 213.25,
+          "consistency_score": 0.05949252679859015,
+          "tire_degradation": 8.161062499999993,
+          "clutch_score": -2.7025388418821814,
+          "s2_std": 4.954997976084402,
+          "s3_std": 5.550032720790532,
+          "post_fcy_performance": -1.5423388043916026,
+          "late_pace": 116.23010714285715,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 207.7,
+          "consistency_score": 0.0399859943667359,
+          "tire_degradation": -18.464199999999977,
+          "clutch_score": 6.122917544474914,
+          "s2_std": 9.775743885114473,
+          "s3_std": 8.482742864191984,
+          "post_fcy_performance": 0.6036992635725263,
+          "late_pace": 162.50500000000002,
+          "races": 1
+        },
+        "sonoma": {
+          "top_speed_max": 187.64999999999998,
+          "consistency_score": 0.051676364828369,
+          "tire_degradation": -19.734928571428576,
+          "clutch_score": 8.203272716239564,
+          "s2_std": 6.348755339234144,
+          "s3_std": 6.535273080590099,
+          "post_fcy_performance": 13.233393391881718,
+          "late_pace": 114.10964285714286,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.1786129915960252,
+          "tire_degradation": -0.934000000000026,
+          "clutch_score": 0.8165394301610847,
+          "s2_std": 0.9884805604669484,
+          "s3_std": 3.069107454687935,
+          "post_fcy_performance": 0.0,
+          "late_pace": 134.3902857142857,
+          "races": 1
+        },
+        "road_america": {
+          "top_speed_max": 210.8,
+          "consistency_score": 0.03141398709212555,
+          "tire_degradation": -33.15549999999999,
+          "clutch_score": 8.095565312049638,
+          "s2_std": 10.698221108237668,
+          "s3_std": 10.681655867688074,
+          "post_fcy_performance": 19.699889104122782,
+          "late_pace": 160.7553,
+          "races": 2
+        }
+      }
+    },
+    "93": {
+      "id": 93,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 43.5,
+        "consistency": 74.5,
+        "tire_management": 50.8,
+        "pressure": 45.2,
+        "s1_skill": 50.0,
+        "s2_skill": 42.2,
+        "s3_skill": 84.3,
+        "race_craft": 47.7,
+        "peak_speed": 43.5,
+        "technical_skill": 42.2,
+        "high_speed_skill": 84.3,
+        "restart_ability": 47.7,
+        "race_pace": 38.5
+      },
+      "fingerprint": {
+        "peak_speed": 43.5,
+        "consistency": 74.5,
+        "tire_management": 50.8,
+        "pressure_handling": 45.2,
+        "technical_skill": 57.8,
+        "high_speed_skill": 15.7,
+        "restart_ability": 47.7,
+        "race_pace": 61.5
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 74.5
+      },
+      "strengths": [
+        "s3_skill",
+        "high_speed_skill",
+        "consistency"
+      ],
+      "improvements": [
+        "technical_skill",
+        "race_pace"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sonoma",
+        "vir"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 184.75,
+          "consistency_score": 0.06722005463456875,
+          "tire_degradation": -17.98345833333333,
+          "clutch_score": 8.640795103087607,
+          "s2_std": 2.6454772052996516,
+          "s3_std": 25.649490713347316,
+          "post_fcy_performance": 9.22721112652866,
+          "late_pace": 100.26065277777778,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 213.25,
+          "consistency_score": 0.06081892889122805,
+          "tire_degradation": 7.876258928571438,
+          "clutch_score": -2.46060687982766,
+          "s2_std": 4.943246082390294,
+          "s3_std": 5.32197668541303,
+          "post_fcy_performance": -1.6356467100996714,
+          "late_pace": 116.46776785714286,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 208.5,
+          "consistency_score": 0.0396501733852112,
+          "tire_degradation": -3.248400000000004,
+          "clutch_score": 7.244196905376921,
+          "s2_std": 10.451624729452076,
+          "s3_std": 8.790801332007428,
+          "post_fcy_performance": -2.376547180316284,
+          "late_pace": 165.7966,
+          "races": 1
+        },
+        "sonoma": {
+          "top_speed_max": 186.25,
+          "consistency_score": 0.0528748177983271,
+          "tire_degradation": -19.956428571428596,
+          "clutch_score": 7.230572073409519,
+          "s2_std": 5.733422865837653,
+          "s3_std": 5.2337229195531885,
+          "post_fcy_performance": 13.31714850286753,
+          "late_pace": 115.10664285714284,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.15945362472789557,
+          "tire_degradation": -13.07544047619048,
+          "clutch_score": 2.7320560601428103,
+          "s2_std": 6.065947877065785,
+          "s3_std": 2.6989919887022182,
+          "post_fcy_performance": 7.71407908473986,
+          "late_pace": 131.90789285714285,
+          "races": 2
+        }
+      }
+    },
+    "98": {
+      "id": 98,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 48.1,
+        "consistency": 75.1,
+        "tire_management": 42.8,
+        "pressure": 32.0,
+        "s1_skill": 50.0,
+        "s2_skill": 67.7,
+        "s3_skill": 62.2,
+        "race_craft": 44.3,
+        "peak_speed": 48.1,
+        "technical_skill": 67.7,
+        "high_speed_skill": 62.2,
+        "restart_ability": 44.3,
+        "race_pace": 58.5
+      },
+      "fingerprint": {
+        "peak_speed": 48.1,
+        "consistency": 75.1,
+        "tire_management": 42.8,
+        "pressure_handling": 32.0,
+        "technical_skill": 32.3,
+        "high_speed_skill": 37.8,
+        "restart_ability": 44.3,
+        "race_pace": 41.5
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 75.1
+      },
+      "strengths": [
+        "consistency",
+        "s2_skill",
+        "technical_skill"
+      ],
+      "improvements": [
+        "tire_management",
+        "pressure"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 188.64999999999998,
+          "consistency_score": 0.10464078654761425,
+          "tire_degradation": -0.49099999999999966,
+          "clutch_score": -0.523033645667258,
+          "s2_std": 2.2786655158307294,
+          "s3_std": 5.000472943875282,
+          "post_fcy_performance": 8.597646002319905,
+          "late_pace": 101.78105555555555,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 217.1,
+          "consistency_score": 0.056350864838665846,
+          "tire_degradation": 9.044964285714272,
+          "clutch_score": -1.8857705050355014,
+          "s2_std": 5.52642618824114,
+          "s3_std": 5.782109547308536,
+          "post_fcy_performance": -1.3648780684832467,
+          "late_pace": 115.96491964285714,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 206.1,
+          "consistency_score": 0.0376332802739774,
+          "tire_degradation": -2.7387999999999977,
+          "clutch_score": 7.684544056559776,
+          "s2_std": 11.228054521847865,
+          "s3_std": 9.570388381848032,
+          "post_fcy_performance": -1.985309202624752,
+          "late_pace": 164.87539999999998,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.044344792097987196,
+          "tire_degradation": -21.94486666666664,
+          "clutch_score": 4.413932710338736,
+          "s2_std": 5.768276765845058,
+          "s3_std": 8.324530325160207,
+          "post_fcy_performance": 1.0849245387763544,
+          "late_pace": 147.54378333333335,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 188.14999999999998,
+          "consistency_score": 0.0516003207627894,
+          "tire_degradation": -19.74285714285716,
+          "clutch_score": 7.779359670030365,
+          "s2_std": 6.446849742501129,
+          "s3_std": 6.834686799162957,
+          "post_fcy_performance": 13.20698486942548,
+          "late_pace": 113.77392857142856,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.26389358740405827,
+          "tire_degradation": 32.74721428571429,
+          "clutch_score": -9.006759337385937,
+          "s2_std": 10.302831430399879,
+          "s3_std": 4.838592036059154,
+          "post_fcy_performance": -12.5629140746419,
+          "late_pace": 164.01007142857145,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 213.85000000000002,
+          "consistency_score": 0.031505916871481354,
+          "tire_degradation": -33.229600000000005,
+          "clutch_score": 8.333473505103477,
+          "s2_std": 10.726625611520703,
+          "s3_std": 10.775244689394597,
+          "post_fcy_performance": 19.272427783749478,
+          "late_pace": 159.5272,
+          "races": 2
+        }
+      }
+    },
+    "111": {
+      "id": 111,
+      "archetype": "Qualifying Heroes",
+      "scores": {
+        "speed": 45.6,
+        "consistency": 83.4,
+        "tire_management": 39.7,
+        "pressure": 28.3,
+        "s1_skill": 50.0,
+        "s2_skill": 32.599999999999994,
+        "s3_skill": 22.5,
+        "race_craft": 45.5,
+        "peak_speed": 45.6,
+        "technical_skill": 32.599999999999994,
+        "high_speed_skill": 22.5,
+        "restart_ability": 45.5,
+        "race_pace": 31.400000000000006
+      },
+      "fingerprint": {
+        "peak_speed": 45.6,
+        "consistency": 83.4,
+        "tire_management": 39.7,
+        "pressure_handling": 28.3,
+        "technical_skill": 67.4,
+        "high_speed_skill": 77.5,
+        "restart_ability": 45.5,
+        "race_pace": 68.6
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 83.4
+      },
+      "strengths": [
+        "consistency",
+        "s1_skill",
+        "speed"
+      ],
+      "improvements": [
+        "s3_skill",
+        "high_speed_skill"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "vir"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 185.2,
+          "consistency_score": 0.3384633010517053,
+          "tire_degradation": -3.909055555555561,
+          "clutch_score": 1.3234011701763044,
+          "s2_std": 1.8833335999447045,
+          "s3_std": 1.1397993431880755,
+          "post_fcy_performance": 8.794551151740647,
+          "late_pace": 99.02033333333333,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 214.3,
+          "consistency_score": 0.059599310366600954,
+          "tire_degradation": 8.22940178571428,
+          "clutch_score": -2.52493285427835,
+          "s2_std": 4.953815570930688,
+          "s3_std": 5.473348929641027,
+          "post_fcy_performance": -1.3988385034310507,
+          "late_pace": 116.22985714285714,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.1778659350584034,
+          "tire_degradation": -13.748702380952379,
+          "clutch_score": 3.0671582957713452,
+          "s2_std": 5.902142135469766,
+          "s3_std": 2.681144347723981,
+          "post_fcy_performance": 8.074298028533814,
+          "late_pace": 129.96813095238096,
+          "races": 2
+        }
+      }
+    },
+    "113": {
+      "id": 113,
+      "archetype": "All-Rounders",
+      "scores": {
+        "speed": 45.6,
+        "consistency": 74.8,
+        "tire_management": 40.9,
+        "pressure": 9.8,
+        "s1_skill": 50.0,
+        "s2_skill": 52.9,
+        "s3_skill": 93.2,
+        "race_craft": 45.5,
+        "peak_speed": 45.6,
+        "technical_skill": 52.9,
+        "high_speed_skill": 93.2,
+        "restart_ability": 45.5,
+        "race_pace": 58.8
+      },
+      "fingerprint": {
+        "peak_speed": 45.6,
+        "consistency": 74.8,
+        "tire_management": 40.9,
+        "pressure_handling": 9.8,
+        "technical_skill": 47.1,
+        "high_speed_skill": 6.8,
+        "restart_ability": 45.5,
+        "race_pace": 41.2
+      },
+      "signature_strength": {
+        "name": "Consistency",
+        "percentile": 74.8
+      },
+      "strengths": [
+        "s3_skill",
+        "high_speed_skill",
+        "consistency"
+      ],
+      "improvements": [
+        "tire_management",
+        "pressure"
+      ],
+      "tracks": [
+        "barber",
+        "indianapolis",
+        "cota",
+        "sebring",
+        "sonoma",
+        "vir",
+        "road_america"
+      ],
+      "track_stats": {
+        "barber": {
+          "top_speed_max": 185.2,
+          "consistency_score": 0.0636955396633907,
+          "tire_degradation": 11.360777777777784,
+          "clutch_score": -66.67620951044441,
+          "s2_std": 2.511895375902763,
+          "s3_std": 38.9635109682329,
+          "post_fcy_performance": 9.112599694033658,
+          "late_pace": 121.71884722222222,
+          "races": 2
+        },
+        "indianapolis": {
+          "top_speed_max": 214.8,
+          "consistency_score": 0.04483309893789415,
+          "tire_degradation": 38.4803125,
+          "clutch_score": -14.562819501701858,
+          "s2_std": 7.663082177798131,
+          "s3_std": 10.730758676074686,
+          "post_fcy_performance": -15.528085620157444,
+          "late_pace": 145.0596875,
+          "races": 2
+        },
+        "cota": {
+          "top_speed_max": 210.1,
+          "consistency_score": 0.0380384777921858,
+          "tire_degradation": 3.846799999999945,
+          "clutch_score": 8.067160099562575,
+          "s2_std": 11.24971203814464,
+          "s3_std": 9.433559909502694,
+          "post_fcy_performance": -6.390690440447767,
+          "late_pace": 172.03879999999998,
+          "races": 1
+        },
+        "sebring": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.17847779227211066,
+          "tire_degradation": -8.988533333333322,
+          "clutch_score": 1.604233436333986,
+          "s2_std": 3.500316051613563,
+          "s3_std": 4.374700230370789,
+          "post_fcy_performance": 1.1632174252452212,
+          "late_pace": 147.90486666666666,
+          "races": 2
+        },
+        "sonoma": {
+          "top_speed_max": 187.2,
+          "consistency_score": 0.05319183319648055,
+          "tire_degradation": -20.253928571428567,
+          "clutch_score": 7.407310381856238,
+          "s2_std": 5.98142742336421,
+          "s3_std": 6.4464069109752575,
+          "post_fcy_performance": 13.547988499586213,
+          "late_pace": 114.78914285714286,
+          "races": 2
+        },
+        "vir": {
+          "top_speed_max": 0.0,
+          "consistency_score": 0.15971361773511125,
+          "tire_degradation": -13.405285714285696,
+          "clutch_score": 2.657363212491673,
+          "s2_std": 6.080317224713475,
+          "s3_std": 2.8775761365131656,
+          "post_fcy_performance": 7.96798332780732,
+          "late_pace": 130.9089880952381,
+          "races": 2
+        },
+        "road_america": {
+          "top_speed_max": 212.14999999999998,
+          "consistency_score": 0.030980442386563153,
+          "tire_degradation": -33.77119999999999,
+          "clutch_score": 7.711105115369071,
+          "s2_std": 10.667834391442302,
+          "s3_std": 10.662069634802561,
+          "post_fcy_performance": 19.815322169428043,
+          "late_pace": 159.899,
+          "races": 2
+        }
+      }
+    }
+  },
+  "archetypes": {
+    "Smooth Operators": {
+      "id": 0,
+      "count": 12,
+      "characteristics": {
+        "consistency_score": 0.07863416949504093,
+        "avg_speed_kph": 129.74452676337265,
+        "top_speed_max": 200.71108796296298,
+        "clutch_score": 4.040880591185876,
+        "sector_balance": 0.37157748205498803,
+        "s1_mean": 45.18316025220364,
+        "s2_mean": 53.01980035809981,
+        "s3_mean": 48.512170758980794,
+        "tire_degradation": -19.74987117975581,
+        "pace_improvement": 19.74987117975581,
+        "post_fcy_performance": 8.790087829411382,
+        "lap_best": 134.50089142709146
+      }
+    },
+    "Qualifying Heroes": {
+      "id": 1,
+      "count": 4,
+      "characteristics": {
+        "consistency_score": 0.1397493161439293,
+        "avg_speed_kph": 129.69744239935454,
+        "top_speed_max": 205.0875,
+        "clutch_score": 0.9749499896892353,
+        "sector_balance": 0.3724211211492362,
+        "s1_mean": 40.46947456645141,
+        "s2_mean": 43.54509093036628,
+        "s3_mean": 36.84170110404994,
+        "tire_degradation": -0.00149601355819462,
+        "pace_improvement": 0.00149601355819462,
+        "post_fcy_performance": 4.70735550204764,
+        "lap_best": 111.72055
+      }
+    },
+    "Clutch Performers": {
+      "id": 2,
+      "count": 5,
+      "characteristics": {
+        "consistency_score": 0.04751270309630265,
+        "avg_speed_kph": 112.46710549503071,
+        "top_speed_max": 188.03666666666666,
+        "clutch_score": 1.7687531463420083,
+        "sector_balance": 0.35042098042663344,
+        "s1_mean": 41.87215704884062,
+        "s2_mean": 44.4098995396973,
+        "s3_mean": 45.913837517114885,
+        "tire_degradation": -10.87405428571428,
+        "pace_improvement": 10.87405428571428,
+        "post_fcy_performance": 7.335250525697859,
+        "lap_best": 118.95886666666665
+      }
+    },
+    "All-Rounders": {
+      "id": 3,
+      "count": 18,
+      "characteristics": {
+        "consistency_score": 0.13017647910842445,
+        "avg_speed_kph": 130.83363260227372,
+        "top_speed_max": 199.92420634920634,
+        "clutch_score": 1.6206015790659358,
+        "sector_balance": 0.37119705463993674,
+        "s1_mean": 41.50779882439087,
+        "s2_mean": 49.45944916928982,
+        "s3_mean": 45.173569533922546,
+        "tire_degradation": -9.549030062296202,
+        "pace_improvement": 9.549030062296202,
+        "post_fcy_performance": 6.712714353170232,
+        "lap_best": 126.48072833493669
+      }
+    }
+  },
+  "fingerprint_features": {
+    "peak_speed": {
+      "display_name": "Peak Speed",
+      "description": "Maximum speed achieved. Shows bravery and car setup."
+    },
+    "consistency": {
+      "display_name": "Consistency",
+      "description": "Lap time consistency. Higher = more consistent."
+    },
+    "tire_management": {
+      "display_name": "Tire Management",
+      "description": "Tire preservation. Negative values mean improving pace."
+    },
+    "pressure_handling": {
+      "display_name": "Pressure Handling",
+      "description": "Performance under pressure (final 10% of race)."
+    },
+    "technical_skill": {
+      "display_name": "Technical Skill",
+      "description": "Sector 2 consistency (mid-corner precision)."
+    },
+    "high_speed_skill": {
+      "display_name": "High-Speed Skill",
+      "description": "Sector 3 consistency (speed confidence)."
+    },
+    "restart_ability": {
+      "display_name": "Restart Ability",
+      "description": "Performance after Full Course Yellow restarts."
+    },
+    "race_pace": {
+      "display_name": "Race Pace",
+      "description": "Late race pace (stamina and focus)."
+    }
+  },
+  "track_types": {
+    "technical": [
+      "barber",
+      "vir",
+      "sonoma"
+    ],
+    "high_speed": [
+      "indianapolis",
+      "road_america"
+    ],
+    "mixed": [
+      "cota",
+      "sebring"
+    ]
+  }
+}

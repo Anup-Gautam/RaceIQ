@@ -1,0 +1,3610 @@
+{
+  "rule_26x": {
+    "high_consistency_low_lap": {
+      "label": "High S2 Consistency + Low Best Lap",
+      "podium_rate": 8.3,
+      "count": 36,
+      "icon": "\ud83c\udfc6"
+    },
+    "low_consistency_high_lap": {
+      "label": "Low S2 Consistency + High Best Lap",
+      "podium_rate": 7.3,
+      "count": 55,
+      "icon": "\u26a1"
+    },
+    "ratio": 1.15,
+    "insight": "Drivers with high S2 consistency and fast best laps achieve podium 1.1\u00d7 more often"
+  },
+  "archetype_matrix": {
+    "data": [
+      {
+        "archetype": "All-Rounders",
+        "pct_field": 46.2,
+        "pct_podiums": 93.9,
+        "podium_rate": 2.04,
+        "count": 18,
+        "podiums": 31
+      },
+      {
+        "archetype": "Qualifying Heroes",
+        "pct_field": 10.3,
+        "pct_podiums": 6.1,
+        "podium_rate": 0.59,
+        "count": 4,
+        "podiums": 2
+      },
+      {
+        "archetype": "Smooth Operators",
+        "pct_field": 30.8,
+        "pct_podiums": 0.0,
+        "podium_rate": 0.0,
+        "count": 12,
+        "podiums": 0
+      },
+      {
+        "archetype": "Clutch Performers",
+        "pct_field": 12.8,
+        "pct_podiums": 0.0,
+        "podium_rate": 0.0,
+        "count": 5,
+        "podiums": 0
+      }
+    ],
+    "total_drivers": 39,
+    "total_podiums": 33
+  },
+  "track_network": {
+    "nodes": [
+      {
+        "id": "barber",
+        "name": "Barber",
+        "cluster": "Mixed",
+        "pc1": 0,
+        "pc2": 0
+      },
+      {
+        "id": "cota",
+        "name": "Cota",
+        "cluster": "High-Speed",
+        "pc1": 0,
+        "pc2": 0
+      },
+      {
+        "id": "indianapolis",
+        "name": "Indianapolis",
+        "cluster": "Technical",
+        "pc1": 0,
+        "pc2": 0
+      },
+      {
+        "id": "road_america",
+        "name": "Road America",
+        "cluster": "High-Speed",
+        "pc1": 0,
+        "pc2": 0
+      },
+      {
+        "id": "sebring",
+        "name": "Sebring",
+        "cluster": "Technical",
+        "pc1": 0,
+        "pc2": 0
+      },
+      {
+        "id": "sonoma",
+        "name": "Sonoma",
+        "cluster": "Technical",
+        "pc1": 0,
+        "pc2": 0
+      },
+      {
+        "id": "vir",
+        "name": "Vir",
+        "cluster": "Technical",
+        "pc1": 0,
+        "pc2": 0
+      }
+    ],
+    "edges": [
+      {
+        "source": "indianapolis",
+        "target": "cota",
+        "strength": 0.915,
+        "metric": "s1_std"
+      },
+      {
+        "source": "sebring",
+        "target": "sonoma",
+        "strength": 0.774,
+        "metric": "s1_mean"
+      },
+      {
+        "source": "indianapolis",
+        "target": "sebring",
+        "strength": 0.755,
+        "metric": "s1_std"
+      },
+      {
+        "source": "sebring",
+        "target": "sonoma",
+        "strength": 0.725,
+        "metric": "lap_mean"
+      },
+      {
+        "source": "sebring",
+        "target": "sonoma",
+        "strength": 0.721,
+        "metric": "avg_speed_kph"
+      },
+      {
+        "source": "sebring",
+        "target": "sonoma",
+        "strength": 0.684,
+        "metric": "tire_degradation"
+      },
+      {
+        "source": "indianapolis",
+        "target": "cota",
+        "strength": 0.641,
+        "metric": "s1_mean"
+      },
+      {
+        "source": "sebring",
+        "target": "sonoma",
+        "strength": 0.639,
+        "metric": "s1_std"
+      }
+    ]
+  },
+  "feature_waterfall": {
+    "baseline": 50.0,
+    "steps": [
+      {
+        "feature": "Avg Speed Kph",
+        "contribution": 8.2,
+        "cumulative": 58.2,
+        "importance": 0.1156
+      },
+      {
+        "feature": "Speed Std",
+        "contribution": 6.8,
+        "cumulative": 65.0,
+        "importance": 0.095
+      },
+      {
+        "feature": "Speed Variance",
+        "contribution": 5.0,
+        "cumulative": 70.0,
+        "importance": 0.0707
+      },
+      {
+        "feature": "Lap Best",
+        "contribution": 3.9,
+        "cumulative": 73.9,
+        "importance": 0.0553
+      },
+      {
+        "feature": "Sector Balance",
+        "contribution": 3.8,
+        "cumulative": 77.7,
+        "importance": 0.0532
+      },
+      {
+        "feature": "S2 Ratio",
+        "contribution": 3.1,
+        "cumulative": 80.8,
+        "importance": 0.044
+      },
+      {
+        "feature": "Consistency Score",
+        "contribution": 3.1,
+        "cumulative": 83.9,
+        "importance": 0.0433
+      },
+      {
+        "feature": "S1 Std",
+        "contribution": 2.9,
+        "cumulative": 86.8,
+        "importance": 0.0407
+      },
+      {
+        "feature": "Late Pace",
+        "contribution": 2.8,
+        "cumulative": 89.6,
+        "importance": 0.0389
+      },
+      {
+        "feature": "Lap Std",
+        "contribution": 2.7,
+        "cumulative": 92.3,
+        "importance": 0.0387
+      }
+    ],
+    "final_accuracy": 92.3
+  },
+  "consistency_scatter": {
+    "data": [
+      {
+        "consistency": 54.5,
+        "speed": 13.6,
+        "best_lap": 99.17,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 14,
+        "driver": 3,
+        "track": "Barber"
+      },
+      {
+        "consistency": 45.5,
+        "speed": 25.0,
+        "best_lap": 98.94,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 12,
+        "driver": 111,
+        "track": "Barber"
+      },
+      {
+        "consistency": 50.0,
+        "speed": 18.2,
+        "best_lap": 99.06,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 10,
+        "driver": 113,
+        "track": "Barber"
+      },
+      {
+        "consistency": 20.5,
+        "speed": 93.2,
+        "best_lap": 97.43,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 1,
+        "driver": 13,
+        "track": "Barber"
+      },
+      {
+        "consistency": 61.4,
+        "speed": 0.0,
+        "best_lap": 101.38,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 21,
+        "driver": 18,
+        "track": "Barber"
+      },
+      {
+        "consistency": 27.3,
+        "speed": 47.7,
+        "best_lap": 98.33,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 5,
+        "driver": 2,
+        "track": "Barber"
+      },
+      {
+        "consistency": 47.7,
+        "speed": 34.1,
+        "best_lap": 98.78,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 11,
+        "driver": 21,
+        "track": "Barber"
+      },
+      {
+        "consistency": 15.9,
+        "speed": 84.1,
+        "best_lap": 97.75,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 2,
+        "driver": 22,
+        "track": "Barber"
+      },
+      {
+        "consistency": 43.2,
+        "speed": 38.6,
+        "best_lap": 98.54,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 13,
+        "driver": 31,
+        "track": "Barber"
+      },
+      {
+        "consistency": 40.9,
+        "speed": 40.9,
+        "best_lap": 98.39,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 9,
+        "driver": 41,
+        "track": "Barber"
+      },
+      {
+        "consistency": 18.2,
+        "speed": 56.8,
+        "best_lap": 98.2,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 16,
+        "driver": 46,
+        "track": "Barber"
+      },
+      {
+        "consistency": 29.5,
+        "speed": 52.3,
+        "best_lap": 98.25,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 6,
+        "driver": 47,
+        "track": "Barber"
+      },
+      {
+        "consistency": 52.3,
+        "speed": 15.9,
+        "best_lap": 99.08,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 17,
+        "driver": 5,
+        "track": "Barber"
+      },
+      {
+        "consistency": 22.7,
+        "speed": 9.1,
+        "best_lap": 99.41,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 20,
+        "driver": 51,
+        "track": "Barber"
+      },
+      {
+        "consistency": 31.8,
+        "speed": 63.6,
+        "best_lap": 98.09,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 4,
+        "driver": 55,
+        "track": "Barber"
+      },
+      {
+        "consistency": 59.1,
+        "speed": 4.5,
+        "best_lap": 100.16,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 18,
+        "driver": 58,
+        "track": "Barber"
+      },
+      {
+        "consistency": 36.4,
+        "speed": 36.4,
+        "best_lap": 98.58,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 8,
+        "driver": 7,
+        "track": "Barber"
+      },
+      {
+        "consistency": 25.0,
+        "speed": 86.4,
+        "best_lap": 97.74,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 3,
+        "driver": 72,
+        "track": "Barber"
+      },
+      {
+        "consistency": 38.6,
+        "speed": 6.8,
+        "best_lap": 99.81,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 19,
+        "driver": 80,
+        "track": "Barber"
+      },
+      {
+        "consistency": 2.3,
+        "speed": 29.5,
+        "best_lap": 98.84,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 22,
+        "driver": 88,
+        "track": "Barber"
+      },
+      {
+        "consistency": 56.8,
+        "speed": 11.4,
+        "best_lap": 99.33,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 15,
+        "driver": 93,
+        "track": "Barber"
+      },
+      {
+        "consistency": 34.1,
+        "speed": 65.9,
+        "best_lap": 98.09,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 7,
+        "driver": 98,
+        "track": "Barber"
+      },
+      {
+        "consistency": 70.5,
+        "speed": 27.3,
+        "best_lap": 98.92,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 14,
+        "driver": 3,
+        "track": "Barber"
+      },
+      {
+        "consistency": 81.8,
+        "speed": 50.0,
+        "best_lap": 98.3,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 10,
+        "driver": 111,
+        "track": "Barber"
+      },
+      {
+        "consistency": 0.0,
+        "speed": 43.2,
+        "best_lap": 98.38,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 22,
+        "driver": 113,
+        "track": "Barber"
+      },
+      {
+        "consistency": 97.7,
+        "speed": 95.5,
+        "best_lap": 97.35,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 1,
+        "driver": 13,
+        "track": "Barber"
+      },
+      {
+        "consistency": 65.9,
+        "speed": 2.3,
+        "best_lap": 100.3,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 16,
+        "driver": 18,
+        "track": "Barber"
+      },
+      {
+        "consistency": 88.6,
+        "speed": 90.9,
+        "best_lap": 97.68,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 3,
+        "driver": 2,
+        "track": "Barber"
+      },
+      {
+        "consistency": 79.5,
+        "speed": 68.2,
+        "best_lap": 98.07,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 7,
+        "driver": 21,
+        "track": "Barber"
+      },
+      {
+        "consistency": 93.2,
+        "speed": 97.7,
+        "best_lap": 97.3,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 2,
+        "driver": 22,
+        "track": "Barber"
+      },
+      {
+        "consistency": 11.4,
+        "speed": 79.5,
+        "best_lap": 97.88,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 17,
+        "driver": 31,
+        "track": "Barber"
+      },
+      {
+        "consistency": 63.6,
+        "speed": 72.7,
+        "best_lap": 97.94,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 12,
+        "driver": 41,
+        "track": "Barber"
+      },
+      {
+        "consistency": 86.4,
+        "speed": 77.3,
+        "best_lap": 97.91,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 5,
+        "driver": 46,
+        "track": "Barber"
+      },
+      {
+        "consistency": 84.1,
+        "speed": 70.5,
+        "best_lap": 97.97,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 6,
+        "driver": 47,
+        "track": "Barber"
+      },
+      {
+        "consistency": 75.0,
+        "speed": 59.1,
+        "best_lap": 98.19,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 11,
+        "driver": 5,
+        "track": "Barber"
+      },
+      {
+        "consistency": 68.2,
+        "speed": 45.5,
+        "best_lap": 98.34,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 13,
+        "driver": 51,
+        "track": "Barber"
+      },
+      {
+        "consistency": 90.9,
+        "speed": 81.8,
+        "best_lap": 97.79,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 20,
+        "driver": 55,
+        "track": "Barber"
+      },
+      {
+        "consistency": 6.8,
+        "speed": 31.8,
+        "best_lap": 98.84,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 19,
+        "driver": 58,
+        "track": "Barber"
+      },
+      {
+        "consistency": 77.3,
+        "speed": 54.5,
+        "best_lap": 98.24,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 8,
+        "driver": 7,
+        "track": "Barber"
+      },
+      {
+        "consistency": 95.5,
+        "speed": 72.7,
+        "best_lap": 97.94,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 4,
+        "driver": 72,
+        "track": "Barber"
+      },
+      {
+        "consistency": 9.1,
+        "speed": 20.5,
+        "best_lap": 99.01,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 18,
+        "driver": 80,
+        "track": "Barber"
+      },
+      {
+        "consistency": 72.7,
+        "speed": 61.4,
+        "best_lap": 98.18,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 9,
+        "driver": 88,
+        "track": "Barber"
+      },
+      {
+        "consistency": 4.5,
+        "speed": 22.7,
+        "best_lap": 98.96,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 21,
+        "driver": 93,
+        "track": "Barber"
+      },
+      {
+        "consistency": 13.6,
+        "speed": 88.6,
+        "best_lap": 97.69,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 15,
+        "driver": 98,
+        "track": "Barber"
+      },
+      {
+        "consistency": 67.3,
+        "speed": 63.5,
+        "best_lap": 100.81,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 9,
+        "driver": 21,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 86.5,
+        "speed": 46.2,
+        "best_lap": 101.38,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 15,
+        "driver": 3,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 80.8,
+        "speed": 38.5,
+        "best_lap": 101.71,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 19,
+        "driver": 11,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 76.9,
+        "speed": 44.2,
+        "best_lap": 101.41,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 14,
+        "driver": 111,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 57.7,
+        "speed": 69.2,
+        "best_lap": 100.72,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 7,
+        "driver": 113,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 42.3,
+        "speed": 92.3,
+        "best_lap": 100.13,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 3,
+        "driver": 13,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 88.5,
+        "speed": 32.7,
+        "best_lap": 101.87,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 20,
+        "driver": 18,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 48.1,
+        "speed": 84.6,
+        "best_lap": 100.31,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 2,
+        "driver": 2,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 96.2,
+        "speed": 7.7,
+        "best_lap": 105.12,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 22,
+        "driver": 20,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 44.2,
+        "speed": 90.4,
+        "best_lap": 100.16,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 8,
+        "driver": 22,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 50.0,
+        "speed": 88.5,
+        "best_lap": 100.23,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 4,
+        "driver": 46,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 53.8,
+        "speed": 82.7,
+        "best_lap": 100.32,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 6,
+        "driver": 47,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 78.8,
+        "speed": 59.6,
+        "best_lap": 100.99,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 12,
+        "driver": 5,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 73.1,
+        "speed": 55.8,
+        "best_lap": 101.04,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 11,
+        "driver": 51,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 40.4,
+        "speed": 98.1,
+        "best_lap": 99.75,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 1,
+        "driver": 55,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 46.2,
+        "speed": 17.3,
+        "best_lap": 103.28,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 24,
+        "driver": 57,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 84.6,
+        "speed": 34.6,
+        "best_lap": 101.81,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 18,
+        "driver": 61,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 98.1,
+        "speed": 86.5,
+        "best_lap": 100.27,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 27,
+        "driver": 7,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 5.8,
+        "speed": 96.2,
+        "best_lap": 100.04,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 25,
+        "driver": 72,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 94.2,
+        "speed": 15.4,
+        "best_lap": 103.62,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 23,
+        "driver": 8,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 69.2,
+        "speed": 42.3,
+        "best_lap": 101.55,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 26,
+        "driver": 80,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 63.5,
+        "speed": 80.8,
+        "best_lap": 100.37,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 10,
+        "driver": 88,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 71.2,
+        "speed": 50.0,
+        "best_lap": 101.32,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 13,
+        "driver": 89,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 82.7,
+        "speed": 30.8,
+        "best_lap": 102.09,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 17,
+        "driver": 93,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 51.9,
+        "speed": 94.2,
+        "best_lap": 100.06,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 5,
+        "driver": 98,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 32.7,
+        "speed": 48.1,
+        "best_lap": 101.34,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 6,
+        "driver": 21,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 38.5,
+        "speed": 25.0,
+        "best_lap": 102.34,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 13,
+        "driver": 3,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 55.8,
+        "speed": 19.2,
+        "best_lap": 102.81,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 15,
+        "driver": 11,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 28.8,
+        "speed": 36.5,
+        "best_lap": 101.72,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 8,
+        "driver": 111,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 1.9,
+        "speed": 0.0,
+        "best_lap": 110.97,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 29,
+        "driver": 113,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 7.7,
+        "speed": 67.3,
+        "best_lap": 100.75,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 1,
+        "driver": 13,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 59.6,
+        "speed": 13.5,
+        "best_lap": 103.84,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 14,
+        "driver": 18,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 11.5,
+        "speed": 57.7,
+        "best_lap": 101.0,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 4,
+        "driver": 2,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 61.5,
+        "speed": 3.8,
+        "best_lap": 108.35,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 23,
+        "driver": 20,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 19.2,
+        "speed": 76.9,
+        "best_lap": 100.46,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 21,
+        "driver": 22,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 3.8,
+        "speed": 71.2,
+        "best_lap": 100.71,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 20,
+        "driver": 31,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 92.3,
+        "speed": 73.1,
+        "best_lap": 100.56,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 28,
+        "driver": 46,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 17.3,
+        "speed": 53.8,
+        "best_lap": 101.1,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 16,
+        "driver": 47,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 15.4,
+        "speed": 28.8,
+        "best_lap": 102.15,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 27,
+        "driver": 5,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 26.9,
+        "speed": 40.4,
+        "best_lap": 101.57,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 7,
+        "driver": 51,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 9.6,
+        "speed": 78.8,
+        "best_lap": 100.41,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 2,
+        "driver": 55,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 90.4,
+        "speed": 9.6,
+        "best_lap": 104.43,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 26,
+        "driver": 57,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 0.0,
+        "speed": 1.9,
+        "best_lap": 108.58,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 24,
+        "driver": 61,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 13.5,
+        "speed": 65.4,
+        "best_lap": 100.8,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 3,
+        "driver": 7,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 30.8,
+        "speed": 61.5,
+        "best_lap": 100.89,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 25,
+        "driver": 72,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 65.4,
+        "speed": 11.5,
+        "best_lap": 104.25,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 18,
+        "driver": 8,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 21.2,
+        "speed": 26.9,
+        "best_lap": 102.29,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 19,
+        "driver": 80,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 75.0,
+        "speed": 5.8,
+        "best_lap": 106.08,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 17,
+        "driver": 86,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 23.1,
+        "speed": 51.9,
+        "best_lap": 101.11,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 5,
+        "driver": 88,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 34.6,
+        "speed": 23.1,
+        "best_lap": 102.58,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 9,
+        "driver": 89,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 36.5,
+        "speed": 21.2,
+        "best_lap": 102.61,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 10,
+        "driver": 93,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 25.0,
+        "speed": 75.0,
+        "best_lap": 100.48,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 12,
+        "driver": 98,
+        "track": "Indianapolis"
+      },
+      {
+        "consistency": 72.4,
+        "speed": 34.5,
+        "best_lap": 151.03,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 15,
+        "driver": 3,
+        "track": "Cota"
+      },
+      {
+        "consistency": 75.9,
+        "speed": 27.6,
+        "best_lap": 151.7,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 29,
+        "driver": 11,
+        "track": "Cota"
+      },
+      {
+        "consistency": 51.7,
+        "speed": 51.7,
+        "best_lap": 149.93,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 26,
+        "driver": 113,
+        "track": "Cota"
+      },
+      {
+        "consistency": 24.1,
+        "speed": 82.8,
+        "best_lap": 148.75,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 6,
+        "driver": 13,
+        "track": "Cota"
+      },
+      {
+        "consistency": 58.6,
+        "speed": 41.4,
+        "best_lap": 150.36,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 14,
+        "driver": 14,
+        "track": "Cota"
+      },
+      {
+        "consistency": 3.4,
+        "speed": 24.1,
+        "best_lap": 151.9,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 30,
+        "driver": 15,
+        "track": "Cota"
+      },
+      {
+        "consistency": 17.2,
+        "speed": 86.2,
+        "best_lap": 148.73,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 3,
+        "driver": 16,
+        "track": "Cota"
+      },
+      {
+        "consistency": 93.1,
+        "speed": 10.3,
+        "best_lap": 153.54,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 24,
+        "driver": 18,
+        "track": "Cota"
+      },
+      {
+        "consistency": 37.9,
+        "speed": 75.9,
+        "best_lap": 148.99,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 10,
+        "driver": 21,
+        "track": "Cota"
+      },
+      {
+        "consistency": 0.0,
+        "speed": 44.8,
+        "best_lap": 150.24,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 28,
+        "driver": 31,
+        "track": "Cota"
+      },
+      {
+        "consistency": 34.5,
+        "speed": 72.4,
+        "best_lap": 149.26,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 8,
+        "driver": 41,
+        "track": "Cota"
+      },
+      {
+        "consistency": 13.8,
+        "speed": 96.6,
+        "best_lap": 148.63,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 1,
+        "driver": 46,
+        "track": "Cota"
+      },
+      {
+        "consistency": 44.8,
+        "speed": 58.6,
+        "best_lap": 149.69,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 13,
+        "driver": 47,
+        "track": "Cota"
+      },
+      {
+        "consistency": 65.5,
+        "speed": 37.9,
+        "best_lap": 150.85,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 17,
+        "driver": 5,
+        "track": "Cota"
+      },
+      {
+        "consistency": 6.9,
+        "speed": 6.9,
+        "best_lap": 153.57,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 27,
+        "driver": 51,
+        "track": "Cota"
+      },
+      {
+        "consistency": 20.7,
+        "speed": 89.7,
+        "best_lap": 148.68,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 4,
+        "driver": 55,
+        "track": "Cota"
+      },
+      {
+        "consistency": 86.2,
+        "speed": 3.4,
+        "best_lap": 153.62,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 22,
+        "driver": 57,
+        "track": "Cota"
+      },
+      {
+        "consistency": 10.3,
+        "speed": 93.1,
+        "best_lap": 148.68,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 2,
+        "driver": 7,
+        "track": "Cota"
+      },
+      {
+        "consistency": 41.4,
+        "speed": 62.1,
+        "best_lap": 149.53,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 9,
+        "driver": 71,
+        "track": "Cota"
+      },
+      {
+        "consistency": 27.6,
+        "speed": 79.3,
+        "best_lap": 148.85,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 5,
+        "driver": 72,
+        "track": "Cota"
+      },
+      {
+        "consistency": 79.3,
+        "speed": 20.7,
+        "best_lap": 152.06,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 25,
+        "driver": 73,
+        "track": "Cota"
+      },
+      {
+        "consistency": 31.0,
+        "speed": 69.0,
+        "best_lap": 149.29,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 7,
+        "driver": 78,
+        "track": "Cota"
+      },
+      {
+        "consistency": 89.7,
+        "speed": 0.0,
+        "best_lap": 153.79,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 23,
+        "driver": 8,
+        "track": "Cota"
+      },
+      {
+        "consistency": 96.6,
+        "speed": 17.2,
+        "best_lap": 152.37,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 21,
+        "driver": 80,
+        "track": "Cota"
+      },
+      {
+        "consistency": 82.8,
+        "speed": 13.8,
+        "best_lap": 153.29,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 20,
+        "driver": 86,
+        "track": "Cota"
+      },
+      {
+        "consistency": 55.2,
+        "speed": 65.5,
+        "best_lap": 149.42,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 12,
+        "driver": 88,
+        "track": "Cota"
+      },
+      {
+        "consistency": 69.0,
+        "speed": 55.2,
+        "best_lap": 149.74,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 18,
+        "driver": 89,
+        "track": "Cota"
+      },
+      {
+        "consistency": 62.1,
+        "speed": 31.0,
+        "best_lap": 151.17,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 16,
+        "driver": 93,
+        "track": "Cota"
+      },
+      {
+        "consistency": 48.3,
+        "speed": 48.3,
+        "best_lap": 149.98,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 11,
+        "driver": 98,
+        "track": "Cota"
+      },
+      {
+        "consistency": 65.1,
+        "speed": 2.3,
+        "best_lap": 148.6,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 13,
+        "driver": 3,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 69.8,
+        "speed": 7.0,
+        "best_lap": 148.09,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 16,
+        "driver": 11,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 67.4,
+        "speed": 20.9,
+        "best_lap": 147.39,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 11,
+        "driver": 113,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 93.0,
+        "speed": 88.4,
+        "best_lap": 145.44,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 1,
+        "driver": 13,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 81.4,
+        "speed": 46.5,
+        "best_lap": 146.85,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 9,
+        "driver": 15,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 95.3,
+        "speed": 67.4,
+        "best_lap": 146.12,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 4,
+        "driver": 16,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 83.7,
+        "speed": 55.8,
+        "best_lap": 146.33,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 7,
+        "driver": 2,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 79.1,
+        "speed": 27.9,
+        "best_lap": 147.3,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 10,
+        "driver": 21,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 58.1,
+        "speed": 30.2,
+        "best_lap": 147.22,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 21,
+        "driver": 31,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 53.5,
+        "speed": 25.6,
+        "best_lap": 147.34,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 19,
+        "driver": 41,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 90.7,
+        "speed": 81.4,
+        "best_lap": 145.71,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 2,
+        "driver": 46,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 55.8,
+        "speed": 11.6,
+        "best_lap": 147.72,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 17,
+        "driver": 47,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 2.3,
+        "speed": 9.3,
+        "best_lap": 147.78,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 22,
+        "driver": 5,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 60.5,
+        "speed": 0.0,
+        "best_lap": 148.79,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 18,
+        "driver": 51,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 76.7,
+        "speed": 48.8,
+        "best_lap": 146.6,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 8,
+        "driver": 55,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 97.7,
+        "speed": 60.5,
+        "best_lap": 146.18,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 3,
+        "driver": 7,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 74.4,
+        "speed": 14.0,
+        "best_lap": 147.72,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 12,
+        "driver": 71,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 88.4,
+        "speed": 65.1,
+        "best_lap": 146.12,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 6,
+        "driver": 72,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 86.0,
+        "speed": 58.1,
+        "best_lap": 146.25,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 5,
+        "driver": 78,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 62.8,
+        "speed": 4.7,
+        "best_lap": 148.55,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 15,
+        "driver": 80,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 72.1,
+        "speed": 32.6,
+        "best_lap": 147.19,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 14,
+        "driver": 88,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 4.7,
+        "speed": 41.9,
+        "best_lap": 147.01,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 20,
+        "driver": 98,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 48.8,
+        "speed": 16.3,
+        "best_lap": 147.57,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 16,
+        "driver": 3,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 44.2,
+        "speed": 23.3,
+        "best_lap": 147.38,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 15,
+        "driver": 11,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 32.6,
+        "speed": 69.8,
+        "best_lap": 146.08,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 17,
+        "driver": 113,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 9.3,
+        "speed": 97.7,
+        "best_lap": 145.06,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 1,
+        "driver": 13,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 27.9,
+        "speed": 76.7,
+        "best_lap": 145.84,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 11,
+        "driver": 15,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 14.0,
+        "speed": 95.3,
+        "best_lap": 145.3,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 4,
+        "driver": 16,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 23.3,
+        "speed": 79.1,
+        "best_lap": 145.82,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 7,
+        "driver": 2,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 39.5,
+        "speed": 53.5,
+        "best_lap": 146.51,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 12,
+        "driver": 21,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 0.0,
+        "speed": 44.2,
+        "best_lap": 146.91,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 20,
+        "driver": 31,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 37.2,
+        "speed": 51.2,
+        "best_lap": 146.55,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 18,
+        "driver": 41,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 18.6,
+        "speed": 83.7,
+        "best_lap": 145.54,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 6,
+        "driver": 46,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 7.0,
+        "speed": 34.9,
+        "best_lap": 147.17,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 21,
+        "driver": 47,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 46.5,
+        "speed": 39.5,
+        "best_lap": 147.05,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 19,
+        "driver": 5,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 41.9,
+        "speed": 18.6,
+        "best_lap": 147.47,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 14,
+        "driver": 51,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 30.2,
+        "speed": 74.4,
+        "best_lap": 145.88,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 9,
+        "driver": 55,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 11.6,
+        "speed": 90.7,
+        "best_lap": 145.4,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 3,
+        "driver": 7,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 34.9,
+        "speed": 62.8,
+        "best_lap": 146.13,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 10,
+        "driver": 71,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 16.3,
+        "speed": 93.0,
+        "best_lap": 145.34,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 2,
+        "driver": 72,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 20.9,
+        "speed": 86.0,
+        "best_lap": 145.47,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 5,
+        "driver": 78,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 51.2,
+        "speed": 37.2,
+        "best_lap": 147.15,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 13,
+        "driver": 88,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 25.6,
+        "speed": 72.1,
+        "best_lap": 146.07,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 8,
+        "driver": 98,
+        "track": "Sebring"
+      },
+      {
+        "consistency": 46.7,
+        "speed": 30.0,
+        "best_lap": 114.17,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 3,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 55.0,
+        "speed": 18.3,
+        "best_lap": 114.52,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 11,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 35.0,
+        "speed": 53.3,
+        "best_lap": 113.3,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 113,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 65.0,
+        "speed": 5.0,
+        "best_lap": 116.14,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 12,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 11.7,
+        "speed": 96.7,
+        "best_lap": 111.72,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 13,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 40.0,
+        "speed": 41.7,
+        "best_lap": 113.57,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 14,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 36.7,
+        "speed": 36.7,
+        "best_lap": 113.86,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 15,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 18.3,
+        "speed": 88.3,
+        "best_lap": 112.12,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 16,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 38.3,
+        "speed": 55.0,
+        "best_lap": 113.28,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 17,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 15.0,
+        "speed": 91.7,
+        "best_lap": 112.04,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 2,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 3.3,
+        "speed": 73.3,
+        "best_lap": 112.63,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 21,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 31.7,
+        "speed": 83.3,
+        "best_lap": 112.46,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 31,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 6.7,
+        "speed": 48.3,
+        "best_lap": 113.48,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 41,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 10.0,
+        "speed": 90.0,
+        "best_lap": 112.07,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 46,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 33.3,
+        "speed": 76.7,
+        "best_lap": 112.61,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 47,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 0.0,
+        "speed": 26.7,
+        "best_lap": 114.3,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 5,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 28.3,
+        "speed": 66.7,
+        "best_lap": 112.95,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 50,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 45.0,
+        "speed": 31.7,
+        "best_lap": 113.95,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 51,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 13.3,
+        "speed": 95.0,
+        "best_lap": 111.98,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 55,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 5.0,
+        "speed": 15.0,
+        "best_lap": 114.61,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 67,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 21.7,
+        "speed": 86.7,
+        "best_lap": 112.16,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 7,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 26.7,
+        "speed": 71.7,
+        "best_lap": 112.76,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 71,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 23.3,
+        "speed": 98.3,
+        "best_lap": 111.67,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 72,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 43.3,
+        "speed": 28.3,
+        "best_lap": 114.29,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 73,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 16.7,
+        "speed": 93.3,
+        "best_lap": 112.02,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 78,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 50.0,
+        "speed": 6.7,
+        "best_lap": 115.84,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 80,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 25.0,
+        "speed": 81.7,
+        "best_lap": 112.47,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 88,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 30.0,
+        "speed": 80.0,
+        "best_lap": 112.5,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 89,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 41.7,
+        "speed": 33.3,
+        "best_lap": 113.92,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 93,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 20.0,
+        "speed": 85.0,
+        "best_lap": 112.3,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 98,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 66.7,
+        "speed": 8.3,
+        "best_lap": 115.14,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 3,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 90.0,
+        "speed": 10.0,
+        "best_lap": 114.92,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 11,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 93.3,
+        "speed": 56.7,
+        "best_lap": 113.22,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 113,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 98.3,
+        "speed": 0.0,
+        "best_lap": 117.72,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 12,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 70.0,
+        "speed": 65.0,
+        "best_lap": 112.96,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 13,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 68.3,
+        "speed": 38.3,
+        "best_lap": 113.78,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 14,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 81.7,
+        "speed": 35.0,
+        "best_lap": 113.86,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 15,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 58.3,
+        "speed": 70.0,
+        "best_lap": 112.79,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 16,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 95.0,
+        "speed": 13.3,
+        "best_lap": 114.81,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 17,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 48.3,
+        "speed": 75.0,
+        "best_lap": 112.61,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 2,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 91.7,
+        "speed": 40.0,
+        "best_lap": 113.71,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 21,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 75.0,
+        "speed": 46.7,
+        "best_lap": 113.53,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 31,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 88.3,
+        "speed": 21.7,
+        "best_lap": 114.35,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 41,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 8.3,
+        "speed": 20.0,
+        "best_lap": 114.47,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 46,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 76.7,
+        "speed": 58.3,
+        "best_lap": 113.16,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 47,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 71.7,
+        "speed": 3.3,
+        "best_lap": 116.93,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 5,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 73.3,
+        "speed": 50.0,
+        "best_lap": 113.46,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 50,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 86.7,
+        "speed": 23.3,
+        "best_lap": 114.31,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 51,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 63.3,
+        "speed": 68.3,
+        "best_lap": 112.83,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 55,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 85.0,
+        "speed": 11.7,
+        "best_lap": 114.91,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 67,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 51.7,
+        "speed": 78.3,
+        "best_lap": 112.52,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 7,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 60.0,
+        "speed": 63.3,
+        "best_lap": 113.06,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 71,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 61.7,
+        "speed": 60.0,
+        "best_lap": 113.09,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 72,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 1.7,
+        "speed": 25.0,
+        "best_lap": 114.31,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 73,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 53.3,
+        "speed": 61.7,
+        "best_lap": 113.08,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 78,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 96.7,
+        "speed": 1.7,
+        "best_lap": 117.67,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 80,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 56.7,
+        "speed": 45.0,
+        "best_lap": 113.54,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 88,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 78.3,
+        "speed": 51.7,
+        "best_lap": 113.36,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 89,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 83.3,
+        "speed": 16.7,
+        "best_lap": 114.58,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 93,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 80.0,
+        "speed": 43.3,
+        "best_lap": 113.56,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 999,
+        "driver": 98,
+        "track": "Sonoma"
+      },
+      {
+        "consistency": 41.9,
+        "speed": 37.2,
+        "best_lap": 129.88,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 14,
+        "driver": 3,
+        "track": "Vir"
+      },
+      {
+        "consistency": 30.2,
+        "speed": 53.5,
+        "best_lap": 129.34,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 9,
+        "driver": 111,
+        "track": "Vir"
+      },
+      {
+        "consistency": 25.6,
+        "speed": 51.2,
+        "best_lap": 129.37,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 11,
+        "driver": 113,
+        "track": "Vir"
+      },
+      {
+        "consistency": 48.8,
+        "speed": 2.3,
+        "best_lap": 133.82,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 18,
+        "driver": 12,
+        "track": "Vir"
+      },
+      {
+        "consistency": 18.6,
+        "speed": 97.7,
+        "best_lap": 128.43,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 3,
+        "driver": 13,
+        "track": "Vir"
+      },
+      {
+        "consistency": 0.0,
+        "speed": 44.2,
+        "best_lap": 129.65,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 21,
+        "driver": 15,
+        "track": "Vir"
+      },
+      {
+        "consistency": 14.0,
+        "speed": 65.1,
+        "best_lap": 129.06,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 8,
+        "driver": 2,
+        "track": "Vir"
+      },
+      {
+        "consistency": 20.9,
+        "speed": 55.8,
+        "best_lap": 129.32,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 6,
+        "driver": 21,
+        "track": "Vir"
+      },
+      {
+        "consistency": 23.3,
+        "speed": 67.4,
+        "best_lap": 129.03,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 7,
+        "driver": 31,
+        "track": "Vir"
+      },
+      {
+        "consistency": 39.5,
+        "speed": 25.6,
+        "best_lap": 130.4,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 13,
+        "driver": 41,
+        "track": "Vir"
+      },
+      {
+        "consistency": 7.0,
+        "speed": 86.0,
+        "best_lap": 128.54,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 2,
+        "driver": 46,
+        "track": "Vir"
+      },
+      {
+        "consistency": 27.9,
+        "speed": 27.9,
+        "best_lap": 130.18,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 12,
+        "driver": 5,
+        "track": "Vir"
+      },
+      {
+        "consistency": 37.2,
+        "speed": 14.0,
+        "best_lap": 131.21,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 16,
+        "driver": 51,
+        "track": "Vir"
+      },
+      {
+        "consistency": 11.6,
+        "speed": 95.3,
+        "best_lap": 128.5,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 5,
+        "driver": 55,
+        "track": "Vir"
+      },
+      {
+        "consistency": 46.5,
+        "speed": 7.0,
+        "best_lap": 132.35,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 15,
+        "driver": 61,
+        "track": "Vir"
+      },
+      {
+        "consistency": 9.3,
+        "speed": 79.1,
+        "best_lap": 128.78,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 4,
+        "driver": 7,
+        "track": "Vir"
+      },
+      {
+        "consistency": 4.7,
+        "speed": 62.8,
+        "best_lap": 129.11,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 19,
+        "driver": 71,
+        "track": "Vir"
+      },
+      {
+        "consistency": 16.3,
+        "speed": 88.4,
+        "best_lap": 128.51,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 1,
+        "driver": 72,
+        "track": "Vir"
+      },
+      {
+        "consistency": 44.2,
+        "speed": 18.6,
+        "best_lap": 130.88,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 17,
+        "driver": 80,
+        "track": "Vir"
+      },
+      {
+        "consistency": 32.6,
+        "speed": 46.5,
+        "best_lap": 129.59,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 10,
+        "driver": 88,
+        "track": "Vir"
+      },
+      {
+        "consistency": 34.9,
+        "speed": 16.3,
+        "best_lap": 131.15,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 20,
+        "driver": 93,
+        "track": "Vir"
+      },
+      {
+        "consistency": 2.3,
+        "speed": 4.7,
+        "best_lap": 132.51,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 22,
+        "driver": 98,
+        "track": "Vir"
+      },
+      {
+        "consistency": 72.1,
+        "speed": 41.9,
+        "best_lap": 129.66,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 12,
+        "driver": 3,
+        "track": "Vir"
+      },
+      {
+        "consistency": 74.4,
+        "speed": 60.5,
+        "best_lap": 129.17,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 8,
+        "driver": 111,
+        "track": "Vir"
+      },
+      {
+        "consistency": 62.8,
+        "speed": 48.8,
+        "best_lap": 129.5,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 11,
+        "driver": 113,
+        "track": "Vir"
+      },
+      {
+        "consistency": 69.8,
+        "speed": 0.0,
+        "best_lap": 133.91,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 21,
+        "driver": 12,
+        "track": "Vir"
+      },
+      {
+        "consistency": 95.3,
+        "speed": 90.7,
+        "best_lap": 128.5,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 1,
+        "driver": 13,
+        "track": "Vir"
+      },
+      {
+        "consistency": 79.1,
+        "speed": 39.5,
+        "best_lap": 129.75,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 14,
+        "driver": 15,
+        "track": "Vir"
+      },
+      {
+        "consistency": 97.7,
+        "speed": 72.1,
+        "best_lap": 128.94,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 7,
+        "driver": 2,
+        "track": "Vir"
+      },
+      {
+        "consistency": 65.1,
+        "speed": 30.2,
+        "best_lap": 130.05,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 13,
+        "driver": 41,
+        "track": "Vir"
+      },
+      {
+        "consistency": 93.0,
+        "speed": 90.7,
+        "best_lap": 128.5,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 5,
+        "driver": 46,
+        "track": "Vir"
+      },
+      {
+        "consistency": 76.7,
+        "speed": 34.9,
+        "best_lap": 129.9,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 10,
+        "driver": 5,
+        "track": "Vir"
+      },
+      {
+        "consistency": 55.8,
+        "speed": 23.3,
+        "best_lap": 130.77,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 18,
+        "driver": 51,
+        "track": "Vir"
+      },
+      {
+        "consistency": 51.2,
+        "speed": 76.7,
+        "best_lap": 128.83,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 16,
+        "driver": 55,
+        "track": "Vir"
+      },
+      {
+        "consistency": 58.1,
+        "speed": 11.6,
+        "best_lap": 131.34,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 19,
+        "driver": 61,
+        "track": "Vir"
+      },
+      {
+        "consistency": 86.0,
+        "speed": 81.4,
+        "best_lap": 128.77,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 3,
+        "driver": 7,
+        "track": "Vir"
+      },
+      {
+        "consistency": 88.4,
+        "speed": 74.4,
+        "best_lap": 128.91,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 4,
+        "driver": 71,
+        "track": "Vir"
+      },
+      {
+        "consistency": 90.7,
+        "speed": 83.7,
+        "best_lap": 128.68,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 2,
+        "driver": 72,
+        "track": "Vir"
+      },
+      {
+        "consistency": 67.4,
+        "speed": 20.9,
+        "best_lap": 130.78,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 17,
+        "driver": 80,
+        "track": "Vir"
+      },
+      {
+        "consistency": 83.7,
+        "speed": 58.1,
+        "best_lap": 129.28,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 9,
+        "driver": 88,
+        "track": "Vir"
+      },
+      {
+        "consistency": 53.5,
+        "speed": 9.3,
+        "best_lap": 131.36,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 20,
+        "driver": 89,
+        "track": "Vir"
+      },
+      {
+        "consistency": 60.5,
+        "speed": 32.6,
+        "best_lap": 130.05,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 15,
+        "driver": 93,
+        "track": "Vir"
+      },
+      {
+        "consistency": 81.4,
+        "speed": 69.8,
+        "best_lap": 128.99,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 6,
+        "driver": 98,
+        "track": "Vir"
+      },
+      {
+        "consistency": 48.1,
+        "speed": 20.4,
+        "best_lap": 164.84,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 17,
+        "driver": 3,
+        "track": "Road America"
+      },
+      {
+        "consistency": 70.4,
+        "speed": 13.0,
+        "best_lap": 167.5,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 21,
+        "driver": 11,
+        "track": "Road America"
+      },
+      {
+        "consistency": 72.2,
+        "speed": 16.7,
+        "best_lap": 164.99,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 13,
+        "driver": 113,
+        "track": "Road America"
+      },
+      {
+        "consistency": 51.9,
+        "speed": 9.3,
+        "best_lap": 168.53,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 23,
+        "driver": 12,
+        "track": "Road America"
+      },
+      {
+        "consistency": 68.5,
+        "speed": 40.7,
+        "best_lap": 163.42,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 3,
+        "driver": 13,
+        "track": "Road America"
+      },
+      {
+        "consistency": 53.7,
+        "speed": 11.1,
+        "best_lap": 167.97,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 22,
+        "driver": 15,
+        "track": "Road America"
+      },
+      {
+        "consistency": 83.3,
+        "speed": 0.0,
+        "best_lap": 174.3,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 27,
+        "driver": 18,
+        "track": "Road America"
+      },
+      {
+        "consistency": 75.9,
+        "speed": 50.0,
+        "best_lap": 160.84,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 19,
+        "driver": 2,
+        "track": "Road America"
+      },
+      {
+        "consistency": 64.8,
+        "speed": 25.9,
+        "best_lap": 164.3,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 4,
+        "driver": 21,
+        "track": "Road America"
+      },
+      {
+        "consistency": 87.0,
+        "speed": 42.6,
+        "best_lap": 163.41,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 7,
+        "driver": 22,
+        "track": "Road America"
+      },
+      {
+        "consistency": 66.7,
+        "speed": 37.0,
+        "best_lap": 163.67,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 15,
+        "driver": 31,
+        "track": "Road America"
+      },
+      {
+        "consistency": 61.1,
+        "speed": 38.9,
+        "best_lap": 163.51,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 20,
+        "driver": 41,
+        "track": "Road America"
+      },
+      {
+        "consistency": 38.9,
+        "speed": 31.5,
+        "best_lap": 164.08,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 14,
+        "driver": 46,
+        "track": "Road America"
+      },
+      {
+        "consistency": 92.6,
+        "speed": 27.8,
+        "best_lap": 164.24,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 5,
+        "driver": 47,
+        "track": "Road America"
+      },
+      {
+        "consistency": 42.6,
+        "speed": 44.4,
+        "best_lap": 163.28,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 18,
+        "driver": 5,
+        "track": "Road America"
+      },
+      {
+        "consistency": 63.0,
+        "speed": 22.2,
+        "best_lap": 164.59,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 11,
+        "driver": 51,
+        "track": "Road America"
+      },
+      {
+        "consistency": 74.1,
+        "speed": 35.2,
+        "best_lap": 163.77,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 1,
+        "driver": 55,
+        "track": "Road America"
+      },
+      {
+        "consistency": 79.6,
+        "speed": 1.9,
+        "best_lap": 174.08,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 26,
+        "driver": 57,
+        "track": "Road America"
+      },
+      {
+        "consistency": 59.3,
+        "speed": 14.8,
+        "best_lap": 165.04,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 10,
+        "driver": 58,
+        "track": "Road America"
+      },
+      {
+        "consistency": 77.8,
+        "speed": 33.3,
+        "best_lap": 163.79,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 2,
+        "driver": 7,
+        "track": "Road America"
+      },
+      {
+        "consistency": 88.9,
+        "speed": 18.5,
+        "best_lap": 164.89,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 12,
+        "driver": 71,
+        "track": "Road America"
+      },
+      {
+        "consistency": 90.7,
+        "speed": 46.3,
+        "best_lap": 163.27,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 9,
+        "driver": 72,
+        "track": "Road America"
+      },
+      {
+        "consistency": 50.0,
+        "speed": 5.6,
+        "best_lap": 169.45,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 25,
+        "driver": 8,
+        "track": "Road America"
+      },
+      {
+        "consistency": 0.0,
+        "speed": 3.7,
+        "best_lap": 172.13,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 28,
+        "driver": 80,
+        "track": "Road America"
+      },
+      {
+        "consistency": 57.4,
+        "speed": 7.4,
+        "best_lap": 168.9,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 24,
+        "driver": 86,
+        "track": "Road America"
+      },
+      {
+        "consistency": 44.4,
+        "speed": 48.1,
+        "best_lap": 162.43,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 8,
+        "driver": 88,
+        "track": "Road America"
+      },
+      {
+        "consistency": 85.2,
+        "speed": 24.1,
+        "best_lap": 164.31,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 16,
+        "driver": 89,
+        "track": "Road America"
+      },
+      {
+        "consistency": 94.4,
+        "speed": 29.6,
+        "best_lap": 164.16,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 6,
+        "driver": 98,
+        "track": "Road America"
+      },
+      {
+        "consistency": 29.6,
+        "speed": 70.4,
+        "best_lap": 152.94,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 14,
+        "driver": 3,
+        "track": "Road America"
+      },
+      {
+        "consistency": 33.3,
+        "speed": 63.0,
+        "best_lap": 154.52,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 19,
+        "driver": 11,
+        "track": "Road America"
+      },
+      {
+        "consistency": 16.7,
+        "speed": 81.5,
+        "best_lap": 152.29,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 9,
+        "driver": 113,
+        "track": "Road America"
+      },
+      {
+        "consistency": 96.3,
+        "speed": 55.6,
+        "best_lap": 156.01,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 23,
+        "driver": 12,
+        "track": "Road America"
+      },
+      {
+        "consistency": 3.7,
+        "speed": 87.0,
+        "best_lap": 151.88,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 8,
+        "driver": 13,
+        "track": "Road America"
+      },
+      {
+        "consistency": 55.6,
+        "speed": 51.9,
+        "best_lap": 160.54,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 25,
+        "driver": 18,
+        "track": "Road America"
+      },
+      {
+        "consistency": 9.3,
+        "speed": 88.9,
+        "best_lap": 151.88,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 1,
+        "driver": 2,
+        "track": "Road America"
+      },
+      {
+        "consistency": 22.2,
+        "speed": 77.8,
+        "best_lap": 152.56,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 15,
+        "driver": 21,
+        "track": "Road America"
+      },
+      {
+        "consistency": 14.8,
+        "speed": 83.3,
+        "best_lap": 152.11,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 7,
+        "driver": 31,
+        "track": "Road America"
+      },
+      {
+        "consistency": 27.8,
+        "speed": 79.6,
+        "best_lap": 152.49,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 16,
+        "driver": 41,
+        "track": "Road America"
+      },
+      {
+        "consistency": 18.5,
+        "speed": 96.3,
+        "best_lap": 151.7,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 11,
+        "driver": 46,
+        "track": "Road America"
+      },
+      {
+        "consistency": 11.1,
+        "speed": 90.7,
+        "best_lap": 151.81,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 3,
+        "driver": 47,
+        "track": "Road America"
+      },
+      {
+        "consistency": 37.0,
+        "speed": 66.7,
+        "best_lap": 153.25,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 18,
+        "driver": 5,
+        "track": "Road America"
+      },
+      {
+        "consistency": 31.5,
+        "speed": 68.5,
+        "best_lap": 153.14,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 12,
+        "driver": 51,
+        "track": "Road America"
+      },
+      {
+        "consistency": 7.4,
+        "speed": 98.1,
+        "best_lap": 151.7,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 4,
+        "driver": 55,
+        "track": "Road America"
+      },
+      {
+        "consistency": 46.3,
+        "speed": 53.7,
+        "best_lap": 159.21,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 24,
+        "driver": 57,
+        "track": "Road America"
+      },
+      {
+        "consistency": 24.1,
+        "speed": 72.2,
+        "best_lap": 152.82,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 13,
+        "driver": 58,
+        "track": "Road America"
+      },
+      {
+        "consistency": 5.6,
+        "speed": 85.2,
+        "best_lap": 151.93,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 6,
+        "driver": 7,
+        "track": "Road America"
+      },
+      {
+        "consistency": 98.1,
+        "speed": 74.1,
+        "best_lap": 152.78,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 26,
+        "driver": 71,
+        "track": "Road America"
+      },
+      {
+        "consistency": 1.9,
+        "speed": 94.4,
+        "best_lap": 151.71,
+        "outcome": "podium",
+        "color": "#10b981",
+        "finishing_position": 2,
+        "driver": 72,
+        "track": "Road America"
+      },
+      {
+        "consistency": 40.7,
+        "speed": 57.4,
+        "best_lap": 155.65,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 22,
+        "driver": 8,
+        "track": "Road America"
+      },
+      {
+        "consistency": 81.5,
+        "speed": 61.1,
+        "best_lap": 154.69,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 20,
+        "driver": 80,
+        "track": "Road America"
+      },
+      {
+        "consistency": 35.2,
+        "speed": 59.3,
+        "best_lap": 155.41,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 21,
+        "driver": 86,
+        "track": "Road America"
+      },
+      {
+        "consistency": 20.4,
+        "speed": 75.9,
+        "best_lap": 152.64,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 10,
+        "driver": 88,
+        "track": "Road America"
+      },
+      {
+        "consistency": 25.9,
+        "speed": 64.8,
+        "best_lap": 153.39,
+        "outcome": "outside",
+        "color": "#ef4444",
+        "finishing_position": 17,
+        "driver": 89,
+        "track": "Road America"
+      },
+      {
+        "consistency": 13.0,
+        "speed": 92.6,
+        "best_lap": 151.72,
+        "outcome": "top10",
+        "color": "#eab308",
+        "finishing_position": 5,
+        "driver": 98,
+        "track": "Road America"
+      }
+    ],
+    "x_label": "Consistency Score (0-100, Higher = More Consistent)",
+    "y_label": "Speed Score (0-100, Higher = Faster Best Lap)",
+    "x_min": 0,
+    "x_max": 100,
+    "y_min": 0,
+    "y_max": 100,
+    "avg_podium_consistency": 43.0,
+    "avg_podium_speed": 82.8,
+    "insight": "Podium finishers average 43.0 consistency and 82.8 speed score"
+  },
+  "training_allocation": {
+    "current": [
+      {
+        "category": "Qualifying",
+        "percentage": 40
+      },
+      {
+        "category": "General Racing",
+        "percentage": 30
+      },
+      {
+        "category": "Race Strategy",
+        "percentage": 20
+      },
+      {
+        "category": "Restarts",
+        "percentage": 10
+      }
+    ],
+    "optimal": [
+      {
+        "category": "S2 Consistency Drills",
+        "percentage": 45
+      },
+      {
+        "category": "Qualifying",
+        "percentage": 25
+      },
+      {
+        "category": "General Racing",
+        "percentage": 20
+      },
+      {
+        "category": "Race Strategy",
+        "percentage": 5
+      },
+      {
+        "category": "Restart Scenarios",
+        "percentage": 5
+      }
+    ],
+    "insight": "Prioritize S2 consistency drills while maintaining strong qualifying and general racing skills"
+  },
+  "fcy_impact": {
+    "high_fcy": {
+      "label": "Top 25% Restart Performance",
+      "podium_rate": 9.8,
+      "count": 82
+    },
+    "low_fcy": {
+      "label": "Bottom 25% Restart Performance",
+      "podium_rate": 11.4,
+      "count": 123
+    },
+    "improvement": -1.6,
+    "insight": "Top restart performers achieve -1.6% lower podium rate than bottom performers"
+  },
+  "sector_heatmap": {
+    "by_track": [
+      {
+        "track": "Barber",
+        "track_id": "barber",
+        "s1_importance": 0.194,
+        "s2_importance": 0.004,
+        "s3_importance": 0.144,
+        "data_count": 44,
+        "has_podiums": "True"
+      },
+      {
+        "track": "Cota",
+        "track_id": "cota",
+        "s1_importance": 0.1,
+        "s2_importance": 0.215,
+        "s3_importance": 0.449,
+        "data_count": 29,
+        "has_podiums": "True"
+      },
+      {
+        "track": "Indianapolis",
+        "track_id": "indianapolis",
+        "s1_importance": 0.042,
+        "s2_importance": 0.087,
+        "s3_importance": 0.058,
+        "data_count": 52,
+        "has_podiums": "True"
+      },
+      {
+        "track": "Road America",
+        "track_id": "road_america",
+        "s1_importance": 0.075,
+        "s2_importance": 0.149,
+        "s3_importance": 0.034,
+        "data_count": 54,
+        "has_podiums": "True"
+      },
+      {
+        "track": "Sebring",
+        "track_id": "sebring",
+        "s1_importance": 0.129,
+        "s2_importance": 0.03,
+        "s3_importance": 0.057,
+        "data_count": 43,
+        "has_podiums": "True"
+      },
+      {
+        "track": "Vir",
+        "track_id": "vir",
+        "s1_importance": 0.047,
+        "s2_importance": 0.031,
+        "s3_importance": 0.082,
+        "data_count": 43,
+        "has_podiums": "True"
+      }
+    ],
+    "overall": {
+      "s1_importance": 0.057,
+      "s2_importance": 0.008,
+      "s3_importance": 0.065
+    },
+    "total_tracks": 6,
+    "insight": "Sector 2 consistency is the most important across 6 tracks (correlation: 0.008)"
+  }
+}

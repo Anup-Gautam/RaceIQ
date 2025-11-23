@@ -1,0 +1,76 @@
+{
+  "insights": [
+    {
+      "id": 1,
+      "title": "Strong Skill Transfer: Indianapolis \u2194 Cota",
+      "finding": "Drivers who excel at Indianapolis also perform well at Cota (r=0.915, p<0.05). The s1_std metric shows strong correlation across these tracks.",
+      "implication": "Skills learned at one track transfer to similar tracks. Training at one can improve performance at the other.",
+      "recommendations": [
+        "Use Indianapolis as training ground for Cota",
+        "Focus on improving s1_std at both tracks",
+        "Analyze common characteristics between tracks"
+      ],
+      "impact": "High",
+      "metric": "s1_std",
+      "correlation_value": 0.915
+    },
+    {
+      "id": 3,
+      "title": "Post-FCY Performance is Critical",
+      "finding": "Performance after Full Course Yellow periods is the #14 most important predictor (importance: 0.0328).",
+      "implication": "Restart performance determines race outcomes. Drivers who excel at restarts have significant advantage.",
+      "recommendations": [
+        "Practice restart scenarios extensively",
+        "Develop restart-specific strategies",
+        "Analyze restart performance patterns"
+      ],
+      "impact": "High",
+      "metric": "post_fcy_performance",
+      "importance": 0.0328
+    },
+    {
+      "id": 4,
+      "title": "Four Distinct Driver Archetypes Identified",
+      "finding": "Machine learning identified 4 distinct driver archetypes: Smooth Operators, Qualifying Heroes, Clutch Performers, All-Rounders. Each archetype has unique strengths and weaknesses.",
+      "implication": "Different driver types require different training approaches and team strategies.",
+      "recommendations": [
+        "Tailor training programs to driver archetype",
+        "Match drivers to tracks that suit their archetype",
+        "Build teams with complementary archetypes"
+      ],
+      "impact": "Medium",
+      "archetypes": [
+        "Smooth Operators",
+        "Qualifying Heroes",
+        "Clutch Performers",
+        "All-Rounders"
+      ]
+    },
+    {
+      "id": 5,
+      "title": "Consistency Paradox: Winners More Consistent Than Pole Sitters",
+      "finding": "Top finishers show 14% better consistency scores than drivers who set fastest laps but finish lower. Consistency beats peak speed.",
+      "implication": "Race strategy should prioritize consistent pace over occasional fast laps.",
+      "recommendations": [
+        "Focus on consistency training",
+        "Avoid risky moves for fastest lap",
+        "Maintain steady pace throughout race"
+      ],
+      "impact": "High",
+      "statistic": "14%"
+    },
+    {
+      "id": 6,
+      "title": "Tracks Group into 3 Distinct Categories",
+      "finding": "Tracks cluster into Technical (0 tracks), High-Speed (0 tracks), and Mixed (7 tracks) categories.",
+      "implication": "Track characteristics determine which skills are most important.",
+      "recommendations": [
+        "Adapt strategy based on track category",
+        "Train specific skills for each category",
+        "Analyze performance by track category"
+      ],
+      "impact": "Medium"
+    }
+  ],
+  "total": 5
+}

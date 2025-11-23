@@ -17,16 +17,11 @@ venv/
 ENV/
 .venv
 
-# Data files - EXCLUDE ALL CSV AND DATA FILES
+# Data files (keep structure, ignore large data)
 *.csv
-*.CSV
-Data_analysis/features_matrix.csv
+!**/features_matrix.csv
 Data_analysis/ml_results.json
 Data_analysis/data_summary.json
-
-# Frontend data files (generated JSON)
-frontend/public/data/*.json
-Data_analysis/frontend/public/data/*.json
 
 # IDE
 .vscode/
@@ -55,15 +50,15 @@ yarn-error.log*
 # Netlify
 .netlify/
 
-# Keep code files - these are explicitly tracked:
-# - All .py files
-# - All .js files
-# - All .jsx files
-# - All .json config files (package.json, etc.)
-# - All .md files
-# - All .css files
-# - All .html files
-# - netlify.toml
-# - requirements.txt
-# - tailwind.config.js
-# - postcss.config.js
+# Jupyter Notebooks
+.ipynb_checkpoints
+*.ipynb
+
+# Coverage reports
+coverage/
+.nyc_output/
+
+# Temporary files
+*.tmp
+*.temp
+

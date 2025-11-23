@@ -1,0 +1,134 @@
+{
+  "archetypes": {
+    "Smooth Operators": {
+      "description": "Drivers with exceptional consistency and tire management. They maintain pace throughout the race.",
+      "strengths": [
+        "Consistency",
+        "Tire Management",
+        "Race Pace"
+      ],
+      "weaknesses": [
+        "Qualifying Speed",
+        "Aggressive Overtaking"
+      ],
+      "recommendations": [
+        "Focus on qualifying pace to start higher",
+        "Work on aggressive overtaking moves",
+        "Maintain consistency advantage"
+      ],
+      "count": 12,
+      "characteristics": {
+        "consistency_score": 0.07863416949504093,
+        "avg_speed_kph": 129.74452676337265,
+        "top_speed_max": 200.71108796296298,
+        "clutch_score": 4.040880591185876,
+        "sector_balance": 0.37157748205498803,
+        "s1_mean": 45.18316025220364,
+        "s2_mean": 53.01980035809981,
+        "s3_mean": 48.512170758980794,
+        "tire_degradation": -19.74987117975581,
+        "pace_improvement": 19.74987117975581,
+        "post_fcy_performance": 8.790087829411382,
+        "lap_best": 134.50089142709146
+      }
+    },
+    "Qualifying Heroes": {
+      "description": "Drivers who excel in single-lap pace but may struggle with race consistency.",
+      "strengths": [
+        "Fastest Lap",
+        "Qualifying",
+        "Sector 2 Speed"
+      ],
+      "weaknesses": [
+        "Race Consistency",
+        "Tire Degradation",
+        "Long Runs"
+      ],
+      "recommendations": [
+        "Improve race consistency",
+        "Work on tire management",
+        "Practice long-run pace"
+      ],
+      "count": 4,
+      "characteristics": {
+        "consistency_score": 0.1397493161439293,
+        "avg_speed_kph": 129.69744239935454,
+        "top_speed_max": 205.0875,
+        "clutch_score": 0.9749499896892353,
+        "sector_balance": 0.3724211211492362,
+        "s1_mean": 40.46947456645141,
+        "s2_mean": 43.54509093036628,
+        "s3_mean": 36.84170110404994,
+        "tire_degradation": -0.00149601355819462,
+        "pace_improvement": 0.00149601355819462,
+        "post_fcy_performance": 4.70735550204764,
+        "lap_best": 111.72055
+      }
+    },
+    "Clutch Performers": {
+      "description": "Drivers who perform best under pressure, especially in final stages and restarts.",
+      "strengths": [
+        "Pressure Handling",
+        "Restarts",
+        "Final Laps"
+      ],
+      "weaknesses": [
+        "Early Race Pace",
+        "Qualifying",
+        "Sector Balance"
+      ],
+      "recommendations": [
+        "Improve early race pace",
+        "Focus on qualifying performance",
+        "Maintain clutch advantage"
+      ],
+      "count": 5,
+      "characteristics": {
+        "consistency_score": 0.04751270309630265,
+        "avg_speed_kph": 112.46710549503071,
+        "top_speed_max": 188.03666666666666,
+        "clutch_score": 1.7687531463420083,
+        "sector_balance": 0.35042098042663344,
+        "s1_mean": 41.87215704884062,
+        "s2_mean": 44.4098995396973,
+        "s3_mean": 45.913837517114885,
+        "tire_degradation": -10.87405428571428,
+        "pace_improvement": 10.87405428571428,
+        "post_fcy_performance": 7.335250525697859,
+        "lap_best": 118.95886666666665
+      }
+    },
+    "All-Rounders": {
+      "description": "Well-balanced drivers with no major weaknesses but may lack standout strengths.",
+      "strengths": [
+        "Balance",
+        "Consistency",
+        "Adaptability"
+      ],
+      "weaknesses": [
+        "Peak Performance",
+        "Specialization"
+      ],
+      "recommendations": [
+        "Develop a standout strength",
+        "Focus on peak performance",
+        "Maintain balanced approach"
+      ],
+      "count": 18,
+      "characteristics": {
+        "consistency_score": 0.13017647910842445,
+        "avg_speed_kph": 130.83363260227372,
+        "top_speed_max": 199.92420634920634,
+        "clutch_score": 1.6206015790659358,
+        "sector_balance": 0.37119705463993674,
+        "s1_mean": 41.50779882439087,
+        "s2_mean": 49.45944916928982,
+        "s3_mean": 45.173569533922546,
+        "tire_degradation": -9.549030062296202,
+        "pace_improvement": 9.549030062296202,
+        "post_fcy_performance": 6.712714353170232,
+        "lap_best": 126.48072833493669
+      }
+    }
+  }
+}

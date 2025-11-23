@@ -1,0 +1,276 @@
+{
+  "correlations": [
+    {
+      "track1": "Indianapolis",
+      "track2": "Cota",
+      "metric": "s1_std",
+      "correlation": 0.915,
+      "p_value": 0.0,
+      "strength": "strong",
+      "drivers_compared": 22
+    },
+    {
+      "track1": "Indianapolis",
+      "track2": "Sebring",
+      "metric": "sector_balance",
+      "correlation": -0.778,
+      "p_value": 0.0002,
+      "strength": "strong",
+      "drivers_compared": 17
+    },
+    {
+      "track1": "Sebring",
+      "track2": "Sonoma",
+      "metric": "s1_mean",
+      "correlation": 0.774,
+      "p_value": 0.0,
+      "strength": "strong",
+      "drivers_compared": 22
+    },
+    {
+      "track1": "Indianapolis",
+      "track2": "Sebring",
+      "metric": "s1_std",
+      "correlation": 0.755,
+      "p_value": 0.0005,
+      "strength": "strong",
+      "drivers_compared": 17
+    },
+    {
+      "track1": "Sebring",
+      "track2": "Sonoma",
+      "metric": "lap_mean",
+      "correlation": 0.725,
+      "p_value": 0.0001,
+      "strength": "strong",
+      "drivers_compared": 22
+    },
+    {
+      "track1": "Sebring",
+      "track2": "Sonoma",
+      "metric": "avg_speed_kph",
+      "correlation": 0.721,
+      "p_value": 0.0002,
+      "strength": "strong",
+      "drivers_compared": 22
+    },
+    {
+      "track1": "Sebring",
+      "track2": "Sonoma",
+      "metric": "tire_degradation",
+      "correlation": 0.684,
+      "p_value": 0.0004,
+      "strength": "moderate",
+      "drivers_compared": 22
+    },
+    {
+      "track1": "Indianapolis",
+      "track2": "Road America",
+      "metric": "clutch_score",
+      "correlation": -0.673,
+      "p_value": 0.0004,
+      "strength": "moderate",
+      "drivers_compared": 23
+    },
+    {
+      "track1": "Indianapolis",
+      "track2": "Cota",
+      "metric": "s1_mean",
+      "correlation": 0.641,
+      "p_value": 0.0013,
+      "strength": "moderate",
+      "drivers_compared": 22
+    },
+    {
+      "track1": "Sebring",
+      "track2": "Sonoma",
+      "metric": "s1_std",
+      "correlation": 0.639,
+      "p_value": 0.0014,
+      "strength": "moderate",
+      "drivers_compared": 22
+    },
+    {
+      "track1": "Cota",
+      "track2": "Vir",
+      "metric": "tire_degradation",
+      "correlation": 0.637,
+      "p_value": 0.0034,
+      "strength": "moderate",
+      "drivers_compared": 19
+    },
+    {
+      "track1": "Barber",
+      "track2": "Road America",
+      "metric": "s1_std",
+      "correlation": 0.6,
+      "p_value": 0.0051,
+      "strength": "moderate",
+      "drivers_compared": 20
+    },
+    {
+      "track1": "Sebring",
+      "track2": "Sonoma",
+      "metric": "lap_std",
+      "correlation": 0.6,
+      "p_value": 0.0032,
+      "strength": "moderate",
+      "drivers_compared": 22
+    },
+    {
+      "track1": "Cota",
+      "track2": "Vir",
+      "metric": "lap_std",
+      "correlation": 0.58,
+      "p_value": 0.0092,
+      "strength": "moderate",
+      "drivers_compared": 19
+    },
+    {
+      "track1": "Barber",
+      "track2": "Indianapolis",
+      "metric": "s3_mean",
+      "correlation": 0.552,
+      "p_value": 0.0116,
+      "strength": "moderate",
+      "drivers_compared": 20
+    },
+    {
+      "track1": "Indianapolis",
+      "track2": "Cota",
+      "metric": "sector_balance",
+      "correlation": 0.545,
+      "p_value": 0.0088,
+      "strength": "moderate",
+      "drivers_compared": 22
+    },
+    {
+      "track1": "Sebring",
+      "track2": "Sonoma",
+      "metric": "s3_mean",
+      "correlation": 0.53,
+      "p_value": 0.0112,
+      "strength": "moderate",
+      "drivers_compared": 22
+    },
+    {
+      "track1": "Barber",
+      "track2": "Cota",
+      "metric": "s2_mean",
+      "correlation": 0.527,
+      "p_value": 0.0246,
+      "strength": "moderate",
+      "drivers_compared": 18
+    },
+    {
+      "track1": "Cota",
+      "track2": "Sebring",
+      "metric": "sector_balance",
+      "correlation": -0.523,
+      "p_value": 0.015,
+      "strength": "moderate",
+      "drivers_compared": 21
+    },
+    {
+      "track1": "Indianapolis",
+      "track2": "Cota",
+      "metric": "lap_std",
+      "correlation": 0.515,
+      "p_value": 0.0141,
+      "strength": "moderate",
+      "drivers_compared": 22
+    },
+    {
+      "track1": "Barber",
+      "track2": "Indianapolis",
+      "metric": "s3_std",
+      "correlation": 0.514,
+      "p_value": 0.0204,
+      "strength": "moderate",
+      "drivers_compared": 20
+    },
+    {
+      "track1": "Sebring",
+      "track2": "Vir",
+      "metric": "s2_std",
+      "correlation": 0.513,
+      "p_value": 0.0295,
+      "strength": "moderate",
+      "drivers_compared": 18
+    },
+    {
+      "track1": "Sebring",
+      "track2": "Vir",
+      "metric": "s1_std",
+      "correlation": 0.484,
+      "p_value": 0.0418,
+      "strength": "moderate",
+      "drivers_compared": 18
+    },
+    {
+      "track1": "Indianapolis",
+      "track2": "Sonoma",
+      "metric": "sector_balance",
+      "correlation": 0.482,
+      "p_value": 0.0368,
+      "strength": "moderate",
+      "drivers_compared": 19
+    },
+    {
+      "track1": "Barber",
+      "track2": "Indianapolis",
+      "metric": "lap_mean",
+      "correlation": 0.48,
+      "p_value": 0.032,
+      "strength": "moderate",
+      "drivers_compared": 20
+    },
+    {
+      "track1": "Cota",
+      "track2": "Vir",
+      "metric": "sector_balance",
+      "correlation": 0.473,
+      "p_value": 0.0407,
+      "strength": "moderate",
+      "drivers_compared": 19
+    },
+    {
+      "track1": "Cota",
+      "track2": "Sebring",
+      "metric": "s1_std",
+      "correlation": 0.465,
+      "p_value": 0.0338,
+      "strength": "moderate",
+      "drivers_compared": 21
+    },
+    {
+      "track1": "Barber",
+      "track2": "Indianapolis",
+      "metric": "lap_std",
+      "correlation": 0.46,
+      "p_value": 0.0412,
+      "strength": "moderate",
+      "drivers_compared": 20
+    },
+    {
+      "track1": "Indianapolis",
+      "track2": "Cota",
+      "metric": "avg_speed_kph",
+      "correlation": 0.459,
+      "p_value": 0.0316,
+      "strength": "moderate",
+      "drivers_compared": 22
+    },
+    {
+      "track1": "Cota",
+      "track2": "Sebring",
+      "metric": "clutch_score",
+      "correlation": -0.448,
+      "p_value": 0.0418,
+      "strength": "moderate",
+      "drivers_compared": 21
+    }
+  ],
+  "total": 30,
+  "strong": 6
+}

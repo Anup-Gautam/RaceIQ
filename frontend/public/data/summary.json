@@ -1,0 +1,9 @@
+{
+  "total_laps": 6706,
+  "total_drivers": 39,
+  "total_races": 13,
+  "total_tracks": 7,
+  "model_accuracy": 0.9230769230769231,
+  "significant_correlations": 30,
+  "driver_archetypes": 4
+}

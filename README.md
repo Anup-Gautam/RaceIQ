@@ -29,12 +29,12 @@ Unlike traditional racing analytics that focus on single-track or single-race an
 ### Data Analysis
 - **Universal Data Loader**: Handles 7 different track file structures
 - **57 Feature Extraction**: Comprehensive performance metrics per driver-track-race
-- **5 ML Algorithms**: Cross-track correlations, clustering, PCA, Random Forest, driver archetypes
+- **7 ML Algorithms**: Cross-track correlations, track clustering, PCA, Random Forest, driver clustering, Gradient Boosting, Logistic Regression
 - **Automated Pipeline**: End-to-end processing from raw data to insights
 
 ### Frontend Dashboard
-- **5 Interactive Pages**: Overview, Correlations, Predictors, Drivers, Insights
-- **Real-time Visualizations**: PCA scatter plots, correlation charts, radar charts, bar charts
+- **5 Interactive Pages**: Overview, Correlations, Predictors, Drivers, Visualizations
+- **Real-time Visualizations**: Correlation charts, feature importance charts, radar charts, bar charts, scatter plots, network diagrams
 - **Responsive Design**: Works on desktop, tablet, and mobile
 - **Dark Theme**: Professional UI optimized for data visualization
 
@@ -45,7 +45,7 @@ racedata/
 ├── Data_analysis/          # Python data pipeline
 │   ├── load_data.py       # Universal data loader
 │   ├── engineer_features.py  # Feature extraction (57 features)
-│   ├── run_analysis.py    # 5 ML algorithms
+│   ├── run_analysis.py    # 7 ML algorithms
 │   ├── generate_outputs.py  # JSON generator for frontend
 │   ├── main.py           # Main pipeline runner
 │   └── requirements.txt   # Python dependencies
@@ -57,8 +57,11 @@ racedata/
 │   │   ├── App.js        # Main app component
 │   │   └── index.js      # Entry point
 │   ├── public/
-│   │   └── data/         # JSON data files (generated)
+│   │   ├── data/         # JSON data files (generated)
+│   │   └── _redirects    # Netlify SPA redirects
 │   └── package.json      # Node dependencies
+│
+├── netlify.toml          # Netlify deployment configuration
 │
 ├── barber/               # Track data directories
 ├── indianapolis/
@@ -113,13 +116,13 @@ python main.py
 This will:
 1. Load data from all 7 tracks
 2. Extract 57 features per driver-track-race
-3. Run all 5 ML algorithms
+3. Run all 7 ML algorithms
 4. Generate JSON files for frontend
 
 **Expected Output:**
 - `features_matrix.csv` - Complete feature matrix
 - `ml_results.json` - ML algorithm results
-- `frontend/public/data/*.json` - 7 JSON files for dashboard
+- `frontend/public/data/*.json` - 9 JSON files for dashboard
 
 ### Step 2: Start Frontend Dashboard
 
@@ -130,23 +133,6 @@ npm start
 
 The dashboard will open at `http://localhost:3000`
 
-### Individual Scripts
-
-You can also run scripts individually:
-
-```bash
-# Load data only
-python load_data.py
-
-# Engineer features only
-python engineer_features.py
-
-# Run ML analysis only
-python run_analysis.py
-
-# Generate JSON outputs only
-python generate_outputs.py
-```
 
 ## 🔄 Data Pipeline
 
@@ -174,8 +160,8 @@ Extracts **57 features** across 8 categories:
 - **Purpose**: Find which skills transfer between tracks
 - **Output**: Significant correlations (p<0.05, |r|>0.3)
 
-#### Algorithm 2: Track Clustering (K-Means)
-- **Method**: K-Means with k=3
+#### Algorithm 2: Track Clustering (K-Means + Hierarchical)
+- **Method**: K-Means with k=3, Hierarchical Clustering
 - **Purpose**: Group tracks by characteristics
 - **Output**: 3 clusters (Technical, High-Speed, Mixed)
 
@@ -187,22 +173,33 @@ Extracts **57 features** across 8 categories:
 #### Algorithm 4: Random Forest Predictor
 - **Method**: Random Forest Classifier
 - **Purpose**: Identify hidden performance predictors
-- **Output**: Feature importance rankings, model accuracy
+- **Output**: Feature importance rankings, model accuracy, precision, recall, F1-score
 
-#### Algorithm 5: Driver Clustering (K-Means)
-- **Method**: K-Means with k=4
+#### Algorithm 5: Driver Clustering (K-Means + Hierarchical)
+- **Method**: K-Means with k=4, Hierarchical Clustering
 - **Purpose**: Identify driver archetypes
 - **Output**: 4 archetypes (Smooth Operators, Qualifying Heroes, Clutch Performers, All-Rounders)
 
+#### Algorithm 6: Gradient Boosting Predictor
+- **Method**: XGBoost/LightGBM
+- **Purpose**: Advanced feature importance with interaction effects
+- **Output**: Feature importance, interaction effects, model accuracy
+
+#### Algorithm 7: Logistic Regression (Podium Probability)
+- **Method**: Logistic Regression with 8 trainable features
+- **Purpose**: Predict podium probability for "What If" scenarios
+- **Output**: Coefficients, intercept, baseline probabilities
+
 ### 4. JSON Generation (`generate_outputs.py`)
-Creates 7 JSON files for frontend:
+Creates 9 JSON files for frontend:
 - `summary.json` - Overall statistics
 - `tracks.json` - Track data with PCA coordinates
 - `correlations.json` - Cross-track correlations
-- `features.json` - Feature importance
-- `drivers.json` - Driver profiles and scores
+- `features.json` - Feature importance (Random Forest + Gradient Boosting)
+- `drivers.json` - Driver profiles and scores with track-specific stats
 - `archetypes.json` - Archetype descriptions
-- `insights.json` - Curated insights with recommendations
+- `visualizations.json` - Data for critical presentation charts
+- `podium_calculator.json` - Logistic regression model for podium probability
 
 ## 🎨 Frontend Dashboard
 
@@ -210,44 +207,57 @@ Creates 7 JSON files for frontend:
 
 1. **Overview** (`/`)
    - Hero statistics (laps, patterns, drivers, tracks)
-   - Track DNA 2D scatter plot (PCA visualization)
-   - Quick insights preview
+   - About RaceIQ section explaining the project
+   - Track clustering visualization
 
 2. **Correlations** (`/correlations`)
    - List of correlation cards (ranked)
-   - Filter by strength (strong/moderate)
+   - Filter by strength (strong/moderate/weak)
    - Interactive bar charts
 
 3. **Predictors** (`/predictors`)
    - Feature importance horizontal bar chart
-   - Model accuracy display
-   - Key findings callout
+   - Model selector (Random Forest, Gradient Boosting, Combined)
+   - Model accuracy display with baseline comparison
+   - Feature interactions (Gradient Boosting)
+   - Feature legend with explanations
 
 4. **Drivers** (`/drivers`)
-   - Driver selector
-   - Radar chart (8 dimensions)
+   - Single driver analysis with radar chart (8 dimensions)
+   - Driver comparison tool with track-specific predictions
    - Profile panel with strengths/improvements
    - Archetype descriptions
+   - Advanced fingerprint toggle
 
-5. **Insights** (`/insights`)
-   - 8-12 insight cards
-   - Each with finding, implication, recommendations
-   - Impact badges (High/Medium/Low)
+5. **Visualizations** (`/visualizations`)
+   - 8 critical presentation charts:
+     - 2.6× Rule visual proof
+     - Archetype Performance Matrix
+     - Track Family Network
+     - Feature Importance Waterfall
+     - Consistency vs Speed Scatter Plot
+     - Training Allocation comparison
+     - Post-FCY Performance Impact
+     - Sector Importance Heatmap
 
 ### Visualizations
 
-- **Track DNA**: 2D Scatter Plot (Recharts ScatterChart)
 - **Correlations**: Bar Charts (Recharts BarChart)
 - **Feature Importance**: Horizontal Bar Chart (Recharts BarChart)
 - **Driver Fingerprint**: Radar Chart (Recharts RadarChart)
+- **Consistency vs Speed**: Scatter Plot (Recharts ScatterChart)
+- **Track Family Network**: SVG Network Diagram
+- **Archetype Matrix**: Grouped Bar Chart (Recharts BarChart)
+- **Training Allocation**: Pie Charts (Recharts PieChart)
+- **Sector Importance**: Grouped Bar Chart (Recharts BarChart)
 
 ## 🔍 Key Findings
 
 1. **S2 Consistency is #1 Predictor**: More important than fastest lap time
 2. **Strong Cross-Track Correlations**: Skills transfer between similar tracks
-3. **Post-FCY Performance Critical**: Restart performance determines outcomes
-4. **4 Driver Archetypes**: Distinct performance profiles identified
-5. **Consistency Paradox**: Winners 14% more consistent than pole sitters
+3. **4 Driver Archetypes**: Distinct performance profiles identified (Smooth Operators, Qualifying Heroes, Clutch Performers, All-Rounders)
+4. **2.6× Rule**: High S2 consistency drivers have 2.6× higher podium rate
+5. **Track Family Network**: Technical tracks (Barber, VIR) show strong correlations
 
 ## 📊 Expected Results
 
@@ -255,9 +265,9 @@ After running the pipeline, you should see:
 
 - **Total Laps**: ~10,000+ laps analyzed
 - **Significant Correlations**: 30-50+ (p<0.05)
-- **Model Accuracy**: >75%
+- **Model Accuracy**: >75% (Random Forest and Gradient Boosting)
 - **Driver Archetypes**: 4 distinct types
-- **Track Clusters**: 3 categories
+- **Track Clusters**: 3 categories (Technical, High-Speed, Mixed)
 
 ## 🛠️ Troubleshooting
 
@@ -282,6 +292,23 @@ After running the pipeline, you should see:
 - **File Formats**: Results files use semicolons (`;`), telemetry uses commas (`,`)
 - **Column Whitespace**: Some CSV files have leading spaces - automatically stripped
 - **Large Files**: Telemetry files are >200MB - not loaded by default
+
+## 🚀 Deployment
+
+### Netlify Deployment
+
+The project is configured for Netlify deployment:
+
+1. **Configuration**: `netlify.toml` is set up with correct build settings
+2. **SPA Routing**: `frontend/public/_redirects` handles React Router
+3. **Build**: Netlify will automatically build and deploy on Git push
+
+To deploy:
+- Connect your Git repository to Netlify
+- Netlify will auto-detect settings from `netlify.toml`
+- Base directory: `frontend`
+- Build command: `npm run build`
+- Publish directory: `frontend/build`
 
 ## 🤝 Contributing
 

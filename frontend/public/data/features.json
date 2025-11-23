@@ -1,0 +1,406 @@
+{
+  "random_forest": {
+    "feature_importance": [
+      {
+        "feature": "avg_speed_kph",
+        "importance": 0.11556823166808566
+      },
+      {
+        "feature": "speed_std",
+        "importance": 0.09498735355823705
+      },
+      {
+        "feature": "speed_variance",
+        "importance": 0.07069367512679134
+      },
+      {
+        "feature": "lap_best",
+        "importance": 0.05525451303245155
+      },
+      {
+        "feature": "sector_balance",
+        "importance": 0.053235670081116744
+      },
+      {
+        "feature": "s2_ratio",
+        "importance": 0.04401029949115055
+      },
+      {
+        "feature": "consistency_score",
+        "importance": 0.04326772952306571
+      },
+      {
+        "feature": "s1_std",
+        "importance": 0.04068266462341472
+      },
+      {
+        "feature": "late_pace",
+        "importance": 0.03888538586355532
+      },
+      {
+        "feature": "lap_std",
+        "importance": 0.03867941508149177
+      },
+      {
+        "feature": "lap_mean",
+        "importance": 0.03674474465740752
+      },
+      {
+        "feature": "s3_std",
+        "importance": 0.03542475941880353
+      },
+      {
+        "feature": "s3_ratio",
+        "importance": 0.03283994182312118
+      },
+      {
+        "feature": "post_fcy_performance",
+        "importance": 0.03281340711471209
+      },
+      {
+        "feature": "s1_mean",
+        "importance": 0.03150270188572807
+      },
+      {
+        "feature": "s1_ratio",
+        "importance": 0.030212269159384828
+      },
+      {
+        "feature": "pace_improvement",
+        "importance": 0.029680255809373092
+      },
+      {
+        "feature": "s2_std",
+        "importance": 0.026536346192157313
+      },
+      {
+        "feature": "s2_mean",
+        "importance": 0.02615426879302701
+      },
+      {
+        "feature": "clutch_score",
+        "importance": 0.02533780385893279
+      },
+      {
+        "feature": "early_pace",
+        "importance": 0.024163098150782145
+      },
+      {
+        "feature": "s3_mean",
+        "importance": 0.02086534306393076
+      },
+      {
+        "feature": "tire_degradation",
+        "importance": 0.017506450495224243
+      },
+      {
+        "feature": "best_to_avg_ratio",
+        "importance": 0.016589249689539926
+      },
+      {
+        "feature": "top_speed_max",
+        "importance": 0.01164033245313067
+      },
+      {
+        "feature": "fcy_lap_count",
+        "importance": 0.006724089385384379
+      }
+    ],
+    "top_predictors": [
+      {
+        "feature": "avg_speed_kph",
+        "importance": 0.11556823166808566
+      },
+      {
+        "feature": "speed_std",
+        "importance": 0.09498735355823705
+      },
+      {
+        "feature": "speed_variance",
+        "importance": 0.07069367512679134
+      },
+      {
+        "feature": "lap_best",
+        "importance": 0.05525451303245155
+      },
+      {
+        "feature": "sector_balance",
+        "importance": 0.053235670081116744
+      },
+      {
+        "feature": "s2_ratio",
+        "importance": 0.04401029949115055
+      },
+      {
+        "feature": "consistency_score",
+        "importance": 0.04326772952306571
+      },
+      {
+        "feature": "s1_std",
+        "importance": 0.04068266462341472
+      },
+      {
+        "feature": "late_pace",
+        "importance": 0.03888538586355532
+      },
+      {
+        "feature": "lap_std",
+        "importance": 0.03867941508149177
+      },
+      {
+        "feature": "lap_mean",
+        "importance": 0.03674474465740752
+      },
+      {
+        "feature": "s3_std",
+        "importance": 0.03542475941880353
+      },
+      {
+        "feature": "s3_ratio",
+        "importance": 0.03283994182312118
+      },
+      {
+        "feature": "post_fcy_performance",
+        "importance": 0.03281340711471209
+      },
+      {
+        "feature": "s1_mean",
+        "importance": 0.03150270188572807
+      }
+    ],
+    "model_accuracy": 0.9230769230769231,
+    "model_type": "RandomForest"
+  },
+  "gradient_boosting": {
+    "feature_importance": [
+      {
+        "feature": "lap_best",
+        "importance": 0.0965321734547615
+      },
+      {
+        "feature": "speed_std",
+        "importance": 0.08387462049722672
+      },
+      {
+        "feature": "lap_std",
+        "importance": 0.06626880168914795
+      },
+      {
+        "feature": "sector_balance",
+        "importance": 0.06007479131221771
+      },
+      {
+        "feature": "best_to_avg_ratio",
+        "importance": 0.05542752146720886
+      },
+      {
+        "feature": "s2_ratio",
+        "importance": 0.0533137284219265
+      },
+      {
+        "feature": "s1_mean",
+        "importance": 0.052822571247816086
+      },
+      {
+        "feature": "clutch_score",
+        "importance": 0.051668521016836166
+      },
+      {
+        "feature": "s2_mean",
+        "importance": 0.047205302864313126
+      },
+      {
+        "feature": "avg_speed_kph",
+        "importance": 0.04655058681964874
+      },
+      {
+        "feature": "early_pace",
+        "importance": 0.04518316686153412
+      },
+      {
+        "feature": "s2_std",
+        "importance": 0.041898902505636215
+      },
+      {
+        "feature": "top_speed_max",
+        "importance": 0.04102376848459244
+      },
+      {
+        "feature": "late_pace",
+        "importance": 0.038939233869314194
+      },
+      {
+        "feature": "s1_std",
+        "importance": 0.034985076636075974
+      },
+      {
+        "feature": "tire_degradation",
+        "importance": 0.033989954739809036
+      },
+      {
+        "feature": "s3_mean",
+        "importance": 0.032827772200107574
+      },
+      {
+        "feature": "s3_ratio",
+        "importance": 0.03090287744998932
+      },
+      {
+        "feature": "post_fcy_performance",
+        "importance": 0.02642364613711834
+      },
+      {
+        "feature": "lap_mean",
+        "importance": 0.02295907400548458
+      },
+      {
+        "feature": "s1_ratio",
+        "importance": 0.019945014268159866
+      },
+      {
+        "feature": "s3_std",
+        "importance": 0.008970122784376144
+      },
+      {
+        "feature": "fcy_lap_count",
+        "importance": 0.008212761022150517
+      },
+      {
+        "feature": "consistency_score",
+        "importance": 0.0
+      },
+      {
+        "feature": "speed_variance",
+        "importance": 0.0
+      },
+      {
+        "feature": "pace_improvement",
+        "importance": 0.0
+      }
+    ],
+    "top_predictors": [
+      {
+        "feature": "lap_best",
+        "importance": 0.0965321734547615
+      },
+      {
+        "feature": "speed_std",
+        "importance": 0.08387462049722672
+      },
+      {
+        "feature": "lap_std",
+        "importance": 0.06626880168914795
+      },
+      {
+        "feature": "sector_balance",
+        "importance": 0.06007479131221771
+      },
+      {
+        "feature": "best_to_avg_ratio",
+        "importance": 0.05542752146720886
+      },
+      {
+        "feature": "s2_ratio",
+        "importance": 0.0533137284219265
+      },
+      {
+        "feature": "s1_mean",
+        "importance": 0.052822571247816086
+      },
+      {
+        "feature": "clutch_score",
+        "importance": 0.051668521016836166
+      },
+      {
+        "feature": "s2_mean",
+        "importance": 0.047205302864313126
+      },
+      {
+        "feature": "avg_speed_kph",
+        "importance": 0.04655058681964874
+      },
+      {
+        "feature": "early_pace",
+        "importance": 0.04518316686153412
+      },
+      {
+        "feature": "s2_std",
+        "importance": 0.041898902505636215
+      },
+      {
+        "feature": "top_speed_max",
+        "importance": 0.04102376848459244
+      },
+      {
+        "feature": "late_pace",
+        "importance": 0.038939233869314194
+      },
+      {
+        "feature": "s1_std",
+        "importance": 0.034985076636075974
+      }
+    ],
+    "model_accuracy": 0.9384615384615385,
+    "model_type": "XGBoost",
+    "interaction_effects": [
+      {
+        "feature1": "lap_best",
+        "feature2": "lap_std",
+        "combined_importance": "0.098873824"
+      },
+      {
+        "feature1": "lap_std",
+        "feature2": "best_to_avg_ratio",
+        "combined_importance": "0.09685169"
+      },
+      {
+        "feature1": "speed_std",
+        "feature2": "lap_std",
+        "combined_importance": "0.092692286"
+      },
+      {
+        "feature1": "lap_best",
+        "feature2": "best_to_avg_ratio",
+        "combined_importance": "0.092388466"
+      },
+      {
+        "feature1": "lap_best",
+        "feature2": "speed_std",
+        "combined_importance": "0.088229075"
+      },
+      {
+        "feature1": "speed_std",
+        "feature2": "best_to_avg_ratio",
+        "combined_importance": "0.086206935"
+      },
+      {
+        "feature1": "lap_std",
+        "feature2": "sector_balance",
+        "combined_importance": "0.05988128"
+      },
+      {
+        "feature1": "lap_best",
+        "feature2": "sector_balance",
+        "combined_importance": "0.055418063"
+      },
+      {
+        "feature1": "sector_balance",
+        "feature2": "best_to_avg_ratio",
+        "combined_importance": "0.053395927"
+      },
+      {
+        "feature1": "speed_std",
+        "feature2": "sector_balance",
+        "combined_importance": "0.04923653"
+      }
+    ],
+    "error": null
+  },
+  "comparison": {
+    "rf_accuracy": 0.9230769230769231,
+    "gb_accuracy": 0.9384615384615385,
+    "best_model": "Gradient Boosting",
+    "accuracy_improvement": 1.54
+  },
+  "key_finding": "S2 consistency is a top predictor of race success, more important than fastest lap time"
+}
