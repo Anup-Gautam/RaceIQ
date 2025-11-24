@@ -839,23 +839,23 @@ def generate_visualizations_json(ml_results: dict, features_df: pd.DataFrame, lo
     }
 
 def _generate_26x_rule(features_df: pd.DataFrame) -> dict:
-    """Calculate 2.6× Rule: High S2 Consistency + Low Best Lap vs Low S2 Consistency + High Best Lap"""
+    """Calculate 1.15× Rule: High Lap Consistency + Low Best Lap vs Low Lap Consistency + High Best Lap"""
     
     # Use quartiles for better separation (top 25% vs bottom 25%)
-    s2_std_q25 = features_df['s2_std'].quantile(0.25)  # Top 25% most consistent (lowest std)
-    s2_std_q75 = features_df['s2_std'].quantile(0.75)  # Bottom 25% least consistent (highest std)
+    lap_std_q25 = features_df['lap_std'].quantile(0.25)  # Top 25% most consistent (lowest std)
+    lap_std_q75 = features_df['lap_std'].quantile(0.75)  # Bottom 25% least consistent (highest std)
     lap_best_q25 = features_df['lap_best'].quantile(0.25)  # Top 25% fastest (lowest time)
     lap_best_q75 = features_df['lap_best'].quantile(0.75)  # Bottom 25% slowest (highest time)
     
-    # High consistency = low s2_std (top quartile), Low best lap = fast (top quartile)
+    # High consistency = low lap_std (top quartile), Low best lap = fast (top quartile)
     high_consistency_low_lap = features_df[
-        (features_df['s2_std'] <= s2_std_q25) & 
+        (features_df['lap_std'] <= lap_std_q25) & 
         (features_df['lap_best'] <= lap_best_q25)
     ]
     
-    # Low consistency = high s2_std (bottom quartile), High best lap = slow (bottom quartile)
+    # Low consistency = high lap_std (bottom quartile), High best lap = slow (bottom quartile)
     low_consistency_high_lap = features_df[
-        (features_df['s2_std'] >= s2_std_q75) & 
+        (features_df['lap_std'] >= lap_std_q75) & 
         (features_df['lap_best'] >= lap_best_q75)
     ]
     
@@ -867,19 +867,19 @@ def _generate_26x_rule(features_df: pd.DataFrame) -> dict:
     
     return {
         'high_consistency_low_lap': {
-            'label': 'High S2 Consistency + Low Best Lap',
+            'label': 'High Lap Consistency + Low Best Lap',
             'podium_rate': round(hc_ll_podium_rate, 1),
             'count': len(high_consistency_low_lap),
             'icon': '🏆'
         },
         'low_consistency_high_lap': {
-            'label': 'Low S2 Consistency + High Best Lap',
+            'label': 'Low Lap Consistency + High Best Lap',
             'podium_rate': round(lc_hl_podium_rate, 1),
             'count': len(low_consistency_high_lap),
             'icon': '⚡'
         },
         'ratio': round(ratio, 2),
-        'insight': f'Drivers with high S2 consistency and fast best laps achieve podium {ratio:.1f}× more often'
+        'insight': f'Drivers with high lap consistency and fast best laps achieve podium {ratio:.1f}× more often'
     }
 
 def _generate_archetype_matrix(ml_results: dict, features_df: pd.DataFrame) -> dict:

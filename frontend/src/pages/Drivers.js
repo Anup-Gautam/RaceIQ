@@ -28,8 +28,15 @@ const Drivers = () => {
       if (driversData?.drivers && Object.keys(driversData.drivers).length > 0) {
         const driverIds = Object.keys(driversData.drivers);
         setSelectedDriver(driverIds[0]);
-        if (driverIds.length > 1) {
+        // Set default comparison drivers: Driver #50 and Driver #14
+        if (driverIds.includes('50')) {
+          setCompareDriver1('50');
+        } else if (driverIds.length > 0) {
           setCompareDriver1(driverIds[0]);
+        }
+        if (driverIds.includes('14')) {
+          setCompareDriver2('14');
+        } else if (driverIds.length > 1) {
           setCompareDriver2(driverIds[1]);
         }
       }
@@ -49,7 +56,9 @@ const Drivers = () => {
           setSelectedTrackSingle(availableTracks[0].id);
         }
         if (!selectedTrackCompare) {
-          setSelectedTrackCompare(availableTracks[0].id);
+          // Set default comparison track to Road America
+          const roadAmericaTrack = availableTracks.find(t => t.id === 'road_america');
+          setSelectedTrackCompare(roadAmericaTrack ? roadAmericaTrack.id : availableTracks[0].id);
         }
       }
     }

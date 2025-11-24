@@ -156,7 +156,7 @@ const Visualizations = () => {
           {rule26x.ratio ? `The ${rule26x.ratio}× Rule: Consistency Beats Speed` : 'The Consistency Rule: Consistency Beats Speed'}
         </h2>
         <p className="section-description">
-          {rule26x.insight || 'High S2 consistency + fast best lap achieves podium significantly more often'}
+          {rule26x.insight || 'High lap consistency + fast best lap achieves podium significantly more often'}
         </p>
         <div className="chart-container">
           <ResponsiveContainer width="100%" height={400}>
@@ -212,7 +212,7 @@ const Visualizations = () => {
               {rule26x.ratio}× More Podiums
             </div>
             <div style={{ color: '#cbd5e1', marginTop: '0.5rem' }}>
-              Drivers with high S2 consistency and fast best laps achieve podium {rule26x.ratio}× more often
+              Drivers with high lap consistency and fast best laps achieve podium {rule26x.ratio}× more often
             </div>
           </div>
         )}
@@ -895,7 +895,7 @@ const Visualizations = () => {
           position: 'relative'
         }}>
           {/* Simple network visualization using SVG */}
-          <svg width="100%" height="400" style={{ border: '1px solid #374151', borderRadius: '0.25rem' }}>
+          <svg width="100%" height="500" style={{ border: '1px solid #374151', borderRadius: '0.25rem' }}>
             {/* Draw edges first */}
             {networkEdges.map((edge, idx) => {
               const sourceNode = networkNodes.find(n => n.id === edge.source);
@@ -907,7 +907,7 @@ const Visualizations = () => {
               const angleStep = (2 * Math.PI) / nodeCount;
               const radius = 150;
               const centerX = 400;
-              const centerY = 200;
+              const centerY = 250;
               
               const sourceIdx = networkNodes.findIndex(n => n.id === edge.source);
               const targetIdx = networkNodes.findIndex(n => n.id === edge.target);
@@ -939,7 +939,7 @@ const Visualizations = () => {
               const angleStep = (2 * Math.PI) / nodeCount;
               const radius = 150;
               const centerX = 400;
-              const centerY = 200;
+              const centerY = 250;
               
               const x = centerX + radius * Math.cos(idx * angleStep - Math.PI / 2);
               const y = centerY + radius * Math.sin(idx * angleStep - Math.PI / 2);
@@ -965,10 +965,10 @@ const Visualizations = () => {
                     y={y + 35}
                     textAnchor="middle"
                     fill="#d1d5db"
-                    fontSize="12"
+                    fontSize="11"
                     fontWeight="bold"
                   >
-                    {node.name.split(' ').map(w => w[0]).join('')}
+                    {node.name}
                   </text>
                 </g>
               );

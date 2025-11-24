@@ -1,19 +1,19 @@
 {
   "rule_26x": {
     "high_consistency_low_lap": {
-      "label": "High S2 Consistency + Low Best Lap",
-      "podium_rate": 8.3,
-      "count": 36,
+      "label": "High Lap Consistency + Low Best Lap",
+      "podium_rate": 15.4,
+      "count": 39,
       "icon": "\ud83c\udfc6"
     },
     "low_consistency_high_lap": {
-      "label": "Low S2 Consistency + High Best Lap",
-      "podium_rate": 7.3,
-      "count": 55,
+      "label": "Low Lap Consistency + High Best Lap",
+      "podium_rate": 10.6,
+      "count": 66,
       "icon": "\u26a1"
     },
-    "ratio": 1.15,
-    "insight": "Drivers with high S2 consistency and fast best laps achieve podium 1.1\u00d7 more often"
+    "ratio": 1.45,
+    "insight": "Drivers with high lap consistency and fast best laps achieve podium 1.5\u00d7 more often"
   },
   "archetype_matrix": {
     "data": [
