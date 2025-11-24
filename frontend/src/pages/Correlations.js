@@ -72,12 +72,13 @@ const Correlations = () => {
           <ResponsiveContainer width="100%" height={600}>
             <BarChart data={chartData} layout="vertical">
               <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
-              <XAxis type="number" domain={[-1, 1]} stroke="#9ca3af" />
+              <XAxis type="number" domain={[-1, 1]} stroke="#ffffff" tick={{ fill: '#ffffff' }} />
               <YAxis 
                 type="category" 
                 dataKey="name" 
                 width={200}
-                stroke="#9ca3af"
+                stroke="#ffffff"
+                tick={{ fill: '#ffffff' }}
               />
               <Tooltip
                 content={({ active, payload }) => {

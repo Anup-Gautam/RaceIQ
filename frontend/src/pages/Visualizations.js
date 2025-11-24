@@ -77,9 +77,11 @@ const Visualizations = () => {
   );
   const archetypeRange = archetypeMax - archetypeMin;
   const archetypePadding = Math.max(archetypeRange * 0.15, 2);
+  // Ensure max is at least 100 if any value is close to 100
+  const archetypeYMax = Math.max(archetypeMax + archetypePadding, archetypeMax >= 90 ? 100 : archetypeMax + archetypePadding);
   const archetypeYDomain = [
     Math.max(0, archetypeMin - archetypePadding),
-    archetypeMax + archetypePadding
+    archetypeYMax
   ];
 
   // 3. Consistency vs Speed Scatter
@@ -165,14 +167,15 @@ const Visualizations = () => {
               <XAxis 
                 type="number" 
                 domain={rule26xYDomain}
-                stroke="#9ca3af"
-                tick={{ fill: '#9ca3af' }}
+                stroke="#ffffff"
+                tick={{ fill: '#ffffff' }}
               />
               <YAxis 
                 type="category" 
                 dataKey="name" 
                 width={300}
-                stroke="#9ca3af"
+                stroke="#ffffff"
+                tick={{ fill: '#ffffff' }}
               />
               <Tooltip
                 content={({ active, payload }) => {
@@ -230,16 +233,24 @@ const Visualizations = () => {
               <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
               <XAxis 
                 dataKey="archetype" 
-                stroke="#9ca3af"
+                stroke="#ffffff"
                 angle={-45}
                 textAnchor="end"
                 height={100}
-                tick={{ fill: '#9ca3af' }}
+                tick={{ fill: '#ffffff' }}
               />
               <YAxis 
                 domain={archetypeYDomain}
-                stroke="#9ca3af"
-                tick={{ fill: '#9ca3af' }}
+                stroke="#ffffff"
+                tick={{ fill: '#ffffff' }}
+                tickFormatter={(value) => {
+                  // Ensure proper formatting - show as integer if whole number, otherwise 1 decimal
+                  // Handle very small numbers that might be displayed incorrectly
+                  if (value < 0.001 && value > 0) return '0';
+                  if (value >= 100) return '100';
+                  if (value % 1 === 0) return value.toString();
+                  return value.toFixed(1);
+                }}
               />
               <Tooltip
                 content={({ active, payload }) => {
@@ -307,10 +318,10 @@ const Visualizations = () => {
                   value: scatterData.x_label || 'Consistency Score (0-100)', 
                   position: 'insideBottom', 
                   offset: -5,
-                  style: { fill: '#d1d5db', fontSize: '14px' }
+                  style: { fill: '#ffffff', fontSize: '14px' }}
                 }}
-                stroke="#9ca3af"
-                tick={{ fill: '#9ca3af' }}
+                stroke="#ffffff"
+                tick={{ fill: '#ffffff' }}
               />
               <YAxis 
                 type="number" 
@@ -321,10 +332,10 @@ const Visualizations = () => {
                   value: scatterData.y_label || 'Speed Score (0-100)', 
                   angle: -90, 
                   position: 'insideLeft',
-                  style: { fill: '#d1d5db', fontSize: '14px' }
+                  style: { fill: '#ffffff', fontSize: '14px' }}
                 }}
-                stroke="#9ca3af"
-                tick={{ fill: '#9ca3af' }}
+                stroke="#ffffff"
+                tick={{ fill: '#ffffff' }}
               />
               <Tooltip
                 cursor={{ strokeDasharray: '3 3' }}
@@ -437,21 +448,21 @@ const Visualizations = () => {
                   <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
                   <XAxis 
                     dataKey="feature" 
-                    stroke="#9ca3af"
+                    stroke="#ffffff"
                     angle={-45}
                     textAnchor="end"
                     height={120}
-                    tick={{ fill: '#9ca3af', fontSize: 11 }}
+                    tick={{ fill: '#ffffff', fontSize: 11 }}
                   />
                   <YAxis 
                     domain={[0, 100]}
-                    stroke="#9ca3af"
-                    tick={{ fill: '#9ca3af' }}
+                    stroke="#ffffff"
+                    tick={{ fill: '#ffffff' }}
                     label={{ 
                       value: 'Accuracy (%)', 
                       angle: -90, 
                       position: 'insideLeft',
-                      style: { fill: '#d1d5db', fontSize: '14px' }
+                      style: { fill: '#ffffff', fontSize: '14px' }}
                     }}
                   />
                   <Tooltip
@@ -646,18 +657,18 @@ const Visualizations = () => {
               <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
               <XAxis 
                 dataKey="name" 
-                stroke="#9ca3af"
-                tick={{ fill: '#9ca3af' }}
+                stroke="#ffffff"
+                tick={{ fill: '#ffffff' }}
               />
               <YAxis 
                 domain={fcyYDomain}
-                stroke="#9ca3af"
-                tick={{ fill: '#9ca3af' }}
+                stroke="#ffffff"
+                tick={{ fill: '#ffffff' }}
                 label={{ 
                   value: 'Podium Rate (%)', 
                   angle: -90, 
                   position: 'insideLeft',
-                  style: { fill: '#d1d5db', fontSize: '14px' }
+                  style: { fill: '#ffffff', fontSize: '14px' }}
                 }}
               />
               <Tooltip
@@ -737,23 +748,23 @@ const Visualizations = () => {
               <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
               <XAxis 
                 dataKey="track" 
-                stroke="#9ca3af"
+                stroke="#ffffff"
                 angle={-45}
                 textAnchor="end"
                 height={120}
-                tick={{ fill: '#9ca3af', fontSize: 12 }}
+                tick={{ fill: '#ffffff', fontSize: 12 }}
               />
               <YAxis 
                 domain={sectorYDomain}
-                stroke="#9ca3af"
+                stroke="#ffffff"
                 label={{ 
                   value: 'Importance (|Correlation|)', 
                   angle: -90, 
                   position: 'insideLeft',
                   offset: 10,
-                  style: { fill: '#d1d5db', fontSize: '14px' }
+                  style: { fill: '#ffffff', fontSize: '14px' }}
                 }}
-                tick={{ fill: '#9ca3af' }}
+                tick={{ fill: '#ffffff' }}
               />
               <Tooltip
                 content={({ active, payload }) => {
@@ -964,7 +975,7 @@ const Visualizations = () => {
                     x={x}
                     y={y + 35}
                     textAnchor="middle"
-                    fill="#d1d5db"
+                    fill="#ffffff"
                     fontSize="11"
                     fontWeight="bold"
                   >
@@ -1080,16 +1091,16 @@ const Visualizations = () => {
                     <XAxis 
                       dataKey="lap" 
                       type="number"
-                      label={{ value: 'Lap Number', position: 'insideBottom', offset: -10, style: { fill: '#9ca3af', fontSize: '14px' } }}
-                      stroke="#9ca3af"
+                      label={{ value: 'Lap Number', position: 'insideBottom', offset: -10, style: { fill: '#ffffff', fontSize: '14px' } }}
+                      stroke="#ffffff"
                       domain={['dataMin', 'dataMax']}
-                      tick={{ fill: '#9ca3af', fontSize: '12px' }}
+                      tick={{ fill: '#ffffff', fontSize: '12px' }}
                     />
                     <YAxis 
-                      label={{ value: 'Lap Time (seconds)', angle: -90, position: 'insideLeft', style: { fill: '#9ca3af', fontSize: '14px' } }}
-                      stroke="#9ca3af"
+                      label={{ value: 'Lap Time (seconds)', angle: -90, position: 'insideLeft', style: { fill: '#ffffff', fontSize: '14px' } }}
+                      stroke="#ffffff"
                       domain={['dataMin - 2', 'dataMax + 2']}
-                      tick={{ fill: '#9ca3af', fontSize: '12px' }}
+                      tick={{ fill: '#ffffff', fontSize: '12px' }}
                     />
                     <Tooltip
                       content={({ active, payload }) => {

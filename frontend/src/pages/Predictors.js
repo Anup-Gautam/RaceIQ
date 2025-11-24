@@ -352,12 +352,13 @@ const Predictors = () => {
             <ResponsiveContainer width="100%" height={600}>
               <BarChart data={chartData} layout="vertical">
               <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
-              <XAxis type="number" stroke="#9ca3af" />
+              <XAxis type="number" stroke="#ffffff" tick={{ fill: '#ffffff' }} />
               <YAxis 
                 type="category" 
                 dataKey="name" 
                 width={250}
-                stroke="#9ca3af"
+                stroke="#ffffff"
+                tick={{ fill: '#ffffff' }}
               />
               <Tooltip
                 content={({ active, payload }) => {
@@ -409,12 +410,13 @@ const Predictors = () => {
                 };
               })} layout="vertical">
                 <CartesianGrid strokeDasharray="3 3" stroke="#374151" />
-                <XAxis type="number" stroke="#9ca3af" />
+                <XAxis type="number" stroke="#ffffff" tick={{ fill: '#ffffff' }} />
                 <YAxis 
                   type="category" 
                   dataKey="name" 
                   width={300}
-                  stroke="#9ca3af"
+                  stroke="#ffffff"
+                tick={{ fill: '#ffffff' }}
                 />
                 <Tooltip
                   content={({ active, payload }) => {

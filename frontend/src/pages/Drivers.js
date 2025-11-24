@@ -329,7 +329,7 @@ const Drivers = () => {
                       <PolarRadiusAxis 
                         angle={90} 
                         domain={[0, 100]}
-                        tick={{ fill: '#9ca3af', fontSize: 10 }}
+                        tick={{ fill: '#ffffff', fontSize: 10 }}
                         tickCount={6}
                         tickFormatter={(value) => {
                           if (value === 90) return 'Elite';
@@ -341,7 +341,7 @@ const Drivers = () => {
                       
                       <PolarAngleAxis 
                         dataKey="dimension" 
-                        tick={{ fill: '#d1d5db', fontSize: 12 }}
+                        tick={{ fill: '#ffffff', fontSize: 12 }}
                       />
                       
                       <Radar
@@ -644,8 +644,8 @@ const Drivers = () => {
                         <ResponsiveContainer width="100%" height={350}>
                           <RadarChart data={driver1RadarData}>
                             <PolarGrid stroke="#374151" strokeDasharray="3 3" />
-                            <PolarRadiusAxis angle={90} domain={[0, 100]} tick={{ fill: '#9ca3af', fontSize: 10 }} tickCount={6} />
-                            <PolarAngleAxis dataKey="dimension" tick={{ fill: '#d1d5db', fontSize: 11 }} />
+                            <PolarRadiusAxis angle={90} domain={[0, 100]} tick={{ fill: '#ffffff', fontSize: 10 }} tickCount={6} />
+                            <PolarAngleAxis dataKey="dimension" tick={{ fill: '#ffffff', fontSize: 11 }} />
                             <Radar name="Driver 1" dataKey="value" stroke="#3b82f6" strokeWidth={2.5} fill="#3b82f6" fillOpacity={0.5} dot={{ fill: '#3b82f6', r: 4 }} />
                           </RadarChart>
                         </ResponsiveContainer>
@@ -680,8 +680,8 @@ const Drivers = () => {
                         <ResponsiveContainer width="100%" height={350}>
                           <RadarChart data={driver2RadarData}>
                             <PolarGrid stroke="#374151" strokeDasharray="3 3" />
-                            <PolarRadiusAxis angle={90} domain={[0, 100]} tick={{ fill: '#9ca3af', fontSize: 10 }} tickCount={6} />
-                            <PolarAngleAxis dataKey="dimension" tick={{ fill: '#d1d5db', fontSize: 11 }} />
+                            <PolarRadiusAxis angle={90} domain={[0, 100]} tick={{ fill: '#ffffff', fontSize: 10 }} tickCount={6} />
+                            <PolarAngleAxis dataKey="dimension" tick={{ fill: '#ffffff', fontSize: 11 }} />
                             <Radar name="Driver 2" dataKey="value" stroke="#ef4444" strokeWidth={2.5} fill="#ef4444" fillOpacity={0.5} dot={{ fill: '#ef4444', r: 4 }} />
                           </RadarChart>
                         </ResponsiveContainer>
